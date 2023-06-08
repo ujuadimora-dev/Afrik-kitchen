@@ -1,0 +1,1 @@
+web: gunicorn afrik_kitchen.wsgi
