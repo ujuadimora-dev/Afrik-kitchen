@@ -1,5 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
+from cloudinary.models import CloudinaryField
+
+STATUS = ((0, "Draft"), (1, "published"))
 
 
 # Choice fields
@@ -15,14 +18,16 @@ ITEM_TYPES = (
 class FoodMenu(models.Model):
     """ Model to create the menu list"""
     name = models.CharField(max_length=45)
+    #slug = models.SlugField(max_length=45)
     description = models.TextField()
     price = models.FloatField(default=0.00)
-    image = models.ImageField(upload_to='media/',blank=True, null=True)
+    image = models.ImageField(upload_to='foodtype/', blank=True, null=True)
+    created_on = models.DateTimeField(auto_now_add=True)
 
 
 class Meta:
     """ Order by name"""
-    ordering = ['name']
+    ordering = ['name', '_created_on']
 
 def __str__ (self):
     return str(self.name)
@@ -49,3 +54,6 @@ class Meta:
 
 def __str__ (self):
     return str(self.name)
+
+def number_of_food_item(self):
+    return self.Menu.count()

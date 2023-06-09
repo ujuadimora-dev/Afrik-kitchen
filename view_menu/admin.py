@@ -1,5 +1,9 @@
 from django.contrib import admin
+from django_summernote.admin import SummernoteModelAdmin
 from .models import FoodMenu, Menu
+#class FoodMenuAdmin(SummernoteModelAdmin):
+
+    #summernote_fields = ('description')
 
 
 
@@ -8,9 +12,12 @@ from .models import FoodMenu, Menu
 # Register your models here.
 
 @admin.register(FoodMenu)
-class FoodMenuAdmin(admin.ModelAdmin):
-    list_display = ('name', 'description', 'price', 'image')
-    list_filter = ('name',)
+class FoodMenuAdmin(SummernoteModelAdmin):
+    list_display = ('name', 'description', 'price', 'image', 'created_on')
+    search_fields = ['name', 'description']
+    #prepopulated_fields = {'slug': ('name',)}
+    list_filter = ('name', 'created_on')
+    summernote_fields = ('description')
 
 
 @admin.register(Menu)
