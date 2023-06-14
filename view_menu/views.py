@@ -3,9 +3,11 @@ from django.http import HttpResponse
 
 # Create your views here.
 
+
 def index(request):
-    return HttpResponse('<h1>hellow World </h1><h2 style="color:red">Home page</h2>')
+    ctx = {'name': 'Afrian Kitchen', 'msg': 'This is No 4 projects'}
+    return render(request, 'menu/index.html', ctx) # menu here is the directory(path)
 
 
 def menu(request):
-    return HttpResponse('view the menu list here' )
+    return render(request, 'menu/menu.html') # menu here is the directory(path)
