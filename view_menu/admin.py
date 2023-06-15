@@ -4,7 +4,7 @@ from .models import BreakFast, Lunch, Dinner, Sides
 
 # Register your models here.
 class BreakFastAdmin(admin.ModelAdmin):
-    list_display = ('name', 'priceM', 'priceL')
+    list_display = ('name', 'priceM', 'priceL', 'fimage')
 
 
 admin.site.register(BreakFast, BreakFastAdmin)

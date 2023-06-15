@@ -1,0 +1,32 @@
+{% extends 'menu/base.html' %}
+
+{% block title %}Breakfasts{% endblock %}
+
+{% block content %}
+
+    <h2 class="title"> Our Menu for BreakFast</h2>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    {% for breakfast in breakfasts %}
+                    <div class="col-md-6">
+                        <image class="img" src="{{breakfast.fimage}}"> 
+
+                        <h2>BreakFast name: {{breakfast.name}}, price M: {{breakfast.priceM}} $</h2>
+                    </div>
+                    {% endfor %}
+
+
+                </div>
+            </div>
+            <div class="col-md-4">
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+
+

@@ -1,5 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import BreakFast
+from django.conf import settings
+from django.templatetags.static import static
+import os
+
 
 # Create your views here.
 
@@ -11,6 +16,15 @@ def index(request):
 
 def menu(request):
     return render(request, 'menu/menu.html') # menu here is the directory(path)
+
+def breakfast(request):
+    path = settings.MEDIA_ROOT
+    breakfasts = BreakFast.objects.all()
+   
+    ctx = {'breakfasts': breakfasts}
+    print(breakfasts)
+    return render(request, 'menu/breakfast.html', ctx)
+
 
 
 

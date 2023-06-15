@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from view_menu import views
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 
 urlpatterns = [
@@ -23,5 +26,8 @@ urlpatterns = [
     path('', views.index, name="index"),
     path('view_menu/', include('view_menu.urls', namespace='view_menu')),
 
-    
-]
+   ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+ 
+
+
+
