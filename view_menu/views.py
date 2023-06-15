@@ -11,3 +11,6 @@ def index(request):
 
 def menu(request):
     return render(request, 'menu/menu.html') # menu here is the directory(path)
+
+
+

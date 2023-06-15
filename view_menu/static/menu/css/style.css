@@ -10,5 +10,9 @@
     height: 100vh;
     background-image: url(../css/images/hotspoint.png);
     background-size: cover;
+    background-position:  center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+
    
 }
