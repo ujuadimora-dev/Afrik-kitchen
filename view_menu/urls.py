@@ -10,6 +10,9 @@ app_name = 'view_menu'
 urlpatterns = [
     path('menu/', views.menu, name="menu"),   # menu here is the url for the view_menu
     path('breakfast/', views.breakfast, name="breakfast"),
+    path('lunch/', views.lunch, name="lunch"),
+    path('dinner/', views.dinner, name="dinner"),
+    path('side/', views.side, name="side"),
 ]
 
 # Add the following line at the end of the file
