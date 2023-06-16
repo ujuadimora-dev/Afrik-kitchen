@@ -5,7 +5,8 @@ class BreakFast(models.Model):
     name = models.CharField(max_length=100)
     priceM = models.DecimalField(max_digits=5, decimal_places=2)
     priceL = models.DecimalField(max_digits=5, decimal_places=2)
-    fimage = models.ImageField(upload_to='menu_images')  
+    fimage = models.URLField()
+  
 
 class Meta:
     """ Order by name"""
@@ -18,7 +19,7 @@ class Lunch(models.Model):
     name = models.CharField(max_length=100)
     priceM = models.DecimalField(max_digits=5, decimal_places=2)
     priceL = models.DecimalField(max_digits=5, decimal_places=2)
-    fimage = models.ImageField(upload_to='menu_images')  
+    fimage = models.URLField()
 
 class Meta:
     """ Order by name"""
@@ -32,8 +33,7 @@ class Dinner(models.Model):
     name = models.CharField(max_length=100)
     priceM = models.DecimalField(max_digits=5, decimal_places=2)
     priceL = models.DecimalField(max_digits=5, decimal_places=2)
-    fimage = models.ImageField(upload_to='menu_images')  
-
+    fimage = models.URLField()
 class Meta:
     """ Order by name"""
     ordering = ['name', '_created_on']
@@ -47,8 +47,7 @@ class  Sides(models.Model):
     name = models.CharField(max_length=100)
     priceM = models.DecimalField(max_digits=5, decimal_places=2)
     priceL = models.DecimalField(max_digits=5, decimal_places=2)
-    fimage = models.ImageField(upload_to='menu_images')  
-
+    fimage = models.URLField()
 class Meta:
     """ Order by name"""
     ordering = ['name', '_created_on']
