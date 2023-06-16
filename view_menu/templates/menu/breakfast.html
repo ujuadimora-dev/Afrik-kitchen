@@ -3,30 +3,38 @@
 {% block title %}Breakfasts{% endblock %}
 
 {% block content %}
-
-    <h2 class="title"> Our Menu for BreakFast</h2>
-    
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="row">
-                    {% for breakfast in breakfasts %}
-                    <div class="col-md-6">
-                        <image class="img" src="{{breakfast.fimage}}"> 
-
-                        <h2>BreakFast name: {{breakfast.name}}, price M: {{breakfast.priceM}} $</h2>
+<div class="container-fluid">
+    <div class="row text-center">
+        <div class="col-md-8">
+            <h2 class="title">Our Menu for Breakfast</h2>
+            <div class="row">
+                {% for breakfast in breakfasts %}
+                <div class="col-md-4 p-4 justify-content-center">
+                    <!-- Added "p-4" class inside div -->
+                    <img class="img" src="{{ breakfast.fimage }}" alt="{{ breakfast.name }}">
+                    <!-- Corrected "image" tag to "img" and added alt attribute -->
+                    <h4 class="pt-3">{{ breakfast.name }}</h4>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" checked>
+                            {{ breakfast.priceM }} $
+                        </label>
                     </div>
-                    {% endfor %}
-
-
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio">
+                            {{ breakfast.priceL }} $
+                            <!-- "priceM"  -->
+                        </label>
+                    </div>
+                    <div>
+                        <button class="btn-warning mt-3">Add to Cart</button> 
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-
+                {% endfor %}
             </div>
         </div>
+        <div class="col-md-4"></div>
     </div>
-
+</div>
 {% endblock %}
-
-

@@ -19,3 +19,15 @@
     margin: 50px;
     text-align: center;
 }
+
+.img {
+    width: 300px;
+    border-radius: 50%;
+    height: 200px;
+}
+
+.item-title{
+    position: relative;
+    margin-top: 10px;
+    left: 120px;
+}
