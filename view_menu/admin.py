@@ -1,5 +1,11 @@
 from django.contrib import admin
 from .models import BreakFast, Lunch, Dinner, Sides
+#from .forms import BreakFastForm, LunchForm, DinnerForm, SidesForm
+from .forms import MenuCreateForm
+
+from .forms import MenuCreateForm, MenuForm
+
+
 
 
 # Register your models here.
@@ -29,3 +35,15 @@ class SidesAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Sides, SidesAdmin)
+
+""" for creating Menu"""
+
+
+class MenuAdmin(admin.ModelAdmin):
+    form = MenuCreateForm
+    list_display = ('breakfast', 'lunch', 'dinnner',('side'))
+
+
+class MenuAdmin(admin.ModelAdmin):
+    form = MenuCreateForm
+

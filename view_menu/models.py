@@ -1,11 +1,17 @@
 from django.db import models
 
+
+
 class BreakFast(models.Model):
+    fimage = models.URLField()
     name = models.CharField(max_length=100)
     description = models.TextField()
     priceM = models.DecimalField(max_digits=5, decimal_places=2)
     priceL = models.DecimalField(max_digits=5, decimal_places=2)
-    fimage = models.URLField()
+    vegetarian = models.BooleanField()
+    calorie_count = models.IntegerField()
+    created_on = models.DateField()
+    created_by_staff = models.TextField(max_length=25)
 
     class Meta:
         ordering = ['name']
@@ -15,10 +21,16 @@ class BreakFast(models.Model):
 
 
 class Lunch(models.Model):
+    fimage = models.URLField()
     name = models.CharField(max_length=100)
+    description = models.TextField()
     priceM = models.DecimalField(max_digits=5, decimal_places=2)
     priceL = models.DecimalField(max_digits=5, decimal_places=2)
-    fimage = models.URLField()
+    vegetarian = models.BooleanField()
+    calorie_count = models.IntegerField()
+    created_on = models.DateField()
+    created_by_staff = models.TextField(max_length=25)
+    
 
     class Meta:
         ordering = ['name']
@@ -28,10 +40,16 @@ class Lunch(models.Model):
 
 
 class Dinner(models.Model):
+    fimage = models.URLField()
     name = models.CharField(max_length=100)
+    description = models.TextField()
     priceM = models.DecimalField(max_digits=5, decimal_places=2)
     priceL = models.DecimalField(max_digits=5, decimal_places=2)
-    fimage = models.URLField()
+    vegetarian = models.BooleanField()
+    calorie_count = models.IntegerField()
+    created_on = models.DateField()
+    created_by_staff = models.TextField(max_length=25)
+    
 
     class Meta:
         ordering = ['name']
@@ -41,10 +59,16 @@ class Dinner(models.Model):
 
 
 class Sides(models.Model):
+    fimage = models.URLField()
     name = models.CharField(max_length=100)
+    description = models.TextField()
     priceM = models.DecimalField(max_digits=5, decimal_places=2)
     priceL = models.DecimalField(max_digits=5, decimal_places=2)
-    fimage = models.URLField()
+    vegetarian = models.BooleanField()
+    calorie_count = models.IntegerField()
+    created_on = models.DateField()
+    created_by_staff = models.TextField(max_length=25)
+   
 
     class Meta:
         ordering = ['name']
