@@ -5,6 +5,8 @@ from django.conf import settings
 from django.templatetags.static import static
 from .forms import MenuCreateForm
 from view_menu.forms import MenuForm
+from django.contrib import messages
+
 
 import os
 
@@ -70,7 +72,59 @@ def create_menu(request):
             if menu_type == 'BREAKFAST':
                 # Save data to Breakfast model
                 breakfast = BreakFast.objects.create(
-                    #description=form.cleaned_data['description'],
+                    description=form.cleaned_data['description'],
+                    #content=form.cleaned_data['content'],
+                    fimage=form.cleaned_data['fimage'],
+                    name=form.cleaned_data['name'],
+                    priceM=form.cleaned_data['priceM'],
+                    priceL=form.cleaned_data['priceL'],
+                    vegetarian=form.cleaned_data['vegetarian'],
+                    calorie_count=form.cleaned_data['calorie_count']
+                )
+                # Additional processing if needed
+                
+                #return render(request, 'menu/success.html')
+                return render(request, 'menu/success.html', {'menu_type': 'breakfast'})
+                
+            elif menu_type == 'LUNCH':
+                # Save data to Lunch model
+                lunch = Lunch.objects.create(
+                    description=form.cleaned_data['description'],
+                    #content=form.cleaned_data['content'],
+                    fimage=form.cleaned_data['fimage'],
+                    name=form.cleaned_data['name'],
+                    priceM=form.cleaned_data['priceM'],
+                    priceL=form.cleaned_data['priceL'],
+                    vegetarian=form.cleaned_data['vegetarian'],
+                    calorie_count=form.cleaned_data['calorie_count']
+                )
+                # Additional processing if needed
+                
+               # return render(request, 'menu/success.html')
+                return render(request, 'menu/success.html', {'menu_type': 'lunch'})
+                
+            elif menu_type == 'DINNER':
+                # Save data to Dinner model
+                dinner = Dinner.objects.create(
+                   
+                    #content=form.cleaned_data['content'],
+                    description=form.cleaned_data['description'],
+                    fimage=form.cleaned_data['fimage'],
+                    name=form.cleaned_data['name'],
+                    priceM=form.cleaned_data['priceM'],
+                    priceL=form.cleaned_data['priceL'],
+                    vegetarian=form.cleaned_data['vegetarian'],
+                    calorie_count=form.cleaned_data['calorie_count']
+                )
+                # Additional processing if needed
+                
+                return render(request, 'menu/success.html')
+                return render(request, 'menu/success.html', {'menu_type': 'dinner'})
+                
+            elif menu_type == 'SIDE':
+                # Save data to Sides model
+                sides = Sides.objects.create(
+                    description=form.cleaned_data['description'],
                     #content=form.cleaned_data['content'],
                     fimage=form.cleaned_data['fimage'],
                     name=form.cleaned_data['name'],
@@ -82,54 +136,7 @@ def create_menu(request):
                 # Additional processing if needed
                 
                 return render(request, 'menu/success.html')
-                
-            elif menu_type == 'LUNCH':
-                # Save data to Lunch model
-                lunch = Lunch.objects.create(
-                    #description=form.cleaned_data['description'],
-                    content=form.cleaned_data['content'],
-                    image=form.cleaned_data['fimage'],
-                    name=form.cleaned_data['name'],
-                    priceM=form.cleaned_data['priceM'],
-                    priceL=form.cleaned_data['priceL'],
-                    vegetarian=form.cleaned_data['vegetarian'],
-                    calorie_count=form.cleaned_data['calorie_count']
-                )
-                # Additional processing if needed
-                
-                return render(request, 'menu/success.html')
-                
-            elif menu_type == 'DINNER':
-                # Save data to Dinner model
-                dinner = Dinner.objects.create(
-                   
-                    content=form.cleaned_data['content'],
-                    image=form.cleaned_data['fmage'],
-                    name=form.cleaned_data['name'],
-                    priceM=form.cleaned_data['priceM'],
-                    priceL=form.cleaned_data['priceL'],
-                    vegetarian=form.cleaned_data['vegetarian'],
-                    calorie_count=form.cleaned_data['calorie_count']
-                )
-                # Additional processing if needed
-                
-                return render(request, 'menu/success.html')
-                
-            elif menu_type == 'SIDE':
-                # Save data to Sides model
-                sides = Sides.objects.create(
-                    #description=form.cleaned_data['description'],
-                    content=form.cleaned_data['content'],
-                    image=form.cleaned_data['fimage'],
-                    name=form.cleaned_data['name'],
-                    priceM=form.cleaned_data['priceM'],
-                    priceL=form.cleaned_data['priceL'],
-                    vegetarian=form.cleaned_data['vegetarian'],
-                    calorie_count=form.cleaned_data['calorie_count']
-                )
-                # Additional processing if needed
-                
-                return render(request, 'menu/success.html')
+                return render(request, 'menu/success.html', {'menu_type': 'side'})
     else:
         form = MenuCreateForm()
 

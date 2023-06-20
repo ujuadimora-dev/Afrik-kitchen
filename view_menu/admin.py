@@ -10,28 +10,27 @@ from .forms import MenuCreateForm, MenuForm
 
 # Register your models here.
 class BreakFastAdmin(admin.ModelAdmin):
-    list_display = ('name', 'description', 'priceM', 'priceL', 'fimage')
+    list_display = ('name', 'description', 'priceM', 'priceL', 'fimage', 'vegetarian', 'calorie_count', 'created_on', 'created_by_staff')
 
 
 admin.site.register(BreakFast, BreakFastAdmin)
 
 
 class LunchAdmin(admin.ModelAdmin):
-    list_display = ('name', 'priceM', 'priceL')
+    list_display =  ('name', 'description', 'priceM', 'priceL', 'fimage', 'vegetarian', 'calorie_count', 'created_on', 'created_by_staff')
 
 
 admin.site.register(Lunch, LunchAdmin)
 
 
 class DinnerAdmin(admin.ModelAdmin):
-    list_display = ('name', 'priceM', 'priceL')
-
+    list_display =  ('name', 'description', 'priceM', 'priceL', 'fimage', 'vegetarian', 'calorie_count', 'created_on', 'created_by_staff')
 
 admin.site.register(Dinner, DinnerAdmin)
 
 
 class SidesAdmin(admin.ModelAdmin):
-    list_display = ('name', 'priceM', 'priceL')
+    list_display =  ('name', 'description', 'priceM', 'priceL', 'fimage', 'vegetarian', 'calorie_count', 'created_on', 'created_by_staff')
 
 
 admin.site.register(Sides, SidesAdmin)

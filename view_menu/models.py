@@ -1,4 +1,8 @@
 from django.db import models
+import datetime
+
+
+
 
 
 
@@ -8,10 +12,11 @@ class BreakFast(models.Model):
     description = models.TextField()
     priceM = models.DecimalField(max_digits=5, decimal_places=2)
     priceL = models.DecimalField(max_digits=5, decimal_places=2)
-    vegetarian = models.BooleanField()
-    calorie_count = models.IntegerField()
-    created_on = models.DateField()
-    created_by_staff = models.TextField(max_length=25)
+    vegetarian = models.BooleanField(default=False)
+    calorie_count = models.IntegerField(default=0)
+    created_on = models.DateField(default=datetime.date.today)
+    created_by_staff = models.CharField(max_length=25, default='Unknown')
+
 
     class Meta:
         ordering = ['name']
@@ -23,14 +28,13 @@ class BreakFast(models.Model):
 class Lunch(models.Model):
     fimage = models.URLField()
     name = models.CharField(max_length=100)
-    description = models.TextField()
+    description = models.TextField(max_length=25, default='Unknown')
     priceM = models.DecimalField(max_digits=5, decimal_places=2)
     priceL = models.DecimalField(max_digits=5, decimal_places=2)
-    vegetarian = models.BooleanField()
-    calorie_count = models.IntegerField()
-    created_on = models.DateField()
-    created_by_staff = models.TextField(max_length=25)
-    
+    vegetarian = models.BooleanField(default=False)
+    calorie_count = models.IntegerField(default=0)
+    created_on = models.DateField(default=datetime.date.today)
+    created_by_staff = models.CharField(max_length=25, default='Unknown')
 
     class Meta:
         ordering = ['name']
@@ -42,13 +46,13 @@ class Lunch(models.Model):
 class Dinner(models.Model):
     fimage = models.URLField()
     name = models.CharField(max_length=100)
-    description = models.TextField()
+    description = models.TextField(max_length=25, default='Unknown')
     priceM = models.DecimalField(max_digits=5, decimal_places=2)
     priceL = models.DecimalField(max_digits=5, decimal_places=2)
-    vegetarian = models.BooleanField()
-    calorie_count = models.IntegerField()
-    created_on = models.DateField()
-    created_by_staff = models.TextField(max_length=25)
+    vegetarian = models.BooleanField(default=False)
+    calorie_count = models.IntegerField(default=0)
+    created_on = models.DateField(default=datetime.date.today)
+    created_by_staff = models.CharField(max_length=25, default='Unknown')
     
 
     class Meta:
@@ -61,13 +65,13 @@ class Dinner(models.Model):
 class Sides(models.Model):
     fimage = models.URLField()
     name = models.CharField(max_length=100)
-    description = models.TextField()
+    description = models.TextField(max_length=25, default='Unknown')
     priceM = models.DecimalField(max_digits=5, decimal_places=2)
     priceL = models.DecimalField(max_digits=5, decimal_places=2)
-    vegetarian = models.BooleanField()
-    calorie_count = models.IntegerField()
-    created_on = models.DateField()
-    created_by_staff = models.TextField(max_length=25)
+    vegetarian = models.BooleanField(default=False)
+    calorie_count = models.IntegerField(default=0)
+    created_on = models.DateField(default=datetime.date.today)
+    created_by_staff = models.CharField(max_length=25, default='Unknown')
    
 
     class Meta:
