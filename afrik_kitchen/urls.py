@@ -18,13 +18,15 @@ from django.urls import path, include
 from view_menu import views
 from django.conf import settings
 from django.conf.urls.static import static
-
+from .views import create_booking
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name="index"),
     path('view_menu/', include('view_menu.urls', namespace='view_menu')),
+    path('booking/', include('booking.urls', namespace='booking')),
+
 
    ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
  
