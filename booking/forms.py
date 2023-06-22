@@ -1,4 +1,9 @@
 from django import forms
+from booking.models import Booking
+#from booking.forms import BookingForm
+#from .forms import BookingForm
+
+
 
 
 class BookingForm(forms.ModelForm):

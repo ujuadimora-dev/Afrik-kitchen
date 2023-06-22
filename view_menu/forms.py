@@ -61,7 +61,7 @@ class MenuCreateForm(forms.Form):
                # created_on=self.cleaned_data['created_on'],
                 # created_by_staff=self.cleaned_data['created_by_staff']
             )
-            # Additional processing if needed
+        
             
         elif menu_type == 'LUNCH':
             lunch = Lunch.objects.create(
@@ -73,7 +73,7 @@ class MenuCreateForm(forms.Form):
                 vegetarian=self.cleaned_data['vegetarian'],
                 calorie_count=self.cleaned_data['calorie_count']
             )
-            # Additional processing if needed
+            
             
         elif menu_type == 'DINNER':
             dinner = Dinner.objects.create(
@@ -85,7 +85,7 @@ class MenuCreateForm(forms.Form):
                 vegetarian=self.cleaned_data['vegetarian'],
                 calorie_count=self.cleaned_data['calorie_count']
             )
-            # Additional processing if needed
+           
             
         elif menu_type == 'SIDE':
             sides = Sides.objects.create(
@@ -97,4 +97,4 @@ class MenuCreateForm(forms.Form):
                 vegetarian=self.cleaned_data['vegetarian'],
                 calorie_count=self.cleaned_data['calorie_count']
             )
-            # Additional processing if needed
+           

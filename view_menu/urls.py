@@ -16,11 +16,10 @@ urlpatterns = [
     path('lunch/', views.lunch, name="lunch"),
     path('dinner/', views.dinner, name="dinner"),
     path('side/', views.side, name="side"),
-    path('create-menu/', views.create_menu, name='create_menu'),
+    #path('create-menu/', views.create_menu, name='create_menu'),
+    path('create-menu/', create_menu, name='create_menu')
     
 ]
 
 
-
-# Add the following line at the end of the file
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,24 +1,28 @@
-from django.shortcuts import render
-from datetime import timedelta, date
-from  django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
+from django.shortcuts import render, redirect
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import CreateView
-from .models import Booking, CreateTable
-from .forms import BookingForm
-# Create your views here.
+from .models import Booking
+from booking.forms import BookingForm
 
-""" This is the view for user creating  booking """
-def create_booking(LoginRequiredMixin, CreateView):
-    if request.method == 'POST':
-        form = BookingForm(reqest.POST)
-        if form.is_vakid():
-            booking = form.save(commit=False)
-            booking.user = request.user
-            booking.save()
-            return redirect('booking/success.html')
-        else:
-            form = BookingForm()
+class CreateBookingView(LoginRequiredMixin, CreateView):
+    model = Booking
+    form_class = BookingForm
+    template_name = 'booking/booking.html'
+    #success_url = '/booking/success.html/'
+    
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        return super().form_valid(form)
+
+
+class SuccessView:
+    def get_success(self):
+        return redirect('/booking/success.html/')
+    
+
+
+
         
-        context = {'form': form}
-        return render(request, 'booking/booking.html', context)
+
 
 

@@ -18,18 +18,38 @@ from django.urls import path, include
 from view_menu import views
 from django.conf import settings
 from django.conf.urls.static import static
-from .views import create_booking
+#from booking.views import create_booking
+from booking.views import CreateBookingView
+#from booking import views
+#from . import views
+from django.contrib import admin
+from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 
+
+
+#from django.urls import path
+#from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name="index"),
-    path('view_menu/', include('view_menu.urls', namespace='view_menu')),
+    path('', views.index, name='index'),
+    #path('', include('view.urls')),
+    path('view_menu', include('view_menu.urls', namespace='view_menu')),
+    path('booking/create_booking/', CreateBookingView.as_view(), name='create_booking'),
     path('booking/', include('booking.urls', namespace='booking')),
-
-
-   ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
  
 
 
+
+#path('admin/', admin.site.urls),
+    #path('', include('home.urls')),
+    #path('booking/', include('booking.urls')),
+    #path('menu/', include('menu.urls')),
+
+
+  
 

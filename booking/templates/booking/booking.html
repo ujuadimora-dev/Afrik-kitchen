@@ -1,5 +1,25 @@
-<form method="post">
+{% extends 'menu/base.html' %}
+
+{% block title %}booking{% endblock %}
+
+
+
+<!--- creat the form-->
+{% block content %}
+
+<!--<form method="post">-->
+<form method="POST" action="{% url 'create_booking' %}" class="form mb-2 p-2 form-style" enctype="multipart/form-data">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Do you want to make Reservation for Table</button>
+    <button type="submit"> make Reservation</button>
 </form>
+
+
+{% endblock %}
+
+
+
+
+
+
+
