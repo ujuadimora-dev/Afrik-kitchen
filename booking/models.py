@@ -1,5 +1,8 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.db.models import Q
+from django.db import models
+
 
 
 # Choice of fields
@@ -59,3 +62,47 @@ class Booking(models.Model):
                f'at {self.booked_table.table_position} ' \
                f'on {self.reservation_date} ' \
                f'at {next(time for time, _ in BOOKING_TIME if time == self.reservation_time)}.'
+
+
+
+class ManageBooking(models.Model):
+    @staticmethod
+    def cancel_booking(booking_id):
+        try:
+            booking = Booking.objects.get(id=booking_id)
+            booking.delete()
+            return True
+        except Booking.DoesNotExist:
+            return False
+
+    @staticmethod
+    def delete_booking(booking_id):
+        try:
+            booking = Booking.objects.get(id=booking_id)
+            booking.delete()
+            return True
+        except Booking.DoesNotExist:
+            return False
+
+    @staticmethod
+    def update_booking(booking_id, new_data):
+        try:
+            booking = Booking.objects.get(id=booking_id)
+            for key, value in new_data.items():
+                setattr(booking, key, value)
+            booking.save()
+            return True
+        except Booking.DoesNotExist:
+            return False
+
+    @staticmethod
+    def get_bookings_by_date(date):
+        bookings = Booking.objects.filter(reservation_date=date)
+        return bookings
+
+    @staticmethod
+    def get_bookings_by_customer(customer_name):
+        bookings = Booking.objects.filter(
+            Q(user__username=customer_name) | Q(customer_name=customer_name)
+        )
+        return bookings

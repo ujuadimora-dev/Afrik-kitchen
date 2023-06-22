@@ -1,17 +1,14 @@
 from django.urls import path
-from .views import CreateBookingView, Booking, SuccessView
-from . import views
-
+from .views import Booking
+from booking.views import BookingList, CreateTableList, ManageBookingList
 
 app_name = 'booking'
 
-
 urlpatterns = [
-    path('create_booking/', CreateBookingView.as_view(), name='create_booking'),
-    path('success/', views.SuccessView, name='success'),
-    
-    #path('booking/', views.booking, name='booking'),
-    # Other URL patterns
+    path('booking/booking_list/', BookingList.as_view(), name='BookingList'),
+    path('booking/createtable_list/', CreateTableList.as_view(), name='CreateTableList'),
+    path('booking/managebooking_list/', ManageBookingList.as_view(), name='ManageBookingList')
 ]
+
 
 

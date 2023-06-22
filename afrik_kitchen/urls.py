@@ -19,7 +19,7 @@ from view_menu import views
 from django.conf import settings
 from django.conf.urls.static import static
 #from booking.views import create_booking
-from booking.views import CreateBookingView
+#from booking.views import CreateBookingView
 #from booking import views
 #from . import views
 from django.contrib import admin
@@ -36,9 +36,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     #path('', include('view.urls')),
-    path('view_menu', include('view_menu.urls', namespace='view_menu')),
-    path('booking/create_booking/', CreateBookingView.as_view(), name='create_booking'),
+    path('view_menu/', include('view_menu.urls', namespace='view_menu')),
     path('booking/', include('booking.urls', namespace='booking')),
+    #path('booking/', include('booking.urls', namespace='booking')),
     
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
  

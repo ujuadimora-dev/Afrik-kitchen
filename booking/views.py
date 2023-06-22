@@ -1,26 +1,28 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views.generic import CreateView
-from .models import Booking
+from django.views.generic import CreateView, ListView
+from .models import Booking, CreateTable, ManageBooking
 from booking.forms import BookingForm
 
-class CreateBookingView(LoginRequiredMixin, CreateView):
+
+class CreateTableList(ListView):
+    """ This is to book table for reservation"""
+    model = CreateTable
+
+
+class BookingList(ListView):
+    """ This is show the booked Table"""
     model = Booking
-    form_class = BookingForm
-    template_name = 'booking/booking.html'
-    #success_url = '/booking/success.html/'
+
+
+class ManageBookingList(ListView):
+    """ To manage the book table( delet, conceal, rebook)"""
+    model = ManageBooking
+
+
+
+
     
-    def form_valid(self, form):
-        form.instance.user = self.request.user
-        return super().form_valid(form)
-
-
-class SuccessView:
-    def get_success(self):
-        return redirect('/booking/success.html/')
-    
-
-
 
         
 
