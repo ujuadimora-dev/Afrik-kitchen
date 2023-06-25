@@ -37,7 +37,9 @@ urlpatterns = [
     path('', views.index, name='index'),
     #path('', include('view.urls')),
     path('view_menu/', include('view_menu.urls', namespace='view_menu')),
-   # path('booking/', include('booking.urls', namespace='booking')),
+    path('booking/', include(('booking.urls', 'booking'), namespace='booking')),
+
+   #path('booking/', include('booking.urls', namespace='booking')),
     #path('booking/', include('booking.urls', namespace='booking')),
     
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

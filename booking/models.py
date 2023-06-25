@@ -37,6 +37,7 @@ class Table(models.Model):
         ("available", "Available"),
         ("not_available", "Not Available"),
     )
+    
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default="not_available")
     capacity = models.IntegerField(choices=CAPACITY, default=2)
     table_position = models.CharField(max_length=10, choices=TABLE_POSITION, default="window")
@@ -64,6 +65,9 @@ class Booking(models.Model):
     user = models.ForeignKey(User, null=True, blank=True, on_delete=models.CASCADE)
     customer_name = models.ForeignKey(Customer, on_delete=models.CASCADE)
     #customer_name = models.CharField(max_length=20, null=True)
+    table = models.ForeignKey(Table, related_name='bookings', on_delete=models.CASCADE, default=0)
+    table_num = models.ForeignKey(Table, related_name='booking_numbers', on_delete=models.CASCADE, default=0)
+    table = models.ForeignKey(Table, on_delete=models.CASCADE, null=True, blank=True )
     number_of_guests = models.IntegerField(default=2)
     reservation_date = models.DateField()
     reservation_time = models.IntegerField(choices=BOOKING_TIME, default=1)
