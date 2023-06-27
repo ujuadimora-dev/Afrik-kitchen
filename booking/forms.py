@@ -1,8 +1,21 @@
 from django import forms
-from .models import Booking
+from .models import Booking, Table, Customer
+
+""" Avalibiliy form"""
+class TableAvaliableForm(forms.Form):
+
+    CAPACITY_CHOICES = (
+
+        (2, "2"),
+        (3, "3"),
+        (4, "4"),
+        (14, "14"),
+        (20, "20"),
+    )
+    
+    capacity = forms.ChoiceField(choices=CAPACITY_CHOICES, required=True)
+    reservation_date = forms.DateTimeField(required=True, input_formats=["%Y-%m-%d %H:%M:%S"])
+    reservation_time = forms.DateTimeField(required=True, input_formats=["%Y-%m-%d %H:%M:%S"])
 
 
-class BookingForm(forms.ModelForm):
-    class Meta:
-        model = Booking
-        fields = ['customer_name', 'number_of_guests', 'reservation_date', 'reservation_time']
+

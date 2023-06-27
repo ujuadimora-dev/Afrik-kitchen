@@ -8,6 +8,7 @@ from .views import create_menu
 
 
 
+
 app_name = 'view_menu'
 
 urlpatterns = [

@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     #'django_summernote',
     # app used
     'home',
+    #'booking.avaliable',
     'view_menu',
     'booking',
     'event',

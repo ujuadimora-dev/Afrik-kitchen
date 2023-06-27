@@ -3,8 +3,8 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.core.exceptions import ValidationError
 
-# Choice of fields
-CAPACITY = (
+# Choice of fields( Tables Number and their capacities)
+CAPACITY_CHOICES = (
     (2, "2"),
     (3, "3"),
     (4, "4"),
@@ -39,7 +39,7 @@ class Table(models.Model):
     )
     
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default="not_available")
-    capacity = models.IntegerField(choices=CAPACITY, default=2)
+    capacity = models.IntegerField(choices=CAPACITY_CHOICES, default=2)
     table_position = models.CharField(max_length=10, choices=TABLE_POSITION, default="window")
     wheelchair_accessible = models.BooleanField(default=False)
     created_on = models.DateTimeField(auto_now_add=True)
