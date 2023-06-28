@@ -6,6 +6,13 @@
     <title>Book a table</title>
 </head>
 <body>
-    {{form.as_p}}
+    <form action="" method="POST">
+        {{form.as_p}}
+        {% csrf_token %}
+        <button type="submit"> Book table</button>     
+    </form>
+
 </body>
+
+   
 </html>

@@ -37,7 +37,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['afrik-kitchen.herokuapp.com', 'localhost', '8000-ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu99.gitpod.io', '8000-ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu100.gitpod.io']
+ALLOWED_HOSTS = ['afrik-kitchen.herokuapp.com', 'localhost', '8000-ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu101.gitpod.io','8000-ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu99.gitpod.io', '8000-ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu100.gitpod.io']
 
 
 # Application definition

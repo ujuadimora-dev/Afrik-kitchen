@@ -77,7 +77,17 @@ from django.shortcuts import render, HttpResponse
 from django.views.generic import ListView, FormView
 from .models import Booking, Table, Customer
 from .forms import TableAvaliableForm
-#from booking.table_avaliable import check_available
+#from .table_avaliable import check_available
+from .table_avaliable import check_avaliable
+import datetime
+from django.views.generic.edit import FormView
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.http import HttpResponse
+#from .forms import TableAvailableForm
+from booking.models import Table, Booking
+#from booking.table_available import check_available
+
+import datetime
 
 class TableList(ListView):
     model = Table
@@ -88,25 +98,153 @@ class BookingList(ListView):
 class CustomerList(ListView):
     model = Customer
 
+# class BookingView(FormView):
+#     form_class = TableAvaliableForm
+#     template_name = 'tableavaliable_form.html'
+
+#     def form_valid(self, form):
+#         data = form.cleaned_data
+#         table_list = Table.objects.filter(capacity=data['capacity'])
+#         avaliable_tables = []
+#         for table in table_list:
+#             if check_avaliable(table, data['reservation_date'], data['reservation_time']):
+#                 avaliable_tables.append(table)
+
+#         if len(avaliable_tables) > 0:
+#             table = avaliable_tables[0]
+#             booking = Booking.objects.create(
+#                 user=self.request.user,
+#                 customer_name=data['customer_name'],
+#                 table=table,
+#                 #number_of_guests= number_of_guests,
+#                 reservation_date=data['reservation_date'],
+#                 reservation_time=data['reservation_time'],
+#                 created_on=datetime.datetime.now()
+#             )
+#             booking.save()
+#             return HttpResponse(str(booking))
+#         else:
+#             return HttpResponse('This table is booked! Try another one')
+
+
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.generic.edit import FormView
+from django.http import HttpResponse
+from .forms import TableAvaliableForm
+from .models import Booking, Table
+import datetime
+
+# class BookingView(LoginRequiredMixin, FormView):
+#     form_class = TableAvaliableForm
+#     template_name = 'tableavaliable_form.html'
+#     success_url = '/booking/success/'
+
+#     def form_valid(self, form):
+#         data = form.cleaned_data
+#         table_num = form.get_table_number(int(data['capacity']))
+#         table = Table.objects.filter(table_num=table_num, status='available').first()
+
+#         if table:
+#             customer_name = data['customer_name']
+#             customer = Customer.objects.create(name=customer_name)
+#             booking_time = int(data['reservation_time'])
+#             booking = Booking.objects.create(
+#                 user=self.request.user,
+#                 customer=customer,
+#                 table=table,
+#                 booking_time=booking_time,
+#                 created_on=datetime.datetime.now()
+#             )
+#             return HttpResponse(str(booking))
+#         else:
+#             return HttpResponse('This table is booked! Try another one')
+
+
+# from django.shortcuts import render
+# from django.views.generic.edit import FormView
+# from django.http import HttpResponse
+# from .forms import TableAvaliableForm
+# from .models import Booking, Table, Customer
+# import datetime
+
+# class BookingView(FormView):
+#     form_class = TableAvaliableForm
+#     template_name = 'tableavaliable_form.html'
+#     success_url = '/booking/success/'
+
+#     def form_valid(self, form):
+#         data = form.cleaned_data
+#         table_list = Table.objects.filter(capacity=data['capacity'])
+#         avaliable_tables = []
+
+#         for table in table_list:
+#             if check_avaliable(table, data['reservation_date'], data['reservation_time']):
+#                 avaliable_tables.append(table)
+
+#         if avaliable_tables:
+#             table = avaliable_tables[0]
+#             customer_name = data['customer_name']
+#             customer = Customer.objects.create(
+#                 customer_name=customer_name,
+#                 table=table
+#             )
+#             booking = Booking.objects.create(
+#                 customer_name=customer,
+#                 user=self.request.user,
+#                 table=table,
+#                 number_of_guests=data['capacity'],
+#                 reservation_date=data['reservation_date'],
+#                 reservation_time=data['reservation_time'],
+#                 created_on=datetime.datetime.now()
+#             )
+#             return HttpResponse(str(booking))
+#         else:
+#             error_message = 'This table is booked! Please choose another table.'
+#             return render(self.request, self.template_name, {'form': form, 'error_message': error_message})
+
+#     def form_invalid(self, form):
+#         return self.render_to_response(self.get_context_data(form=form))
+
+
+from django.shortcuts import render
+from django.views.generic.edit import FormView
+from .forms import TableAvaliableForm
+from .models import Table, Customer, Booking
+import datetime
+
 class BookingView(FormView):
     form_class = TableAvaliableForm
     template_name = 'tableavaliable_form.html'
+    success_url = '/booking/success/'
+
+    # def get_form_class(self):
+    #     return self.form_class
 
     def form_valid(self, form):
         data = form.cleaned_data
-        table_list = Table.objects.filter(capacity=data['capacity_choices'])
-        available_tables = []
-        for table in table_list:
-            if check_available(table, data['reservation_date'], data['reservation_time']):
-                available_tables.append(table)
+        table_list = Table.objects.filter(capacity=data['capacity'])
+        avaliable_tables = []
 
-        if len(available_tables) > 0:
-            table = available_tables[0]
+        for table in table_list:
+            if check_avaliable(table, data['reservation_date'], data['reservation_time']):
+                avaliable_tables.append(table)
+
+        if len(avaliable_tables) > 0:
+            table = avaliable_tables[0]
+            
+            customer_name = data['customer_name']
+            customer = Customer.objects.create(
+                customer_name=customer_name,
+                table=table
+            )
             booking = Booking.objects.create(
-                user=self.request.user,
-                customer_name=data['customer_name'],
+                customer_name=customer_name,
+                #user=request.user,
                 table=table,
-                number_of_guests=data['number_of_guests'],
+                #capacity=capacity,
+                #wheelchair_accessibility=table.wheelchair_accessibility,
+                #table_position=table_position,
+                number_of_guests=data['capacity'],
                 reservation_date=data['reservation_date'],
                 reservation_time=data['reservation_time'],
                 created_on=datetime.datetime.now()
@@ -114,4 +252,6 @@ class BookingView(FormView):
             booking.save()
             return HttpResponse(booking)
         else:
-            return HttpResponse('This table is booked! Try another one')
+            return HttpResponse('All of this Table are booked!, try another one')
+
+        
