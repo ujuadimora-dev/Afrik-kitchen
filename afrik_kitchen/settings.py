@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     #'booking.avaliable',
     'view_menu',
     'booking',
+    
     'event',
 ]
 
