@@ -65,7 +65,7 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('view_menu/', include('view_menu.urls', namespace='view_menu')),
     
-   # path('', include('booking.urls')),
+    path('', include('booking.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 

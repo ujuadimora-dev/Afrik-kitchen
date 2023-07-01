@@ -60,9 +60,6 @@ class Table(models.Model):
 
     
 
-
-
-
 class Booking(models.Model):
     BOOKING_TIME = (
         
@@ -82,6 +79,6 @@ class Booking(models.Model):
 
     
     def __str__(self):
-        return f"{self.user} **has Booked for** {self.table.table_number} on {self.reservation_date} at {self.reservation_time}"
+        return f"{self.user} **has Booked for** {self.table.table_number} Table  on {self.reservation_date} at {self.reservation_time}"
 
 

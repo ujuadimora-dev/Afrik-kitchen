@@ -15,14 +15,14 @@
 
 
 from django.urls import path
-from .views import BookingList, TableList, CustomerList, BookingView
+from .views import BookingList, TableList, BookingView
 
 app_name = 'booking'
 
 urlpatterns = [
     path('table_list/', TableList.as_view(), name='TableList'),
     path('booking_list/', BookingList.as_view(), name='BookingList'),
-    path('customer_list/', CustomerList.as_view(), name='CustomerList'),
+    #path('customer_list/', CustomerList.as_view(), name='CustomerList'),
     path('book/', BookingView.as_view(), name='booking_view')
 
 ]
