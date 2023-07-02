@@ -10,7 +10,7 @@ class Table(models.Model):
     
     CAPACITY_CHOICES = (
         ("2_person", "2_persons"),
-        ("2_person", "3_persons"),
+        ("3_person", "3_persons"),
         ( "4_person", "4_persons"),
         ("8_person", "8_persons"),
         ("14_person", "14_persons"),
