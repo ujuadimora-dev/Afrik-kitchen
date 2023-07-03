@@ -8,7 +8,7 @@
   <title>Afrik Kitchen</title>
   <!-- Main StyleSheet -->
   <link rel="stylesheet" href="{% static 'menu/css/home.css' %}" />
-  <link rel="stylesheet" href="{% static 'menu/css/nav.css' %}" />
+
 </head>
 
 <body>
@@ -32,15 +32,15 @@
       <img src="../static/menu/images/abtus.jpg" id="landing-img" alt="Best Kitchen in the World" srcset="" />
     </div>
 
-    <h2>Table</h2>
+    <h2>Tables</h2>
     <!-- Main Content -->
-    <div class="content">
+    <div id="content">
       {% for table_capacity, table_url in table_list %}
       <div class="room">
         <a href="{{table_url}}">
           <img
             src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
-            <h2>{{table_capacity}} Table capacity</h2>
+          <h2>{{table_capacity}} Table capacity</h2>
 
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi
@@ -48,10 +48,8 @@
         </a>
       </div>
       {% endfor %}
-      
-      
-  </div>
-  <script src="{% static 'hotel/js/nav.js' %}"></script>
+    </div>
+    <script src="{% static 'menu/js/nav.js' %}"></script>
 </body>
 
 </html>

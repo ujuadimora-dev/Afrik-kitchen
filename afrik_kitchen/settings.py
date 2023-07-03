@@ -10,11 +10,11 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+
 from pathlib import Path
-#import cloudinary_storage
-#import cloudinary
 import os
 import dj_database_url
+
 if os.path.isfile('env.py'):
     import env
 
@@ -50,16 +50,25 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'cloudinary_storage',
     'django.contrib.staticfiles',
+
+     # Django Allauth
+    'django.contrib.sites', # new
+    'allauth', # new
+    'allauth.account', # new
+    'allauth.socialaccount', # new
+    'allauth.socialaccount.providers.github',
+
     #'django-lib',
     'cloudinary',
+    #'cloudinary_storage',
     #'django_summernote',
     # app used
     'home',
     #'booking.avaliable',
     'view_menu',
     'booking',
-    
     'event',
+    'accounts'
 ]
 
 MIDDLEWARE = [
@@ -71,6 +80,22 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+AUTHENTICATION_BACKENDS = [
+    #Needed to login by username in Django admin, regareless of 'allauth'
+    'django.contrib.auth.backends.ModelBackend',
+
+    # 'Allauth' specific authentification methods, such as login be emmail
+    'allauth.account.auth_backends.AuthenticationBackend',
+]
+
+
+AUTHENTICATION_BACKENDS = (
+    #Needed to login by username in Django admin, regareless of 'allauth'
+    "django.contrib.auth.backends.ModelBackend",
+    # 'Allauth' specific authentification methods, such as login be emmail
+    "allauth.account.auth_backends.AuthenticationBackend",
+)
 
 ROOT_URLCONF = 'afrik_kitchen.urls'
 
@@ -130,6 +155,15 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+# Email settings
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
+ACCOUNT_USERNAME_MIN_LENGTH = 4
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/'
+
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
@@ -142,6 +176,8 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+SITE_ID = 1
 
 
 # Static files (CSS, JavaScript, Images)
