@@ -18,7 +18,7 @@ def TableListView(request):
     context_object_name = 'tables'
     table = Table.objects.all()[0]
     table_capacities = dict(table.CAPACITY_CHOICES)
-    print('capacities=', table_capacities)
+    #print('capacities=', table_capacities)
 
     table_values = table_capacities.values()
     print('table_values=', table_values)
@@ -40,6 +40,7 @@ def TableListView(request):
 
 class BookingList(ListView):
     model = Booking
+    template_name = 'booking_list.html'
     def get_queryset(self, *args, **kwargs):
         if self.request.user.is_staff:
             booking_list = Booking.objects.all()
@@ -64,7 +65,7 @@ class TableDetailView(View):
             }
             return render(request, 'home_detail.html', context)
         else:
-            return HttpResponse('capacity does not exit')
+            return HttpResponse('This capacity of table have bben booked ')
 
 
     def post(self, request, *args, **kwargs): 
@@ -99,32 +100,3 @@ class TableDetailView(View):
 
 
 
-class BookingView(FormView):
-    form_class = TableAvaliableForm
-    template_name = 'tableavaliable_form.html'
-
-    def form_valid(self, form):
-        data = form.cleaned_data
-        table_list = Table.objects.filter(capacity = data['capacity_choices'])
-        avaliable_tables = []
-        
-        for table in table_list:
-            if check_avaliable(table, data['reservation_date'], data['reservation_time']):
-                avaliable_tables.append(table)
-        if len(avaliable_tables) > 0:
-            table = avaliable_tables[0]
-            booking = Booking.objects.create(
-                user=self.request.user,
-                table=table,
-                reservation_date=data['reservation_date'],
-                reservation_time=data['reservation_time']
-)
-
-            booking.save()
-            return HttpResponse(booking)
-        else:
-            return HttpResponse('These choice of Table are booked try Another one! ')
-
-
-
-        

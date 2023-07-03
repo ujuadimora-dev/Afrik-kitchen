@@ -10,14 +10,14 @@ class Table(models.Model):
     
     CAPACITY_CHOICES = (
         ("2_person", "2_persons"),
-        ("3_person", "3_persons"),
+       # ("3_person", "3_persons"),
         ( "4_person", "4_persons"),
-        ("8_person", "8_persons"),
-        ("14_person", "14_persons"),
-        ("16_person", "16_persons"),
-        ("20_person", "20_persons"),
+       # ("8_person", "8_persons"),
+        #("14_person", "14_persons"),
+       # ("16_person", "16_persons"),
+       # ("20_person", "20_persons"),
         ("24_person", "24_persons"),
-        ("30_person", "30_persons"),
+        #("30_person", "30_persons"),
         ("35_person", "35_persons"),
         
 

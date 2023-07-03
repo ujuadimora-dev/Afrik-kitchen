@@ -88,16 +88,16 @@
     z-index: -1;
 
 }
-
+/* Custom CSS for the Afrik Kitchen template 
+'
 .order{
     position: relative;
     top: -30%
 }
 
 
-/* Custom CSS for the Afrik Kitchen template */
-'
-/* Navbar */
+
+/* Navbar *
 .navbar {
     background-color: #343a40;
     padding: 10px;
@@ -115,63 +115,6 @@
   
   .navbar-nav .nav-link:hover {
     color: #ffc107;
-  }
-  
-  /* Logo */
-  .logo {
-    width: 40px;
-    height: 40px;
-  }'
-
-  div.container {
-    margin-top: 20px;
-  }
-  
-  /* Table Info */
-
-  
-
-  .table-info {
-    background-color: #f8f9fa;
-    padding: 10px;
-  }
-  
-  /* Menu Info */
-  .menu-info {
-    background-color: #f8f9fa;
-    padding: 10px;
-  }
-  
-  /* Booking Form */
-  #booking-form {
-    background-color: #f8f9fa;
-    padding: 10px;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #343a40;
-    color: #fff;
-    padding: 20px 0;
-  }
-  
-  .address,
-  .opening-hours {
-    margin-bottom: 20px;
-  }
-  
-  .social-media a {
-    color: #fff;
-    margin-right: 10px;
-  }
-  
-  .social-media a:hover {
-    color: #ffc107;
-  }
-  
-  /* Container */
-  .container {
-    margin-top: 20px;
   }
   
  
