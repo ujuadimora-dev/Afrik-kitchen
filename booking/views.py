@@ -7,6 +7,8 @@ from django.urls import reverse
 from booking.table_avaliable import check_avaliable
 from django.contrib.auth import get_user_model
 from django.core.exceptions import ObjectDoesNotExist
+from django.shortcuts import get_object_or_404
+from django.http import HttpResponse
 
 import datetime
 
@@ -99,4 +101,34 @@ class TableDetailView(View):
 
 
 
+class BookingCreateView(FormView):
+    template_name = 'create_booking.html'
+    form_class = TableAvaliableForm
+    success_url = '/booking/success/'  # Update with the appropriate URL for successful booking
+    
+    def form_valid(self, form):
+        data = form.cleaned_data
+
+        # Get the table with the specified capacity
+        capacity = data['capacity']
+        table = get_object_or_404(Table, capacity=capacity)
+
+        # Check if the table is available for the given reservation date and time
+        if check_avaliable(table, data['reservation_date'], data['reservation_time']):
+            # Create a new booking
+            booking = Booking.objects.create(
+                user=self.request.user,
+                table=table,
+                reservation_date=data['reservation_date'],
+                reservation_time=data['reservation_time']
+            )
+            booking.save()
+
+            return super().form_valid(form)
+        else:
+            return HttpResponse('The chosen table is already booked. Please try another one.')
+
+class BookingSuccessView(View):
+    def get(self, request, *args, **kwargs):
+        return HttpResponse('Booking created successfully!')
 

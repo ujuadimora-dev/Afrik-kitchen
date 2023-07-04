@@ -62,7 +62,8 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index'),
+    path('', include('home.urls')),
+    #path('', views.index, name='index'),
     path('view_menu/', include('view_menu.urls', namespace='view_menu')),
     
     path('', include('booking.urls')),

@@ -1,8 +1,140 @@
-{% extends 'menu/base.html' %}
+
+{% extends "base.html" %}
+{% load static %}
 
 {% block title %}Menu{% endblock %}
 
+{% block css %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'menu/css/menus.css' %}">
+{% endblock %}
+
 {% block content %}
-    <h1> Welcome to Menu </h1>
-    <div id="test"></div>
+
+<!-- View menus -->
+<div id="menus" class="mt-3 mb-3 d-flex flex-row justify-content-between shadow">
+    <div>
+        <!-- Back button for previous menu -->
+        <a role="button" class="slider slider-back" aria-label="Previous Menu" onclick="back()">
+            <i class="fa-solid fa-chevron-left"></i>
+        </a>
+    </div>
+    <!-- Menus -->
+    {% for menu in object_list %}
+    {% if forloop.counter == 1 %}
+    <div id="menu-{{forloop.counter}}" class="col-10 text-center">
+        {% else %}
+        <div id="menu-{{forloop.counter}}" class="hide col-10 text-center">
+            {% endif %}
+            <h2>{{ menu.name }}</h2>
+            <img src="{% static 'menu/images/divider.png' %}" class="w-75" alt="Top of the menu swirl image divider">
+
+            <div class="breakfast">
+                <h3>Breakfast</h3>
+                {% for item in menu.breakfast.all %}
+                <h5>{{ item.name }}</h5>
+                <span class="m-text">{{ item.description }}</span>
+                <span>£{{ item.priceM|floatformat:2 }} / £{{ item.priceL|floatformat:2 }}</span>
+                <p class="sm-text">
+                {% if item.vegetarian %}
+                *Vegetarian*
+                {% endif %}
+                {% if item.calorie_count %}
+                Calorie Count: {{ item.calorie_count }}
+                {% endif %}
+                </p>
+                {% endfor %}
+            </div>
+            <div class="lunch mt-2">
+                <h3>Lunch</h3>
+                {% for item in menu.lunch.all %}
+                <h5>{{ item.name }}</h5>
+                <span class="m-text">{{ item.description }}</span>
+                <span>£{{ item.priceM|floatformat:2 }} / £{{ item.priceL|floatformat:2 }}</span>
+                <p class="sm-text">
+                {% if item.vegetarian %}
+                *Vegetarian*
+                {% endif %}
+                {% if item.calorie_count %}
+                Calorie Count: {{ item.calorie_count }}
+                {% endif %}
+                </p>
+                {% endfor %}
+            </div>
+            <div class="dinner mt-2">
+                <h3>Dinner</h3>
+                {% for item in menu.dinner.all %}
+                <h5 class="menu-title">{{ item.name }}</h5>
+                <span class="m-text">{{ item.description }}</span>
+                <span>£{{ item.priceM|floatformat:2 }} / £{{ item.priceL|floatformat:2 }}</span>
+                <p class="sm-text">
+                {% if item.vegetarian %}
+                * Vegetarian
+                {% endif %}
+                {% if item.calorie_count %}
+                Calorie Count: {{ item.calorie_count }}
+                {% endif %}
+                </p>
+                {% endfor %}
+            </div>
+            <div class="side mt-2">
+                <h3>Sides</h3>
+                {% for item in menu.sides.all %}
+                <span class="m-text">{{ item.name }}</span>
+                <span>£{{ item.priceM|floatformat:2 }} / £{{ item.priceL|floatformat:2 }}</span>
+                <p class="sm-text">
+                {% if item.vegetarian %}
+                *Vegetarian*
+                {% endif %}
+                {% if item.calorie_count %}
+                Calorie Count: {{ item.calorie_count }}
+                {% endif %}
+                </p>
+                {% endfor %}
+            </div>
+            <img src="{% static 'menu/images/divider.png' %}" class="w-75" alt="Bottom of the menu swirl image divider">
+        </div>
+        {% endfor %}
+        <div>
+            <!-- Forward button for next menu -->
+            <a role="button" class="slider slider-forward" aria-label="Next Menu" onclick="forward()">
+                <i class="fa-solid fa-chevron-right"></i>
+            </a>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block extra_js %}
+{{ block.super }}
+<script>
+    // Initialise variables
+    let menus = document.querySelectorAll('[id^="menu-"]');
+    let currentMenu = 0;
+
+    // Function to handle next menu
+    function forward() {
+        if (currentMenu < menus.length - 1) {
+            menus[currentMenu].classList.add('hide');
+            currentMenu++;
+            menus[currentMenu].classList.remove('hide');
+        } else {
+            menus[currentMenu].classList.add('hide');
+            currentMenu = 0;
+            menus[currentMenu].classList.remove('hide');
+        }
+    }
+    // Function to handle previous menu
+    function back(loop) {
+        if (currentMenu > 0) {
+            menus[currentMenu].classList.add('hide');
+            currentMenu--;
+            menus[currentMenu].classList.remove('hide');
+        } else {
+            menus[currentMenu].classList.add('hide');
+            currentMenu = menus.length - 1;
+            menus[currentMenu].classList.remove('hide');
+        }
+    }
+</script>
 {% endblock %}
