@@ -9,6 +9,8 @@ urlpatterns = [
     path('', HomeView.as_view(), name='home'),
     path('contact/', contact, name='contact'),
     path('contact_success/{name}/', success, name='contact_success'),
+    #path('success/<str:name>/', success, name='success'),
+
     ]
 
 

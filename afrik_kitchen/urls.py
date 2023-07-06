@@ -75,7 +75,8 @@ urlpatterns = [
 
 
 
-     path('contact/', contact, name='contact'),
-    path('success/<str:name>/', success, name='success'),
+    path('contact/', contact, name='contact'),
+    path('contact_success/<str:name>/', success, name='success'),
+
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

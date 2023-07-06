@@ -32,6 +32,58 @@ main {
     background-size: cover;
 }
 
+.table-img {
+  background-image: url("https://res.cloudinary.com/daaluzzqp/image/upload/v1688646705/book_bgr_xjsh5m.jpg");
+  height: 400px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-wrapper1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9; /* Add your desired background color here */
+  padding: 40px;
+}
+
+#content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.table {
+  width: calc(33.33% - 20px);
+  background-color: #ffffff; /* Add your desired background color here */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.table img {
+  width: 100%;
+  height: auto;
+}
+
+.table h2 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.table p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.green-heading {
+  color: darkgreen;
+}
+
+.cursive-heading {
+  font-family: Script MT;
+}
+
 /* Navbar */
 
 nav.navbar {
@@ -280,7 +332,7 @@ td a {
   }
   
   input[type="submit"] {
-    background-color: #4caf50;
+    background-color:rgb(0, 128, 43);
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -289,7 +341,7 @@ td a {
   }
   
   input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: rgb(0, 128, 43);
   }
   
   
@@ -329,7 +381,7 @@ td a {
 
 /* Footer Section */
 .footer {
-    background-color: rgb(0, 128, 43);;
+    background-color: rgb(0, 128, 43);
     padding: 40px 0;
   }
   

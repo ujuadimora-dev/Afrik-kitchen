@@ -18,8 +18,5 @@ def contact(request):
 
 
 def success(request, name):
-    message = f"Thank you, {name}, for submitting the form!, Our Manager will contact You within 6 hours"
-    context = {
-        'message': message,
-    }
-    return render(request, 'contact_success.html', context)
+    message = f"Thank you, {name}, for submitting the form!, our Manager will get back to you within 5 hours"
+    return render(request, 'contact_success.html', {'message': message})
