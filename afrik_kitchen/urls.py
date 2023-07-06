@@ -59,6 +59,9 @@ from view_menu import views
 from django.conf import settings
 from django.conf.urls.static import static
 
+from django.urls import path
+from afrik_kitchen.views import contact, success
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -68,9 +71,11 @@ urlpatterns = [
     
     path('', include('booking.urls')),
     path('accounts/', include('allauth.urls')),
+   # path('event/', include('event.urls', namespace='event')),
+
+
+
+     path('contact/', contact, name='contact'),
+    path('success/<str:name>/', success, name='success'),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-
-
-
-

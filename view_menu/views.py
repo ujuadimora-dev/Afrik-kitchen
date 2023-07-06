@@ -81,7 +81,7 @@ def create_menu(request):
                     vegetarian=form.cleaned_data['vegetarian'],
                     calorie_count=form.cleaned_data['calorie_count']
                 )
-                # Additional processing if needed
+                
                 
                 #return render(request, 'menu/success.html')
                 return render(request, 'menu/success.html', {'menu_type': 'breakfast'})
@@ -98,7 +98,7 @@ def create_menu(request):
                     vegetarian=form.cleaned_data['vegetarian'],
                     calorie_count=form.cleaned_data['calorie_count']
                 )
-                # Additional processing if needed
+                
                 
                # return render(request, 'menu/success.html')
                 return render(request, 'menu/success.html', {'menu_type': 'lunch'})
@@ -116,7 +116,7 @@ def create_menu(request):
                     vegetarian=form.cleaned_data['vegetarian'],
                     calorie_count=form.cleaned_data['calorie_count']
                 )
-                # Additional processing if needed
+               
                 
                 return render(request, 'menu/success.html')
                 return render(request, 'menu/success.html', {'menu_type': 'dinner'})
@@ -133,7 +133,7 @@ def create_menu(request):
                     vegetarian=form.cleaned_data['vegetarian'],
                     calorie_count=form.cleaned_data['calorie_count']
                 )
-                # Additional processing if needed
+             
                 
                 return render(request, 'menu/success.html')
                 return render(request, 'menu/success.html', {'menu_type': 'side'})

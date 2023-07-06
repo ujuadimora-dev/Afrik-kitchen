@@ -104,7 +104,7 @@ class TableDetailView(View):
 class BookingCreateView(FormView):
     template_name = 'create_booking.html'
     form_class = TableAvaliableForm
-    success_url = '/booking/success/'  # Update with the appropriate URL for successful booking
+    success_url = '/booking/success/' 
     
     def form_valid(self, form):
         data = form.cleaned_data

@@ -15,6 +15,9 @@ urlpatterns = [
     path('create/', BookingCreateView.as_view(), name='create_booking'),
     path('success/', BookingSuccessView.as_view(), name='booking_success')
 
+    
+
+
 ]
 
 

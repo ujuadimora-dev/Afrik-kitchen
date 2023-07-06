@@ -104,9 +104,6 @@
                         </div>
                     </div>
                 </section>
-
-
-
                 <!-- Events Section -->
                 <section class="events">
                     <div class="container-wrapper">
@@ -114,14 +111,16 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="event-card">
-                                    <img src="{% static 'images/event_afrik.jpg' %}" alt="Event booking">
+                                    <img src="{% static 'images/event_afrik.jpg' %}" alt="Event ennquiring/booking">
                                     <h3>Contact Us for Your Events</h3>
-                                    <p>@ Afrik Kitchen, we are at best at organising events such as weddings, Birthdays, party,
-                                        house warming party, churching, graduations party, compaies and school parties. You can book 
+                                    <p>@ Afrik Kitchen, we are at best at organising events such as weddings, Birthdays,
+                                        party,
+                                        house warming party, churching, graduations party, compaies and school parties.
+                                        You can book
                                         today or make enquiry here</p>
-                                        <a href="{% url 'view_menu:breakfast' %}" class="btn btn-success">contact Us</a>
+                                    <a href="{% url 'home:contact' %}" class="btn btn-success">contact Us</a>
 
-                                    
+
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -130,8 +129,7 @@
                                     <h3>Book Your Tables 2</h3>
                                     <p>You can book tables for your dinner, Company's meeting, Dating out,
                                         familiy's meeting , lunck or dinner as case may be here.</p>
-                                        <a href="{% url 'booking:create_booking' %}" class="btn btn-success">Table Bookings</a>
-
+                                    <a href="{% url 'booking:TableListView' %}" class="btn btn-success">Book Table</a>      
                                 </div>
                             </div>
                         </div>
@@ -145,7 +143,7 @@
                             <div class="col-md-4">
                                 <div class="footer-card">
                                     <h3>Afrik Kitchen</h3>
-                                    <p>14 Gronland Street Bremen<br>Bremen, State  Germany<br>Phone: <a
+                                    <p>14 Gronland Street Bremen<br>Bremen, State Germany<br>Phone: <a
                                             href="tel:+1234567890">123-456-7890</a></p>
                                 </div>
                             </div>
