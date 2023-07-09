@@ -81,4 +81,11 @@ class Booking(models.Model):
     def __str__(self):
         return f"{self.user} **has Booked for** {self.table.table_number} Table  on {self.reservation_date} at {self.reservation_time}"
 
+    def get_table_capacity(self):
+        """ to get the value to display"""
+        table_capacities = dict(self.table.CAPACITY_CHOICES)
+        table_capacity = table_capacities.get(self.table.capacity)
+        return table_capacity
 
+
+#def get_cancel_booking_url(self):

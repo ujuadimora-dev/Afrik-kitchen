@@ -1,14 +1,18 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse, redirect, HttpResponseRedirect
 from django.views.generic.edit import FormView, View
-from django.views.generic import ListView, FormView
+from django.views.generic import ListView, FormView, DeleteView, UpdateView
 from .models import Table, Booking
 from .forms import TableAvaliableForm
-from django.urls import reverse
+from django.urls import reverse, reverse_lazy
 from booking.table_avaliable import check_avaliable
 from django.contrib.auth import get_user_model
 from django.core.exceptions import ObjectDoesNotExist
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404, redirect
 from django.http import HttpResponse
+from django.contrib import messages
+from django.shortcuts import redirect
+
+
 
 import datetime
 
@@ -67,8 +71,9 @@ class TableDetailView(View):
             }
             return render(request, 'home_detail.html', context)
         else:
-            return HttpResponse('This capacity of table have bben booked ')
-
+            message = "This table is already booked. Please try another one."
+            booking_home_url = reverse('booking:TableListView')
+            return HttpResponse(f"{message} <a href='{booking_home_url}'>Booking Home</a>")
 
     def post(self, request, *args, **kwargs): 
         capacity = self.kwargs.get('capacity', None)
@@ -97,8 +102,9 @@ class TableDetailView(View):
             booking.save()
             return HttpResponse(booking)
         else:
-            return HttpResponse('These choice of Table are booked try Another one! ')
-
+            message = "This table is already booked. Please try another one."
+            booking_home_url = reverse('booking:TableListView')
+            return HttpResponse(f"{message} <a href='{booking_home_url}'>Booking Home</a>")
 
 
 class BookingCreateView(FormView):
@@ -131,4 +137,83 @@ class BookingCreateView(FormView):
 class BookingSuccessView(View):
     def get(self, request, *args, **kwargs):
         return HttpResponse('Booking created successfully!')
+
+
+""" Here is the view to manage Booking"""
+
+# class CancelBookingView(DeleteView):
+
+#     model = Booking
+#     template_name = 'booking_cancel_view.html'
+#     success_url = reverse_lazy('booking:BookingList')
+
+
+
+# '
+# class CancelBookingView(DeleteView):
+#     def get(self, request, booking_id):
+#         try:
+#             booking = Booking.objects.get(id=booking_id)
+#         except Booking.DoesNotExist:
+#             return ('404.html')  # Redirect to a "booking not found" page
+
+#         # Update the booking status to "Cancelled" or perform any other necessary operations
+#         booking.status = "Cancelled"
+#         booking.save()
+
+#         return redirect('booking:cancel_booking')  # Redirect to a "booking cancelled" page
+
+
+# from django.shortcuts import redirect
+# from django.views.generic import DeleteView
+# from django.urls import reverse_lazy
+# from .models import Booking'
+
+# class CancelBookingView(DeleteView):
+#     model = Booking
+#     success_url = reverse_lazy('booking:booking:BookingList' )  # Redirect to a "booking cancelled" page
+
+#     def delete(self, request, *args, **kwargs):
+#         self.object = self.get_object()
+        
+#         # Update the booking status to "Cancelled" or perform any other necessary operations
+#         self.object.status = "Cancelled"
+#         self.object.save()
+
+#         return redirect(self.get_success_url())
+
+# from django.shortcuts import redirect
+# from django.views.generic import DeleteView
+# from django.urls import reverse_lazy
+# from .models import Booking
+
+class CancelBookingView(DeleteView):
+    model = Booking
+    success_url = reverse_lazy('booking:managebookings')  # Redirect to the booking list page
+
+    def delete(self, request, *args, **kwargs):
+        self.object = self.get_object()
+        
+        # Update the booking status to "Cancelled" or perform any other necessary operations
+        self.object.status = "Cancelled"
+        self.object.save()
+
+        return redirect(self.get_success_url())
+
+
+
+class DeleteBookingView(DeleteView):
+    model = Booking
+    success_url = reverse_lazy('booking:managebookings')  # Redirect to the booking list page
+    
+
+
+
+class EditBookingView(UpdateView):
+    model = Booking
+    fields = ['reservation_date', 'reservation_time', 'table']
+    template_name = 'booking_edit.html'
+    success_url = reverse_lazy('booking:managebookings')
+
+
 

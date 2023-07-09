@@ -1,5 +1,4 @@
 
-
 {% load static %}
 
 <!DOCTYPE html>
@@ -20,10 +19,10 @@
     <!-- Main Content -->
     <div class="content">
 
-        <!-- Room Details -->
+        <!-- Table Details -->
         <div class="table">
 
-            <!-- Div 1: Back to Home -->
+            <!-- Div 1: Back to BookingHome -->
             <div class="home">
                 <a href="{% url 'booking:TableListView' %}" class="white_color"><i class="fas fa-arrow-alt-circle-left "></i> Booking Home</a>
             </div>
@@ -41,6 +40,10 @@
 
                 <!-- Input Div -->
                 <div class="input-div">
+                    <label for="id_table_number">Table Number:</label>
+                    <input type="number" name="table_number" id="id_table_number">
+                </div>
+                <div class="input-div">
                     <label for="id_reservation_date">Reservation Date:</label>
                     {{ form.reservation_date }}
                 </div>
@@ -56,7 +59,7 @@
                 </div>
             </form>
 
-        </div> <!-- END Room Div -->
+        </div> 
 
     </div> <!-- END Main Content Div -->
 

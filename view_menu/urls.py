@@ -4,6 +4,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import path
 from .views import create_menu
+from view_menu import views
+
 
 
 
@@ -18,9 +20,10 @@ urlpatterns = [
     path('dinner/', views.dinner, name="dinner"),
     path('side/', views.side, name="side"),
     #path('create-menu/', views.create_menu, name='create_menu'),
-    path('create-menu/', create_menu, name='create_menu')
+    path('create-menu/', views.create_menu, name='create_menu')
     
 ]
 
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+

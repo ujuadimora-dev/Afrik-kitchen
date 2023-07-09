@@ -345,6 +345,92 @@ td a {
   }
   
   
+/* css for the booking managmemt*/
+
+/* booking_list.css */
+
+/* Styles for the content container */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styles for the header section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.headings {
+  flex-grow: 1;
+}
+
+.home {
+  text-align: right;
+}
+
+/* Styles for the bookings section */
+.bookings {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.booking {
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Styles for booking details */
+.category,
+.on,
+.at,
+.position,
+.capacity {
+  margin-bottom: 10px;
+}
+
+/* Styles for cancel, delete, update, and reboot links */
+.cancel,
+.delete,
+.update,
+.reboot {
+  margin-top: 10px;
+}
+
+.cancel a,
+.delete a,
+.update a,
+.reboot a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cancel a:hover,
+.delete a:hover,
+.update a:hover,
+.reboot a:hover {
+  background-color: #ddd;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .home {
+    margin-top: 10px;
+    text-align: left;
+  }
+}
 
   
 

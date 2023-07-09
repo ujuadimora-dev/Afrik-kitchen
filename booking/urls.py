@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import BookingList, TableListView, TableDetailView, BookingCreateView, BookingSuccessView
+from .views import BookingList, TableListView, TableDetailView, BookingCreateView, BookingSuccessView, CancelBookingView,  DeleteBookingView, EditBookingView
+from . import views
 
 
 app_name = 'booking'
@@ -13,12 +14,11 @@ urlpatterns = [
    # path('managebookings/', ManageBooking.as_view(), name='managebookings'),
     path('managebookings/', BookingList.as_view(), name='managebookings'),
     path('create/', BookingCreateView.as_view(), name='create_booking'),
-    path('success/', BookingSuccessView.as_view(), name='booking_success')
+    path('success/', BookingSuccessView.as_view(), name='booking_success'),
 
+    path('cancel/<int:pk>/', CancelBookingView.as_view(), name='cancel_booking'),
+    path('delete/<int:pk>/', DeleteBookingView.as_view(), name='delete_booking'),
+    path('edit/<int:pk>/', EditBookingView.as_view(), name='edit_booking'),
     
-
-
 ]
-
-
 
