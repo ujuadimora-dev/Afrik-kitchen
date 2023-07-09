@@ -22,10 +22,10 @@ def get_menu_items(model):
 
 
 def render_menu(request, template_name, model):
-    """ Renders the menu template """
     menu_items = get_menu_items(model)
-    ctx = {model.__name__.lower() + 's': menu_items}
+    ctx = {model.__name__.lower() + 's': menu_items, 'sides': menu_items}  # Add 'sides' in the context
     return render(request, template_name, ctx)
+
 
 
 def breakfast(request):
@@ -66,7 +66,7 @@ def create_menu(request):
                 menu_model = Dinner
             elif menu_type == 'SIDE':
                 # Save data to the Sides model
-                menu_model = Sides
+                menu_model = Side
 
             if menu_model:
                 menu = menu_model.objects.create(
@@ -94,9 +94,8 @@ def menu_success(request):
 
 
 def permission_denied(request):
-    """Renders the permission_denied.html template"""
+    """Renders the permission_denied.html templae"""
     return render(request, 'permission_denied.html')
-
 
 
 
