@@ -3,6 +3,7 @@ from .models import BreakFast, Lunch, Dinner, Sides
 from django.conf import settings
 from .forms import MenuCreateForm
 from django.contrib.auth.decorators import user_passes_test
+from django.http import Http404
 
 
 def index(request):
@@ -66,7 +67,7 @@ def create_menu(request):
                 menu_model = Dinner
             elif menu_type == 'SIDE':
                 # Save data to the Sides model
-                menu_model = Side
+                menu_model = Sides
 
             if menu_model:
                 menu = menu_model.objects.create(
@@ -98,9 +99,6 @@ def permission_denied(request):
     return render(request, 'permission_denied.html')
 
 
-
-
-
-
-
+def page_not_found(request):
+    return render(request, 'menu/page_not_found.html')
 

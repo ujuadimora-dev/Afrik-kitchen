@@ -50,19 +50,3 @@ class MenuCreateForm(MenuForm):
     created_on = forms.DateField()
     created_by_staff = forms.CharField(max_length=25)
 
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-    

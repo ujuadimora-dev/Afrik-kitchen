@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: rgb(0, 128, 43);
+    background-color: rgb(2, 131, 45);
 }
 
 body {
@@ -31,7 +31,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+/* Table home image*/
 .table-img {
   background-image: url("https://res.cloudinary.com/daaluzzqp/image/upload/v1688646705/book_bgr_xjsh5m.jpg");
   height: 400px;
@@ -44,7 +44,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f9f9f9; /* Add your desired background color here */
+  background-color: #f9f9f9; 
   padding: 40px;
 }
 
@@ -135,9 +135,9 @@ i.fa-solid.fa-bars:hover {
 
 /* Reusable table styling */
 /* Zebra striping */
-tr:nth-of-type(odd) {
-    background: #eee;
-}
+/* tr:nth-of-type(odd) {
+    background: #dd1313;
+} */
 
 td,
 th {
@@ -148,20 +148,20 @@ th {
     vertical-align: middle;
 }
 
-hr {
+/* hr {
     width: 33%;
     margin: 10px auto;
     color: #ddc439;
     
-}
+} */
 
-td a {
+/* td a {
     width: 150px;
-}
+} */
 
 /* Reusable form styling */
 
-.form-style, .button-style {
+/* .form-style, .button-style {
     background-color: black; 
     color: white;
     border-radius: 10px;
@@ -170,28 +170,28 @@ td a {
 
 .button-style:hover {
     color: #ddc439;
-}
+} */
 
 /* All auth pages */
 
-.login-a {
+/* .login-a {
     color: #ddc439;
 }
 
 .allauth-form {
     width: 100%;
-}
+} */
 
 /* Home page */
 
-.mapouter {
+/* .mapouter {
     display: flex; 
     flex-direction: column;
     width: 100%;
     height: auto;
-}
+/* } */
 
-.gmap_canvas {
+/* .gmap_canvas {
     overflow: hidden;
     background: none !important;
     display: flex;
@@ -206,10 +206,11 @@ td a {
 
 .opening ul {
     list-style: none;
-}
+} */ */
 
 /* home Section */
 /* Our Story Section */
+
 .our-story {
     padding: 80px 0;
   }
@@ -228,7 +229,36 @@ td a {
   .our-story .story-text {
     padding: 0 40px;
   }
+
+  .green-heading{
+    color :green
+  }
+
+  .cursive-heading{
+    font-family: cursive;
+  }
   
+  .our-story .story-image img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    opacity: 0; /* Set initial opacity to 0 */
+   animation-name: fade-in;
+   animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards
+
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   /* Menu Section */
   .menu {
     padding: 80px 0;
@@ -238,15 +268,31 @@ td a {
   .menu h2 {
     margin-bottom: 40px;
   }
+
+  .menu .row {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .menu .col-md-3 {
+    display: flex;
+    justify-content: center;
+  }
   
   .menu-card {
     background-color: #fff;
     padding: 20px;
-    text-align: center;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+    text-align: left;
+    
+   
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards
+
   }
+
+  
   
   .menu-card:hover {
     transform: translateY(-5px);
@@ -254,8 +300,8 @@ td a {
   }
   
   .menu-card img {
-    width: 100%;
-    max-height: 200px;
+    width: 200%;
+    max-height: 100px;
     object-fit: cover;
     border-radius: 4px;
     margin-bottom: 20px;
@@ -269,6 +315,19 @@ td a {
   .menu-card p {
     font-size: 16px;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+  
   
   /* Events Section */
   .events {
