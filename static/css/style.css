@@ -8,6 +8,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
+
 header {
     background-color: rgb(2, 131, 45);
 }
@@ -21,6 +23,8 @@ main {
     flex: 1 0 auto;
     background-color: white;
 }
+
+
 
 /* Hero Image */
 
@@ -207,6 +211,29 @@ th {
 .opening ul {
     list-style: none;
 } */ */
+/* map syle*/
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 400px;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 100%;
+  width: 100%;
+}
+
+.no-decoration {
+  list-style-type: none;
+  padding-left: 0;
+  justify-content: left;
+}
+
+
 
 /* home Section */
 /* Our Story Section */
@@ -317,6 +344,80 @@ th {
   }
 
 
+/* login*/
+/* Styles for the form container */
+.form-style {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Heading style */
+.form-style h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styles for the social account providers section */
+.socialaccount_ballot {
+  margin-top: 20px;
+}
+
+.socialaccount_providers {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.socialaccount_providers li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+/* "or" text style */
+.login-or {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Styles for the login form */
+.allauth-form {
+  margin-top: 20px;
+}
+
+.allauth-form input[type="text"],
+.allauth-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.allauth-form button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.allauth-form button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Forgot password link style */
+.allauth-form p a {
+  color: #1E90FF;
+}
+
+.allauth-form p a:hover {
+  text-decoration: underline;
+}
 
 
 
