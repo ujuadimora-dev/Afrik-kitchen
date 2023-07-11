@@ -420,7 +420,9 @@ th {
 }
 
 
-
+.invisible {
+  display: none;
+}
 
 
 

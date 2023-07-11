@@ -61,6 +61,7 @@ from django.conf.urls.static import static
 
 from django.urls import path
 from afrik_kitchen.views import contact, success
+from django.views.generic import TemplateView
 
 
 urlpatterns = [
@@ -72,7 +73,7 @@ urlpatterns = [
     path('', include('booking.urls')),
     path('accounts/', include('allauth.urls')),
    # path('event/', include('event.urls', namespace='event')),
-
+    path('view_menu/create-menu/includes/403/', TemplateView.as_view(template_name='includes/403.html'), name='403'),
 
 
     path('contact/', contact, name='contact'),
@@ -80,3 +81,6 @@ urlpatterns = [
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+
