@@ -1,0 +1,152 @@
+/* Root CSS */
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(46, 47, 48);
+    color: rgb(236, 235, 228);
+    font-family: sans-serif;
+    line-height: 1.25;
+    height: 100vh;
+}
+
+/* Main Divs *
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: left;
+}
+
+.image{
+    flex: 0.3;
+}
+
+.table{
+    flex:0.5;
+    margin: 2rem;
+    display:flex;
+    text-align: left;
+    align-items: start;  
+    flex-direction: column;
+}
+
+/* Sub Divs */
+
+.home{
+    flex: 0.2;
+}
+.table-info{
+    flex: 0.4;
+    margin: 5rem 1rem;
+    
+}
+
+form{
+    display: flex;
+    flex: 0.4 1 auto;
+    flex-direction: column;
+}
+
+/* Inside Sub Divs */
+
+.image img{
+    flex:1;
+    max-height: 99.2vh;
+}
+
+i{
+    color:#dfdfdf;
+    font-size: 2rem;
+}
+
+/* Form's CSS */
+
+.input-div{
+    flex: 1 1 auto;
+    margin:1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input, button{
+    flex:1;
+    width:300px;
+    border-radius: 0.5rem;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    color: #555;
+}
+
+button{
+    background-color: #dfdfdf;
+    color:rgb(6, 137, 245);
+    outline:none;
+}
+
+button:hover{
+    color:#dfdfdf;
+    background-color: rgb(6, 137, 245);
+}
+
+/* the table_list*/
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 40px 0;
+  }
+  
+  .content-wrapper {
+    max-width: 900px;
+  }
+  
+  .text-area {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .table {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .table:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .table img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .table h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .table p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  #content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  

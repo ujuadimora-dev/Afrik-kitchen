@@ -1,0 +1,49 @@
+.logo{
+    margin-bottom: 10px;
+}
+
+.home{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../css/images/hotspoint.png);
+    background-size: cover;
+    background-position:  center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.title {
+    margin: 50px;
+    text-align: center;
+}
+
+.img {
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+}
+
+.item-title{
+    position: relative;
+    margin-top: 10px;
+    left: 120px;
+}
+
+
+
+.break {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../css/images/breakfbg.jpg);
+    background-size: cover;
+    background-position:  center center;
+    background-repeat: no-repeat;
+
+
+}

@@ -1,0 +1,30 @@
+2023-07-07 12:19:44.834 [info] Extension host with pid 1451 started
+2023-07-07 12:19:44.848 [info] Lock '/workspace/.vscode-remote/data/User/workspaceStorage/-2f942137/vscode.lock': Lock acquired.
+2023-07-07 12:19:45.373 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-07-07 12:19:45.375 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2023-07-07 12:19:45.375 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onView:pr:github', root cause: GitHub.vscode-pull-request-github
+2023-07-07 12:19:45.375 [info] ExtensionService#_doActivateExtension gitpod.gitpod-web, startup: false, activationEvent: 'onAuthenticationRequest:gitpod'
+2023-07-07 12:19:45.780 [info] ExtensionService#_doActivateExtension GitHub.vscode-pull-request-github, startup: false, activationEvent: 'onView:pr:github'
+2023-07-07 12:19:46.376 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-07-07 12:19:46.376 [info] ExtensionService#_doActivateExtension formulahendry.auto-close-tag, startup: true, activationEvent: '*'
+2023-07-07 12:19:46.377 [info] ExtensionService#_doActivateExtension HookyQR.beautify, startup: true, activationEvent: '*'
+2023-07-07 12:19:46.426 [info] ExtensionService#_doActivateExtension ms-python.python, startup: true, activationEvent: 'workspaceContains:Pipfile'
+2023-07-07 12:19:47.065 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-07-07 12:19:47.066 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-07-07 12:19:47.232 [info] ExtensionService#_doActivateExtension redhat.vscode-yaml, startup: false, activationEvent: 'onLanguage:yaml'
+2023-07-07 12:19:47.535 [info] Eager extensions activated
+2023-07-07 12:19:47.536 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-07-07 12:19:47.536 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-07-07 12:19:48.028 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2023-07-07 12:19:48.031 [warning] [redhat.vscode-yaml] Accessing a resource scoped configuration without providing a resource is not expected. To get the effective value for '[yaml]', provide the URI of a resource or 'null' for any resource.
+2023-07-07 12:19:50.812 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-07-07 12:19:50.812 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-07-07 12:48:04.651 [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter, startup: false, activationEvent: 'onLanguage:python'
+2023-07-07 12:48:05.565 [info] ExtensionService#_doActivateExtension ms-toolsai.jupyter-renderers, startup: false, activationEvent: 'api', root cause: ms-toolsai.jupyter
+2023-07-07 13:23:12.639 [error] [ms-python.python] provider FAILED
+2023-07-07 13:23:12.640 [error] Error: ValueError: `column` parameter (1) is not in a valid range (0-0) for line 18 ('\n').
+	at /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/out/client/extension.js:2:2254118
+	at re (/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/out/client/extension.js:2:2254412)
+	at /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/out/client/extension.js:2:2249196
+	at Immediate.<anonymous> (/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/out/client/extension.js:2:2249216)
+	at processImmediate (node:internal/timers:466:21)

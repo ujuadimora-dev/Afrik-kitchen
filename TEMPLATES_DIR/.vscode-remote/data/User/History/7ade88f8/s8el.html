@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block css %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/table_list.css' %}">
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="container-wrapper">
+  <div class="table-img">
+    <img src="{% static 'images/afrik_logo.png' %}" alt="African Kitchen background" width="200" height="100">
+  </div>
+  <div class="content-wrapper main-column">
+    <div class="text-area content">
+      <!-- Title and about us sections -->
+      <h1 class="text-center">**Ndewo**<span>**Wilkommen**</span><span>**Welcome**</span><span>**Bonjour**</span>
+      </h1>
+      <div>
+        <p>
+          Here at <span>Afrik Kitchen</span>, we speak the language of food. All our food ingredients are
+          orgnic, that
+          i can assure you.They are orginicall made or prepard with touch of proffessionlism.
+
+        </p>
+        <p>
+          If your are seeking where to relax, after a hectic work of the day, or you want to business or
+          familiy lunch?
+          or would like a home mande dinner with friends, or you are Dating out? Here @Afrik Kitchen is the
+          right restaurant for
+          every occasion
+        </p>
+
+        
+        <h2>Tables</h2>
+        <!-- Main Content -->
+        <div id="content">
+          {% for table_capacity, table_url in table_list %}
+          <div class="table">
+            <a href="{{table_url}}">
+
+              <img
+                src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+
+              <h2>{{table_capacity}} Table capacity</h2>
+
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi
+              </p>
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+        <script src=""></script>
+        </body>
+
+        </html>
+        {% endblock %}

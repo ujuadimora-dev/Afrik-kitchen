@@ -1,0 +1,557 @@
+2023-07-09 13:50:18.269 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2"
+
+2023-07-09 13:50:18.278 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "3"
+
+2023-07-09 13:51:53.137 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "7"
+
+2023-07-09 13:51:56.620 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "10"
+
+2023-07-09 13:51:56.621 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "11"
+
+2023-07-09 13:51:59.698 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "13"
+
+2023-07-09 13:56:49.940 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "17"
+
+2023-07-09 14:22:30.258 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "109"
+
+2023-07-09 14:22:30.262 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "110"
+
+2023-07-09 14:22:30.265 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "111"
+
+2023-07-09 14:22:33.122 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "115"
+
+2023-07-09 14:22:36.346 [info] Exception in thread Thread-30:
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 289, in lsp_python_diagnostic
+    compile(source, uri, "exec", PyCF_ONLY_AST)
+  File "file:///workspace/Afrik-kitchen/booking/views.py", line 140
+    def get(self, request, *args, **kwargs):
+    ^
+IndentationError: expected an indented block
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 1254, in run
+    self.function(*self.args, **self.kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 61, in run
+    return func(*args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 651, in _publish_diagnostics
+    diagnostic = jedi_utils.lsp_python_diagnostic(uri, doc.source)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 309, in lsp_python_diagnostic
+    start=Position(line=line, character=column),
+  File "<attrs generated init lsprotocol.types.Position>", line 7, in __init__
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/lsprotocol/validators.py", line 45, in uinteger_validator
+    raise ValueError(
+ValueError: Position.character should be in range [0:2147483647], but was -1.
+
+2023-07-09 14:22:50.281 [info] Exception in thread Thread-31:
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 289, in lsp_python_diagnostic
+    compile(source, uri, "exec", PyCF_ONLY_AST)
+  File "file:///workspace/Afrik-kitchen/booking/views.py", line 141
+    def get(self, request, *args, **kwargs):
+    ^
+IndentationError: expected an indented block
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 1254, in run
+    self.function(*self.args, **self.kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 61, in run
+    return func(*args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 651, in _publish_diagnostics
+    diagnostic = jedi_utils.lsp_python_diagnostic(uri, doc.source)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 309, in lsp_python_diagnostic
+    start=Position(line=line, character=column),
+  File "<attrs generated init lsprotocol.types.Position>", line 7, in __init__
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/lsprotocol/validators.py", line 45, in uinteger_validator
+    raise ValueError(
+ValueError: Position.character should be in range [0:2147483647], but was -1.
+
+2023-07-09 14:22:51.659 [info] Exception in thread Thread-32:
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 289, in lsp_python_diagnostic
+    compile(source, uri, "exec", PyCF_ONLY_AST)
+  File "file:///workspace/Afrik-kitchen/booking/views.py", line 141
+    def get(self, request, *args, **kwargs):
+    ^
+IndentationError: expected an indented block
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 1254, in run
+    self.function(*self.args, **self.kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 61, in run
+    return func(*args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 651, in _publish_diagnostics
+    diagnostic = jedi_utils.lsp_python_diagnostic(uri, doc.source)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 309, in lsp_python_diagnostic
+    start=Position(line=line, character=column),
+  File "<attrs generated init lsprotocol.types.Position>", line 7, in __init__
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/lsprotocol/validators.py", line 45, in uinteger_validator
+    raise ValueError(
+ValueError: Position.character should be in range [0:2147483647], but was -1.
+
+2023-07-09 14:25:14.893 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "162"
+
+2023-07-09 14:25:15.156 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "163"
+
+2023-07-09 14:29:02.656 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "182"
+
+2023-07-09 14:33:18.423 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "244"
+
+2023-07-09 14:33:35.633 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "252"
+
+2023-07-09 14:34:18.067 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "278"
+
+2023-07-09 14:35:27.652 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "293"
+
+2023-07-09 14:35:57.938 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "316"
+
+2023-07-09 14:36:23.857 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "342"
+
+2023-07-09 14:36:28.298 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "347"
+
+2023-07-09 14:36:42.808 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "362"
+
+2023-07-09 14:36:45.148 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "365"
+
+2023-07-09 14:36:50.501 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "370"
+
+2023-07-09 14:40:21.984 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "388"
+
+2023-07-09 14:46:05.085 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "498"
+
+2023-07-09 14:55:16.911 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "536"
+
+2023-07-09 15:03:42.904 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "576"
+
+2023-07-09 15:21:25.372 [info] Exception in thread Thread-186:
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 289, in lsp_python_diagnostic
+    compile(source, uri, "exec", PyCF_ONLY_AST)
+  File "file:///workspace/Afrik-kitchen/booking/views.py", line 158
+    class BookingSuccessView(View):
+    ^
+IndentationError: expected an indented block
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 1254, in run
+    self.function(*self.args, **self.kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 61, in run
+    return func(*args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 651, in _publish_diagnostics
+    diagnostic = jedi_utils.lsp_python_diagnostic(uri, doc.source)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 309, in lsp_python_diagnostic
+    start=Position(line=line, character=column),
+  File "<attrs generated init lsprotocol.types.Position>", line 7, in __init__
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/lsprotocol/validators.py", line 45, in uinteger_validator
+    raise ValueError(
+ValueError: Position.character should be in range [0:2147483647], but was -1.
+
+2023-07-09 15:23:09.291 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "697"
+
+2023-07-09 15:30:24.404 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "771"
+
+2023-07-09 15:34:40.228 [info] Exception in thread Thread-217:
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 289, in lsp_python_diagnostic
+    compile(source, uri, "exec", PyCF_ONLY_AST)
+  File "file:///workspace/Afrik-kitchen/booking/models.py", line 63
+    class Booking(models.Model):
+    ^
+IndentationError: expected an indented block
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 1254, in run
+    self.function(*self.args, **self.kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 61, in run
+    return func(*args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 651, in _publish_diagnostics
+    diagnostic = jedi_utils.lsp_python_diagnostic(uri, doc.source)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 309, in lsp_python_diagnostic
+    start=Position(line=line, character=column),
+  File "<attrs generated init lsprotocol.types.Position>", line 7, in __init__
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/lsprotocol/validators.py", line 45, in uinteger_validator
+    raise ValueError(
+ValueError: Position.character should be in range [0:2147483647], but was -1.
+
+2023-07-09 15:34:49.427 [info] Exception in thread Thread-219:
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 289, in lsp_python_diagnostic
+    compile(source, uri, "exec", PyCF_ONLY_AST)
+  File "file:///workspace/Afrik-kitchen/booking/models.py", line 63
+    class Booking(models.Model):
+    ^
+IndentationError: expected an indented block
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 1254, in run
+    self.function(*self.args, **self.kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 61, in run
+    return func(*args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 651, in _publish_diagnostics
+    diagnostic = jedi_utils.lsp_python_diagnostic(uri, doc.source)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 309, in lsp_python_diagnostic
+    start=Position(line=line, character=column),
+  File "<attrs generated init lsprotocol.types.Position>", line 7, in __init__
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/lsprotocol/validators.py", line 45, in uinteger_validator
+    raise ValueError(
+ValueError: Position.character should be in range [0:2147483647], but was -1.
+
+2023-07-09 15:37:37.369 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "875"
+
+2023-07-09 15:37:43.901 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "883"
+
+2023-07-09 15:40:50.379 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "909"
+
+2023-07-09 15:42:24.350 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "926"
+
+2023-07-09 15:46:54.586 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "987"
+
+2023-07-09 15:47:01.573 [info] Exception in thread Thread-307:
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 289, in lsp_python_diagnostic
+    compile(source, uri, "exec", PyCF_ONLY_AST)
+  File "file:///workspace/Afrik-kitchen/booking/models.py", line 83
+    return
+    ^
+IndentationError: expected an indented block
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 1254, in run
+    self.function(*self.args, **self.kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 61, in run
+    return func(*args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 651, in _publish_diagnostics
+    diagnostic = jedi_utils.lsp_python_diagnostic(uri, doc.source)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 309, in lsp_python_diagnostic
+    start=Position(line=line, character=column),
+  File "<attrs generated init lsprotocol.types.Position>", line 7, in __init__
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/lsprotocol/validators.py", line 45, in uinteger_validator
+    raise ValueError(
+ValueError: Position.character should be in range [0:2147483647], but was -1.
+
+2023-07-09 15:47:03.017 [info] Exception in thread Thread-308:
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 289, in lsp_python_diagnostic
+    compile(source, uri, "exec", PyCF_ONLY_AST)
+  File "file:///workspace/Afrik-kitchen/booking/models.py", line 83
+    return
+    ^
+IndentationError: expected an indented block
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 1254, in run
+    self.function(*self.args, **self.kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 61, in run
+    return func(*args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 651, in _publish_diagnostics
+    diagnostic = jedi_utils.lsp_python_diagnostic(uri, doc.source)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 309, in lsp_python_diagnostic
+    start=Position(line=line, character=column),
+  File "<attrs generated init lsprotocol.types.Position>", line 7, in __init__
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/lsprotocol/validators.py", line 45, in uinteger_validator
+    raise ValueError(
+ValueError: Position.character should be in range [0:2147483647], but was -1.
+
+2023-07-09 15:47:44.391 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1022"
+
+2023-07-09 15:48:56.888 [info] Exception in thread Thread-333:
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 289, in lsp_python_diagnostic
+    compile(source, uri, "exec", PyCF_ONLY_AST)
+  File "file:///workspace/Afrik-kitchen/booking/models.py", line 83
+    return redirect('booking-success')
+    ^
+IndentationError: expected an indented block
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 1254, in run
+    self.function(*self.args, **self.kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 61, in run
+    return func(*args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 651, in _publish_diagnostics
+    diagnostic = jedi_utils.lsp_python_diagnostic(uri, doc.source)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 309, in lsp_python_diagnostic
+    start=Position(line=line, character=column),
+  File "<attrs generated init lsprotocol.types.Position>", line 7, in __init__
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/lsprotocol/validators.py", line 45, in uinteger_validator
+    raise ValueError(
+ValueError: Position.character should be in range [0:2147483647], but was -1.
+
+2023-07-09 16:09:29.164 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1141"
+
+2023-07-09 16:20:11.974 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1202"
+
+2023-07-09 16:21:22.751 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1241"
+
+2023-07-09 16:21:23.016 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1242"
+
+2023-07-09 16:23:07.515 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1262"
+
+2023-07-09 16:44:50.787 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1335"
+
+2023-07-09 16:50:19.036 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1359"
+
+2023-07-09 16:50:28.168 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1367"
+
+2023-07-09 16:50:32.800 [info] ERROR:pygls.protocol:Failed to handle request 1370 textDocument/hover HoverParams(text_document=TextDocumentIdentifier(uri='file:///workspace/Afrik-kitchen/view_menu/views.py'), position=14:0, work_done_token=None)
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 378, in hover
+    jedi_script.help(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper
+    raise ValueError('`column` parameter (%d) is not in a valid range '
+ValueError: `column` parameter (1) is not in a valid range (0-0) for line 15 ('\n').
+
+2023-07-09 16:50:32.802 [info] [Error - 4:50:32 PM] Request textDocument/hover failed.
+2023-07-09 16:50:32.802 [info]   Message: ValueError: `column` parameter (1) is not in a valid range (0-0) for line 15 ('\n').
+  Code: -32602 
+{'traceback': ['  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request\n    self._execute_request(msg_id, handler, params)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request\n    self._send_response(msg_id, handler(params))\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 378, in hover\n    jedi_script.help(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper\n    raise ValueError(\'`column` parameter (%d) is not in a valid range \'\n']}
+2023-07-09 16:50:47.277 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1385"
+
+2023-07-09 16:50:50.950 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1387"
+
+2023-07-09 16:50:56.014 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1391"
+
+2023-07-09 16:51:04.850 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1408"
+
+2023-07-09 16:51:34.931 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1439"
+
+2023-07-09 16:52:25.003 [info] ERROR:pygls.protocol:Failed to handle request 1502 textDocument/hover HoverParams(text_document=TextDocumentIdentifier(uri='file:///workspace/Afrik-kitchen/view_menu/views.py'), position=20:0, work_done_token=None)
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 378, in hover
+    jedi_script.help(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper
+    raise ValueError('`column` parameter (%d) is not in a valid range '
+ValueError: `column` parameter (1) is not in a valid range (0-0) for line 21 ('\n').
+
+2023-07-09 16:52:25.004 [info] [Error - 4:52:25 PM] Request textDocument/hover failed.
+2023-07-09 16:52:25.004 [info]   Message: ValueError: `column` parameter (1) is not in a valid range (0-0) for line 21 ('\n').
+  Code: -32602 
+{'traceback': ['  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request\n    self._execute_request(msg_id, handler, params)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request\n    self._send_response(msg_id, handler(params))\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 378, in hover\n    jedi_script.help(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper\n    raise ValueError(\'`column` parameter (%d) is not in a valid range \'\n']}
+2023-07-09 16:52:27.645 [info] ERROR:pygls.protocol:Failed to handle request 1505 textDocument/hover HoverParams(text_document=TextDocumentIdentifier(uri='file:///workspace/Afrik-kitchen/view_menu/views.py'), position=13:0, work_done_token=None)
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 378, in hover
+    jedi_script.help(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper
+    raise ValueError('`column` parameter (%d) is not in a valid range '
+ValueError: `column` parameter (1) is not in a valid range (0-0) for line 14 ('\n').
+
+2023-07-09 16:52:27.646 [info] [Error - 4:52:27 PM] Request textDocument/hover failed.
+2023-07-09 16:52:27.646 [info]   Message: ValueError: `column` parameter (1) is not in a valid range (0-0) for line 14 ('\n').
+  Code: -32602 
+{'traceback': ['  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request\n    self._execute_request(msg_id, handler, params)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request\n    self._send_response(msg_id, handler(params))\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 378, in hover\n    jedi_script.help(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper\n    raise ValueError(\'`column` parameter (%d) is not in a valid range \'\n']}
+2023-07-09 17:12:14.824 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1613"
+
+2023-07-09 17:17:42.702 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1622"
+
+2023-07-09 17:18:33.883 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1648"
+
+2023-07-09 17:23:04.519 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1769"
+
+2023-07-09 17:23:11.399 [info] ERROR:pygls.protocol:Failed to handle request 1776 textDocument/hover HoverParams(text_document=TextDocumentIdentifier(uri='file:///workspace/Afrik-kitchen/view_menu/views.py'), position=27:0, work_done_token=None)
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 378, in hover
+    jedi_script.help(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper
+    raise ValueError('`column` parameter (%d) is not in a valid range '
+ValueError: `column` parameter (1) is not in a valid range (0-0) for line 28 ('\n').
+
+2023-07-09 17:23:11.400 [info] [Error - 5:23:11 PM] Request textDocument/hover failed.
+2023-07-09 17:23:11.400 [info]   Message: ValueError: `column` parameter (1) is not in a valid range (0-0) for line 28 ('\n').
+  Code: -32602 
+{'traceback': ['  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request\n    self._execute_request(msg_id, handler, params)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request\n    self._send_response(msg_id, handler(params))\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 378, in hover\n    jedi_script.help(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper\n    raise ValueError(\'`column` parameter (%d) is not in a valid range \'\n']}
+2023-07-09 17:24:42.264 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1798"
+
+2023-07-09 17:25:44.262 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1850"
+
+2023-07-09 17:25:56.708 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1865"
+
+2023-07-09 17:25:58.361 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1867"
+
+2023-07-09 17:27:13.756 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1909"
+
+2023-07-09 17:35:31.675 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2119"
+
+2023-07-09 17:35:35.534 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2126"
+
+2023-07-09 17:35:35.618 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2127"
+
+2023-07-09 17:36:10.336 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2165"
+
+2023-07-09 17:36:11.438 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2168"
+
+2023-07-09 17:36:15.480 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2177"
+
+2023-07-09 17:37:10.914 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2196"
+
+2023-07-09 17:37:11.143 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2197"
+
+2023-07-09 17:37:46.711 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2232"
+
+2023-07-09 17:37:49.188 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2237"
+
+2023-07-09 17:37:52.149 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2242"
+
+2023-07-09 17:38:01.841 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2249"
+
+2023-07-09 17:38:28.952 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2275"
+
+2023-07-09 17:38:37.422 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2280"
+
+2023-07-09 17:38:56.708 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2287"
+
+2023-07-09 17:39:57.854 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2330"
+
+2023-07-09 17:40:56.622 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2377"
+
+2023-07-09 17:41:03.060 [info] ERROR:pygls.protocol:Failed to handle request 2382 textDocument/hover HoverParams(text_document=TextDocumentIdentifier(uri='file:///workspace/Afrik-kitchen/view_menu/views.py'), position=4:0, work_done_token=None)
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 378, in hover
+    jedi_script.help(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper
+    raise ValueError('`column` parameter (%d) is not in a valid range '
+ValueError: `column` parameter (1) is not in a valid range (0-0) for line 5 ('\n').
+
+2023-07-09 17:41:03.060 [info] [Error - 5:41:03 PM] Request textDocument/hover failed.
+2023-07-09 17:41:03.060 [info]   Message: ValueError: `column` parameter (1) is not in a valid range (0-0) for line 5 ('\n').
+  Code: -32602 
+{'traceback': ['  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request\n    self._execute_request(msg_id, handler, params)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request\n    self._send_response(msg_id, handler(params))\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 378, in hover\n    jedi_script.help(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper\n    raise ValueError(\'`column` parameter (%d) is not in a valid range \'\n']}
+2023-07-09 17:41:05.919 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2386"
+
+2023-07-09 17:41:55.979 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2415"
+
+2023-07-09 17:42:07.897 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2418"
+
+2023-07-09 17:42:33.983 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2427"
+
+2023-07-09 17:42:37.298 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2429"
+
+2023-07-09 17:43:15.790 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2439"
+
+2023-07-09 17:46:05.608 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2459"
+
+2023-07-09 17:46:13.463 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2460"
+
+2023-07-09 17:46:15.836 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2465"
+
+2023-07-09 17:46:16.026 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2466"
+
+2023-07-09 17:46:17.729 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2469"
+
+2023-07-09 17:46:36.496 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2503"
+
+2023-07-09 17:46:37.641 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2506"
+
+2023-07-09 17:46:39.939 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2509"
+
+2023-07-09 17:47:27.455 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2526"
+
+2023-07-09 18:17:18.296 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2582"
+
+2023-07-09 18:22:42.890 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2617"
+
+2023-07-09 18:36:06.552 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2676"
+
+2023-07-09 18:45:07.748 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2800"
+
+2023-07-09 18:51:49.569 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2952"
+
+2023-07-09 18:52:05.608 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2969"
+
+2023-07-09 18:54:55.823 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "3013"
+
+2023-07-09 18:54:57.548 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "3014"
+
+2023-07-09 18:54:59.493 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "3019"
+
+2023-07-09 18:55:34.359 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "3029"
+
+2023-07-09 18:58:54.270 [info] ERROR:pygls.protocol:Failed to handle request 3110 textDocument/hover HoverParams(text_document=TextDocumentIdentifier(uri='file:///workspace/Afrik-kitchen/view_menu/models.py'), position=48:0, work_done_token=None)
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 378, in hover
+    jedi_script.help(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper
+    raise ValueError('`column` parameter (%d) is not in a valid range '
+ValueError: `column` parameter (1) is not in a valid range (0-0) for line 49 ('\n').
+
+2023-07-09 18:58:54.271 [info] [Error - 6:58:54 PM] Request textDocument/hover failed.
+2023-07-09 18:58:54.271 [info]   Message: ValueError: `column` parameter (1) is not in a valid range (0-0) for line 49 ('\n').
+  Code: -32602 
+{'traceback': ['  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request\n    self._execute_request(msg_id, handler, params)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request\n    self._send_response(msg_id, handler(params))\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 378, in hover\n    jedi_script.help(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper\n    raise ValueError(\'`column` parameter (%d) is not in a valid range \'\n']}
+2023-07-09 19:01:25.729 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "3125"
+
+2023-07-09 19:09:00.316 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "3151"
+
+2023-07-09 19:11:39.301 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "3203"
+
+2023-07-09 19:21:45.188 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "3272"
+
+2023-07-09 19:21:47.995 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "3278"
+
+2023-07-09 19:25:45.125 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "3301"
+
+2023-07-09 19:25:50.119 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "3306"
+
+2023-07-09 19:25:51.534 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "3309"
+
+2023-07-09 19:36:33.077 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "3318"
+

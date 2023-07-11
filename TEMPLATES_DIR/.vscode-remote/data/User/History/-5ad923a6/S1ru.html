@@ -1,0 +1,71 @@
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <script src="https://kit.fontawesome.com/692189991f.js" crossorigin="anonymous"></script>
+
+    <!-- Main StyleSheet -->
+    <link rel="stylesheet" href="{% static 'css/table_detail.css' %}">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+
+    <!-- Main Content -->
+    <div class="content">
+
+        <!-- Room Details -->
+        <div class="table">
+
+            <!-- Div 1: Back to Home -->
+            <div class="home">
+                <a href="{% url 'booking:TableListView' %}"><i class="fas fa-arrow-alt-circle-left"></i> Booking Home</a>
+            </div>
+            
+
+            <!-- Div 2: Tablenformation -->
+            <div class="table-info">
+                <h1>{{table_capacity}}</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id optio rem saepe culpa architecto tempora
+                    numquam debitis reiciendis! Quaerat laudantium consequuntur doloribus quod placeat consectetur
+                    veniam,
+                    rerum repellendus magnam labore. </p>
+            </div>
+
+            <!-- Div 3: Table Booking Form -->
+            <form id="booking-form" action="" method="POST">
+                {% csrf_token %}
+
+                <!-- Input Div -->
+                <div class="input-div">
+                    <label for="id_reservation_date">Reservation Date:</label>
+                    {{ form.reservation_date }}
+                </div>
+
+                <div class="input-div">
+                    <label for="id_reservation_date">Reservation Time:</label>
+                    {{ form.reservation_time }}
+                </div>
+
+                <!-- Input Div -->
+                <div class="input-div">
+                    <button type="submit">Book the Table</button>
+                </div>
+            </form>
+
+        </div> <!-- END Room Div -->
+
+    </div> <!-- END Main Content Div -->
+
+</body>
+
+</html>
+
+
+

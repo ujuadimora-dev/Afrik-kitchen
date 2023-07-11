@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Cancel Booking</h2>
+  <p>Are you sure you want to cancel the booking for {{ booking.user }}?</p>
+  <form method="POST" action="{% url 'booking:cancel_booking' booking.capcity %}">
+    {% csrf_token %}
+    <button type="submit">Cancel Booking</button>
+  </form>
+{% endblock %}
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+<!-- booking_success.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Booking Success</h1>
+  <p>Your booking has been successfully created!</p>
+  <!-- You can add more information or customize the content as needed -->
+  <p>Thank you for choosing our service.</p>
+  <a href="{% url 'TableListView' %}">Back to Table List</a>
+{% endblock %}

@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}Side{% endblock %}
+
+{% block content %}
+<div class="break_fast">
+    
+    <div class="break"></div>
+
+</div>
+
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-8">
+            <h2 class="title">Check our Sides</h2>
+            <div class="row">
+                {% for side in sides %}
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <img class="card-img-top fade-in" src="{{ side.fimage }}" alt="{{ side.name }}"  style="width:250px; height: auto;">
+                        <div class="card-body fade-in" style="width: 400px; height: auto;" >
+                            <h4 class="card-title" >{{ side.name }}</h4>
+                            <p class="card-text">{{ side.description }}</p>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" checked>
+                                <label class="form-check-label">{{ side.priceM }} $</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio">
+                                <label class="form-check-label">{{ side.priceL }} $</label>
+                            </div>
+                            <button class="btn btn-warning mt-3">call us to book for Sides</button>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'menu/base.html' %}
+
+{% block content %}
+  <h2>Booking List</h2>
+  {% if bookings %}
+    <ul>
+      {% for booking in bookings %}
+        <li>{{ booking.customer_name }} - {{ booking.reservation_date }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No bookings found.</p>
+  {% endif %}
+{% endblock %}

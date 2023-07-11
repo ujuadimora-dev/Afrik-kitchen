@@ -1,0 +1,302 @@
+2023-07-11 13:34:37.090 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2"
+
+2023-07-11 13:34:37.899 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "3"
+
+2023-07-11 13:34:37.952 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "4"
+
+2023-07-11 13:34:38.006 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "6"
+
+2023-07-11 13:34:38.008 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "7"
+
+2023-07-11 14:11:58.414 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "82"
+
+2023-07-11 14:12:01.802 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "87"
+
+2023-07-11 14:12:05.794 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "91"
+
+2023-07-11 14:24:32.572 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "156"
+
+2023-07-11 14:26:17.399 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "159"
+
+2023-07-11 14:29:35.752 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "170"
+
+2023-07-11 14:50:20.346 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "179"
+
+2023-07-11 14:52:59.346 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "344"
+
+2023-07-11 14:55:39.998 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "421"
+
+2023-07-11 14:58:14.923 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "498"
+
+2023-07-11 14:59:11.730 [info] Exception in thread Thread-225:
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 289, in lsp_python_diagnostic
+    compile(source, uri, "exec", PyCF_ONLY_AST)
+  File "file:///workspace/Afrik-kitchen/view_menu/views.py", line 108
+    return HttpResponseRedirect(request, 'includes/403.html')
+    ^
+IndentationError: expected an indented block
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 1254, in run
+    self.function(*self.args, **self.kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 61, in run
+    return func(*args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 651, in _publish_diagnostics
+    diagnostic = jedi_utils.lsp_python_diagnostic(uri, doc.source)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 309, in lsp_python_diagnostic
+    start=Position(line=line, character=column),
+  File "<attrs generated init lsprotocol.types.Position>", line 7, in __init__
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/lsprotocol/validators.py", line 45, in uinteger_validator
+    raise ValueError(
+ValueError: Position.character should be in range [0:2147483647], but was -1.
+
+2023-07-11 14:59:12.783 [info] Exception in thread Thread-226:
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 289, in lsp_python_diagnostic
+    compile(source, uri, "exec", PyCF_ONLY_AST)
+  File "file:///workspace/Afrik-kitchen/view_menu/views.py", line 109
+    return HttpResponseRedirect(request, 'includes/403.html')
+    ^
+IndentationError: expected an indented block
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/home/gitpod/.pyenv/versions/3.8.11/lib/python3.8/threading.py", line 1254, in run
+    self.function(*self.args, **self.kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 61, in run
+    return func(*args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 651, in _publish_diagnostics
+    diagnostic = jedi_utils.lsp_python_diagnostic(uri, doc.source)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/jedi_utils.py", line 309, in lsp_python_diagnostic
+    start=Position(line=line, character=column),
+  File "<attrs generated init lsprotocol.types.Position>", line 7, in __init__
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/lsprotocol/validators.py", line 45, in uinteger_validator
+    raise ValueError(
+ValueError: Position.character should be in range [0:2147483647], but was -1.
+
+2023-07-11 15:01:03.818 [info] ERROR:pygls.protocol:Failed to handle request 578 textDocument/codeAction CodeActionParams(text_document=TextDocumentIdentifier(uri='file:///workspace/Afrik-kitchen/view_menu/views.py'), range=105:28-105:28, context=CodeActionContext(diagnostics=[], only=None, trigger_kind=<CodeActionTriggerKind.Automatic: 2>), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 578, in code_action
+    extract_variable_refactoring = jedi_script.extract_variable(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper
+    return func(self, line, column, *args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 615, in extract_variable
+    return extract_variable(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 19, in extract_variable
+    nodes = _find_nodes(module_node, pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 87, in _find_nodes
+    nodes = _remove_unwanted_expression_nodes(parent_node, pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 198, in _remove_unwanted_expression_nodes
+    nodes[0:1] = _remove_unwanted_expression_nodes(nodes[0], pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 196, in _remove_unwanted_expression_nodes
+    nodes = nodes[start_index:end_index + 1]
+UnboundLocalError: local variable 'start_index' referenced before assignment
+
+2023-07-11 15:01:03.822 [info] [Error - 3:01:03 PM] Request textDocument/codeAction failed.
+2023-07-11 15:01:03.822 [info]   Message: UnboundLocalError: local variable 'start_index' referenced before assignment
+  Code: -32602 
+{'traceback': ['  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request\n    self._execute_request(msg_id, handler, params)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request\n    self._send_response(msg_id, handler(params))\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 578, in code_action\n    extract_variable_refactoring = jedi_script.extract_variable(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper\n    return func(self, line, column, *args, **kwargs)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 615, in extract_variable\n    return extract_variable(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 19, in extract_variable\n    nodes = _find_nodes(module_node, pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 87, in _find_nodes\n    nodes = _remove_unwanted_expression_nodes(parent_node, pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 198, in _remove_unwanted_expression_nodes\n    nodes[0:1] = _remove_unwanted_expression_nodes(nodes[0], pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 196, in _remove_unwanted_expression_nodes\n    nodes = nodes[start_index:end_index + 1]\n']}
+2023-07-11 15:01:05.193 [info] ERROR:pygls.protocol:Failed to handle request 580 textDocument/codeAction CodeActionParams(text_document=TextDocumentIdentifier(uri='file:///workspace/Afrik-kitchen/view_menu/views.py'), range=105:27-105:27, context=CodeActionContext(diagnostics=[], only=None, trigger_kind=<CodeActionTriggerKind.Automatic: 2>), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 578, in code_action
+    extract_variable_refactoring = jedi_script.extract_variable(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper
+    return func(self, line, column, *args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 615, in extract_variable
+    return extract_variable(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 19, in extract_variable
+    nodes = _find_nodes(module_node, pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 87, in _find_nodes
+    nodes = _remove_unwanted_expression_nodes(parent_node, pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 198, in _remove_unwanted_expression_nodes
+    nodes[0:1] = _remove_unwanted_expression_nodes(nodes[0], pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 196, in _remove_unwanted_expression_nodes
+    nodes = nodes[start_index:end_index + 1]
+UnboundLocalError: local variable 'start_index' referenced before assignment
+
+2023-07-11 15:01:05.194 [info] [Error - 3:01:05 PM] Request textDocument/codeAction failed.
+2023-07-11 15:01:05.194 [info]   Message: UnboundLocalError: local variable 'start_index' referenced before assignment
+  Code: -32602 
+{'traceback': ['  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request\n    self._execute_request(msg_id, handler, params)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request\n    self._send_response(msg_id, handler(params))\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 578, in code_action\n    extract_variable_refactoring = jedi_script.extract_variable(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper\n    return func(self, line, column, *args, **kwargs)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 615, in extract_variable\n    return extract_variable(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 19, in extract_variable\n    nodes = _find_nodes(module_node, pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 87, in _find_nodes\n    nodes = _remove_unwanted_expression_nodes(parent_node, pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 198, in _remove_unwanted_expression_nodes\n    nodes[0:1] = _remove_unwanted_expression_nodes(nodes[0], pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 196, in _remove_unwanted_expression_nodes\n    nodes = nodes[start_index:end_index + 1]\n']}
+2023-07-11 15:01:05.195 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "580"
+
+2023-07-11 15:01:05.867 [info] ERROR:pygls.protocol:Failed to handle request 581 textDocument/codeAction CodeActionParams(text_document=TextDocumentIdentifier(uri='file:///workspace/Afrik-kitchen/view_menu/views.py'), range=105:24-105:24, context=CodeActionContext(diagnostics=[], only=None, trigger_kind=<CodeActionTriggerKind.Automatic: 2>), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 578, in code_action
+    extract_variable_refactoring = jedi_script.extract_variable(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper
+    return func(self, line, column, *args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 615, in extract_variable
+    return extract_variable(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 19, in extract_variable
+    nodes = _find_nodes(module_node, pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 87, in _find_nodes
+    nodes = _remove_unwanted_expression_nodes(parent_node, pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 198, in _remove_unwanted_expression_nodes
+    nodes[0:1] = _remove_unwanted_expression_nodes(nodes[0], pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 196, in _remove_unwanted_expression_nodes
+    nodes = nodes[start_index:end_index + 1]
+UnboundLocalError: local variable 'start_index' referenced before assignment
+
+2023-07-11 15:01:05.867 [info] [Error - 3:01:05 PM] Request textDocument/codeAction failed.
+2023-07-11 15:01:05.867 [info]   Message: UnboundLocalError: local variable 'start_index' referenced before assignment
+  Code: -32602 
+{'traceback': ['  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request\n    self._execute_request(msg_id, handler, params)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request\n    self._send_response(msg_id, handler(params))\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 578, in code_action\n    extract_variable_refactoring = jedi_script.extract_variable(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper\n    return func(self, line, column, *args, **kwargs)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 615, in extract_variable\n    return extract_variable(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 19, in extract_variable\n    nodes = _find_nodes(module_node, pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 87, in _find_nodes\n    nodes = _remove_unwanted_expression_nodes(parent_node, pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 198, in _remove_unwanted_expression_nodes\n    nodes[0:1] = _remove_unwanted_expression_nodes(nodes[0], pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 196, in _remove_unwanted_expression_nodes\n    nodes = nodes[start_index:end_index + 1]\n']}
+2023-07-11 15:01:06.555 [info] ERROR:pygls.protocol:Failed to handle request 582 textDocument/codeAction CodeActionParams(text_document=TextDocumentIdentifier(uri='file:///workspace/Afrik-kitchen/view_menu/views.py'), range=105:18-105:18, context=CodeActionContext(diagnostics=[], only=None, trigger_kind=<CodeActionTriggerKind.Automatic: 2>), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 578, in code_action
+    extract_variable_refactoring = jedi_script.extract_variable(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper
+    return func(self, line, column, *args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 615, in extract_variable
+    return extract_variable(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 19, in extract_variable
+    nodes = _find_nodes(module_node, pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 87, in _find_nodes
+    nodes = _remove_unwanted_expression_nodes(parent_node, pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 198, in _remove_unwanted_expression_nodes
+    nodes[0:1] = _remove_unwanted_expression_nodes(nodes[0], pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 196, in _remove_unwanted_expression_nodes
+    nodes = nodes[start_index:end_index + 1]
+UnboundLocalError: local variable 'start_index' referenced before assignment
+
+2023-07-11 15:01:06.555 [info] [Error - 3:01:06 PM] Request textDocument/codeAction failed.
+2023-07-11 15:01:06.555 [info]   Message: UnboundLocalError: local variable 'start_index' referenced before assignment
+  Code: -32602 
+{'traceback': ['  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request\n    self._execute_request(msg_id, handler, params)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request\n    self._send_response(msg_id, handler(params))\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 578, in code_action\n    extract_variable_refactoring = jedi_script.extract_variable(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper\n    return func(self, line, column, *args, **kwargs)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 615, in extract_variable\n    return extract_variable(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 19, in extract_variable\n    nodes = _find_nodes(module_node, pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 87, in _find_nodes\n    nodes = _remove_unwanted_expression_nodes(parent_node, pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 198, in _remove_unwanted_expression_nodes\n    nodes[0:1] = _remove_unwanted_expression_nodes(nodes[0], pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 196, in _remove_unwanted_expression_nodes\n    nodes = nodes[start_index:end_index + 1]\n']}
+2023-07-11 15:01:06.556 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "582"
+
+2023-07-11 15:01:07.201 [info] ERROR:pygls.protocol:Failed to handle request 583 textDocument/codeAction CodeActionParams(text_document=TextDocumentIdentifier(uri='file:///workspace/Afrik-kitchen/view_menu/views.py'), range=105:15-105:15, context=CodeActionContext(diagnostics=[], only=None, trigger_kind=<CodeActionTriggerKind.Automatic: 2>), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 578, in code_action
+    extract_variable_refactoring = jedi_script.extract_variable(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper
+    return func(self, line, column, *args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 615, in extract_variable
+    return extract_variable(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 19, in extract_variable
+    nodes = _find_nodes(module_node, pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 87, in _find_nodes
+    nodes = _remove_unwanted_expression_nodes(parent_node, pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 198, in _remove_unwanted_expression_nodes
+    nodes[0:1] = _remove_unwanted_expression_nodes(nodes[0], pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 196, in _remove_unwanted_expression_nodes
+    nodes = nodes[start_index:end_index + 1]
+UnboundLocalError: local variable 'start_index' referenced before assignment
+
+2023-07-11 15:01:07.202 [info] [Error - 3:01:07 PM] Request textDocument/codeAction failed.
+2023-07-11 15:01:07.202 [info]   Message: UnboundLocalError: local variable 'start_index' referenced before assignment
+  Code: -32602 
+{'traceback': ['  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request\n    self._execute_request(msg_id, handler, params)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request\n    self._send_response(msg_id, handler(params))\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 578, in code_action\n    extract_variable_refactoring = jedi_script.extract_variable(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper\n    return func(self, line, column, *args, **kwargs)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 615, in extract_variable\n    return extract_variable(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 19, in extract_variable\n    nodes = _find_nodes(module_node, pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 87, in _find_nodes\n    nodes = _remove_unwanted_expression_nodes(parent_node, pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 198, in _remove_unwanted_expression_nodes\n    nodes[0:1] = _remove_unwanted_expression_nodes(nodes[0], pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 196, in _remove_unwanted_expression_nodes\n    nodes = nodes[start_index:end_index + 1]\n']}
+2023-07-11 15:01:08.409 [info] ERROR:pygls.protocol:Failed to handle request 586 textDocument/codeAction CodeActionParams(text_document=TextDocumentIdentifier(uri='file:///workspace/Afrik-kitchen/view_menu/views.py'), range=105:18-105:18, context=CodeActionContext(diagnostics=[], only=None, trigger_kind=<CodeActionTriggerKind.Automatic: 2>), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 578, in code_action
+    extract_variable_refactoring = jedi_script.extract_variable(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper
+    return func(self, line, column, *args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 615, in extract_variable
+    return extract_variable(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 19, in extract_variable
+    nodes = _find_nodes(module_node, pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 87, in _find_nodes
+    nodes = _remove_unwanted_expression_nodes(parent_node, pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 198, in _remove_unwanted_expression_nodes
+    nodes[0:1] = _remove_unwanted_expression_nodes(nodes[0], pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 196, in _remove_unwanted_expression_nodes
+    nodes = nodes[start_index:end_index + 1]
+UnboundLocalError: local variable 'start_index' referenced before assignment
+
+2023-07-11 15:01:08.409 [info] [Error - 3:01:08 PM] Request textDocument/codeAction failed.
+2023-07-11 15:01:08.409 [info]   Message: UnboundLocalError: local variable 'start_index' referenced before assignment
+  Code: -32602 
+{'traceback': ['  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request\n    self._execute_request(msg_id, handler, params)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request\n    self._send_response(msg_id, handler(params))\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 578, in code_action\n    extract_variable_refactoring = jedi_script.extract_variable(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper\n    return func(self, line, column, *args, **kwargs)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 615, in extract_variable\n    return extract_variable(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 19, in extract_variable\n    nodes = _find_nodes(module_node, pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 87, in _find_nodes\n    nodes = _remove_unwanted_expression_nodes(parent_node, pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 198, in _remove_unwanted_expression_nodes\n    nodes[0:1] = _remove_unwanted_expression_nodes(nodes[0], pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 196, in _remove_unwanted_expression_nodes\n    nodes = nodes[start_index:end_index + 1]\n']}
+2023-07-11 15:01:09.549 [info] ERROR:pygls.protocol:Failed to handle request 588 textDocument/codeAction CodeActionParams(text_document=TextDocumentIdentifier(uri='file:///workspace/Afrik-kitchen/view_menu/views.py'), range=105:20-105:20, context=CodeActionContext(diagnostics=[], only=None, trigger_kind=<CodeActionTriggerKind.Automatic: 2>), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 578, in code_action
+    extract_variable_refactoring = jedi_script.extract_variable(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper
+    return func(self, line, column, *args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 615, in extract_variable
+    return extract_variable(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 19, in extract_variable
+    nodes = _find_nodes(module_node, pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 87, in _find_nodes
+    nodes = _remove_unwanted_expression_nodes(parent_node, pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 198, in _remove_unwanted_expression_nodes
+    nodes[0:1] = _remove_unwanted_expression_nodes(nodes[0], pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 196, in _remove_unwanted_expression_nodes
+    nodes = nodes[start_index:end_index + 1]
+UnboundLocalError: local variable 'start_index' referenced before assignment
+
+2023-07-11 15:01:09.550 [info] [Error - 3:01:09 PM] Request textDocument/codeAction failed.
+2023-07-11 15:01:09.550 [info]   Message: UnboundLocalError: local variable 'start_index' referenced before assignment
+  Code: -32602 
+{'traceback': ['  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request\n    self._execute_request(msg_id, handler, params)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request\n    self._send_response(msg_id, handler(params))\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 578, in code_action\n    extract_variable_refactoring = jedi_script.extract_variable(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper\n    return func(self, line, column, *args, **kwargs)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 615, in extract_variable\n    return extract_variable(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 19, in extract_variable\n    nodes = _find_nodes(module_node, pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 87, in _find_nodes\n    nodes = _remove_unwanted_expression_nodes(parent_node, pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 198, in _remove_unwanted_expression_nodes\n    nodes[0:1] = _remove_unwanted_expression_nodes(nodes[0], pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 196, in _remove_unwanted_expression_nodes\n    nodes = nodes[start_index:end_index + 1]\n']}
+2023-07-11 15:01:10.481 [info] ERROR:pygls.protocol:Failed to handle request 591 textDocument/codeAction CodeActionParams(text_document=TextDocumentIdentifier(uri='file:///workspace/Afrik-kitchen/view_menu/views.py'), range=105:20-105:20, context=CodeActionContext(diagnostics=[], only=None, trigger_kind=<CodeActionTriggerKind.Automatic: 2>), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 578, in code_action
+    extract_variable_refactoring = jedi_script.extract_variable(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper
+    return func(self, line, column, *args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 615, in extract_variable
+    return extract_variable(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 19, in extract_variable
+    nodes = _find_nodes(module_node, pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 87, in _find_nodes
+    nodes = _remove_unwanted_expression_nodes(parent_node, pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 198, in _remove_unwanted_expression_nodes
+    nodes[0:1] = _remove_unwanted_expression_nodes(nodes[0], pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 196, in _remove_unwanted_expression_nodes
+    nodes = nodes[start_index:end_index + 1]
+UnboundLocalError: local variable 'start_index' referenced before assignment
+
+2023-07-11 15:01:10.481 [info] [Error - 3:01:10 PM] Request textDocument/codeAction failed.
+2023-07-11 15:01:10.481 [info]   Message: UnboundLocalError: local variable 'start_index' referenced before assignment
+  Code: -32602 
+{'traceback': ['  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request\n    self._execute_request(msg_id, handler, params)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request\n    self._send_response(msg_id, handler(params))\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 578, in code_action\n    extract_variable_refactoring = jedi_script.extract_variable(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper\n    return func(self, line, column, *args, **kwargs)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 615, in extract_variable\n    return extract_variable(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 19, in extract_variable\n    nodes = _find_nodes(module_node, pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 87, in _find_nodes\n    nodes = _remove_unwanted_expression_nodes(parent_node, pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 198, in _remove_unwanted_expression_nodes\n    nodes[0:1] = _remove_unwanted_expression_nodes(nodes[0], pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 196, in _remove_unwanted_expression_nodes\n    nodes = nodes[start_index:end_index + 1]\n']}
+2023-07-11 15:01:12.599 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "592"
+
+2023-07-11 15:01:23.961 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "609"
+
+2023-07-11 15:02:50.566 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "695"
+

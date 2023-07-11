@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Rebook Booking</h2>
+  <p>Are you sure you want to Reboot the booking for {{ booking.user }}?</p>
+  <form method="POST" action="{% url 'rebook_booking' booking.id %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Rebook Booking</button>
+  </form>
+{% endblock %}

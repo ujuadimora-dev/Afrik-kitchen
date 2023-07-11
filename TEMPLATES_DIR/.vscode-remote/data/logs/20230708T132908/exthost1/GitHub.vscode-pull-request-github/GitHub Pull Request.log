@@ -1,0 +1,13 @@
+2023-07-08 13:29:25.843 [warning] /home/gitpod/.ssh/config: ENOENT: no such file or directory, open '/home/gitpod/.ssh/config'
+2023-07-08 13:29:26.542 [info] Looking for git repository
+2023-07-08 13:29:26.542 [info] Found 0 repositories during activation
+2023-07-08 13:29:26.542 [info] Git repository found, initializing review manager and pr tree view.
+2023-07-08 13:29:26.606 [info] Registering git provider
+2023-07-08 13:29:26.606 [info] Review> Validate state in progress
+2023-07-08 13:29:26.606 [info] Review> Validating state...
+2023-07-08 13:29:26.756 [info] Found GitHub remote for folder /workspace/Afrik-kitchen
+2023-07-08 13:29:26.889 [info] Repo state for file:///workspace/Afrik-kitchen changed.
+2023-07-08 13:29:26.889 [info] Repo file:///workspace/Afrik-kitchen has already been setup.
+2023-07-08 13:29:26.889 [info] Review> No matching pull request metadata found locally for current branch main
+2023-07-08 13:29:26.889 [info] Review> no matching pull request metadata found for current branch main
+2023-07-08 13:29:26.890 [info] Review> No matching pull request metadata found on GitHub for current branch main

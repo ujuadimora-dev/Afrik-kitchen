@@ -1,0 +1,99 @@
+2023-07-08 13:29:25.179 [info] Test server listening.
+2023-07-08 13:29:25.423 [info] > ~/.pyenv/versions/3.8.11/bin/python -I /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/interpreterInfo.py
+2023-07-08 13:29:25.461 [info] Python interpreter path: ~/.pyenv/versions/3.8.11/bin/python
+2023-07-08 13:29:27.040 [info] Starting Jedi language server for Afrik-kitchen.
+2023-07-08 13:35:13.972 [info] > conda info --json
+2023-07-08 13:35:14.109 [info] Found: /bin/python3 --> /bin/python3.10
+2023-07-08 13:35:14.121 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-08 13:35:14.121 [info] cwd: .
+2023-07-08 13:35:14.122 [info] Found: /bin/python3.10 --> /bin/python3.10
+2023-07-08 13:35:14.216 [info] Found: /usr/bin/python3 --> /usr/bin/python3.10
+2023-07-08 13:35:14.216 [info] Found: /usr/bin/python3.10 --> /usr/bin/python3.10
+2023-07-08 13:35:14.252 [info] > /bin/python3 -I /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/interpreterInfo.py
+2023-07-08 13:35:14.310 [info] > /usr/bin/python3 -I /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/interpreterInfo.py
+2023-07-08 13:35:14.319 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-08 13:35:14.319 [info] 1,80,E,E501:line too long (81 > 79 characters)
+16,1,E,E303:too many blank lines (3)
+20,1,E,E303:too many blank lines (3)
+26,5,E,E265:block comment should start with '# '
+34,9,E,E265:block comment should start with '# '
+35,80,E,E501:line too long (91 > 79 characters)
+41,5,E,E265:block comment should start with '# '
+46,1,E,E303:too many blank lines (3)
+49,5,E,E301:expected 1 blank line, found 0
+63,1,W,W293:blank line contains whitespace
+66,80,E,E501:line too long (83 > 79 characters)
+75,80,E,E501:line too long (91 > 79 characters)
+77,46,W,W291:trailing whitespace
+86,9,E,E303:too many blank lines (2)
+88,80,E,E501:line too long (90 > 79 characters)
+91,1,W,W293:blank line contains whitespace
+92,9,E,E303:too many blank lines (2)
+106,80,E,E501:line too long (91 > 79 characters)
+112,38,W,W291:trailing whitespace
+113,1,W,W293:blank line contains whitespace
+121,80,E,E501:line too long (81 > 79 characters)
+122,80,E,E501:line too long (86 > 79 characters)
+134,80,E,E501:line too long (94 > 79 characters)
+136,1,E,E302:expected 2 blank lines, found 1
+145,1,E,E303:too many blank lines (3)
+156,1,E,E302:expected 2 blank lines, found 1
+162,1,E,E302:expected 2 blank lines, found 1
+168,1,E,E302:expected 2 blank lines, found 1
+178,1,W,W391:blank line at end of file
+
+2023-07-08 13:36:06.760 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/forms.py
+2023-07-08 13:36:06.760 [info] cwd: .
+2023-07-08 13:36:06.840 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-08 13:36:06.840 [info] 27,5,E,E265:block comment should start with '# '
+27,80,E,E501:line too long (82 > 79 characters)
+40,1,W,W391:blank line at end of file
+
+2023-07-08 13:36:12.294 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/urls.py
+2023-07-08 13:36:12.295 [info] cwd: .
+2023-07-08 13:36:12.373 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-08 13:36:12.373 [info] 2,80,E,E501:line too long (101 > 79 characters)
+11,5,E,E265:block comment should start with '# '
+12,5,E,E265:block comment should start with '# '
+13,80,E,E501:line too long (80 > 79 characters)
+14,4,E,E131:continuation line unaligned for hanging indent
+29,1,W,W391:blank line at end of file
+
+2023-07-08 13:42:12.054 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/models.py
+2023-07-08 13:42:12.054 [info] cwd: .
+2023-07-08 13:42:12.154 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-08 13:42:12.154 [info] 10,1,W,W293:blank line contains whitespace
+13,8,E,E131:continuation line unaligned for hanging indent
+14,10,E,E201:whitespace after '('
+16,9,E,E265:block comment should start with '# '
+20,9,E,E265:block comment should start with '# '
+22,1,W,W293:blank line contains whitespace
+34,1,W,W293:blank line contains whitespace
+41,1,W,W293:blank line contains whitespace
+50,1,W,W293:blank line contains whitespace
+51,5,E,E303:too many blank lines (2)
+52,1,W,W293:blank line contains whitespace
+53,80,E,E501:line too long (93 > 79 characters)
+54,80,E,E501:line too long (104 > 79 characters)
+59,80,E,E501:line too long (184 > 79 characters)
+61,1,W,W293:blank line contains whitespace
+63,1,E,E303:too many blank lines (3)
+65,1,W,W293:blank line contains whitespace
+70,10,E,E201:whitespace after '('
+71,3,E,E122:continuation line missing indentation or outdented
+71,4,W,W291:trailing whitespace
+73,80,E,E501:line too long (80 > 79 characters)
+73,81,W,W291:trailing whitespace
+74,1,W,W293:blank line contains whitespace
+77,80,E,E501:line too long (104 > 79 characters)
+77,86,E,E251:unexpected spaces around keyword / parameter equals
+78,1,W,W293:blank line contains whitespace
+80,1,W,W293:blank line contains whitespace
+81,5,E,E303:too many blank lines (3)
+82,80,E,E501:line too long (135 > 79 characters)
+84,1,W,W391:blank line at end of file
+

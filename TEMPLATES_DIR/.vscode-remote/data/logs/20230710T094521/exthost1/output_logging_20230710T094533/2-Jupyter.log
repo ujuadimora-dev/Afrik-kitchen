@@ -1,0 +1,12 @@
+Gitpod Code (1.80.0, ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu101.gitpod.io, Gitpod)
+Jupyter Extension Version: 2023.3.100.
+Python Extension Version: 2023.12.0.
+Workspace folder /workspace/Afrik-kitchen
+info 09:45:36.451: LSP Notebooks experiment is enabled
+warn 09:45:39.276: Failed to get activated env vars for /home/gitpod/.pyenv/versions/3.8.11/bin/python in 2124ms
+error 09:45:39.278: Unable to determine site packages path for python /home/gitpod/.pyenv/versions/3.8.11/bin/python (Pyenv)
+info 09:45:39.305: Process Execution: > ~/.pyenv/versions/3.8.11/bin/python -m pip list
+> ~/.pyenv/versions/3.8.11/bin/python -m pip list
+info 15:17:23.381: Shutting down notebooks for d0e2d9e3-f87a-4daa-ae3d-c4837a71da9f
+info 15:17:23.381: Disposing HostJupyterExecution 91965562-49ee-4379-a900-9106dae27590
+info 15:17:23.381: Disposing HostJupyterExecution 91965562-49ee-4379-a900-9106dae27590

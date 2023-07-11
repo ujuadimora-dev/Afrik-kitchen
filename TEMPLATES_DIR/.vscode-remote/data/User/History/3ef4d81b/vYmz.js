@@ -1,0 +1,1 @@
+document.querySelector('#test').innerHTML = 'Afrik Kitchen';

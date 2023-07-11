@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/table_list.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container-wrapper">
+  <div class="table-img">
+    <img src="{% static 'images/afrik_logo.png' %}" alt="African Kitchen background" width="200" height="100">
+  </div>
+  <div class="content-wrapper main-column">
+    <div class="text-area content">
+      <!-- Title and about us sections -->
+      <h1 class="text-center"><span>There are a lot of categories of Table to choose from</span></h1>
+      <p>
+        Make your choice
+      </p>
+      <div>
+        
+        <div class="container-wrapper1">
+          <h2>Tables</h2>
+          <!-- Main Content -->
+          <div id="content">
+            {% for table_capacity, table_url in table_list %}
+            <div class="table">
+              <a href="{{table_url}}">
+                <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" />
+                <h2>{{table_capacity}} Table capacity</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                </p>
+              </a>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

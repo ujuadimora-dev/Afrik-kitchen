@@ -1,0 +1,71 @@
+2023-07-11 07:29:08.721 [info] Test server listening.
+2023-07-11 07:29:08.784 [info] > ~/.pyenv/versions/3.8.11/bin/python -I /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/interpreterInfo.py
+2023-07-11 07:29:08.815 [info] Python interpreter path: ~/.pyenv/versions/3.8.11/bin/python
+2023-07-11 07:29:10.451 [info] Starting Jedi language server for Afrik-kitchen.
+2023-07-11 07:29:56.381 [info] Running installed packages checker:  python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/installed_check.py /workspace/Afrik-kitchen/requirements.txt
+2023-07-11 07:43:17.658 [info] > conda info --json
+2023-07-11 07:43:17.727 [info] Found: /bin/python3 --> /bin/python3.10
+2023-07-11 07:43:17.744 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./afrik_kitchen/urls.py
+2023-07-11 07:43:17.744 [info] cwd: .
+2023-07-11 07:43:17.746 [info] Found: /bin/python3.10 --> /bin/python3.10
+2023-07-11 07:43:17.865 [info] Found: /usr/bin/python3 --> /usr/bin/python3.10
+2023-07-11 07:43:17.866 [info] Found: /usr/bin/python3.10 --> /usr/bin/python3.10
+2023-07-11 07:43:17.900 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-11 07:43:17.901 [info] 37,1,E,E303:too many blank lines (3)
+45,80,E,E501:line too long (83 > 79 characters)
+47,80,E,E501:line too long (82 > 79 characters)
+52,1,W,W293:blank line contains whitespace
+54,1,W,W293:blank line contains whitespace
+69,5,E,E265:block comment should start with '# '
+71,1,W,W293:blank line contains whitespace
+74,4,E,E131:continuation line unaligned for hanging indent
+
+2023-07-11 07:43:17.959 [info] > /bin/python3 -I /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/interpreterInfo.py
+2023-07-11 07:43:17.992 [info] > /usr/bin/python3 -I /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/interpreterInfo.py
+2023-07-11 07:44:04.834 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./afrik_kitchen/settings.py
+2023-07-11 07:44:04.834 [info] cwd: .
+2023-07-11 07:44:04.956 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-11 07:44:04.956 [info] 24,1,E,E303:too many blank lines (4)
+33,1,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (82 > 79 characters)
+40,80,E,E501:line too long (247 > 79 characters)
+40,123,E,E231:missing whitespace after ','
+54,6,E,E131:continuation line unaligned for hanging indent
+55,28,E,E261:at least two spaces before inline comment
+56,15,E,E261:at least two spaces before inline comment
+57,23,E,E261:at least two spaces before inline comment
+58,29,E,E261:at least two spaces before inline comment
+61,5,E,E265:block comment should start with '# '
+63,5,E,E265:block comment should start with '# '
+64,5,E,E265:block comment should start with '# '
+67,5,E,E265:block comment should start with '# '
+70,5,E,E265:block comment should start with '# '
+71,5,E,E265:block comment should start with '# '
+86,5,E,E265:block comment should start with '# '
+95,5,E,E265:block comment should start with '# '
+125,1,E,E265:block comment should start with '# '
+126,5,E,E116:unexpected indentation (comment)
+126,5,E,E265:block comment should start with '# '
+127,9,E,E116:unexpected indentation (comment)
+127,9,E,E265:block comment should start with '# '
+128,9,E,E116:unexpected indentation (comment)
+128,9,E,E265:block comment should start with '# '
+129,5,E,E116:unexpected indentation (comment)
+129,5,E,E265:block comment should start with '# '
+130,1,E,E265:block comment should start with '# '
+140,1,E,E303:too many blank lines (5)
+145,80,E,E501:line too long (91 > 79 characters)
+148,80,E,E501:line too long (81 > 79 characters)
+151,80,E,E501:line too long (82 > 79 characters)
+154,80,E,E501:line too long (83 > 79 characters)
+189,42,E,E231:missing whitespace after ','
+191,80,E,E501:line too long (80 > 79 characters)
+203,1,W,W391:blank line at end of file
+
+2023-07-11 08:06:16.570 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./home/apps.py
+2023-07-11 08:06:16.571 [info] cwd: .
+2023-07-11 08:06:16.647 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-11 08:06:16.647 [info] 

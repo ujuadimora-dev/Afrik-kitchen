@@ -1,0 +1,79 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking List</title>
+    <script src="https://kit.fontawesome.com/692189991f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static '/css/booking_list.css' %}">
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <div class="headings">
+                <h1>Your Bookings</h1>
+                <h2>Welcome, dear {{ user }}</h2>
+            </div>
+            <div class="home">
+                <!-- Div 1: Back to Home -->
+                <div class="home">
+                    <a href="{% url 'booking:TableListView' %}"><i class="fas fa-arrow-alt-circle-left"></i> Home</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bookings">
+            {% for booking in booking_list %}
+            <div class="booking">
+                <div class="number">
+                    <h2>{{ booking.table.table_number }} Table number</h2>
+                </div>
+                <div class="capacity">
+                    <h2>{{ booking.table.capacity }} Table capacities</h2>
+                </div>
+                <div class="on">
+                    <h3>On: {{ booking.reservation_date }}</h3>
+                </div>
+                <div class="at">
+                    <h3>At: {{ booking.reservation_time }}</h3>
+                </div>
+                <div class="position">
+                    <h3>Position: {{ booking.table.table_position }}</h3>
+                </div>
+                <div class="category">
+                    <h3>wheelchair accessibility: {{ booking.table.wheelchair_accessible }}</h3>
+                </div>
+                <div class="actions">
+                    <!-- Cancel Booking -->
+                    <form method="POST" action="{% url 'booking:cancel' booking.table_capacity %}">
+                        {% csrf_token %}
+                        <button type="submit" class="btn-cancel"><i class="far fa-times-circle"></i> Cancel Booking</button>
+                    </form>
+                    <!-- Delete Booking -->
+                    <form method="POST" action="{% url 'booking:delete' booking.id %}">
+                        {% csrf_token %}
+                        <button type="submit" class="btn-delete"><i class="far fa-trash-alt"></i> Delete Booking</button>
+                    </form>
+                    <!-- Reboot Booking -->
+                    <form method="POST" action="{% url 'booking:reboot' booking.id %}">
+                        {% csrf_token %}
+                        <button type="submit" class="btn-reboot"><i class="far fa-sync-alt"></i> Reboot Booking</button>
+                    </form>
+                    <!-- Update Booking -->
+                    <form method="POST" action="{% url 'booking:update' booking.id %}">
+                        {% csrf_token %}
+                        <button type="submit" class="btn-update"><i class="far fa-edit"></i> Update Booking</button>
+                    </form>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+
+</html>

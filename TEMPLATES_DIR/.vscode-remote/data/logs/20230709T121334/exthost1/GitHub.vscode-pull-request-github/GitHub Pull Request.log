@@ -1,0 +1,37 @@
+2023-07-09 12:13:47.633 [warning] /home/gitpod/.ssh/config: ENOENT: no such file or directory, open '/home/gitpod/.ssh/config'
+2023-07-09 12:13:52.724 [info] Looking for git repository
+2023-07-09 12:13:52.724 [info] Found 0 repositories during activation
+2023-07-09 12:13:52.724 [info] Git repository found, initializing review manager and pr tree view.
+2023-07-09 12:13:52.728 [info] Registering git provider
+2023-07-09 12:13:52.728 [info] Review> Validate state in progress
+2023-07-09 12:13:52.728 [info] Review> Validating state...
+2023-07-09 12:13:52.822 [info] Found GitHub remote for folder /workspace/Afrik-kitchen
+2023-07-09 12:13:52.921 [info] Repo state for file:///workspace/Afrik-kitchen changed.
+2023-07-09 12:13:52.921 [info] Repo file:///workspace/Afrik-kitchen has already been setup.
+2023-07-09 12:13:52.921 [info] Review> No matching pull request metadata found locally for current branch main
+2023-07-09 12:13:52.921 [info] Review> no matching pull request metadata found for current branch main
+2023-07-09 12:13:52.921 [info] Review> No matching pull request metadata found on GitHub for current branch main
+2023-07-09 13:56:20.122 [info] Review> Validate state in progress
+2023-07-09 13:56:20.122 [info] Review> Validating state...
+2023-07-09 13:56:20.180 [info] Found GitHub remote for folder /workspace/Afrik-kitchen
+2023-07-09 13:56:20.209 [info] Review> No matching pull request metadata found locally for current branch main
+2023-07-09 13:56:20.209 [info] Review> no matching pull request metadata found for current branch main
+2023-07-09 13:56:20.209 [info] Review> No matching pull request metadata found on GitHub for current branch main
+2023-07-09 13:56:34.937 [info] Review> Validate state in progress
+2023-07-09 13:56:34.937 [info] Review> Validating state...
+2023-07-09 13:56:34.974 [info] Found GitHub remote for folder /workspace/Afrik-kitchen
+2023-07-09 13:56:35.003 [info] Review> No matching pull request metadata found locally for current branch main
+2023-07-09 13:56:35.004 [info] Review> no matching pull request metadata found for current branch main
+2023-07-09 13:56:35.004 [info] Review> No matching pull request metadata found on GitHub for current branch main
+2023-07-09 17:56:49.909 [info] Review> Validate state in progress
+2023-07-09 17:56:49.910 [info] Review> Validating state...
+2023-07-09 17:56:50.009 [info] Found GitHub remote for folder /workspace/Afrik-kitchen
+2023-07-09 17:56:50.215 [info] Review> No matching pull request metadata found locally for current branch main
+2023-07-09 17:56:50.215 [info] Review> no matching pull request metadata found for current branch main
+2023-07-09 17:56:50.215 [info] Review> No matching pull request metadata found on GitHub for current branch main
+2023-07-09 17:57:12.320 [info] Review> Validate state in progress
+2023-07-09 17:57:12.320 [info] Review> Validating state...
+2023-07-09 17:57:12.374 [info] Found GitHub remote for folder /workspace/Afrik-kitchen
+2023-07-09 17:57:12.398 [info] Review> No matching pull request metadata found locally for current branch main
+2023-07-09 17:57:12.398 [info] Review> no matching pull request metadata found for current branch main
+2023-07-09 17:57:12.398 [info] Review> No matching pull request metadata found on GitHub for current branch main

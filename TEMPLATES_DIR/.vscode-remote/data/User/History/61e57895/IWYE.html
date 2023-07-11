@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1 class=" text-center green-heading cursive-heading" >Create Menu</h1>
+    <form method="POST" action="{% url 'menu:create' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn-success">Create Menu</button>
+    </form>
+
+{% endblock %}
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h1 class="text-center green-heading cursive-heading">Create Menu</h1>
+    <form method="POST" action="{% url 'view_menu:create_menu' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn-success">Create Menu</button>
+    </form>
+
+{% endblock %}
+
+
+
+

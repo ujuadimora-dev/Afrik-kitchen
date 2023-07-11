@@ -1,0 +1,51 @@
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{% endblock %}</title>
+  <script src="https://kit.fontawesome.com/692189991f.js" crossorigin="anonymous"></script>
+
+  <!-- Main StyleSheet -->
+  <link rel="stylesheet" href="{% static 'css/table_detail.css' %}">
+  {% block extra_css %}{% endblock %}
+</head>
+
+<body>
+
+  <!-- Main Content -->
+  <div class="content">
+
+    <!-- Room Details -->
+    <div class="table">
+
+      <!-- Div 1: Back to Home -->
+      <div class="home">
+        <a href="{% url 'booking:TableListView' %}" class="white_color"><i class="fas fa-arrow-alt-circle-left "></i>
+          Booking Home</a>
+      </div>
+
+      <!-- Div 3: Table Booking Form -->
+      <form id="booking-form" action="" method="POST">
+        {% csrf_token %}
+        <h2> are you sure You want to cancel this booking? <br>Details: </h2>
+        <h2> {{booking.table.number}}{{table.get_table_capacity}} {{booking}} </h2>
+
+        <!-- Input Div -->
+        <div class="input-div">
+          <button type="submit">Cancel the  Booking</button>
+        </div>
+      </form>
+
+    </div>
+  </div> <!-- END Main Content Div -->
+
+</body>
+
+</html>
+

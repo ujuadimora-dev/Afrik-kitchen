@@ -1,0 +1,46 @@
+2023-07-07 12:48:07.059 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2"
+
+2023-07-07 12:48:07.072 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "3"
+
+2023-07-07 12:48:07.081 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "4"
+
+2023-07-07 13:19:31.223 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "14"
+
+2023-07-07 13:19:32.415 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "15"
+
+2023-07-07 13:23:12.625 [info] ERROR:pygls.protocol:Failed to handle request 106 textDocument/hover HoverParams(text_document=TextDocumentIdentifier(uri='file:///workspace/Afrik-kitchen/booking/urls.py'), position=17:0, work_done_token=None)
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 378, in hover
+    jedi_script.help(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper
+    raise ValueError('`column` parameter (%d) is not in a valid range '
+ValueError: `column` parameter (1) is not in a valid range (0-0) for line 18 ('\n').
+
+2023-07-07 13:23:12.639 [info] [Error - 1:23:12 PM] Request textDocument/hover failed.
+2023-07-07 13:23:12.639 [info]   Message: ValueError: `column` parameter (1) is not in a valid range (0-0) for line 18 ('\n').
+  Code: -32602 
+{'traceback': ['  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request\n    self._execute_request(msg_id, handler, params)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request\n    self._send_response(msg_id, handler(params))\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 378, in hover\n    jedi_script.help(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper\n    raise ValueError(\'`column` parameter (%d) is not in a valid range \'\n']}
+2023-07-07 13:28:30.129 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "181"
+
+2023-07-07 13:30:05.948 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "226"
+
+2023-07-07 13:57:02.242 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "290"
+
+2023-07-07 13:58:03.507 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "317"
+
+2023-07-07 13:59:12.600 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "354"
+
+2023-07-07 13:59:56.825 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "373"
+
+2023-07-07 13:59:57.103 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "374"
+
+2023-07-07 14:00:05.097 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "388"
+
+2023-07-07 14:02:20.472 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "471"
+
+2023-07-07 14:02:21.682 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "473"
+

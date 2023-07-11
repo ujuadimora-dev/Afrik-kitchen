@@ -1,0 +1,2875 @@
+2023-07-09 12:13:49.753 [info] Test server listening.
+2023-07-09 12:13:49.865 [info] > ~/.pyenv/versions/3.8.11/bin/python -I /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/interpreterInfo.py
+2023-07-09 12:13:49.896 [info] Python interpreter path: ~/.pyenv/versions/3.8.11/bin/python
+2023-07-09 12:13:52.631 [info] Starting Jedi language server for Afrik-kitchen.
+2023-07-09 13:50:17.971 [info] > conda info --json
+2023-07-09 13:50:17.982 [info] Found: /bin/python3 --> /bin/python3.10
+2023-07-09 13:50:18.000 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/models.py
+2023-07-09 13:50:18.000 [info] cwd: .
+2023-07-09 13:50:18.001 [info] Found: /bin/python3.10 --> /bin/python3.10
+2023-07-09 13:50:18.053 [info] Found: /usr/bin/python3 --> /usr/bin/python3.10
+2023-07-09 13:50:18.056 [info] Found: /usr/bin/python3.10 --> /usr/bin/python3.10
+2023-07-09 13:50:18.079 [info] > /bin/python3 -I /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/interpreterInfo.py
+2023-07-09 13:50:18.085 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 13:50:18.085 [info] 10,1,W,W293:blank line contains whitespace
+13,8,E,E131:continuation line unaligned for hanging indent
+14,10,E,E201:whitespace after '('
+16,9,E,E265:block comment should start with '# '
+20,9,E,E265:block comment should start with '# '
+22,1,W,W293:blank line contains whitespace
+34,1,W,W293:blank line contains whitespace
+41,1,W,W293:blank line contains whitespace
+50,1,W,W293:blank line contains whitespace
+51,5,E,E303:too many blank lines (2)
+52,1,W,W293:blank line contains whitespace
+53,80,E,E501:line too long (93 > 79 characters)
+54,80,E,E501:line too long (104 > 79 characters)
+59,80,E,E501:line too long (184 > 79 characters)
+61,1,W,W293:blank line contains whitespace
+63,1,E,E303:too many blank lines (3)
+65,1,W,W293:blank line contains whitespace
+70,10,E,E201:whitespace after '('
+71,3,E,E122:continuation line missing indentation or outdented
+71,4,W,W291:trailing whitespace
+73,80,E,E501:line too long (80 > 79 characters)
+73,81,W,W291:trailing whitespace
+74,1,W,W293:blank line contains whitespace
+77,80,E,E501:line too long (104 > 79 characters)
+77,86,E,E251:unexpected spaces around keyword / parameter equals
+78,1,W,W293:blank line contains whitespace
+80,1,W,W293:blank line contains whitespace
+81,5,E,E303:too many blank lines (3)
+82,80,E,E501:line too long (135 > 79 characters)
+91,1,E,E265:block comment should start with '# '
+91,35,W,W292:no newline at end of file
+91,35,W,W292:no newline at end of file
+91,35,W,W292:no newline at end of file
+
+2023-07-09 13:50:18.115 [info] > /usr/bin/python3 -I /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/interpreterInfo.py
+2023-07-09 13:56:49.734 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 13:56:49.734 [info] cwd: .
+2023-07-09 13:56:49.820 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 13:56:49.820 [info] 1,80,E,E501:line too long (81 > 79 characters)
+17,1,E,E303:too many blank lines (3)
+21,1,E,E303:too many blank lines (3)
+27,5,E,E265:block comment should start with '# '
+35,9,E,E265:block comment should start with '# '
+36,80,E,E501:line too long (91 > 79 characters)
+42,5,E,E265:block comment should start with '# '
+47,1,E,E303:too many blank lines (3)
+50,5,E,E301:expected 1 blank line, found 0
+64,1,W,W293:blank line contains whitespace
+67,80,E,E501:line too long (83 > 79 characters)
+76,80,E,E501:line too long (91 > 79 characters)
+78,46,W,W291:trailing whitespace
+87,9,E,E303:too many blank lines (2)
+89,80,E,E501:line too long (90 > 79 characters)
+92,1,W,W293:blank line contains whitespace
+93,9,E,E303:too many blank lines (2)
+107,80,E,E501:line too long (91 > 79 characters)
+113,38,W,W291:trailing whitespace
+114,1,W,W293:blank line contains whitespace
+122,80,E,E501:line too long (81 > 79 characters)
+123,80,E,E501:line too long (86 > 79 characters)
+135,80,E,E501:line too long (94 > 79 characters)
+137,1,E,E302:expected 2 blank lines, found 1
+152,1,E,E303:too many blank lines (3)
+160,80,E,E501:line too long (94 > 79 characters)
+164,80,E,E501:line too long (93 > 79 characters)
+174,80,E,E501:line too long (106 > 79 characters)
+178,1,W,W293:blank line contains whitespace
+179,80,E,E501:line too long (94 > 79 characters)
+190,1,E,E302:expected 2 blank lines, found 3
+192,80,E,E501:line too long (93 > 79 characters)
+196,1,W,W293:blank line contains whitespace
+197,80,E,E501:line too long (92 > 79 characters)
+205,1,E,E303:too many blank lines (3)
+207,80,E,E501:line too long (93 > 79 characters)
+208,1,W,W293:blank line contains whitespace
+212,1,E,E303:too many blank lines (4)
+219,1,W,W391:blank line at end of file
+
+2023-07-09 14:04:01.823 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/forms.py
+2023-07-09 14:04:01.823 [info] cwd: .
+2023-07-09 14:04:01.899 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 14:04:01.899 [info] 27,5,E,E265:block comment should start with '# '
+27,80,E,E501:line too long (82 > 79 characters)
+40,1,W,W391:blank line at end of file
+
+2023-07-09 14:04:19.960 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/models.py
+2023-07-09 14:04:19.960 [info] cwd: .
+2023-07-09 14:04:20.033 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 14:04:20.033 [info] 10,1,W,W293:blank line contains whitespace
+13,8,E,E131:continuation line unaligned for hanging indent
+14,10,E,E201:whitespace after '('
+16,9,E,E265:block comment should start with '# '
+20,9,E,E265:block comment should start with '# '
+22,1,W,W293:blank line contains whitespace
+34,1,W,W293:blank line contains whitespace
+41,1,W,W293:blank line contains whitespace
+50,1,W,W293:blank line contains whitespace
+51,5,E,E303:too many blank lines (2)
+52,1,W,W293:blank line contains whitespace
+53,80,E,E501:line too long (93 > 79 characters)
+54,80,E,E501:line too long (104 > 79 characters)
+59,80,E,E501:line too long (184 > 79 characters)
+61,1,W,W293:blank line contains whitespace
+63,1,E,E303:too many blank lines (3)
+65,1,W,W293:blank line contains whitespace
+70,10,E,E201:whitespace after '('
+71,3,E,E122:continuation line missing indentation or outdented
+71,4,W,W291:trailing whitespace
+73,80,E,E501:line too long (80 > 79 characters)
+73,81,W,W291:trailing whitespace
+74,1,W,W293:blank line contains whitespace
+77,80,E,E501:line too long (104 > 79 characters)
+77,86,E,E251:unexpected spaces around keyword / parameter equals
+78,1,W,W293:blank line contains whitespace
+80,1,W,W293:blank line contains whitespace
+81,5,E,E303:too many blank lines (3)
+82,80,E,E501:line too long (135 > 79 characters)
+91,1,E,E265:block comment should start with '# '
+91,35,W,W292:no newline at end of file
+91,35,W,W292:no newline at end of file
+91,35,W,W292:no newline at end of file
+
+2023-07-09 14:17:19.688 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 14:17:19.688 [info] cwd: .
+2023-07-09 14:17:19.789 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 14:17:19.789 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (3)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,33,W,W291:trailing whitespace
+111,1,W,W293:blank line contains whitespace
+119,80,E,E501:line too long (81 > 79 characters)
+120,80,E,E501:line too long (86 > 79 characters)
+132,80,E,E501:line too long (94 > 79 characters)
+134,1,E,E302:expected 2 blank lines, found 1
+149,1,E,E303:too many blank lines (3)
+157,80,E,E501:line too long (94 > 79 characters)
+161,80,E,E501:line too long (93 > 79 characters)
+171,80,E,E501:line too long (106 > 79 characters)
+175,1,W,W293:blank line contains whitespace
+176,80,E,E501:line too long (94 > 79 characters)
+187,1,E,E302:expected 2 blank lines, found 3
+189,80,E,E501:line too long (93 > 79 characters)
+193,1,W,W293:blank line contains whitespace
+194,80,E,E501:line too long (92 > 79 characters)
+202,1,E,E303:too many blank lines (3)
+204,80,E,E501:line too long (93 > 79 characters)
+205,1,W,W293:blank line contains whitespace
+209,1,E,E303:too many blank lines (4)
+216,1,W,W391:blank line at end of file
+
+2023-07-09 14:17:19.899 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 14:22:50.707 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 14:22:50.707 [info] cwd: .
+2023-07-09 14:22:50.799 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 14:22:50.799 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (3)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,33,W,W291:trailing whitespace
+111,1,W,W293:blank line contains whitespace
+119,80,E,E501:line too long (81 > 79 characters)
+120,80,E,E501:line too long (86 > 79 characters)
+132,80,E,E501:line too long (94 > 79 characters)
+134,1,E,E302:expected 2 blank lines, found 1
+136,9,E,E265:block comment should start with '# '
+137,1,W,W293:blank line contains whitespace
+141,1,E,E112:expected an indented block
+141,1,E,E303:too many blank lines (4)
+142,9,E,E117:over-indented
+143,1,E,E305:expected 2 blank lines after class or function definition, found 0
+153,1,E,E303:too many blank lines (3)
+161,80,E,E501:line too long (94 > 79 characters)
+165,80,E,E501:line too long (93 > 79 characters)
+175,80,E,E501:line too long (106 > 79 characters)
+179,1,W,W293:blank line contains whitespace
+180,80,E,E501:line too long (94 > 79 characters)
+191,1,E,E302:expected 2 blank lines, found 3
+193,80,E,E501:line too long (93 > 79 characters)
+197,1,W,W293:blank line contains whitespace
+198,80,E,E501:line too long (92 > 79 characters)
+206,1,E,E303:too many blank lines (3)
+208,80,E,E501:line too long (93 > 79 characters)
+209,1,W,W293:blank line contains whitespace
+213,1,E,E303:too many blank lines (4)
+220,1,W,W391:blank line at end of file
+
+2023-07-09 14:22:50.935 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 14:23:15.476 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 14:23:15.476 [info] cwd: .
+2023-07-09 14:23:15.565 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 14:23:15.565 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (3)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,33,W,W291:trailing whitespace
+111,1,W,W293:blank line contains whitespace
+119,80,E,E501:line too long (81 > 79 characters)
+120,80,E,E501:line too long (86 > 79 characters)
+132,80,E,E501:line too long (94 > 79 characters)
+134,1,E,E302:expected 2 blank lines, found 1
+136,9,E,E265:block comment should start with '# '
+143,1,E,E303:too many blank lines (5)
+153,1,E,E303:too many blank lines (3)
+161,80,E,E501:line too long (94 > 79 characters)
+165,80,E,E501:line too long (93 > 79 characters)
+175,80,E,E501:line too long (106 > 79 characters)
+179,1,W,W293:blank line contains whitespace
+180,80,E,E501:line too long (94 > 79 characters)
+191,1,E,E302:expected 2 blank lines, found 3
+193,80,E,E501:line too long (93 > 79 characters)
+197,1,W,W293:blank line contains whitespace
+198,80,E,E501:line too long (92 > 79 characters)
+206,1,E,E303:too many blank lines (3)
+208,80,E,E501:line too long (93 > 79 characters)
+209,1,W,W293:blank line contains whitespace
+213,1,E,E303:too many blank lines (4)
+220,1,W,W391:blank line at end of file
+
+2023-07-09 14:23:15.686 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 14:25:29.404 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 14:25:29.404 [info] cwd: .
+2023-07-09 14:25:29.486 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 14:25:29.486 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (3)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,33,W,W291:trailing whitespace
+111,1,W,W293:blank line contains whitespace
+119,80,E,E501:line too long (81 > 79 characters)
+120,80,E,E501:line too long (86 > 79 characters)
+132,80,E,E501:line too long (94 > 79 characters)
+134,1,E,E302:expected 2 blank lines, found 1
+136,9,E,E265:block comment should start with '# '
+143,1,E,E303:too many blank lines (5)
+153,1,E,E303:too many blank lines (3)
+161,80,E,E501:line too long (94 > 79 characters)
+165,80,E,E501:line too long (93 > 79 characters)
+175,80,E,E501:line too long (106 > 79 characters)
+179,1,W,W293:blank line contains whitespace
+180,80,E,E501:line too long (94 > 79 characters)
+191,1,E,E302:expected 2 blank lines, found 3
+193,80,E,E501:line too long (93 > 79 characters)
+197,1,W,W293:blank line contains whitespace
+198,80,E,E501:line too long (92 > 79 characters)
+206,1,E,E303:too many blank lines (3)
+208,80,E,E501:line too long (93 > 79 characters)
+209,1,W,W293:blank line contains whitespace
+213,1,E,E303:too many blank lines (4)
+220,1,W,W391:blank line at end of file
+
+2023-07-09 14:25:29.623 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 14:34:29.284 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 14:34:29.284 [info] cwd: .
+2023-07-09 14:34:29.379 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 14:34:29.379 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (3)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,5,E,E265:block comment should start with '# '
+110,38,W,W291:trailing whitespace
+111,49,W,W291:trailing whitespace
+112,1,W,W293:blank line contains whitespace
+120,80,E,E501:line too long (81 > 79 characters)
+121,80,E,E501:line too long (86 > 79 characters)
+133,80,E,E501:line too long (96 > 79 characters)
+142,9,E,E265:block comment should start with '# '
+148,1,E,E303:too many blank lines (4)
+148,1,E,E402:module level import not at top of file
+149,1,E,E402:module level import not at top of file
+150,1,E,E402:module level import not at top of file
+152,1,E,E302:expected 2 blank lines, found 1
+155,50,W,W291:trailing whitespace
+156,1,W,W293:blank line contains whitespace
+164,80,E,E501:line too long (81 > 79 characters)
+165,80,E,E501:line too long (86 > 79 characters)
+187,1,E,E303:too many blank lines (9)
+197,1,E,E303:too many blank lines (3)
+205,80,E,E501:line too long (94 > 79 characters)
+209,80,E,E501:line too long (93 > 79 characters)
+219,80,E,E501:line too long (106 > 79 characters)
+223,1,W,W293:blank line contains whitespace
+224,80,E,E501:line too long (94 > 79 characters)
+235,1,E,E302:expected 2 blank lines, found 3
+237,80,E,E501:line too long (93 > 79 characters)
+241,1,W,W293:blank line contains whitespace
+242,80,E,E501:line too long (92 > 79 characters)
+250,1,E,E303:too many blank lines (3)
+252,80,E,E501:line too long (93 > 79 characters)
+253,1,W,W293:blank line contains whitespace
+257,1,E,E303:too many blank lines (4)
+264,1,W,W391:blank line at end of file
+
+2023-07-09 14:34:29.518 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 14:36:55.728 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 14:36:55.728 [info] cwd: .
+2023-07-09 14:36:55.821 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 14:36:55.821 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (4)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,5,E,E265:block comment should start with '# '
+110,38,W,W291:trailing whitespace
+111,49,W,W291:trailing whitespace
+112,1,W,W293:blank line contains whitespace
+120,80,E,E501:line too long (81 > 79 characters)
+121,80,E,E501:line too long (86 > 79 characters)
+133,80,E,E501:line too long (96 > 79 characters)
+142,9,E,E265:block comment should start with '# '
+148,1,E,E303:too many blank lines (4)
+148,1,E,E402:module level import not at top of file
+149,1,E,E402:module level import not at top of file
+150,1,E,E402:module level import not at top of file
+152,1,E,E302:expected 2 blank lines, found 1
+155,50,W,W291:trailing whitespace
+156,1,W,W293:blank line contains whitespace
+164,80,E,E501:line too long (81 > 79 characters)
+165,80,E,E501:line too long (86 > 79 characters)
+187,1,E,E303:too many blank lines (9)
+197,1,E,E303:too many blank lines (3)
+205,80,E,E501:line too long (94 > 79 characters)
+209,80,E,E501:line too long (93 > 79 characters)
+219,80,E,E501:line too long (106 > 79 characters)
+223,1,W,W293:blank line contains whitespace
+224,80,E,E501:line too long (94 > 79 characters)
+235,1,E,E302:expected 2 blank lines, found 3
+237,80,E,E501:line too long (93 > 79 characters)
+241,1,W,W293:blank line contains whitespace
+242,80,E,E501:line too long (92 > 79 characters)
+250,1,E,E303:too many blank lines (3)
+252,80,E,E501:line too long (93 > 79 characters)
+253,1,W,W293:blank line contains whitespace
+257,1,E,E303:too many blank lines (4)
+264,1,W,W391:blank line at end of file
+
+2023-07-09 14:36:55.946 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 14:37:18.309 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 14:37:18.309 [info] cwd: .
+2023-07-09 14:37:18.394 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 14:37:18.394 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (4)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,5,E,E265:block comment should start with '# '
+110,38,W,W291:trailing whitespace
+111,49,W,W291:trailing whitespace
+112,1,W,W293:blank line contains whitespace
+120,80,E,E501:line too long (81 > 79 characters)
+121,80,E,E501:line too long (86 > 79 characters)
+133,80,E,E501:line too long (96 > 79 characters)
+142,9,E,E265:block comment should start with '# '
+149,1,E,E303:too many blank lines (5)
+159,1,E,E303:too many blank lines (3)
+167,80,E,E501:line too long (94 > 79 characters)
+171,80,E,E501:line too long (93 > 79 characters)
+181,80,E,E501:line too long (106 > 79 characters)
+185,1,W,W293:blank line contains whitespace
+186,80,E,E501:line too long (94 > 79 characters)
+197,1,E,E302:expected 2 blank lines, found 3
+199,80,E,E501:line too long (93 > 79 characters)
+203,1,W,W293:blank line contains whitespace
+204,80,E,E501:line too long (92 > 79 characters)
+212,1,E,E303:too many blank lines (3)
+214,80,E,E501:line too long (93 > 79 characters)
+215,1,W,W293:blank line contains whitespace
+219,1,E,E303:too many blank lines (4)
+226,1,W,W391:blank line at end of file
+
+2023-07-09 14:37:18.530 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 14:40:16.740 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/models.py
+2023-07-09 14:40:16.740 [info] cwd: .
+2023-07-09 14:40:16.813 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 14:40:16.813 [info] 10,1,W,W293:blank line contains whitespace
+13,8,E,E131:continuation line unaligned for hanging indent
+14,10,E,E201:whitespace after '('
+16,9,E,E265:block comment should start with '# '
+20,9,E,E265:block comment should start with '# '
+22,1,W,W293:blank line contains whitespace
+34,1,W,W293:blank line contains whitespace
+41,1,W,W293:blank line contains whitespace
+50,1,W,W293:blank line contains whitespace
+51,5,E,E303:too many blank lines (2)
+52,1,W,W293:blank line contains whitespace
+53,80,E,E501:line too long (93 > 79 characters)
+54,80,E,E501:line too long (104 > 79 characters)
+59,80,E,E501:line too long (184 > 79 characters)
+61,1,W,W293:blank line contains whitespace
+63,1,E,E303:too many blank lines (3)
+65,1,W,W293:blank line contains whitespace
+70,10,E,E201:whitespace after '('
+71,3,E,E122:continuation line missing indentation or outdented
+71,4,W,W291:trailing whitespace
+73,80,E,E501:line too long (80 > 79 characters)
+73,81,W,W291:trailing whitespace
+74,1,W,W293:blank line contains whitespace
+77,80,E,E501:line too long (104 > 79 characters)
+77,86,E,E251:unexpected spaces around keyword / parameter equals
+78,1,W,W293:blank line contains whitespace
+80,1,W,W293:blank line contains whitespace
+81,5,E,E303:too many blank lines (3)
+82,80,E,E501:line too long (135 > 79 characters)
+91,1,E,E265:block comment should start with '# '
+91,35,W,W292:no newline at end of file
+91,35,W,W292:no newline at end of file
+91,35,W,W292:no newline at end of file
+
+2023-07-09 14:41:48.369 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/forms.py
+2023-07-09 14:41:48.369 [info] cwd: .
+2023-07-09 14:41:48.438 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 14:41:48.438 [info] 27,5,E,E265:block comment should start with '# '
+27,80,E,E501:line too long (82 > 79 characters)
+40,1,W,W391:blank line at end of file
+
+2023-07-09 14:41:54.924 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/table_avaliable.py
+2023-07-09 14:41:54.924 [info] cwd: .
+2023-07-09 14:41:54.995 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 14:41:54.995 [info] 9,80,E,E501:line too long (107 > 79 characters)
+21,80,E,E501:line too long (90 > 79 characters)
+23,80,E,E501:line too long (84 > 79 characters)
+24,80,E,E501:line too long (95 > 79 characters)
+38,80,E,E501:line too long (90 > 79 characters)
+48,80,E,E501:line too long (86 > 79 characters)
+49,80,E,E501:line too long (99 > 79 characters)
+51,80,E,E501:line too long (95 > 79 characters)
+64,80,E,E501:line too long (90 > 79 characters)
+73,80,E,E501:line too long (86 > 79 characters)
+74,80,E,E501:line too long (99 > 79 characters)
+76,80,E,E501:line too long (95 > 79 characters)
+86,80,E,E501:line too long (193 > 79 characters)
+103,80,E,E501:line too long (105 > 79 characters)
+107,31,W,W292:no newline at end of file
+
+2023-07-09 14:41:58.430 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/tests.py
+2023-07-09 14:41:58.430 [info] cwd: .
+2023-07-09 14:41:58.493 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 14:41:58.493 [info] 
+2023-07-09 14:43:16.519 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 14:43:16.519 [info] cwd: .
+2023-07-09 14:43:16.600 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 14:43:16.600 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (4)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,5,E,E265:block comment should start with '# '
+110,38,W,W291:trailing whitespace
+111,49,W,W291:trailing whitespace
+112,1,W,W293:blank line contains whitespace
+120,80,E,E501:line too long (81 > 79 characters)
+121,80,E,E501:line too long (86 > 79 characters)
+133,80,E,E501:line too long (96 > 79 characters)
+142,9,E,E265:block comment should start with '# '
+149,1,E,E303:too many blank lines (5)
+154,80,E,E501:line too long (93 > 79 characters)
+158,1,W,W293:blank line contains whitespace
+159,80,E,E501:line too long (92 > 79 characters)
+167,1,E,E303:too many blank lines (3)
+169,80,E,E501:line too long (93 > 79 characters)
+170,1,W,W293:blank line contains whitespace
+174,1,E,E303:too many blank lines (4)
+181,1,W,W391:blank line at end of file
+
+2023-07-09 14:43:16.741 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 14:46:20.975 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 14:46:20.975 [info] cwd: .
+2023-07-09 14:46:21.070 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 14:46:21.070 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (4)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,5,E,E265:block comment should start with '# '
+110,38,W,W291:trailing whitespace
+111,49,W,W291:trailing whitespace
+112,1,W,W293:blank line contains whitespace
+120,80,E,E501:line too long (81 > 79 characters)
+121,80,E,E501:line too long (86 > 79 characters)
+133,80,E,E501:line too long (96 > 79 characters)
+142,9,E,E265:block comment should start with '# '
+145,80,E,E501:line too long (87 > 79 characters)
+151,1,E,E303:too many blank lines (5)
+156,80,E,E501:line too long (93 > 79 characters)
+160,1,W,W293:blank line contains whitespace
+161,80,E,E501:line too long (92 > 79 characters)
+169,1,E,E303:too many blank lines (3)
+171,80,E,E501:line too long (93 > 79 characters)
+172,1,W,W293:blank line contains whitespace
+176,1,E,E303:too many blank lines (4)
+183,1,W,W391:blank line at end of file
+
+2023-07-09 14:46:21.203 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 14:51:33.831 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 14:51:33.831 [info] cwd: .
+2023-07-09 14:51:33.917 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 14:51:33.917 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (4)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,5,E,E265:block comment should start with '# '
+110,38,W,W291:trailing whitespace
+111,49,W,W291:trailing whitespace
+112,1,W,W293:blank line contains whitespace
+120,80,E,E501:line too long (81 > 79 characters)
+121,80,E,E501:line too long (86 > 79 characters)
+133,80,E,E501:line too long (96 > 79 characters)
+142,9,E,E265:block comment should start with '# '
+145,80,E,E501:line too long (87 > 79 characters)
+151,1,E,E303:too many blank lines (5)
+156,80,E,E501:line too long (93 > 79 characters)
+160,1,W,W293:blank line contains whitespace
+161,80,E,E501:line too long (92 > 79 characters)
+169,1,E,E303:too many blank lines (3)
+171,80,E,E501:line too long (93 > 79 characters)
+172,1,W,W293:blank line contains whitespace
+176,1,E,E303:too many blank lines (4)
+183,1,W,W391:blank line at end of file
+
+2023-07-09 14:51:34.076 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 14:55:10.173 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/forms.py
+2023-07-09 14:55:10.173 [info] cwd: .
+2023-07-09 14:55:10.242 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 14:55:10.242 [info] 27,5,E,E265:block comment should start with '# '
+27,80,E,E501:line too long (82 > 79 characters)
+40,1,W,W391:blank line at end of file
+
+2023-07-09 14:55:14.418 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/models.py
+2023-07-09 14:55:14.418 [info] cwd: .
+2023-07-09 14:55:14.492 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 14:55:14.492 [info] 10,1,W,W293:blank line contains whitespace
+13,8,E,E131:continuation line unaligned for hanging indent
+14,10,E,E201:whitespace after '('
+16,9,E,E265:block comment should start with '# '
+20,9,E,E265:block comment should start with '# '
+22,1,W,W293:blank line contains whitespace
+34,1,W,W293:blank line contains whitespace
+41,1,W,W293:blank line contains whitespace
+50,1,W,W293:blank line contains whitespace
+51,5,E,E303:too many blank lines (2)
+52,1,W,W293:blank line contains whitespace
+53,80,E,E501:line too long (93 > 79 characters)
+54,80,E,E501:line too long (104 > 79 characters)
+59,80,E,E501:line too long (184 > 79 characters)
+61,1,W,W293:blank line contains whitespace
+63,1,E,E303:too many blank lines (3)
+65,1,W,W293:blank line contains whitespace
+70,10,E,E201:whitespace after '('
+71,3,E,E122:continuation line missing indentation or outdented
+71,4,W,W291:trailing whitespace
+73,80,E,E501:line too long (80 > 79 characters)
+73,81,W,W291:trailing whitespace
+74,1,W,W293:blank line contains whitespace
+77,80,E,E501:line too long (104 > 79 characters)
+77,86,E,E251:unexpected spaces around keyword / parameter equals
+78,1,W,W293:blank line contains whitespace
+80,1,W,W293:blank line contains whitespace
+81,5,E,E303:too many blank lines (3)
+82,80,E,E501:line too long (135 > 79 characters)
+91,1,E,E265:block comment should start with '# '
+91,35,W,W292:no newline at end of file
+91,35,W,W292:no newline at end of file
+91,35,W,W292:no newline at end of file
+
+2023-07-09 15:03:03.795 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 15:03:03.795 [info] cwd: .
+2023-07-09 15:03:03.878 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 15:03:03.878 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (4)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,5,E,E265:block comment should start with '# '
+110,38,W,W291:trailing whitespace
+111,49,W,W291:trailing whitespace
+112,1,W,W293:blank line contains whitespace
+120,80,E,E501:line too long (81 > 79 characters)
+121,80,E,E501:line too long (86 > 79 characters)
+133,80,E,E501:line too long (96 > 79 characters)
+142,9,E,E265:block comment should start with '# '
+145,80,E,E501:line too long (87 > 79 characters)
+153,9,E,E113:unexpected indentation
+161,1,E,E303:too many blank lines (7)
+166,80,E,E501:line too long (93 > 79 characters)
+170,1,W,W293:blank line contains whitespace
+171,80,E,E501:line too long (92 > 79 characters)
+179,1,E,E303:too many blank lines (3)
+181,80,E,E501:line too long (93 > 79 characters)
+182,1,W,W293:blank line contains whitespace
+186,1,E,E303:too many blank lines (4)
+193,1,W,W391:blank line at end of file
+
+2023-07-09 15:03:04.023 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 15:03:56.299 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 15:03:56.299 [info] cwd: .
+2023-07-09 15:03:56.384 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 15:03:56.384 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (4)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,5,E,E265:block comment should start with '# '
+110,38,W,W291:trailing whitespace
+111,49,W,W291:trailing whitespace
+112,1,W,W293:blank line contains whitespace
+120,80,E,E501:line too long (81 > 79 characters)
+121,80,E,E501:line too long (86 > 79 characters)
+133,80,E,E501:line too long (96 > 79 characters)
+142,9,E,E265:block comment should start with '# '
+145,80,E,E501:line too long (87 > 79 characters)
+148,9,E,E303:too many blank lines (2)
+161,1,E,E303:too many blank lines (7)
+166,80,E,E501:line too long (93 > 79 characters)
+170,1,W,W293:blank line contains whitespace
+171,80,E,E501:line too long (92 > 79 characters)
+179,1,E,E303:too many blank lines (3)
+181,80,E,E501:line too long (93 > 79 characters)
+182,1,W,W293:blank line contains whitespace
+186,1,E,E303:too many blank lines (4)
+193,1,W,W391:blank line at end of file
+
+2023-07-09 15:03:56.524 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 15:04:21.976 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 15:04:21.976 [info] cwd: .
+2023-07-09 15:04:21.980 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 15:04:22.072 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 15:04:22.072 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (4)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,5,E,E265:block comment should start with '# '
+110,38,W,W291:trailing whitespace
+111,49,W,W291:trailing whitespace
+112,1,W,W293:blank line contains whitespace
+120,80,E,E501:line too long (81 > 79 characters)
+121,80,E,E501:line too long (86 > 79 characters)
+133,80,E,E501:line too long (96 > 79 characters)
+142,9,E,E265:block comment should start with '# '
+145,80,E,E501:line too long (89 > 79 characters)
+148,9,E,E303:too many blank lines (2)
+161,1,E,E303:too many blank lines (7)
+166,80,E,E501:line too long (93 > 79 characters)
+170,1,W,W293:blank line contains whitespace
+171,80,E,E501:line too long (92 > 79 characters)
+179,1,E,E303:too many blank lines (3)
+181,80,E,E501:line too long (93 > 79 characters)
+182,1,W,W293:blank line contains whitespace
+186,1,E,E303:too many blank lines (4)
+193,1,W,W391:blank line at end of file
+
+2023-07-09 15:04:42.272 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 15:04:42.272 [info] cwd: .
+2023-07-09 15:04:42.357 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 15:04:42.357 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (4)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,5,E,E265:block comment should start with '# '
+110,38,W,W291:trailing whitespace
+111,49,W,W291:trailing whitespace
+112,1,W,W293:blank line contains whitespace
+120,80,E,E501:line too long (81 > 79 characters)
+121,80,E,E501:line too long (86 > 79 characters)
+133,80,E,E501:line too long (96 > 79 characters)
+142,9,E,E265:block comment should start with '# '
+145,80,E,E501:line too long (89 > 79 characters)
+160,1,E,E303:too many blank lines (7)
+165,80,E,E501:line too long (93 > 79 characters)
+169,1,W,W293:blank line contains whitespace
+170,80,E,E501:line too long (92 > 79 characters)
+178,1,E,E303:too many blank lines (3)
+180,80,E,E501:line too long (93 > 79 characters)
+181,1,W,W293:blank line contains whitespace
+185,1,E,E303:too many blank lines (4)
+192,1,W,W391:blank line at end of file
+
+2023-07-09 15:04:42.438 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 15:18:13.681 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 15:18:13.681 [info] cwd: .
+2023-07-09 15:18:13.766 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 15:18:13.766 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (4)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,5,E,E265:block comment should start with '# '
+110,38,W,W291:trailing whitespace
+112,1,W,W293:blank line contains whitespace
+120,80,E,E501:line too long (81 > 79 characters)
+121,80,E,E501:line too long (86 > 79 characters)
+145,80,E,E501:line too long (98 > 79 characters)
+154,9,E,E265:block comment should start with '# '
+157,80,E,E501:line too long (89 > 79 characters)
+172,1,E,E303:too many blank lines (7)
+177,80,E,E501:line too long (93 > 79 characters)
+181,1,W,W293:blank line contains whitespace
+182,80,E,E501:line too long (92 > 79 characters)
+190,1,E,E303:too many blank lines (3)
+192,80,E,E501:line too long (93 > 79 characters)
+193,1,W,W293:blank line contains whitespace
+197,1,E,E303:too many blank lines (4)
+204,1,W,W391:blank line at end of file
+
+2023-07-09 15:18:13.902 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 15:21:58.465 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 15:21:58.465 [info] cwd: .
+2023-07-09 15:21:58.575 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 15:21:58.575 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (4)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,5,E,E265:block comment should start with '# '
+110,38,W,W291:trailing whitespace
+112,1,W,W293:blank line contains whitespace
+120,80,E,E501:line too long (81 > 79 characters)
+121,80,E,E501:line too long (86 > 79 characters)
+145,80,E,E501:line too long (98 > 79 characters)
+155,1,W,W293:blank line contains whitespace
+161,1,E,E303:too many blank lines (6)
+166,80,E,E501:line too long (93 > 79 characters)
+170,1,W,W293:blank line contains whitespace
+171,80,E,E501:line too long (92 > 79 characters)
+179,1,E,E303:too many blank lines (3)
+181,80,E,E501:line too long (93 > 79 characters)
+182,1,W,W293:blank line contains whitespace
+186,1,E,E303:too many blank lines (4)
+193,1,W,W391:blank line at end of file
+
+2023-07-09 15:21:58.613 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 15:22:14.578 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 15:22:14.578 [info] cwd: .
+2023-07-09 15:22:14.659 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 15:22:14.659 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (4)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,5,E,E265:block comment should start with '# '
+110,38,W,W291:trailing whitespace
+112,1,W,W293:blank line contains whitespace
+120,80,E,E501:line too long (81 > 79 characters)
+121,80,E,E501:line too long (86 > 79 characters)
+147,1,W,W293:blank line contains whitespace
+153,1,E,E303:too many blank lines (6)
+158,80,E,E501:line too long (93 > 79 characters)
+162,1,W,W293:blank line contains whitespace
+163,80,E,E501:line too long (92 > 79 characters)
+171,1,E,E303:too many blank lines (3)
+173,80,E,E501:line too long (93 > 79 characters)
+174,1,W,W293:blank line contains whitespace
+178,1,E,E303:too many blank lines (4)
+185,1,W,W391:blank line at end of file
+
+2023-07-09 15:22:14.818 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 15:23:26.726 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 15:23:26.726 [info] cwd: .
+2023-07-09 15:23:26.809 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 15:23:26.809 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (4)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,5,E,E265:block comment should start with '# '
+110,38,W,W291:trailing whitespace
+112,1,W,W293:blank line contains whitespace
+120,80,E,E501:line too long (81 > 79 characters)
+121,80,E,E501:line too long (86 > 79 characters)
+147,1,W,W293:blank line contains whitespace
+153,1,E,E303:too many blank lines (6)
+158,80,E,E501:line too long (93 > 79 characters)
+162,1,W,W293:blank line contains whitespace
+163,80,E,E501:line too long (92 > 79 characters)
+171,1,E,E303:too many blank lines (3)
+173,80,E,E501:line too long (93 > 79 characters)
+174,1,W,W293:blank line contains whitespace
+178,1,E,E303:too many blank lines (4)
+185,1,W,W391:blank line at end of file
+
+2023-07-09 15:23:26.978 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 15:30:31.763 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 15:30:31.763 [info] cwd: .
+2023-07-09 15:30:31.852 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 15:30:31.852 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (4)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,5,E,E265:block comment should start with '# '
+110,38,W,W291:trailing whitespace
+112,1,W,W293:blank line contains whitespace
+120,80,E,E501:line too long (81 > 79 characters)
+121,80,E,E501:line too long (86 > 79 characters)
+141,33,E,E251:unexpected spaces around keyword / parameter equals
+141,35,E,E251:unexpected spaces around keyword / parameter equals
+142,13,E,E122:continuation line missing indentation or outdented
+142,80,E,E501:line too long (91 > 79 characters)
+151,1,W,W293:blank line contains whitespace
+157,1,E,E303:too many blank lines (6)
+162,80,E,E501:line too long (93 > 79 characters)
+166,1,W,W293:blank line contains whitespace
+167,80,E,E501:line too long (92 > 79 characters)
+175,1,E,E303:too many blank lines (3)
+177,80,E,E501:line too long (93 > 79 characters)
+178,1,W,W293:blank line contains whitespace
+182,1,E,E303:too many blank lines (4)
+189,1,W,W391:blank line at end of file
+
+2023-07-09 15:30:31.962 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 15:31:23.646 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 15:31:23.646 [info] cwd: .
+2023-07-09 15:31:23.758 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 15:31:23.758 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (4)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,5,E,E265:block comment should start with '# '
+110,38,W,W291:trailing whitespace
+112,1,W,W293:blank line contains whitespace
+120,80,E,E501:line too long (81 > 79 characters)
+121,80,E,E501:line too long (86 > 79 characters)
+148,1,W,W293:blank line contains whitespace
+154,1,E,E303:too many blank lines (6)
+159,80,E,E501:line too long (93 > 79 characters)
+163,1,W,W293:blank line contains whitespace
+164,80,E,E501:line too long (92 > 79 characters)
+172,1,E,E303:too many blank lines (3)
+174,80,E,E501:line too long (93 > 79 characters)
+175,1,W,W293:blank line contains whitespace
+179,1,E,E303:too many blank lines (4)
+186,1,W,W391:blank line at end of file
+
+2023-07-09 15:31:23.882 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 15:38:03.495 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/models.py
+2023-07-09 15:38:03.495 [info] cwd: .
+2023-07-09 15:38:03.571 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 15:38:03.571 [info] 10,1,W,W293:blank line contains whitespace
+13,8,E,E131:continuation line unaligned for hanging indent
+14,10,E,E201:whitespace after '('
+16,9,E,E265:block comment should start with '# '
+20,9,E,E265:block comment should start with '# '
+22,1,W,W293:blank line contains whitespace
+34,1,W,W293:blank line contains whitespace
+41,1,W,W293:blank line contains whitespace
+50,1,W,W293:blank line contains whitespace
+51,5,E,E303:too many blank lines (2)
+52,1,W,W293:blank line contains whitespace
+53,80,E,E501:line too long (93 > 79 characters)
+54,80,E,E501:line too long (104 > 79 characters)
+59,8,E,E114:indentation is not a multiple of 4 (comment)
+59,80,E,E501:line too long (185 > 79 characters)
+61,1,W,W293:blank line contains whitespace
+65,1,W,W293:blank line contains whitespace
+70,10,E,E201:whitespace after '('
+71,3,E,E122:continuation line missing indentation or outdented
+71,4,W,W291:trailing whitespace
+73,80,E,E501:line too long (80 > 79 characters)
+73,81,W,W291:trailing whitespace
+74,1,W,W293:blank line contains whitespace
+77,80,E,E501:line too long (104 > 79 characters)
+77,86,E,E251:unexpected spaces around keyword / parameter equals
+78,1,W,W293:blank line contains whitespace
+80,1,W,W293:blank line contains whitespace
+81,5,E,E303:too many blank lines (3)
+82,80,E,E501:line too long (135 > 79 characters)
+91,1,E,E265:block comment should start with '# '
+91,35,W,W292:no newline at end of file
+91,35,W,W292:no newline at end of file
+91,35,W,W292:no newline at end of file
+
+2023-07-09 15:38:03.727 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/models.py
+2023-07-09 15:40:41.843 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/urls.py
+2023-07-09 15:40:41.843 [info] cwd: .
+2023-07-09 15:40:41.910 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 15:40:41.910 [info] 2,80,E,E501:line too long (157 > 79 characters)
+11,5,E,E265:block comment should start with '# '
+12,5,E,E265:block comment should start with '# '
+13,80,E,E501:line too long (80 > 79 characters)
+14,4,E,E131:continuation line unaligned for hanging indent
+19,80,E,E501:line too long (81 > 79 characters)
+20,80,E,E501:line too long (81 > 79 characters)
+22,1,W,W293:blank line contains whitespace
+24,1,W,W391:blank line at end of file
+
+2023-07-09 15:42:29.886 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/urls.py
+2023-07-09 15:42:29.886 [info] cwd: .
+2023-07-09 15:42:29.956 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 15:42:29.956 [info] 2,80,E,E501:line too long (157 > 79 characters)
+11,5,E,E265:block comment should start with '# '
+12,5,E,E265:block comment should start with '# '
+13,80,E,E501:line too long (80 > 79 characters)
+14,4,E,E131:continuation line unaligned for hanging indent
+19,80,E,E501:line too long (81 > 79 characters)
+20,80,E,E501:line too long (81 > 79 characters)
+22,1,W,W293:blank line contains whitespace
+24,1,W,W391:blank line at end of file
+
+2023-07-09 15:42:30.112 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/urls.py
+2023-07-09 15:44:27.841 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/urls.py
+2023-07-09 15:44:27.841 [info] cwd: .
+2023-07-09 15:44:27.919 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 15:44:27.919 [info] 2,80,E,E501:line too long (157 > 79 characters)
+11,5,E,E265:block comment should start with '# '
+12,5,E,E265:block comment should start with '# '
+13,80,E,E501:line too long (80 > 79 characters)
+14,4,E,E131:continuation line unaligned for hanging indent
+19,80,E,E501:line too long (81 > 79 characters)
+20,80,E,E501:line too long (81 > 79 characters)
+22,1,W,W293:blank line contains whitespace
+24,1,W,W391:blank line at end of file
+
+2023-07-09 15:44:28.083 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/urls.py
+2023-07-09 15:44:50.652 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/models.py
+2023-07-09 15:44:50.652 [info] cwd: .
+2023-07-09 15:44:50.727 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 15:44:50.727 [info] 10,1,W,W293:blank line contains whitespace
+13,8,E,E131:continuation line unaligned for hanging indent
+14,10,E,E201:whitespace after '('
+16,9,E,E265:block comment should start with '# '
+20,9,E,E265:block comment should start with '# '
+22,1,W,W293:blank line contains whitespace
+34,1,W,W293:blank line contains whitespace
+41,1,W,W293:blank line contains whitespace
+50,1,W,W293:blank line contains whitespace
+51,5,E,E303:too many blank lines (2)
+52,1,W,W293:blank line contains whitespace
+53,80,E,E501:line too long (93 > 79 characters)
+54,80,E,E501:line too long (104 > 79 characters)
+60,1,W,W293:blank line contains whitespace
+64,1,W,W293:blank line contains whitespace
+69,10,E,E201:whitespace after '('
+70,3,E,E122:continuation line missing indentation or outdented
+70,4,W,W291:trailing whitespace
+72,80,E,E501:line too long (80 > 79 characters)
+72,81,W,W291:trailing whitespace
+73,1,W,W293:blank line contains whitespace
+76,80,E,E501:line too long (104 > 79 characters)
+76,86,E,E251:unexpected spaces around keyword / parameter equals
+77,1,W,W293:blank line contains whitespace
+79,1,W,W293:blank line contains whitespace
+80,5,E,E303:too many blank lines (3)
+81,80,E,E501:line too long (135 > 79 characters)
+90,1,E,E265:block comment should start with '# '
+90,35,W,W292:no newline at end of file
+90,35,W,W292:no newline at end of file
+90,35,W,W292:no newline at end of file
+
+2023-07-09 15:44:50.887 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/models.py
+2023-07-09 15:49:02.006 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/models.py
+2023-07-09 15:49:02.006 [info] cwd: .
+2023-07-09 15:49:02.084 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 15:49:02.084 [info] 10,1,W,W293:blank line contains whitespace
+13,8,E,E131:continuation line unaligned for hanging indent
+14,10,E,E201:whitespace after '('
+16,9,E,E265:block comment should start with '# '
+20,9,E,E265:block comment should start with '# '
+22,1,W,W293:blank line contains whitespace
+34,1,W,W293:blank line contains whitespace
+41,1,W,W293:blank line contains whitespace
+50,1,W,W293:blank line contains whitespace
+51,5,E,E303:too many blank lines (2)
+52,1,W,W293:blank line contains whitespace
+53,80,E,E501:line too long (93 > 79 characters)
+54,80,E,E501:line too long (104 > 79 characters)
+59,80,E,E501:line too long (184 > 79 characters)
+61,1,W,W293:blank line contains whitespace
+63,1,E,E303:too many blank lines (3)
+65,1,W,W293:blank line contains whitespace
+70,10,E,E201:whitespace after '('
+71,3,E,E122:continuation line missing indentation or outdented
+71,4,W,W291:trailing whitespace
+73,80,E,E501:line too long (80 > 79 characters)
+73,81,W,W291:trailing whitespace
+74,1,W,W293:blank line contains whitespace
+77,80,E,E501:line too long (104 > 79 characters)
+77,86,E,E251:unexpected spaces around keyword / parameter equals
+78,1,W,W293:blank line contains whitespace
+80,1,W,W293:blank line contains whitespace
+81,5,E,E303:too many blank lines (3)
+82,7,E,E114:indentation is not a multiple of 4 (comment)
+82,80,E,E501:line too long (136 > 79 characters)
+87,5,E,E303:too many blank lines (3)
+94,1,E,E265:block comment should start with '# '
+94,35,W,W292:no newline at end of file
+94,35,W,W292:no newline at end of file
+94,35,W,W292:no newline at end of file
+
+2023-07-09 15:49:02.237 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/models.py
+2023-07-09 15:49:13.013 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/models.py
+2023-07-09 15:49:13.013 [info] cwd: .
+2023-07-09 15:49:13.092 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 15:49:13.092 [info] 10,1,W,W293:blank line contains whitespace
+13,8,E,E131:continuation line unaligned for hanging indent
+14,10,E,E201:whitespace after '('
+16,9,E,E265:block comment should start with '# '
+20,9,E,E265:block comment should start with '# '
+22,1,W,W293:blank line contains whitespace
+34,1,W,W293:blank line contains whitespace
+41,1,W,W293:blank line contains whitespace
+50,1,W,W293:blank line contains whitespace
+51,5,E,E303:too many blank lines (2)
+52,1,W,W293:blank line contains whitespace
+53,80,E,E501:line too long (93 > 79 characters)
+54,80,E,E501:line too long (104 > 79 characters)
+59,80,E,E501:line too long (184 > 79 characters)
+61,1,W,W293:blank line contains whitespace
+63,1,E,E303:too many blank lines (3)
+65,1,W,W293:blank line contains whitespace
+70,10,E,E201:whitespace after '('
+71,3,E,E122:continuation line missing indentation or outdented
+71,4,W,W291:trailing whitespace
+73,80,E,E501:line too long (80 > 79 characters)
+73,81,W,W291:trailing whitespace
+74,1,W,W293:blank line contains whitespace
+77,80,E,E501:line too long (104 > 79 characters)
+77,86,E,E251:unexpected spaces around keyword / parameter equals
+78,1,W,W293:blank line contains whitespace
+80,1,W,W293:blank line contains whitespace
+81,5,E,E303:too many blank lines (3)
+82,7,E,E114:indentation is not a multiple of 4 (comment)
+82,80,E,E501:line too long (136 > 79 characters)
+87,5,E,E303:too many blank lines (3)
+94,1,E,E265:block comment should start with '# '
+94,35,W,W292:no newline at end of file
+94,35,W,W292:no newline at end of file
+94,35,W,W292:no newline at end of file
+
+2023-07-09 15:49:13.253 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/models.py
+2023-07-09 15:51:50.637 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/models.py
+2023-07-09 15:51:50.637 [info] cwd: .
+2023-07-09 15:51:50.712 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 15:51:50.712 [info] 11,1,W,W293:blank line contains whitespace
+14,8,E,E131:continuation line unaligned for hanging indent
+15,10,E,E201:whitespace after '('
+17,9,E,E265:block comment should start with '# '
+21,9,E,E265:block comment should start with '# '
+23,1,W,W293:blank line contains whitespace
+35,1,W,W293:blank line contains whitespace
+42,1,W,W293:blank line contains whitespace
+51,1,W,W293:blank line contains whitespace
+52,5,E,E303:too many blank lines (2)
+53,1,W,W293:blank line contains whitespace
+54,80,E,E501:line too long (93 > 79 characters)
+55,80,E,E501:line too long (104 > 79 characters)
+60,80,E,E501:line too long (184 > 79 characters)
+62,1,W,W293:blank line contains whitespace
+64,1,E,E303:too many blank lines (3)
+66,1,W,W293:blank line contains whitespace
+71,10,E,E201:whitespace after '('
+72,3,E,E122:continuation line missing indentation or outdented
+72,4,W,W291:trailing whitespace
+74,80,E,E501:line too long (80 > 79 characters)
+74,81,W,W291:trailing whitespace
+75,1,W,W293:blank line contains whitespace
+78,80,E,E501:line too long (104 > 79 characters)
+78,86,E,E251:unexpected spaces around keyword / parameter equals
+79,1,W,W293:blank line contains whitespace
+81,1,W,W293:blank line contains whitespace
+82,5,E,E303:too many blank lines (3)
+83,7,E,E114:indentation is not a multiple of 4 (comment)
+83,80,E,E501:line too long (136 > 79 characters)
+88,5,E,E303:too many blank lines (3)
+95,1,E,E265:block comment should start with '# '
+95,35,W,W292:no newline at end of file
+95,35,W,W292:no newline at end of file
+95,35,W,W292:no newline at end of file
+
+2023-07-09 15:51:50.858 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/models.py
+2023-07-09 16:00:03.215 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/urls.py
+2023-07-09 16:00:03.215 [info] cwd: .
+2023-07-09 16:00:03.291 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 16:00:03.291 [info] 2,80,E,E501:line too long (157 > 79 characters)
+11,5,E,E265:block comment should start with '# '
+12,5,E,E265:block comment should start with '# '
+13,80,E,E501:line too long (80 > 79 characters)
+14,4,E,E131:continuation line unaligned for hanging indent
+19,80,E,E501:line too long (81 > 79 characters)
+20,80,E,E501:line too long (81 > 79 characters)
+22,1,W,W293:blank line contains whitespace
+25,1,W,W391:blank line at end of file
+
+2023-07-09 16:00:03.449 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/urls.py
+2023-07-09 16:11:42.494 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/models.py
+2023-07-09 16:11:42.494 [info] cwd: .
+2023-07-09 16:11:42.567 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 16:11:42.567 [info] 11,1,W,W293:blank line contains whitespace
+14,8,E,E131:continuation line unaligned for hanging indent
+15,10,E,E201:whitespace after '('
+17,9,E,E265:block comment should start with '# '
+21,9,E,E265:block comment should start with '# '
+23,1,W,W293:blank line contains whitespace
+35,1,W,W293:blank line contains whitespace
+42,1,W,W293:blank line contains whitespace
+51,1,W,W293:blank line contains whitespace
+52,5,E,E303:too many blank lines (2)
+53,1,W,W293:blank line contains whitespace
+54,80,E,E501:line too long (93 > 79 characters)
+55,80,E,E501:line too long (104 > 79 characters)
+60,80,E,E501:line too long (184 > 79 characters)
+62,1,W,W293:blank line contains whitespace
+64,1,E,E303:too many blank lines (3)
+66,1,W,W293:blank line contains whitespace
+71,10,E,E201:whitespace after '('
+72,3,E,E122:continuation line missing indentation or outdented
+72,4,W,W291:trailing whitespace
+74,80,E,E501:line too long (80 > 79 characters)
+74,81,W,W291:trailing whitespace
+75,1,W,W293:blank line contains whitespace
+78,80,E,E501:line too long (104 > 79 characters)
+78,86,E,E251:unexpected spaces around keyword / parameter equals
+79,1,W,W293:blank line contains whitespace
+81,1,W,W293:blank line contains whitespace
+82,5,E,E303:too many blank lines (3)
+83,7,E,E114:indentation is not a multiple of 4 (comment)
+83,80,E,E501:line too long (136 > 79 characters)
+88,5,E,E303:too many blank lines (3)
+95,1,E,E265:block comment should start with '# '
+95,35,W,W292:no newline at end of file
+95,35,W,W292:no newline at end of file
+95,35,W,W292:no newline at end of file
+
+2023-07-09 16:11:42.690 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/models.py
+2023-07-09 16:16:48.675 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/models.py
+2023-07-09 16:16:48.675 [info] cwd: .
+2023-07-09 16:16:48.751 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 16:16:48.751 [info] 11,1,W,W293:blank line contains whitespace
+14,8,E,E131:continuation line unaligned for hanging indent
+15,10,E,E201:whitespace after '('
+17,9,E,E265:block comment should start with '# '
+21,9,E,E265:block comment should start with '# '
+23,1,W,W293:blank line contains whitespace
+35,1,W,W293:blank line contains whitespace
+42,1,W,W293:blank line contains whitespace
+51,1,W,W293:blank line contains whitespace
+52,5,E,E303:too many blank lines (2)
+53,1,W,W293:blank line contains whitespace
+54,80,E,E501:line too long (93 > 79 characters)
+55,80,E,E501:line too long (104 > 79 characters)
+60,80,E,E501:line too long (184 > 79 characters)
+62,1,W,W293:blank line contains whitespace
+64,1,E,E303:too many blank lines (3)
+66,1,W,W293:blank line contains whitespace
+71,10,E,E201:whitespace after '('
+72,3,E,E122:continuation line missing indentation or outdented
+72,4,W,W291:trailing whitespace
+74,80,E,E501:line too long (80 > 79 characters)
+74,81,W,W291:trailing whitespace
+75,1,W,W293:blank line contains whitespace
+78,80,E,E501:line too long (104 > 79 characters)
+78,86,E,E251:unexpected spaces around keyword / parameter equals
+79,1,W,W293:blank line contains whitespace
+81,1,W,W293:blank line contains whitespace
+82,5,E,E303:too many blank lines (3)
+83,8,E,E111:indentation is not a multiple of 4
+83,80,E,E501:line too long (134 > 79 characters)
+84,1,W,W293:blank line contains whitespace
+87,5,E,E303:too many blank lines (3)
+94,1,E,E265:block comment should start with '# '
+94,35,W,W292:no newline at end of file
+94,35,W,W292:no newline at end of file
+94,35,W,W292:no newline at end of file
+
+2023-07-09 16:16:48.886 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/models.py
+2023-07-09 16:20:22.945 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 16:20:22.945 [info] cwd: .
+2023-07-09 16:20:23.041 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 16:20:23.054 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 16:20:23.054 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (4)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+107,1,E,E402:module level import not at top of file
+109,1,E,E302:expected 2 blank lines, found 1
+112,38,W,W291:trailing whitespace
+113,1,W,W293:blank line contains whitespace
+121,80,E,E501:line too long (81 > 79 characters)
+122,80,E,E501:line too long (86 > 79 characters)
+134,80,E,E501:line too long (94 > 79 characters)
+140,1,W,W293:blank line contains whitespace
+146,1,E,E303:too many blank lines (6)
+151,80,E,E501:line too long (93 > 79 characters)
+155,1,W,W293:blank line contains whitespace
+156,80,E,E501:line too long (92 > 79 characters)
+164,1,E,E303:too many blank lines (3)
+166,80,E,E501:line too long (93 > 79 characters)
+167,1,W,W293:blank line contains whitespace
+171,1,E,E303:too many blank lines (4)
+178,1,W,W391:blank line at end of file
+
+2023-07-09 16:20:54.521 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 16:20:54.521 [info] cwd: .
+2023-07-09 16:20:54.611 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 16:20:54.611 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (4)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+107,1,E,E402:module level import not at top of file
+109,1,E,E302:expected 2 blank lines, found 1
+112,38,W,W291:trailing whitespace
+113,1,W,W293:blank line contains whitespace
+121,80,E,E501:line too long (81 > 79 characters)
+122,80,E,E501:line too long (86 > 79 characters)
+134,80,E,E501:line too long (94 > 79 characters)
+140,1,W,W293:blank line contains whitespace
+146,1,E,E303:too many blank lines (6)
+151,80,E,E501:line too long (93 > 79 characters)
+155,1,W,W293:blank line contains whitespace
+156,80,E,E501:line too long (92 > 79 characters)
+164,1,E,E303:too many blank lines (3)
+166,80,E,E501:line too long (93 > 79 characters)
+167,1,W,W293:blank line contains whitespace
+171,1,E,E303:too many blank lines (4)
+178,1,W,W391:blank line at end of file
+
+2023-07-09 16:20:54.725 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 16:21:25.806 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 16:21:25.806 [info] cwd: .
+2023-07-09 16:21:25.892 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 16:21:25.892 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (4)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+107,1,E,E402:module level import not at top of file
+109,1,E,E302:expected 2 blank lines, found 1
+112,45,W,W291:trailing whitespace
+113,1,W,W293:blank line contains whitespace
+121,80,E,E501:line too long (81 > 79 characters)
+122,80,E,E501:line too long (86 > 79 characters)
+134,80,E,E501:line too long (94 > 79 characters)
+140,1,W,W293:blank line contains whitespace
+146,1,E,E303:too many blank lines (6)
+151,80,E,E501:line too long (93 > 79 characters)
+155,1,W,W293:blank line contains whitespace
+156,80,E,E501:line too long (92 > 79 characters)
+164,1,E,E303:too many blank lines (3)
+166,80,E,E501:line too long (93 > 79 characters)
+167,1,W,W293:blank line contains whitespace
+171,1,E,E303:too many blank lines (4)
+178,1,W,W391:blank line at end of file
+
+2023-07-09 16:21:26.046 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 16:22:52.187 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 16:22:52.187 [info] cwd: .
+2023-07-09 16:22:52.275 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 16:22:52.275 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (4)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,5,E,E265:block comment should start with '# '
+110,38,W,W291:trailing whitespace
+112,1,W,W293:blank line contains whitespace
+120,80,E,E501:line too long (81 > 79 characters)
+121,80,E,E501:line too long (86 > 79 characters)
+147,1,W,W293:blank line contains whitespace
+153,1,E,E303:too many blank lines (6)
+158,80,E,E501:line too long (93 > 79 characters)
+162,1,W,W293:blank line contains whitespace
+163,80,E,E501:line too long (92 > 79 characters)
+171,1,E,E303:too many blank lines (3)
+173,80,E,E501:line too long (93 > 79 characters)
+174,1,W,W293:blank line contains whitespace
+178,1,E,E303:too many blank lines (4)
+185,1,W,W391:blank line at end of file
+
+2023-07-09 16:22:52.405 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 16:25:21.361 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 16:25:21.361 [info] cwd: .
+2023-07-09 16:25:21.447 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 16:25:21.447 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (4)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,5,E,E265:block comment should start with '# '
+110,38,W,W291:trailing whitespace
+112,1,W,W293:blank line contains whitespace
+120,80,E,E501:line too long (81 > 79 characters)
+121,80,E,E501:line too long (86 > 79 characters)
+140,18,E,E131:continuation line unaligned for hanging indent
+140,34,E,E251:unexpected spaces around keyword / parameter equals
+140,36,E,E251:unexpected spaces around keyword / parameter equals
+148,1,W,W293:blank line contains whitespace
+154,1,E,E303:too many blank lines (6)
+159,80,E,E501:line too long (93 > 79 characters)
+163,1,W,W293:blank line contains whitespace
+164,80,E,E501:line too long (92 > 79 characters)
+172,1,E,E303:too many blank lines (3)
+174,80,E,E501:line too long (93 > 79 characters)
+175,1,W,W293:blank line contains whitespace
+179,1,E,E303:too many blank lines (4)
+186,1,W,W391:blank line at end of file
+
+2023-07-09 16:25:21.596 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 16:26:44.879 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./booking/views.py
+2023-07-09 16:26:44.879 [info] cwd: .
+2023-07-09 16:26:44.983 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 16:26:44.984 [info] 1,80,E,E501:line too long (81 > 79 characters)
+18,1,E,E303:too many blank lines (4)
+24,5,E,E265:block comment should start with '# '
+32,9,E,E265:block comment should start with '# '
+33,80,E,E501:line too long (91 > 79 characters)
+39,5,E,E265:block comment should start with '# '
+44,1,E,E303:too many blank lines (3)
+47,5,E,E301:expected 1 blank line, found 0
+61,1,W,W293:blank line contains whitespace
+64,80,E,E501:line too long (83 > 79 characters)
+73,80,E,E501:line too long (91 > 79 characters)
+75,46,W,W291:trailing whitespace
+84,9,E,E303:too many blank lines (2)
+86,80,E,E501:line too long (90 > 79 characters)
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+104,80,E,E501:line too long (91 > 79 characters)
+110,5,E,E265:block comment should start with '# '
+110,38,W,W291:trailing whitespace
+112,1,W,W293:blank line contains whitespace
+120,80,E,E501:line too long (81 > 79 characters)
+121,80,E,E501:line too long (86 > 79 characters)
+140,1,W,W293:blank line contains whitespace
+148,1,W,W293:blank line contains whitespace
+154,1,E,E303:too many blank lines (6)
+159,80,E,E501:line too long (93 > 79 characters)
+163,1,W,W293:blank line contains whitespace
+164,80,E,E501:line too long (92 > 79 characters)
+172,1,E,E303:too many blank lines (3)
+174,80,E,E501:line too long (93 > 79 characters)
+175,1,W,W293:blank line contains whitespace
+179,1,E,E303:too many blank lines (4)
+186,1,W,W391:blank line at end of file
+
+2023-07-09 16:26:45.121 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/booking/views.py
+2023-07-09 16:44:25.401 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/views.py
+2023-07-09 16:44:25.402 [info] cwd: .
+2023-07-09 16:44:25.484 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 16:44:25.484 [info] 22,51,E,E261:at least two spaces before inline comment
+22,80,E,E501:line too long (85 > 79 characters)
+26,50,E,E261:at least two spaces before inline comment
+26,80,E,E501:line too long (84 > 79 characters)
+32,1,W,W293:blank line contains whitespace
+41,1,W,W293:blank line contains whitespace
+50,1,W,W293:blank line contains whitespace
+59,1,W,W293:blank line contains whitespace
+66,1,E,E302:expected 2 blank lines, found 0
+69,1,E,E302:expected 2 blank lines, found 1
+69,61,W,W291:trailing whitespace
+76,1,W,W293:blank line contains whitespace
+88,1,W,W293:blank line contains whitespace
+89,80,E,E501:line too long (87 > 79 characters)
+90,1,W,W293:blank line contains whitespace
+102,1,W,W293:blank line contains whitespace
+103,80,E,E501:line too long (83 > 79 characters)
+104,1,W,W293:blank line contains whitespace
+116,1,W,W293:blank line contains whitespace
+117,80,E,E501:line too long (84 > 79 characters)
+118,1,W,W293:blank line contains whitespace
+130,1,W,W293:blank line contains whitespace
+131,80,E,E501:line too long (82 > 79 characters)
+135,1,W,W293:blank line contains whitespace
+137,5,E,E303:too many blank lines (3)
+144,1,E,E302:expected 2 blank lines, found 1
+145,53,W,W292:no newline at end of file
+
+2023-07-09 16:47:34.523 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/views.py
+2023-07-09 16:47:34.523 [info] cwd: .
+2023-07-09 16:47:34.600 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 16:47:34.600 [info] 9,1,E,E302:expected 2 blank lines, found 1
+13,1,E,E302:expected 2 blank lines, found 1
+16,1,E,E302:expected 2 blank lines, found 1
+19,1,E,E302:expected 2 blank lines, found 1
+24,1,E,E302:expected 2 blank lines, found 1
+27,1,E,E302:expected 2 blank lines, found 1
+30,1,E,E302:expected 2 blank lines, found 1
+33,1,E,E302:expected 2 blank lines, found 1
+36,1,E,E302:expected 2 blank lines, found 1
+36,77,W,W291:trailing whitespace
+51,1,W,W293:blank line contains whitespace
+62,80,E,E501:line too long (93 > 79 characters)
+65,1,W,W293:blank line contains whitespace
+69,1,E,E302:expected 2 blank lines, found 1
+72,1,E,E302:expected 2 blank lines, found 1
+
+2023-07-09 16:47:34.736 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/views.py
+2023-07-09 17:35:33.643 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/views.py
+2023-07-09 17:35:33.643 [info] cwd: .
+2023-07-09 17:35:33.743 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 17:35:33.743 [info] 2,1,E,E265:block comment should start with '# '
+5,1,E,E265:block comment should start with '# '
+7,1,E,E265:block comment should start with '# '
+8,1,E,E265:block comment should start with '# '
+9,1,E,E265:block comment should start with '# '
+10,1,E,E265:block comment should start with '# '
+11,1,E,E265:block comment should start with '# '
+13,1,E,E265:block comment should start with '# '
+19,51,E,E261:at least two spaces before inline comment
+19,80,E,E501:line too long (85 > 79 characters)
+24,50,E,E261:at least two spaces before inline comment
+24,80,E,E501:line too long (84 > 79 characters)
+26,1,E,E302:expected 2 blank lines, found 1
+30,1,E,E302:expected 2 blank lines, found 1
+36,1,E,E302:expected 2 blank lines, found 1
+45,1,E,E302:expected 2 blank lines, found 1
+49,1,E,E302:expected 2 blank lines, found 1
+53,1,E,E305:expected 2 blank lines after class or function definition, found 1
+54,1,E,E302:expected 2 blank lines, found 0
+54,77,W,W291:trailing whitespace
+74,14,E,E901:IndentationError: unindent does not match any outer indentation level
+
+2023-07-09 17:35:33.854 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/views.py
+2023-07-09 17:38:23.544 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/views.py
+2023-07-09 17:38:23.544 [info] cwd: .
+2023-07-09 17:38:23.640 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 17:38:23.640 [info] 2,1,E,E265:block comment should start with '# '
+5,1,E,E265:block comment should start with '# '
+7,1,E,E265:block comment should start with '# '
+8,1,E,E265:block comment should start with '# '
+9,1,E,E265:block comment should start with '# '
+10,1,E,E265:block comment should start with '# '
+11,1,E,E265:block comment should start with '# '
+13,1,E,E265:block comment should start with '# '
+19,51,E,E261:at least two spaces before inline comment
+19,80,E,E501:line too long (85 > 79 characters)
+24,50,E,E261:at least two spaces before inline comment
+24,80,E,E501:line too long (84 > 79 characters)
+26,1,E,E302:expected 2 blank lines, found 1
+30,1,E,E302:expected 2 blank lines, found 1
+36,1,E,E302:expected 2 blank lines, found 1
+45,1,E,E302:expected 2 blank lines, found 1
+49,1,E,E302:expected 2 blank lines, found 1
+53,1,E,E305:expected 2 blank lines after class or function definition, found 1
+54,1,E,E302:expected 2 blank lines, found 0
+54,77,W,W291:trailing whitespace
+76,17,E,E122:continuation line missing indentation or outdented
+77,17,E,E122:continuation line missing indentation or outdented
+78,17,E,E122:continuation line missing indentation or outdented
+79,17,E,E122:continuation line missing indentation or outdented
+80,17,E,E122:continuation line missing indentation or outdented
+81,17,E,E122:continuation line missing indentation or outdented
+82,17,E,E122:continuation line missing indentation or outdented
+83,1,W,W293:blank line contains whitespace
+85,80,E,E501:line too long (93 > 79 characters)
+88,1,W,W293:blank line contains whitespace
+92,1,E,E302:expected 2 blank lines, found 1
+96,1,E,E302:expected 2 blank lines, found 1
+108,1,E,E303:too many blank lines (9)
+109,1,E,E302:expected 2 blank lines, found 0
+112,1,E,E302:expected 2 blank lines, found 1
+112,61,W,W291:trailing whitespace
+119,1,W,W293:blank line contains whitespace
+131,1,W,W293:blank line contains whitespace
+132,80,E,E501:line too long (87 > 79 characters)
+133,1,W,W293:blank line contains whitespace
+145,1,W,W293:blank line contains whitespace
+146,80,E,E501:line too long (83 > 79 characters)
+147,1,W,W293:blank line contains whitespace
+159,1,W,W293:blank line contains whitespace
+160,80,E,E501:line too long (84 > 79 characters)
+161,1,W,W293:blank line contains whitespace
+173,1,W,W293:blank line contains whitespace
+174,80,E,E501:line too long (82 > 79 characters)
+178,1,W,W293:blank line contains whitespace
+180,5,E,E303:too many blank lines (3)
+187,1,E,E302:expected 2 blank lines, found 1
+193,1,E,E402:module level import not at top of file
+194,1,E,E402:module level import not at top of file
+195,1,E,E402:module level import not at top of file
+196,1,E,E402:module level import not at top of file
+197,1,E,E402:module level import not at top of file
+201,1,E,E302:expected 2 blank lines, found 1
+206,1,E,E302:expected 2 blank lines, found 1
+210,1,E,E302:expected 2 blank lines, found 1
+214,1,E,E302:expected 2 blank lines, found 1
+220,1,E,E302:expected 2 blank lines, found 1
+224,1,E,E302:expected 2 blank lines, found 1
+228,1,E,E302:expected 2 blank lines, found 1
+232,1,E,E302:expected 2 blank lines, found 1
+236,1,E,E302:expected 2 blank lines, found 1
+236,77,W,W291:trailing whitespace
+255,1,W,W293:blank line contains whitespace
+266,80,E,E501:line too long (93 > 79 characters)
+269,1,W,W293:blank line contains whitespace
+273,1,E,E302:expected 2 blank lines, found 1
+277,1,E,E302:expected 2 blank lines, found 1
+
+2023-07-09 17:38:23.746 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/views.py
+2023-07-09 17:41:09.975 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/views.py
+2023-07-09 17:41:09.975 [info] cwd: .
+2023-07-09 17:41:10.071 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 17:41:10.071 [info] 11,51,E,E261:at least two spaces before inline comment
+11,80,E,E501:line too long (85 > 79 characters)
+16,50,E,E261:at least two spaces before inline comment
+16,80,E,E501:line too long (84 > 79 characters)
+18,1,E,E302:expected 2 blank lines, found 1
+22,1,E,E302:expected 2 blank lines, found 1
+28,1,E,E302:expected 2 blank lines, found 1
+37,1,E,E302:expected 2 blank lines, found 1
+41,1,E,E302:expected 2 blank lines, found 1
+45,1,E,E305:expected 2 blank lines after class or function definition, found 1
+46,1,E,E302:expected 2 blank lines, found 0
+46,77,W,W291:trailing whitespace
+68,17,E,E122:continuation line missing indentation or outdented
+69,17,E,E122:continuation line missing indentation or outdented
+70,17,E,E122:continuation line missing indentation or outdented
+71,17,E,E122:continuation line missing indentation or outdented
+72,17,E,E122:continuation line missing indentation or outdented
+73,17,E,E122:continuation line missing indentation or outdented
+74,17,E,E122:continuation line missing indentation or outdented
+75,1,W,W293:blank line contains whitespace
+77,80,E,E501:line too long (93 > 79 characters)
+80,1,W,W293:blank line contains whitespace
+84,1,E,E302:expected 2 blank lines, found 1
+88,1,E,E302:expected 2 blank lines, found 1
+100,1,E,E303:too many blank lines (9)
+101,1,E,E302:expected 2 blank lines, found 0
+104,1,E,E302:expected 2 blank lines, found 1
+104,61,W,W291:trailing whitespace
+111,1,W,W293:blank line contains whitespace
+123,1,W,W293:blank line contains whitespace
+124,80,E,E501:line too long (87 > 79 characters)
+125,1,W,W293:blank line contains whitespace
+137,1,W,W293:blank line contains whitespace
+138,80,E,E501:line too long (83 > 79 characters)
+139,1,W,W293:blank line contains whitespace
+151,1,W,W293:blank line contains whitespace
+152,80,E,E501:line too long (84 > 79 characters)
+153,1,W,W293:blank line contains whitespace
+165,1,W,W293:blank line contains whitespace
+166,80,E,E501:line too long (82 > 79 characters)
+170,1,W,W293:blank line contains whitespace
+172,5,E,E303:too many blank lines (3)
+179,1,E,E302:expected 2 blank lines, found 1
+185,1,E,E402:module level import not at top of file
+186,1,E,E402:module level import not at top of file
+187,1,E,E402:module level import not at top of file
+188,1,E,E402:module level import not at top of file
+189,1,E,E402:module level import not at top of file
+193,1,E,E302:expected 2 blank lines, found 1
+198,1,E,E302:expected 2 blank lines, found 1
+202,1,E,E302:expected 2 blank lines, found 1
+206,1,E,E302:expected 2 blank lines, found 1
+212,1,E,E302:expected 2 blank lines, found 1
+216,1,E,E302:expected 2 blank lines, found 1
+220,1,E,E302:expected 2 blank lines, found 1
+224,1,E,E302:expected 2 blank lines, found 1
+228,1,E,E302:expected 2 blank lines, found 1
+228,77,W,W291:trailing whitespace
+247,1,W,W293:blank line contains whitespace
+258,80,E,E501:line too long (93 > 79 characters)
+261,1,W,W293:blank line contains whitespace
+265,1,E,E302:expected 2 blank lines, found 1
+269,1,E,E302:expected 2 blank lines, found 1
+
+2023-07-09 17:41:10.219 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/views.py
+2023-07-09 17:41:31.858 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/views.py
+2023-07-09 17:41:31.858 [info] cwd: .
+2023-07-09 17:41:31.955 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 17:41:31.955 [info] 11,51,W,W291:trailing whitespace
+18,1,E,E302:expected 2 blank lines, found 1
+22,1,E,E302:expected 2 blank lines, found 1
+28,1,E,E302:expected 2 blank lines, found 1
+37,1,E,E302:expected 2 blank lines, found 1
+41,1,E,E302:expected 2 blank lines, found 1
+45,1,E,E305:expected 2 blank lines after class or function definition, found 1
+46,1,E,E302:expected 2 blank lines, found 0
+46,77,W,W291:trailing whitespace
+68,17,E,E122:continuation line missing indentation or outdented
+69,17,E,E122:continuation line missing indentation or outdented
+70,17,E,E122:continuation line missing indentation or outdented
+71,17,E,E122:continuation line missing indentation or outdented
+72,17,E,E122:continuation line missing indentation or outdented
+73,17,E,E122:continuation line missing indentation or outdented
+74,17,E,E122:continuation line missing indentation or outdented
+75,1,W,W293:blank line contains whitespace
+77,80,E,E501:line too long (93 > 79 characters)
+80,1,W,W293:blank line contains whitespace
+84,1,E,E302:expected 2 blank lines, found 1
+88,1,E,E302:expected 2 blank lines, found 1
+100,1,E,E303:too many blank lines (9)
+101,1,E,E302:expected 2 blank lines, found 0
+104,1,E,E302:expected 2 blank lines, found 1
+104,61,W,W291:trailing whitespace
+111,1,W,W293:blank line contains whitespace
+123,1,W,W293:blank line contains whitespace
+124,80,E,E501:line too long (87 > 79 characters)
+125,1,W,W293:blank line contains whitespace
+137,1,W,W293:blank line contains whitespace
+138,80,E,E501:line too long (83 > 79 characters)
+139,1,W,W293:blank line contains whitespace
+151,1,W,W293:blank line contains whitespace
+152,80,E,E501:line too long (84 > 79 characters)
+153,1,W,W293:blank line contains whitespace
+165,1,W,W293:blank line contains whitespace
+166,80,E,E501:line too long (82 > 79 characters)
+170,1,W,W293:blank line contains whitespace
+172,5,E,E303:too many blank lines (3)
+179,1,E,E302:expected 2 blank lines, found 1
+185,1,E,E402:module level import not at top of file
+186,1,E,E402:module level import not at top of file
+187,1,E,E402:module level import not at top of file
+188,1,E,E402:module level import not at top of file
+189,1,E,E402:module level import not at top of file
+193,1,E,E302:expected 2 blank lines, found 1
+198,1,E,E302:expected 2 blank lines, found 1
+202,1,E,E302:expected 2 blank lines, found 1
+206,1,E,E302:expected 2 blank lines, found 1
+212,1,E,E302:expected 2 blank lines, found 1
+216,1,E,E302:expected 2 blank lines, found 1
+220,1,E,E302:expected 2 blank lines, found 1
+224,1,E,E302:expected 2 blank lines, found 1
+228,1,E,E302:expected 2 blank lines, found 1
+228,77,W,W291:trailing whitespace
+247,1,W,W293:blank line contains whitespace
+258,80,E,E501:line too long (93 > 79 characters)
+261,1,W,W293:blank line contains whitespace
+265,1,E,E302:expected 2 blank lines, found 1
+269,1,E,E302:expected 2 blank lines, found 1
+
+2023-07-09 17:41:32.092 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/views.py
+2023-07-09 17:41:55.724 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/views.py
+2023-07-09 17:41:55.724 [info] cwd: .
+2023-07-09 17:41:55.814 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 17:41:55.814 [info] 11,51,W,W291:trailing whitespace
+40,1,E,E302:expected 2 blank lines, found 1
+43,1,W,W293:blank line contains whitespace
+49,1,E,E305:expected 2 blank lines after class or function definition, found 1
+50,1,E,E302:expected 2 blank lines, found 0
+50,77,W,W291:trailing whitespace
+72,17,E,E122:continuation line missing indentation or outdented
+73,17,E,E122:continuation line missing indentation or outdented
+74,17,E,E122:continuation line missing indentation or outdented
+75,17,E,E122:continuation line missing indentation or outdented
+76,17,E,E122:continuation line missing indentation or outdented
+77,17,E,E122:continuation line missing indentation or outdented
+78,17,E,E122:continuation line missing indentation or outdented
+79,1,W,W293:blank line contains whitespace
+81,80,E,E501:line too long (93 > 79 characters)
+84,1,W,W293:blank line contains whitespace
+88,1,E,E302:expected 2 blank lines, found 1
+92,1,E,E302:expected 2 blank lines, found 1
+104,1,E,E303:too many blank lines (9)
+105,1,E,E302:expected 2 blank lines, found 0
+108,1,E,E302:expected 2 blank lines, found 1
+108,61,W,W291:trailing whitespace
+115,1,W,W293:blank line contains whitespace
+127,1,W,W293:blank line contains whitespace
+128,80,E,E501:line too long (87 > 79 characters)
+129,1,W,W293:blank line contains whitespace
+141,1,W,W293:blank line contains whitespace
+142,80,E,E501:line too long (83 > 79 characters)
+143,1,W,W293:blank line contains whitespace
+155,1,W,W293:blank line contains whitespace
+156,80,E,E501:line too long (84 > 79 characters)
+157,1,W,W293:blank line contains whitespace
+169,1,W,W293:blank line contains whitespace
+170,80,E,E501:line too long (82 > 79 characters)
+174,1,W,W293:blank line contains whitespace
+176,5,E,E303:too many blank lines (3)
+183,1,E,E302:expected 2 blank lines, found 1
+189,1,E,E402:module level import not at top of file
+190,1,E,E402:module level import not at top of file
+191,1,E,E402:module level import not at top of file
+192,1,E,E402:module level import not at top of file
+193,1,E,E402:module level import not at top of file
+197,1,E,E302:expected 2 blank lines, found 1
+202,1,E,E302:expected 2 blank lines, found 1
+206,1,E,E302:expected 2 blank lines, found 1
+210,1,E,E302:expected 2 blank lines, found 1
+216,1,E,E302:expected 2 blank lines, found 1
+220,1,E,E302:expected 2 blank lines, found 1
+224,1,E,E302:expected 2 blank lines, found 1
+228,1,E,E302:expected 2 blank lines, found 1
+232,1,E,E302:expected 2 blank lines, found 1
+232,77,W,W291:trailing whitespace
+251,1,W,W293:blank line contains whitespace
+262,80,E,E501:line too long (93 > 79 characters)
+265,1,W,W293:blank line contains whitespace
+269,1,E,E302:expected 2 blank lines, found 1
+273,1,E,E302:expected 2 blank lines, found 1
+
+2023-07-09 17:41:55.968 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/views.py
+2023-07-09 17:42:00.112 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/views.py
+2023-07-09 17:42:00.112 [info] cwd: .
+2023-07-09 17:42:00.205 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 17:42:00.205 [info] 11,51,W,W291:trailing whitespace
+39,1,W,W293:blank line contains whitespace
+50,1,E,E305:expected 2 blank lines after class or function definition, found 1
+51,1,E,E302:expected 2 blank lines, found 0
+51,77,W,W291:trailing whitespace
+73,17,E,E122:continuation line missing indentation or outdented
+74,17,E,E122:continuation line missing indentation or outdented
+75,17,E,E122:continuation line missing indentation or outdented
+76,17,E,E122:continuation line missing indentation or outdented
+77,17,E,E122:continuation line missing indentation or outdented
+78,17,E,E122:continuation line missing indentation or outdented
+79,17,E,E122:continuation line missing indentation or outdented
+80,1,W,W293:blank line contains whitespace
+82,80,E,E501:line too long (93 > 79 characters)
+85,1,W,W293:blank line contains whitespace
+89,1,E,E302:expected 2 blank lines, found 1
+93,1,E,E302:expected 2 blank lines, found 1
+105,1,E,E303:too many blank lines (9)
+106,1,E,E302:expected 2 blank lines, found 0
+109,1,E,E302:expected 2 blank lines, found 1
+109,61,W,W291:trailing whitespace
+116,1,W,W293:blank line contains whitespace
+128,1,W,W293:blank line contains whitespace
+129,80,E,E501:line too long (87 > 79 characters)
+130,1,W,W293:blank line contains whitespace
+142,1,W,W293:blank line contains whitespace
+143,80,E,E501:line too long (83 > 79 characters)
+144,1,W,W293:blank line contains whitespace
+156,1,W,W293:blank line contains whitespace
+157,80,E,E501:line too long (84 > 79 characters)
+158,1,W,W293:blank line contains whitespace
+170,1,W,W293:blank line contains whitespace
+171,80,E,E501:line too long (82 > 79 characters)
+175,1,W,W293:blank line contains whitespace
+177,5,E,E303:too many blank lines (3)
+184,1,E,E302:expected 2 blank lines, found 1
+190,1,E,E402:module level import not at top of file
+191,1,E,E402:module level import not at top of file
+192,1,E,E402:module level import not at top of file
+193,1,E,E402:module level import not at top of file
+194,1,E,E402:module level import not at top of file
+198,1,E,E302:expected 2 blank lines, found 1
+203,1,E,E302:expected 2 blank lines, found 1
+207,1,E,E302:expected 2 blank lines, found 1
+211,1,E,E302:expected 2 blank lines, found 1
+217,1,E,E302:expected 2 blank lines, found 1
+221,1,E,E302:expected 2 blank lines, found 1
+225,1,E,E302:expected 2 blank lines, found 1
+229,1,E,E302:expected 2 blank lines, found 1
+233,1,E,E302:expected 2 blank lines, found 1
+233,77,W,W291:trailing whitespace
+252,1,W,W293:blank line contains whitespace
+263,80,E,E501:line too long (93 > 79 characters)
+266,1,W,W293:blank line contains whitespace
+270,1,E,E302:expected 2 blank lines, found 1
+274,1,E,E302:expected 2 blank lines, found 1
+
+2023-07-09 17:42:00.364 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/views.py
+2023-07-09 17:42:30.828 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/views.py
+2023-07-09 17:42:30.828 [info] cwd: .
+2023-07-09 17:42:30.921 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 17:42:30.921 [info] 11,51,W,W291:trailing whitespace
+50,1,E,E305:expected 2 blank lines after class or function definition, found 1
+51,1,E,E302:expected 2 blank lines, found 0
+51,77,W,W291:trailing whitespace
+73,17,E,E122:continuation line missing indentation or outdented
+74,17,E,E122:continuation line missing indentation or outdented
+75,17,E,E122:continuation line missing indentation or outdented
+76,17,E,E122:continuation line missing indentation or outdented
+77,17,E,E122:continuation line missing indentation or outdented
+78,17,E,E122:continuation line missing indentation or outdented
+79,17,E,E122:continuation line missing indentation or outdented
+80,1,W,W293:blank line contains whitespace
+82,80,E,E501:line too long (93 > 79 characters)
+85,1,W,W293:blank line contains whitespace
+107,1,E,E303:too many blank lines (9)
+108,1,E,E302:expected 2 blank lines, found 0
+111,1,E,E302:expected 2 blank lines, found 1
+111,61,W,W291:trailing whitespace
+118,1,W,W293:blank line contains whitespace
+130,1,W,W293:blank line contains whitespace
+131,80,E,E501:line too long (87 > 79 characters)
+132,1,W,W293:blank line contains whitespace
+144,1,W,W293:blank line contains whitespace
+145,80,E,E501:line too long (83 > 79 characters)
+146,1,W,W293:blank line contains whitespace
+158,1,W,W293:blank line contains whitespace
+159,80,E,E501:line too long (84 > 79 characters)
+160,1,W,W293:blank line contains whitespace
+172,1,W,W293:blank line contains whitespace
+173,80,E,E501:line too long (82 > 79 characters)
+177,1,W,W293:blank line contains whitespace
+179,5,E,E303:too many blank lines (3)
+186,1,E,E302:expected 2 blank lines, found 1
+192,1,E,E402:module level import not at top of file
+193,1,E,E402:module level import not at top of file
+194,1,E,E402:module level import not at top of file
+195,1,E,E402:module level import not at top of file
+196,1,E,E402:module level import not at top of file
+200,1,E,E302:expected 2 blank lines, found 1
+205,1,E,E302:expected 2 blank lines, found 1
+209,1,E,E302:expected 2 blank lines, found 1
+213,1,E,E302:expected 2 blank lines, found 1
+219,1,E,E302:expected 2 blank lines, found 1
+223,1,E,E302:expected 2 blank lines, found 1
+227,1,E,E302:expected 2 blank lines, found 1
+231,1,E,E302:expected 2 blank lines, found 1
+235,1,E,E302:expected 2 blank lines, found 1
+235,77,W,W291:trailing whitespace
+254,1,W,W293:blank line contains whitespace
+265,80,E,E501:line too long (93 > 79 characters)
+268,1,W,W293:blank line contains whitespace
+272,1,E,E302:expected 2 blank lines, found 1
+276,1,E,E302:expected 2 blank lines, found 1
+
+2023-07-09 17:42:31.063 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/views.py
+2023-07-09 17:43:13.326 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/views.py
+2023-07-09 17:43:13.326 [info] cwd: .
+2023-07-09 17:43:13.420 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 17:43:13.420 [info] 11,51,W,W291:trailing whitespace
+50,1,E,E305:expected 2 blank lines after class or function definition, found 1
+51,1,E,E302:expected 2 blank lines, found 0
+51,77,W,W291:trailing whitespace
+73,17,E,E122:continuation line missing indentation or outdented
+74,17,E,E122:continuation line missing indentation or outdented
+75,17,E,E122:continuation line missing indentation or outdented
+76,17,E,E122:continuation line missing indentation or outdented
+77,17,E,E122:continuation line missing indentation or outdented
+78,17,E,E122:continuation line missing indentation or outdented
+79,17,E,E122:continuation line missing indentation or outdented
+80,1,W,W293:blank line contains whitespace
+83,18,E,E128:continuation line under-indented for visual indent
+86,1,W,W293:blank line contains whitespace
+108,1,E,E303:too many blank lines (9)
+109,1,E,E302:expected 2 blank lines, found 0
+112,1,E,E302:expected 2 blank lines, found 1
+112,61,W,W291:trailing whitespace
+119,1,W,W293:blank line contains whitespace
+131,1,W,W293:blank line contains whitespace
+132,80,E,E501:line too long (87 > 79 characters)
+133,1,W,W293:blank line contains whitespace
+145,1,W,W293:blank line contains whitespace
+146,80,E,E501:line too long (83 > 79 characters)
+147,1,W,W293:blank line contains whitespace
+159,1,W,W293:blank line contains whitespace
+160,80,E,E501:line too long (84 > 79 characters)
+161,1,W,W293:blank line contains whitespace
+173,1,W,W293:blank line contains whitespace
+174,80,E,E501:line too long (82 > 79 characters)
+178,1,W,W293:blank line contains whitespace
+180,5,E,E303:too many blank lines (3)
+187,1,E,E302:expected 2 blank lines, found 1
+193,1,E,E402:module level import not at top of file
+194,1,E,E402:module level import not at top of file
+195,1,E,E402:module level import not at top of file
+196,1,E,E402:module level import not at top of file
+197,1,E,E402:module level import not at top of file
+201,1,E,E302:expected 2 blank lines, found 1
+206,1,E,E302:expected 2 blank lines, found 1
+210,1,E,E302:expected 2 blank lines, found 1
+214,1,E,E302:expected 2 blank lines, found 1
+220,1,E,E302:expected 2 blank lines, found 1
+224,1,E,E302:expected 2 blank lines, found 1
+228,1,E,E302:expected 2 blank lines, found 1
+232,1,E,E302:expected 2 blank lines, found 1
+236,1,E,E302:expected 2 blank lines, found 1
+236,77,W,W291:trailing whitespace
+255,1,W,W293:blank line contains whitespace
+266,80,E,E501:line too long (93 > 79 characters)
+269,1,W,W293:blank line contains whitespace
+273,1,E,E302:expected 2 blank lines, found 1
+277,1,E,E302:expected 2 blank lines, found 1
+
+2023-07-09 17:43:13.580 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/views.py
+2023-07-09 17:43:20.154 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/views.py
+2023-07-09 17:43:20.154 [info] cwd: .
+2023-07-09 17:43:20.246 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 17:43:20.246 [info] 11,51,W,W291:trailing whitespace
+50,1,E,E305:expected 2 blank lines after class or function definition, found 1
+51,1,E,E302:expected 2 blank lines, found 0
+51,77,W,W291:trailing whitespace
+73,17,E,E122:continuation line missing indentation or outdented
+74,17,E,E122:continuation line missing indentation or outdented
+75,17,E,E122:continuation line missing indentation or outdented
+76,17,E,E122:continuation line missing indentation or outdented
+77,17,E,E122:continuation line missing indentation or outdented
+78,17,E,E122:continuation line missing indentation or outdented
+79,17,E,E122:continuation line missing indentation or outdented
+80,1,W,W293:blank line contains whitespace
+83,22,E,E128:continuation line under-indented for visual indent
+86,1,W,W293:blank line contains whitespace
+108,1,E,E303:too many blank lines (9)
+109,1,E,E302:expected 2 blank lines, found 0
+112,1,E,E302:expected 2 blank lines, found 1
+112,61,W,W291:trailing whitespace
+119,1,W,W293:blank line contains whitespace
+131,1,W,W293:blank line contains whitespace
+132,80,E,E501:line too long (87 > 79 characters)
+133,1,W,W293:blank line contains whitespace
+145,1,W,W293:blank line contains whitespace
+146,80,E,E501:line too long (83 > 79 characters)
+147,1,W,W293:blank line contains whitespace
+159,1,W,W293:blank line contains whitespace
+160,80,E,E501:line too long (84 > 79 characters)
+161,1,W,W293:blank line contains whitespace
+173,1,W,W293:blank line contains whitespace
+174,80,E,E501:line too long (82 > 79 characters)
+178,1,W,W293:blank line contains whitespace
+180,5,E,E303:too many blank lines (3)
+187,1,E,E302:expected 2 blank lines, found 1
+193,1,E,E402:module level import not at top of file
+194,1,E,E402:module level import not at top of file
+195,1,E,E402:module level import not at top of file
+196,1,E,E402:module level import not at top of file
+197,1,E,E402:module level import not at top of file
+201,1,E,E302:expected 2 blank lines, found 1
+206,1,E,E302:expected 2 blank lines, found 1
+210,1,E,E302:expected 2 blank lines, found 1
+214,1,E,E302:expected 2 blank lines, found 1
+220,1,E,E302:expected 2 blank lines, found 1
+224,1,E,E302:expected 2 blank lines, found 1
+228,1,E,E302:expected 2 blank lines, found 1
+232,1,E,E302:expected 2 blank lines, found 1
+236,1,E,E302:expected 2 blank lines, found 1
+236,77,W,W291:trailing whitespace
+255,1,W,W293:blank line contains whitespace
+266,80,E,E501:line too long (93 > 79 characters)
+269,1,W,W293:blank line contains whitespace
+273,1,E,E302:expected 2 blank lines, found 1
+277,1,E,E302:expected 2 blank lines, found 1
+
+2023-07-09 17:43:20.375 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/views.py
+2023-07-09 17:43:26.522 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/views.py
+2023-07-09 17:43:26.522 [info] cwd: .
+2023-07-09 17:43:26.620 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 17:43:26.620 [info] 11,51,W,W291:trailing whitespace
+50,1,E,E305:expected 2 blank lines after class or function definition, found 1
+51,1,E,E302:expected 2 blank lines, found 0
+51,77,W,W291:trailing whitespace
+73,17,E,E122:continuation line missing indentation or outdented
+74,17,E,E122:continuation line missing indentation or outdented
+75,17,E,E122:continuation line missing indentation or outdented
+76,17,E,E122:continuation line missing indentation or outdented
+77,17,E,E122:continuation line missing indentation or outdented
+78,17,E,E122:continuation line missing indentation or outdented
+79,17,E,E122:continuation line missing indentation or outdented
+80,1,W,W293:blank line contains whitespace
+83,21,E,E128:continuation line under-indented for visual indent
+86,1,W,W293:blank line contains whitespace
+108,1,E,E303:too many blank lines (9)
+109,1,E,E302:expected 2 blank lines, found 0
+112,1,E,E302:expected 2 blank lines, found 1
+112,61,W,W291:trailing whitespace
+119,1,W,W293:blank line contains whitespace
+131,1,W,W293:blank line contains whitespace
+132,80,E,E501:line too long (87 > 79 characters)
+133,1,W,W293:blank line contains whitespace
+145,1,W,W293:blank line contains whitespace
+146,80,E,E501:line too long (83 > 79 characters)
+147,1,W,W293:blank line contains whitespace
+159,1,W,W293:blank line contains whitespace
+160,80,E,E501:line too long (84 > 79 characters)
+161,1,W,W293:blank line contains whitespace
+173,1,W,W293:blank line contains whitespace
+174,80,E,E501:line too long (82 > 79 characters)
+178,1,W,W293:blank line contains whitespace
+180,5,E,E303:too many blank lines (3)
+187,1,E,E302:expected 2 blank lines, found 1
+193,1,E,E402:module level import not at top of file
+194,1,E,E402:module level import not at top of file
+195,1,E,E402:module level import not at top of file
+196,1,E,E402:module level import not at top of file
+197,1,E,E402:module level import not at top of file
+201,1,E,E302:expected 2 blank lines, found 1
+206,1,E,E302:expected 2 blank lines, found 1
+210,1,E,E302:expected 2 blank lines, found 1
+214,1,E,E302:expected 2 blank lines, found 1
+220,1,E,E302:expected 2 blank lines, found 1
+224,1,E,E302:expected 2 blank lines, found 1
+228,1,E,E302:expected 2 blank lines, found 1
+232,1,E,E302:expected 2 blank lines, found 1
+236,1,E,E302:expected 2 blank lines, found 1
+236,77,W,W291:trailing whitespace
+255,1,W,W293:blank line contains whitespace
+266,80,E,E501:line too long (93 > 79 characters)
+269,1,W,W293:blank line contains whitespace
+273,1,E,E302:expected 2 blank lines, found 1
+277,1,E,E302:expected 2 blank lines, found 1
+
+2023-07-09 17:43:26.778 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/views.py
+2023-07-09 17:46:51.633 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/views.py
+2023-07-09 17:46:51.633 [info] cwd: .
+2023-07-09 17:46:51.727 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 17:46:51.727 [info] 11,51,W,W291:trailing whitespace
+50,1,E,E305:expected 2 blank lines after class or function definition, found 1
+51,1,E,E302:expected 2 blank lines, found 0
+51,77,W,W291:trailing whitespace
+80,1,W,W293:blank line contains whitespace
+83,17,E,E128:continuation line under-indented for visual indent
+86,1,W,W293:blank line contains whitespace
+108,1,E,E303:too many blank lines (9)
+109,1,E,E302:expected 2 blank lines, found 0
+112,1,E,E302:expected 2 blank lines, found 1
+112,61,W,W291:trailing whitespace
+119,1,W,W293:blank line contains whitespace
+131,1,W,W293:blank line contains whitespace
+132,80,E,E501:line too long (87 > 79 characters)
+133,1,W,W293:blank line contains whitespace
+145,1,W,W293:blank line contains whitespace
+146,80,E,E501:line too long (83 > 79 characters)
+147,1,W,W293:blank line contains whitespace
+159,1,W,W293:blank line contains whitespace
+160,80,E,E501:line too long (84 > 79 characters)
+161,1,W,W293:blank line contains whitespace
+173,1,W,W293:blank line contains whitespace
+174,80,E,E501:line too long (82 > 79 characters)
+178,1,W,W293:blank line contains whitespace
+180,5,E,E303:too many blank lines (3)
+187,1,E,E302:expected 2 blank lines, found 1
+193,1,E,E402:module level import not at top of file
+194,1,E,E402:module level import not at top of file
+195,1,E,E402:module level import not at top of file
+196,1,E,E402:module level import not at top of file
+197,1,E,E402:module level import not at top of file
+201,1,E,E302:expected 2 blank lines, found 1
+206,1,E,E302:expected 2 blank lines, found 1
+210,1,E,E302:expected 2 blank lines, found 1
+214,1,E,E302:expected 2 blank lines, found 1
+220,1,E,E302:expected 2 blank lines, found 1
+224,1,E,E302:expected 2 blank lines, found 1
+228,1,E,E302:expected 2 blank lines, found 1
+232,1,E,E302:expected 2 blank lines, found 1
+236,1,E,E302:expected 2 blank lines, found 1
+236,77,W,W291:trailing whitespace
+255,1,W,W293:blank line contains whitespace
+266,80,E,E501:line too long (93 > 79 characters)
+269,1,W,W293:blank line contains whitespace
+273,1,E,E302:expected 2 blank lines, found 1
+277,1,E,E302:expected 2 blank lines, found 1
+
+2023-07-09 17:46:51.857 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/views.py
+2023-07-09 17:47:37.247 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/views.py
+2023-07-09 17:47:37.247 [info] cwd: .
+2023-07-09 17:47:37.355 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 17:47:37.355 [info] 11,51,W,W291:trailing whitespace
+50,1,E,E305:expected 2 blank lines after class or function definition, found 1
+51,1,E,E302:expected 2 blank lines, found 0
+51,77,W,W291:trailing whitespace
+80,1,W,W293:blank line contains whitespace
+83,18,E,E128:continuation line under-indented for visual indent
+83,30,E,E231:missing whitespace after ':'
+86,1,W,W293:blank line contains whitespace
+108,1,E,E303:too many blank lines (9)
+109,1,E,E302:expected 2 blank lines, found 0
+112,1,E,E302:expected 2 blank lines, found 1
+112,61,W,W291:trailing whitespace
+119,1,W,W293:blank line contains whitespace
+131,1,W,W293:blank line contains whitespace
+132,80,E,E501:line too long (87 > 79 characters)
+133,1,W,W293:blank line contains whitespace
+145,1,W,W293:blank line contains whitespace
+146,80,E,E501:line too long (83 > 79 characters)
+147,1,W,W293:blank line contains whitespace
+159,1,W,W293:blank line contains whitespace
+160,80,E,E501:line too long (84 > 79 characters)
+161,1,W,W293:blank line contains whitespace
+173,1,W,W293:blank line contains whitespace
+174,80,E,E501:line too long (82 > 79 characters)
+178,1,W,W293:blank line contains whitespace
+180,5,E,E303:too many blank lines (3)
+187,1,E,E302:expected 2 blank lines, found 1
+193,1,E,E402:module level import not at top of file
+194,1,E,E402:module level import not at top of file
+195,1,E,E402:module level import not at top of file
+196,1,E,E402:module level import not at top of file
+197,1,E,E402:module level import not at top of file
+201,1,E,E302:expected 2 blank lines, found 1
+206,1,E,E302:expected 2 blank lines, found 1
+210,1,E,E302:expected 2 blank lines, found 1
+214,1,E,E302:expected 2 blank lines, found 1
+220,1,E,E302:expected 2 blank lines, found 1
+224,1,E,E302:expected 2 blank lines, found 1
+228,1,E,E302:expected 2 blank lines, found 1
+232,1,E,E302:expected 2 blank lines, found 1
+236,1,E,E302:expected 2 blank lines, found 1
+236,77,W,W291:trailing whitespace
+255,1,W,W293:blank line contains whitespace
+266,80,E,E501:line too long (93 > 79 characters)
+269,1,W,W293:blank line contains whitespace
+273,1,E,E302:expected 2 blank lines, found 1
+277,1,E,E302:expected 2 blank lines, found 1
+
+2023-07-09 17:47:37.479 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/views.py
+2023-07-09 17:47:46.942 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/views.py
+2023-07-09 17:47:46.942 [info] cwd: .
+2023-07-09 17:47:47.041 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 17:47:47.041 [info] 11,51,W,W291:trailing whitespace
+50,1,E,E305:expected 2 blank lines after class or function definition, found 1
+51,1,E,E302:expected 2 blank lines, found 0
+51,77,W,W291:trailing whitespace
+80,1,W,W293:blank line contains whitespace
+83,17,E,E128:continuation line under-indented for visual indent
+83,29,E,E231:missing whitespace after ':'
+86,1,W,W293:blank line contains whitespace
+108,1,E,E303:too many blank lines (9)
+109,1,E,E302:expected 2 blank lines, found 0
+112,1,E,E302:expected 2 blank lines, found 1
+112,61,W,W291:trailing whitespace
+119,1,W,W293:blank line contains whitespace
+131,1,W,W293:blank line contains whitespace
+132,80,E,E501:line too long (87 > 79 characters)
+133,1,W,W293:blank line contains whitespace
+145,1,W,W293:blank line contains whitespace
+146,80,E,E501:line too long (83 > 79 characters)
+147,1,W,W293:blank line contains whitespace
+159,1,W,W293:blank line contains whitespace
+160,80,E,E501:line too long (84 > 79 characters)
+161,1,W,W293:blank line contains whitespace
+173,1,W,W293:blank line contains whitespace
+174,80,E,E501:line too long (82 > 79 characters)
+178,1,W,W293:blank line contains whitespace
+180,5,E,E303:too many blank lines (3)
+187,1,E,E302:expected 2 blank lines, found 1
+193,1,E,E402:module level import not at top of file
+194,1,E,E402:module level import not at top of file
+195,1,E,E402:module level import not at top of file
+196,1,E,E402:module level import not at top of file
+197,1,E,E402:module level import not at top of file
+201,1,E,E302:expected 2 blank lines, found 1
+206,1,E,E302:expected 2 blank lines, found 1
+210,1,E,E302:expected 2 blank lines, found 1
+214,1,E,E302:expected 2 blank lines, found 1
+220,1,E,E302:expected 2 blank lines, found 1
+224,1,E,E302:expected 2 blank lines, found 1
+228,1,E,E302:expected 2 blank lines, found 1
+232,1,E,E302:expected 2 blank lines, found 1
+236,1,E,E302:expected 2 blank lines, found 1
+236,77,W,W291:trailing whitespace
+255,1,W,W293:blank line contains whitespace
+266,80,E,E501:line too long (93 > 79 characters)
+269,1,W,W293:blank line contains whitespace
+273,1,E,E302:expected 2 blank lines, found 1
+277,1,E,E302:expected 2 blank lines, found 1
+
+2023-07-09 17:47:47.180 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/views.py
+2023-07-09 17:52:03.539 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/views.py
+2023-07-09 17:52:03.539 [info] cwd: .
+2023-07-09 17:52:03.615 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 17:52:03.615 [info] 11,51,W,W291:trailing whitespace
+50,1,E,E305:expected 2 blank lines after class or function definition, found 1
+51,1,E,E302:expected 2 blank lines, found 0
+51,77,W,W291:trailing whitespace
+80,1,W,W293:blank line contains whitespace
+83,17,E,E128:continuation line under-indented for visual indent
+83,29,E,E231:missing whitespace after ':'
+86,1,W,W293:blank line contains whitespace
+107,1,W,W391:blank line at end of file
+
+2023-07-09 17:52:03.769 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/views.py
+2023-07-09 18:19:28.127 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/tests.py
+2023-07-09 18:19:28.127 [info] cwd: .
+2023-07-09 18:19:28.192 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 18:19:28.192 [info] 
+2023-07-09 18:19:31.847 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/models.py
+2023-07-09 18:19:31.847 [info] cwd: .
+2023-07-09 18:19:31.919 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 18:19:31.919 [info] 9,1,E,E303:too many blank lines (6)
+21,5,E,E303:too many blank lines (2)
+56,1,W,W293:blank line contains whitespace
+58,5,E,E303:too many blank lines (2)
+75,1,W,W293:blank line contains whitespace
+77,5,E,E303:too many blank lines (2)
+
+2023-07-09 18:19:35.336 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/forms.py
+2023-07-09 18:19:35.336 [info] cwd: .
+2023-07-09 18:19:35.412 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 18:19:35.412 [info] 10,1,E,E302:expected 2 blank lines, found 1
+18,1,W,W293:blank line contains whitespace
+20,5,E,E265:block comment should start with '# '
+39,5,E,E265:block comment should start with '# '
+51,1,W,W293:blank line contains whitespace
+61,16,E,E131:continuation line unaligned for hanging indent
+64,1,W,W293:blank line contains whitespace
+65,1,W,W293:blank line contains whitespace
+66,9,E,E303:too many blank lines (2)
+76,1,W,W293:blank line contains whitespace
+77,1,W,W293:blank line contains whitespace
+78,9,E,E303:too many blank lines (2)
+88,1,W,W293:blank line contains whitespace
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+100,1,W,W293:blank line contains whitespace
+
+2023-07-09 18:19:41.485 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/urls.py
+2023-07-09 18:19:41.486 [info] cwd: .
+2023-07-09 18:19:41.551 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 18:19:41.551 [info] 14,1,E,E303:too many blank lines (6)
+17,80,E,E501:line too long (86 > 79 characters)
+22,5,E,E265:block comment should start with '# '
+24,1,W,W293:blank line contains whitespace
+29,1,W,W391:blank line at end of file
+
+2023-07-09 18:28:07.619 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/views.py
+2023-07-09 18:28:07.619 [info] cwd: .
+2023-07-09 18:28:07.690 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 18:28:07.690 [info] 11,51,W,W291:trailing whitespace
+50,1,E,E305:expected 2 blank lines after class or function definition, found 1
+51,1,E,E302:expected 2 blank lines, found 0
+51,77,W,W291:trailing whitespace
+80,1,W,W293:blank line contains whitespace
+83,17,E,E128:continuation line under-indented for visual indent
+83,29,E,E231:missing whitespace after ':'
+86,1,W,W293:blank line contains whitespace
+106,1,W,W391:blank line at end of file
+
+2023-07-09 18:28:07.826 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/views.py
+2023-07-09 18:36:55.578 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/urls.py
+2023-07-09 18:36:55.578 [info] cwd: .
+2023-07-09 18:36:55.642 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 18:36:55.642 [info] 12,80,E,E501:line too long (86 > 79 characters)
+17,5,E,E265:block comment should start with '# '
+19,1,W,W293:blank line contains whitespace
+24,1,W,W391:blank line at end of file
+
+2023-07-09 18:36:55.793 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/urls.py
+2023-07-09 18:37:25.496 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/urls.py
+2023-07-09 18:37:25.496 [info] cwd: .
+2023-07-09 18:37:25.562 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 18:37:25.562 [info] 12,44,W,W291:trailing whitespace
+18,1,W,W293:blank line contains whitespace
+21,1,W,W391:blank line at end of file
+
+2023-07-09 18:37:25.728 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/urls.py
+2023-07-09 18:38:31.069 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/models.py
+2023-07-09 18:38:31.069 [info] cwd: .
+2023-07-09 18:38:31.141 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 18:38:31.141 [info] 9,1,E,E303:too many blank lines (6)
+21,5,E,E303:too many blank lines (2)
+56,1,W,W293:blank line contains whitespace
+58,5,E,E303:too many blank lines (2)
+75,1,W,W293:blank line contains whitespace
+77,5,E,E303:too many blank lines (2)
+
+2023-07-09 18:38:47.288 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/models.py
+2023-07-09 18:38:47.288 [info] cwd: .
+2023-07-09 18:38:47.360 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 18:38:47.360 [info] 17,5,E,E303:too many blank lines (2)
+52,1,W,W293:blank line contains whitespace
+54,5,E,E303:too many blank lines (2)
+71,1,W,W293:blank line contains whitespace
+73,5,E,E303:too many blank lines (2)
+
+2023-07-09 18:38:47.518 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/models.py
+2023-07-09 18:38:57.536 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/models.py
+2023-07-09 18:38:57.536 [info] cwd: .
+2023-07-09 18:38:57.609 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 18:38:57.609 [info] 17,5,E,E303:too many blank lines (2)
+52,1,W,W293:blank line contains whitespace
+54,5,E,E303:too many blank lines (2)
+71,1,W,W293:blank line contains whitespace
+73,5,E,E303:too many blank lines (2)
+
+2023-07-09 18:38:57.773 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/models.py
+2023-07-09 18:52:08.615 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/models.py
+2023-07-09 18:52:08.615 [info] cwd: .
+2023-07-09 18:52:08.689 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 18:52:08.689 [info] 4,1,E,E302:expected 2 blank lines, found 1
+17,5,E,E303:too many blank lines (2)
+26,1,E,E303:too many blank lines (3)
+46,1,E,E303:too many blank lines (6)
+74,1,W,W293:blank line contains whitespace
+76,5,E,E303:too many blank lines (2)
+93,1,W,W293:blank line contains whitespace
+95,5,E,E303:too many blank lines (2)
+
+2023-07-09 18:52:08.821 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/models.py
+2023-07-09 18:52:17.316 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/models.py
+2023-07-09 18:52:17.316 [info] cwd: .
+2023-07-09 18:52:17.395 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 18:52:17.395 [info] 18,5,E,E303:too many blank lines (2)
+27,1,E,E303:too many blank lines (3)
+47,1,E,E303:too many blank lines (6)
+75,1,W,W293:blank line contains whitespace
+77,5,E,E303:too many blank lines (2)
+94,1,W,W293:blank line contains whitespace
+96,5,E,E303:too many blank lines (2)
+
+2023-07-09 18:52:17.553 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/models.py
+2023-07-09 18:54:11.292 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/models.py
+2023-07-09 18:54:11.292 [info] cwd: .
+2023-07-09 18:54:11.374 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 18:54:11.374 [info] 18,5,E,E303:too many blank lines (2)
+46,1,E,E303:too many blank lines (6)
+74,1,W,W293:blank line contains whitespace
+76,5,E,E303:too many blank lines (2)
+93,1,W,W293:blank line contains whitespace
+95,5,E,E303:too many blank lines (2)
+
+2023-07-09 18:54:11.515 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/models.py
+2023-07-09 18:56:31.023 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/models.py
+2023-07-09 18:56:31.023 [info] cwd: .
+2023-07-09 18:56:31.097 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 18:56:31.097 [info] 18,5,E,E303:too many blank lines (2)
+49,1,E,E303:too many blank lines (9)
+77,1,W,W293:blank line contains whitespace
+79,5,E,E303:too many blank lines (2)
+96,1,W,W293:blank line contains whitespace
+98,5,E,E303:too many blank lines (2)
+
+2023-07-09 18:56:31.243 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/models.py
+2023-07-09 18:57:50.319 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/models.py
+2023-07-09 18:57:50.319 [info] cwd: .
+2023-07-09 18:57:50.393 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 18:57:50.393 [info] 18,5,E,E303:too many blank lines (2)
+49,1,E,E303:too many blank lines (9)
+77,1,W,W293:blank line contains whitespace
+79,5,E,E303:too many blank lines (2)
+96,1,W,W293:blank line contains whitespace
+98,5,E,E303:too many blank lines (2)
+
+2023-07-09 18:57:50.526 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/models.py
+2023-07-09 18:59:10.557 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/models.py
+2023-07-09 18:59:10.557 [info] cwd: .
+2023-07-09 18:59:10.625 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 18:59:10.625 [info] 6,1,E,E303:too many blank lines (3)
+19,5,E,E303:too many blank lines (2)
+49,1,W,W391:blank line at end of file
+
+2023-07-09 18:59:10.779 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/models.py
+2023-07-09 18:59:47.783 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/models.py
+2023-07-09 18:59:47.783 [info] cwd: .
+2023-07-09 18:59:47.856 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 18:59:47.856 [info] 18,5,E,E303:too many blank lines (2)
+48,1,W,W391:blank line at end of file
+
+2023-07-09 18:59:48.007 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/models.py
+2023-07-09 18:59:56.190 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/models.py
+2023-07-09 18:59:56.190 [info] cwd: .
+2023-07-09 18:59:56.266 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 18:59:56.266 [info] 47,1,W,W391:blank line at end of file
+
+2023-07-09 18:59:56.431 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/models.py
+2023-07-09 19:01:30.811 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/models.py
+2023-07-09 19:01:30.811 [info] cwd: .
+2023-07-09 19:01:30.881 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 19:01:30.881 [info] 47,1,W,W391:blank line at end of file
+
+2023-07-09 19:01:31.023 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/models.py
+2023-07-09 19:02:16.362 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/models.py
+2023-07-09 19:02:16.362 [info] cwd: .
+2023-07-09 19:02:16.450 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 19:02:16.450 [info] 47,1,W,W391:blank line at end of file
+
+2023-07-09 19:02:16.602 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/models.py
+2023-07-09 19:03:44.304 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/models.py
+2023-07-09 19:03:44.304 [info] cwd: .
+2023-07-09 19:03:44.373 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 19:03:44.373 [info] 47,1,W,W391:blank line at end of file
+
+2023-07-09 19:03:44.556 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/models.py
+2023-07-09 19:08:26.049 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/models.py
+2023-07-09 19:08:26.049 [info] cwd: .
+2023-07-09 19:08:26.117 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 19:08:26.117 [info] 48,1,W,W391:blank line at end of file
+
+2023-07-09 19:08:26.255 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/models.py
+2023-07-09 19:09:43.476 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/models.py
+2023-07-09 19:09:43.476 [info] cwd: .
+2023-07-09 19:09:43.547 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 19:09:43.547 [info] 41,1,E,E302:expected 2 blank lines, found 1
+51,1,W,W391:blank line at end of file
+
+2023-07-09 19:09:43.699 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/models.py
+2023-07-09 19:09:57.351 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/models.py
+2023-07-09 19:09:57.351 [info] cwd: .
+2023-07-09 19:09:57.418 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 19:09:57.418 [info] 52,1,W,W391:blank line at end of file
+
+2023-07-09 19:09:57.603 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/models.py
+2023-07-09 19:11:28.782 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/models.py
+2023-07-09 19:11:28.782 [info] cwd: .
+2023-07-09 19:11:28.857 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 19:11:28.857 [info] 18,5,E,E303:too many blank lines (2)
+49,1,E,E303:too many blank lines (9)
+77,1,W,W293:blank line contains whitespace
+79,5,E,E303:too many blank lines (2)
+96,1,W,W293:blank line contains whitespace
+98,5,E,E303:too many blank lines (2)
+
+2023-07-09 19:11:28.932 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/models.py
+2023-07-09 19:12:03.767 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/models.py
+2023-07-09 19:12:03.767 [info] cwd: .
+2023-07-09 19:12:03.852 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 19:12:03.852 [info] 4,1,E,E302:expected 2 blank lines, found 1
+17,5,E,E303:too many blank lines (2)
+52,1,W,W293:blank line contains whitespace
+54,5,E,E303:too many blank lines (2)
+71,1,W,W293:blank line contains whitespace
+73,5,E,E303:too many blank lines (2)
+
+2023-07-09 19:12:03.978 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/models.py
+2023-07-09 19:12:54.593 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/models.py
+2023-07-09 19:12:54.593 [info] cwd: .
+2023-07-09 19:12:54.666 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 19:12:54.666 [info] 5,1,E,E302:expected 2 blank lines, found 1
+18,5,E,E303:too many blank lines (2)
+53,1,W,W293:blank line contains whitespace
+55,5,E,E303:too many blank lines (2)
+72,1,W,W293:blank line contains whitespace
+74,5,E,E303:too many blank lines (2)
+
+2023-07-09 19:12:54.825 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/models.py
+2023-07-09 19:13:23.429 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/models.py
+2023-07-09 19:13:23.429 [info] cwd: .
+2023-07-09 19:13:23.503 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 19:13:23.503 [info] 6,1,E,E302:expected 2 blank lines, found 1
+18,5,E,E303:too many blank lines (2)
+53,1,W,W293:blank line contains whitespace
+55,5,E,E303:too many blank lines (2)
+72,1,W,W293:blank line contains whitespace
+74,5,E,E303:too many blank lines (2)
+
+2023-07-09 19:13:23.659 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/models.py
+2023-07-09 19:19:28.877 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/forms.py
+2023-07-09 19:19:28.877 [info] cwd: .
+2023-07-09 19:19:28.955 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 19:19:28.955 [info] 10,1,E,E302:expected 2 blank lines, found 1
+18,1,W,W293:blank line contains whitespace
+20,5,E,E265:block comment should start with '# '
+39,5,E,E265:block comment should start with '# '
+51,1,W,W293:blank line contains whitespace
+61,16,E,E131:continuation line unaligned for hanging indent
+64,1,W,W293:blank line contains whitespace
+65,1,W,W293:blank line contains whitespace
+66,9,E,E303:too many blank lines (2)
+76,1,W,W293:blank line contains whitespace
+77,1,W,W293:blank line contains whitespace
+78,9,E,E303:too many blank lines (2)
+88,1,W,W293:blank line contains whitespace
+89,1,W,W293:blank line contains whitespace
+90,9,E,E303:too many blank lines (2)
+100,1,W,W293:blank line contains whitespace
+
+2023-07-09 19:21:55.817 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/views.py
+2023-07-09 19:21:55.817 [info] cwd: .
+2023-07-09 19:21:55.891 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 19:21:55.891 [info] 11,51,W,W291:trailing whitespace
+50,1,E,E305:expected 2 blank lines after class or function definition, found 1
+51,1,E,E302:expected 2 blank lines, found 0
+51,77,W,W291:trailing whitespace
+80,1,W,W293:blank line contains whitespace
+83,17,E,E128:continuation line under-indented for visual indent
+83,29,E,E231:missing whitespace after ':'
+86,1,W,W293:blank line contains whitespace
+106,1,W,W391:blank line at end of file
+
+2023-07-09 19:21:56.033 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/views.py
+2023-07-09 19:40:49.962 [info] > ~/.pyenv/versions/3.8.11/bin/python /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/linter.py -m pycodestyle ./view_menu/views.py
+2023-07-09 19:40:49.962 [info] cwd: .
+2023-07-09 19:40:50.044 [info] ##########Linting Output - pycodestyle##########
+
+2023-07-09 19:40:50.044 [info] 11,51,W,W291:trailing whitespace
+26,80,E,E501:line too long (103 > 79 characters)
+31,1,E,E303:too many blank lines (3)
+50,1,E,E305:expected 2 blank lines after class or function definition, found 1
+51,1,E,E302:expected 2 blank lines, found 0
+51,77,W,W291:trailing whitespace
+80,1,W,W293:blank line contains whitespace
+83,17,E,E128:continuation line under-indented for visual indent
+83,29,E,E231:missing whitespace after ':'
+86,1,W,W293:blank line contains whitespace
+106,1,W,W391:blank line at end of file
+
+2023-07-09 19:40:50.161 [info] Discover tests for workspace name: Afrik-kitchen - uri: /workspace/Afrik-kitchen/view_menu/views.py

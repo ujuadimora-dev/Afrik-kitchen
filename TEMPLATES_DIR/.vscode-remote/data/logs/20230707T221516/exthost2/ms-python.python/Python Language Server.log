@@ -1,0 +1,112 @@
+2023-07-07 23:54:08.527 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2"
+
+2023-07-07 23:54:16.069 [info] ERROR:pygls.protocol:Failed to handle request 6 textDocument/hover HoverParams(text_document=TextDocumentIdentifier(uri='file:///workspace/Afrik-kitchen/booking/views.py'), position=139:0, work_done_token=None)
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 378, in hover
+    jedi_script.help(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper
+    raise ValueError('`column` parameter (%d) is not in a valid range '
+ValueError: `column` parameter (1) is not in a valid range (0-0) for line 140 ('\n').
+
+2023-07-07 23:54:16.070 [info] [Error - 11:54:16 PM] Request textDocument/hover failed.
+2023-07-07 23:54:16.070 [info]   Message: ValueError: `column` parameter (1) is not in a valid range (0-0) for line 140 ('\n').
+  Code: -32602 
+{'traceback': ['  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request\n    self._execute_request(msg_id, handler, params)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request\n    self._send_response(msg_id, handler(params))\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 378, in hover\n    jedi_script.help(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper\n    raise ValueError(\'`column` parameter (%d) is not in a valid range \'\n']}
+2023-07-08 00:12:26.211 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "15"
+
+2023-07-08 00:13:13.083 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "53"
+
+2023-07-08 00:40:17.407 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "119"
+
+2023-07-08 00:41:09.806 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "130"
+
+2023-07-08 00:56:24.238 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "191"
+
+2023-07-08 01:17:02.004 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "245"
+
+2023-07-08 01:19:59.066 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "320"
+
+2023-07-08 01:21:36.979 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "359"
+
+2023-07-08 01:22:53.017 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "389"
+
+2023-07-08 01:22:57.011 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "394"
+
+2023-07-08 01:22:58.089 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "398"
+
+2023-07-08 01:23:10.111 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "411"
+
+2023-07-08 01:23:19.524 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "418"
+
+2023-07-08 01:23:20.529 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "421"
+
+2023-07-08 01:23:23.926 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "425"
+
+2023-07-08 01:23:24.028 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "426"
+
+2023-07-08 01:23:27.045 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "431"
+
+2023-07-08 01:23:27.375 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "432"
+
+2023-07-08 01:23:34.272 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "440"
+
+2023-07-08 01:23:34.986 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "442"
+
+2023-07-08 01:23:36.488 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "446"
+
+2023-07-08 01:23:39.255 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "450"
+
+2023-07-08 01:24:46.826 [info] ERROR:pygls.protocol:Failed to handle request 459 textDocument/codeAction CodeActionParams(text_document=TextDocumentIdentifier(uri='file:///workspace/Afrik-kitchen/booking/views.py'), range=213:37-213:37, context=CodeActionContext(diagnostics=[], only=None, trigger_kind=<CodeActionTriggerKind.Automatic: 2>), work_done_token=None, partial_result_token=None)
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 578, in code_action
+    extract_variable_refactoring = jedi_script.extract_variable(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper
+    return func(self, line, column, *args, **kwargs)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 615, in extract_variable
+    return extract_variable(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 19, in extract_variable
+    nodes = _find_nodes(module_node, pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 87, in _find_nodes
+    nodes = _remove_unwanted_expression_nodes(parent_node, pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 198, in _remove_unwanted_expression_nodes
+    nodes[0:1] = _remove_unwanted_expression_nodes(nodes[0], pos, until_pos)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 196, in _remove_unwanted_expression_nodes
+    nodes = nodes[start_index:end_index + 1]
+UnboundLocalError: local variable 'start_index' referenced before assignment
+
+2023-07-08 01:24:46.827 [info] [Error - 1:24:46 AM] Request textDocument/codeAction failed.
+2023-07-08 01:24:46.827 [info]   Message: UnboundLocalError: local variable 'start_index' referenced before assignment
+  Code: -32602 
+{'traceback': ['  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request\n    self._execute_request(msg_id, handler, params)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request\n    self._send_response(msg_id, handler(params))\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 578, in code_action\n    extract_variable_refactoring = jedi_script.extract_variable(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 487, in wrapper\n    return func(self, line, column, *args, **kwargs)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/__init__.py", line 615, in extract_variable\n    return extract_variable(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 19, in extract_variable\n    nodes = _find_nodes(module_node, pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 87, in _find_nodes\n    nodes = _remove_unwanted_expression_nodes(parent_node, pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 198, in _remove_unwanted_expression_nodes\n    nodes[0:1] = _remove_unwanted_expression_nodes(nodes[0], pos, until_pos)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/refactoring/extract.py", line 196, in _remove_unwanted_expression_nodes\n    nodes = nodes[start_index:end_index + 1]\n']}
+2023-07-08 01:33:13.995 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "492"
+
+2023-07-08 01:33:27.556 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "496"
+
+2023-07-08 01:47:34.607 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "632"
+
+2023-07-08 01:49:56.753 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "644"
+
+2023-07-08 01:51:45.220 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "659"
+
+2023-07-08 02:05:28.545 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "758"
+
+2023-07-08 02:18:13.801 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "842"
+
+2023-07-08 02:18:13.953 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "843"
+
+2023-07-08 02:18:34.067 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "856"
+
+2023-07-08 02:56:07.970 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "953"
+
+2023-07-08 03:02:55.147 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "983"
+
+2023-07-08 03:05:17.065 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1044"
+

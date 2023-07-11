@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Create a Booking</h2>
+  <form method="POST" action="{% url 'booking:create_booking' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Create Booking</button>
+  </form>
+
+  <h2>Manage Bookings</h2>
+  <ul>
+    {% for booking in bookings %}
+      <li>
+        Booking ID: {{ booking.id }}<br>
+        Booking Date: {{ booking.reservation_date }}<br>
+        Booking Time: {{ booking.reservation_time }}<br>
+        <!-- Option to Cancel a Booking -
+        <a href="{% url 'booking:cancel_booking' booking.id %}">Cancel</a> |-->
+        <!-- Option to Delete a Booking -->
+        <a href="{% url 'booking:delete_booking' booking.id %}">Cancel</a> |
+        <!-- Option to Edit a Booking -->
+        <a href="{% url 'booking:edit_booking' booking.id %}">Edit</a>
+      </li>
+    {% empty %}
+      <li>No bookings available.</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

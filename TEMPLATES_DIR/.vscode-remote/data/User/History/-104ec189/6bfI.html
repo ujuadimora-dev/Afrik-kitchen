@@ -1,0 +1,178 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="container-wrapper">
+    <div class="hero-img">
+        <img src="{% static 'images/afrik_logo.png' %}" alt="African Kitchen background" width="200" height="100">
+    </div>
+    <div class="content-wrapper main-column">
+        <div class="text-area content">
+            <!-- Title and about us sections -->
+            <h1 class="text-center  green-heading cursive-heading ">
+                *Ndewo*<span>*Wilkommen*</span><span>*Welcome*</span><span>*Bonjour*</span>
+            </h1>
+            <div>
+                <p>
+                    Here at <span class="green-heading cursive-heading">Afrik Kitchen</span>, we speak the language of
+                    food. All our food ingredients are
+                    orgnic, that i can assure you.They are organically made or prepard with touch of proffessionlism.
+
+                </p>
+                <p>
+                    If your are seeking where to relax, after a hectic work of the day, or you want to have business or
+                    familiy lunch? or where you would like a home made dinner with friends, or you are Dating out? Here
+                    @Afrik Kitchen is the
+                    right restaurant for You as well as for every occasion.
+                </p>
+            </div>
+
+            <!-- Our Story Section -->
+            <section class="our-story ">
+                <div class="container-wrapper">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="story-image">
+                                <img src="{% static 'images/our_story.jpg' %}" alt="Our Story">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="story-text">
+                                <h1 class="green-heading cursive-heading">Our Story</h1>
+                                <p> We have you, Families, and single in mind when preparing our meals.
+                                    A healthy preparations in smaller portions is on the menu that youngsters will
+                                    enjoy..
+                                </p>
+                                <p> Here our staff are polite ,friendly and equally happy taking your Order abd
+                                    serving You , minimal time spent in taking and
+                                    serving orders. We gurantee You of relaxed atmosphere with a soothing background
+                                    music as you enjoy your meal .
+
+                                    .</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Menu Section -->
+            <section class="menu">
+                <div class="container-wrapper">
+                    <h1 class="text-center green-heading cursive-heading">Menu</h1>
+                    <div class="row justify-content-center">
+                        <div class="col-md-4  ">
+                            <div class="menu-card fade-in ">
+                                <h3>Breakfast</h3>
+                                <p>A typical healthy African Breakfast. It contains all essential nutrients
+                                    (protein, fat and oil, fish, etc.) and there is also one made for vegetarians.
+                                    We prepare it the way you will like it.</p>
+                                </p>
+                                <a href="{% url 'view_menu:breakfast' %}" class="btn btn-success">Click here for
+                                    more</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="menu-card fade-in">
+                                <h3>Lunch</h3>
+                                <p>A healthy and mouth-watering fulfilling meal with the right atmosphere. This can
+                                    keep you going for the rest of the day.</p>
+                                <a href="{% url 'view_menu:lunch' %}" class="btn btn-success">Click here for
+                                    more</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="menu-card fade-in">
+                                <h3>Dinner</h3>
+                                <p>A delicious and light dinner with a soothing ambiance and background music. This
+                                    contains meat, fish, vegetables, onions, and oil.
+                                </p>
+                                <a href="{% url 'view_menu:dinner' %}" class="btn btn-success">Click here for
+                                    more</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="menu-card fade-in">
+                                <h3>Sides</h3>
+                                <p>A delicious side dish that can complement your meal while we prepare your order.
+                                </p>.</p>
+                                <a href="{% url 'view_menu:side' %}" class="btn btn-success">Click here for more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Events Section -->
+            <section class="events">
+                <div class="container-wrapper">
+                    <h1 class="text-center green-heading cursive-heading">Events/Table Bookings</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="event-card">
+                                <img src="{% static 'images/event_afrik.jpg' %}" alt="Event ennquiring/booking">
+                                <h3 class="green-heading cursive-heading">Contact Us for Your Events</h3>
+                                <p>@ Afrik Kitchen, we are at best at organising events such as weddings, Birthdays,
+                                    party,
+                                    house warming party, churching, graduations party, compaies and school parties.
+                                    You can book
+                                    today or make enquiry here</p>
+                                <a href="{% url 'home:contact' %}" class="btn btn-success">contact Us</a>
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="event-card">
+                                <img src="{% static 'images/event.jpg' %}" alt="Table booking">
+                                <h3 class="green-heading cursive-heading">Book Your Table(s) </h3>
+                                <p>You can book tables for your dinner, Company's meeting, Dating out,
+                                    familiy's meeting , lunck or dinner as case may be here.</p>
+                                <a href="{% url 'booking:TableListView' %}" class="btn btn-success">Book Table</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer Section -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="footer-card">
+                                <h3 class="green-heading cursive-heading">Afrik Kitchen</h3>
+                                <p>14 Gronland Street Bremen<br>Bremen, State Germany<br>Phone: <a
+                                        href="tel:+1234567890">123-456-7890</a></p>
+                            </div>
+                        
+                    
+
+                        <div class="col-md-4">
+                            <div class="footer-card">
+                                <h3>Google Map</h3>
+                                <div class="mapouter">
+                                    <div class="gmap_canvas">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2392.700881930244!2d8.710993774212072!3d53.15146258929045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b12bf160e48f8f%3A0xbd35931912ecfb78!2sGr%C3%B6nlandstra%C3%9Fe%2014%2C%2028719%20Bremen!5e0!3m2!1sde!2sde!4v1689028745668!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                        width="100%" height="100" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <div class="col-md-4">
+                            <div class="footer-card">
+                                <h3>Opening Hours</h3>
+                                <ul>
+                                    <li>Monday to Saturday: 7.00am - 10.45pm</li>
+                                    <li>Holidays: 10pm - 4pm</li>
+                                    <li>Sundays: closed</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+            {% endblock %}

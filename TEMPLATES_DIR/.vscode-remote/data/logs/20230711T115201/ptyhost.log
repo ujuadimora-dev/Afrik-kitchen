@@ -1,0 +1,8 @@
+2023-07-11 11:56:27.383 [info] Expanding terminal instance, old id 1 -> new id undefined
+2023-07-11 11:56:31.693 [warning] Persistent process "1": Process had no disconnect runners but was an orphan
+2023-07-11 11:56:31.695 [info] Persistent process reconnection "1"
+2023-07-11 11:56:31.729 [info] Persistent process "1": Replaying 71 chars and 1 size events
+2023-07-11 12:23:07.351 [info] Expanding terminal instance, old id 1 -> new id undefined
+2023-07-11 12:23:09.355 [warning] Persistent process "1": Process had no disconnect runners but was an orphan
+2023-07-11 12:23:09.356 [info] Persistent process reconnection "1"
+2023-07-11 12:23:09.419 [info] Persistent process "1": Replaying 71 chars and 1 size events

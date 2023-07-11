@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+</head>
+<body>
+    <h1>Contact Form</h1>
+
+    <form method="post" action="{% url 'contact' %}">
+        {% csrf_token %}
+        
+        <div>
+            <label for="{{ form.name.id_for_label }}">Name:</label>
+            {{ form.name }}
+        </div>
+        
+        <div>
+            <label for="{{ form.email.id_for_label }}">Email:</label>
+            {{ form.email }}
+        </div>
+        
+        <div>
+            <label for="{{ form.phone.id_for_label }}">Phone:</label>
+            {{ form.phone }}
+        </div>
+        
+        <div>
+            <label for="{{ form.choice_of_event.id_for_label }}">Choice of Event:</label>
+            {{ form.choice_of_event }}
+        </div>
+        
+        <div>
+            <label for="{{ form.number_of_guest.id_for_label }}">Number of Guests:</label>
+            {{ form.number_of_guest }}
+        </div>
+        
+        <div>
+            <label for="{{ form.propose_date_time.id_for_label }}">Proposed Date and Time:</label>
+            {{ form.propose_date_time }}
+        </div>
+        
+        <div>
+            <label for="{{ form.other_info.id_for_label }}">Other Information:</label>
+            {{ form.other_info }}
+        </div>
+        
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>

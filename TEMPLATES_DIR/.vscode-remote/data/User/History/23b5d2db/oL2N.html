@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage the booking</title>
+    <script>
+        function confirmAction(action) {
+            if (confirm("Are you sure you want to " + action + " this booking?")) {
+                alert("Booking " + action + " successful!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Booking Manager</h1>
+    <ul>
+        <li><a href="edit_booking.html" onclick="confirmAction('edit')">Edit Booking</a></li>
+        <li><a href="cancel_booking.html" onclick="confirmAction('cancel')">Cancel Booking</a></li>
+        <li><a href="delete_booking.html" onclick="confirmAction('delete')">Delete Booking</a></li>
+        <li><a href="rebook_booking.html" onclick="confirmAction('rebook')">Rebook Booking</a></li>
+    </ul>
+
+    <ul>
+        <li><a href="cancel_booking.html" target="booking_frame">Cancel Booking</a></li>
+        <li><a href="delete_booking.html" target="booking_frame">Delete Booking</a></li>
+        <li><a href="rebook_booking.html" target="booking_frame">Rebook Booking</a></li>
+    </ul>
+
+    <iframe name="booking_frame" width="100%" height="600" frameborder="0"></iframe>
+</body>
+</html>

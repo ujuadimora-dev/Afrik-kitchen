@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a table</title>
+</head>
+<body>
+    <form action="" method="POST">
+        {% csrf_token %}
+        
+        <!-- Display the time -->
+        <label for="id_reservation_time">Time:</label>
+        <select name="reservation_time" id="id_reservation_time">
+            {% for time in booking_time_choices %}
+            <option value="{{ time.0 }}">{{ time.1 }}</option>
+            {% endfor %}
+        </select>
+
+        <!-- Display the customer name -->
+        <label for="id_customer_name">Customer Name:</label>
+        <input type="text" name="customer_name" id="id_customer_name">
+
+        <!-- Include other necessary fields for the form -->
+
+        <button type="submit">Book table</button>     
+    </form>
+</body>
+</html>

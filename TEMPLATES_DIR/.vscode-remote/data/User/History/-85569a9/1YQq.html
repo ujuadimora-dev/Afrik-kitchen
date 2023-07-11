@@ -1,0 +1,57 @@
+
+
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}{% endblock %}</title>
+  <script src="https://kit.fontawesome.com/692189991f.js" crossorigin="anonymous"></script>
+
+  <!-- Main StyleSheet -->
+  <link rel="stylesheet" href="{% static 'css/table_detail.css' %}">
+  {% block extra_css %}{% endblock %}
+</head>
+
+<body>
+
+  <!-- Main Content -->
+  <div class="content">
+
+    <!-- Room Details -->
+    <div class="table">
+
+      <!-- Div 1: Back to Home -->
+      <div class="home">
+        <a href="{% url 'booking:TableListView' %}" class="white_color"><i class="fas fa-arrow-alt-circle-left "></i>
+          Booking Home</a>
+      </div>
+
+      <!-- Div 3: Table Booking Form -->
+      <h1> Edit your Bookings</h1>
+      <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css">
+        <script>
+          $(function() {
+            $("#id_reservation_date").datepicker();
+          });
+        </script>
+        <button type="submit">Save Changes</button>
+      </form>
+
+    </div>
+  </div> <!-- END Main Content Div -->
+
+</body>
+
+</html>
+

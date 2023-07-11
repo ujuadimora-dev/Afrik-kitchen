@@ -1,0 +1,4 @@
+2023-07-11 11:52:13.279 [info] Test server listening.
+2023-07-11 11:52:13.566 [info] > ~/.pyenv/versions/3.8.11/bin/python -I /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/get_output_via_markers.py /workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/interpreterInfo.py
+2023-07-11 11:52:13.749 [info] Python interpreter path: ~/.pyenv/versions/3.8.11/bin/python
+2023-07-11 11:52:15.315 [info] Starting Jedi language server for Afrik-kitchen.

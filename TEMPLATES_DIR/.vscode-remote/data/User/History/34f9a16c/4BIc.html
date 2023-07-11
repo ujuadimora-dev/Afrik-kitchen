@@ -1,0 +1,10 @@
+{% extends 'menu/base.html' %}
+
+{% block content %}
+  <h2>Edit Booking</h2>
+  <form method="POST" action="{% url 'edit_booking' booking.id %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Update Booking</button>
+  </form>
+{% endblock %}

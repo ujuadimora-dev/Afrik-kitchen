@@ -1,0 +1,1 @@
+document.getElementsById('test').innerHTML = 'Afrik Kichen';

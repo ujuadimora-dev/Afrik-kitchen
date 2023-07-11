@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking List</title>
+    <script src="https://kit.fontawesome.com/692189991f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static '/css/booking_list.css' %}">
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <div class="headings">
+                <h1>Your Bookings</h1>
+                <h2>Welcome dear {{user}}</h2>
+            </div>
+            <div class="home">
+                <!-- Div 1: Back to Home -->
+                <div class="home">
+                    <a href="{% url 'booking:TableListView' %}"><i class="fas fa-arrow-alt-circle-left"></i> Home</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bookings">
+            {% for booking in booking_list %}
+            <div class="booking">
+                <div class="category">
+                    <h2>{{booking.table.capacity}} Table capacities</h2>
+                </div>
+                <div class="on">
+                    <h3>On: {{booking.reservation_date}}</h3>
+                </div>
+                <div class="at">
+                    <h3>At: {{booking.reservation_time}}</h3>
+                </div>
+                <div class="position">
+                    <h3>Position: {{booking.table.table_position}}</h3>
+                </div>
+                <div class="capacity">
+                    <h3>wheelchair accessibilty: {{booking.table.wheelchair_accessible}}</h3>
+                </div>
+                <div class="cancel"><a href="{{booking.get_cancel_booking_url}}" class="invisible"><i
+                            class="far fa-2x fa-times-circle"></i> Cancel Booking</a></div>
+                <div class="delete"><a href="{{ booking.get_delete_booking_url }}"><i
+                            class="far fa-2x fa-trash-alt"></i> Delete Booking</a></div>
+                <div class="update"><a href="{{ booking.get_update_booking_url }}"><i class="far fa-2x fa-edit"></i>
+                        Update Booking</a></div>
+                <div class="reboot"><a href="{{ booking.get_reboot_booking_url }}"><i class="far fa-2x fa-sync-alt"></i>
+                        Reboot Booking</a></div>
+
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!-- {% extends 'menu/base.html' %}
+
+{% block content %}
+  <h2>Booking List</h2>
+  {% if bookings %}
+    <ul>
+      {% for booking in bookings %}
+        <li>{{ booking.customer_name }} - {{ booking.reservation_date }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No bookings found.</p>
+  {% endif %}
+{% endblock %} -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>booking t</title>
+</head>
+<body>
+   {{booking_list}}
+</body>
+</html>

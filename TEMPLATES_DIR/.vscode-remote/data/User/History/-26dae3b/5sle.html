@@ -1,0 +1,37 @@
+{% extends 'menu/base.html' %}
+
+{% block title %}Side{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row text-center">
+        <div class="col-md-8">
+            <h2 class="title">Check our Sides</h2>
+            <div class="row">
+                {% for side in sides %}
+                <div class="col-md-4 p-4 justify-content-center">
+                    <img class="img" src="{{side.fimage}}" alt="{{ side.name }}">
+                    <h4 class="pt-3">{{ side.name }}</h4>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" checked>
+                            {{ side.priceM }} $
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio">
+                            {{ side.priceL }} $
+                        </label>
+                    </div>
+                    <div>
+                        <button class="btn btn-warning mt-3">Add to Cart</button>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+{% endblock %}

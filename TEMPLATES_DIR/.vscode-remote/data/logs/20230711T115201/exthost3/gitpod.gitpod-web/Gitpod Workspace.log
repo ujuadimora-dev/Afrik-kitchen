@@ -1,0 +1,15 @@
+2023-07-11 12:23:07.623 [info] Log level: Info
+2023-07-11 12:23:07.657 [info] VSCODE_MACHINE_ID: e33aba9f-40e1-4517-98e6-063e1953092a
+2023-07-11 12:23:07.657 [info] VSCODE_SESSION_ID: 77d8fe5b-cd35-4720-8383-9a78805786901689078182801
+2023-07-11 12:23:07.657 [info] VSCODE_VERSION: 1.80.0
+2023-07-11 12:23:07.657 [info] VSCODE_APP_NAME: Gitpod Code
+2023-07-11 12:23:07.657 [info] VSCODE_APP_HOST: Gitpod
+2023-07-11 12:23:07.657 [info] VSCODE_UI_KIND: web
+2023-07-11 12:23:07.657 [info] GITPOD_WORKSPACE_CONTEXT_URL: https://github.com/ujuadimora-dev/Afrik-kitchen
+2023-07-11 12:23:07.657 [info] GITPOD_INSTANCE_ID: 1d4dca44-1419-4559-b0af-7c3ab556ac51
+2023-07-11 12:23:07.657 [info] GITPOD_WORKSPACE_URL: https://ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu101.gitpod.io
+2023-07-11 12:23:07.665 [info] Gitpod Web 9de665d
+2023-07-11 16:06:06.095 [error] cannot maintain connection to supervisor 13 INTERNAL: closed
+2023-07-11 16:06:07.096 [error] cannot maintain connection to supervisor 13 INTERNAL: closed
+2023-07-11 16:06:08.098 [error] cannot maintain connection to supervisor 13 INTERNAL: closed
+2023-07-11 16:06:09.101 [error] cannot maintain connection to supervisor 13 INTERNAL: closed

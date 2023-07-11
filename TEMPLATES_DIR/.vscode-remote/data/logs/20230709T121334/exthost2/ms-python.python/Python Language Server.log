@@ -1,0 +1,82 @@
+2023-07-09 20:03:21.371 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "2"
+
+2023-07-09 20:04:50.612 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "6"
+
+2023-07-09 20:10:20.690 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "23"
+
+2023-07-09 20:10:30.512 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "32"
+
+2023-07-09 20:12:54.536 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "48"
+
+2023-07-09 20:13:58.611 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "70"
+
+2023-07-09 20:17:40.782 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "134"
+
+2023-07-09 20:17:40.971 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "135"
+
+2023-07-09 20:17:41.122 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "136"
+
+2023-07-09 20:17:45.594 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "144"
+
+2023-07-09 20:17:52.604 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "156"
+
+2023-07-09 20:17:57.394 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "163"
+
+2023-07-09 20:18:29.933 [info] ERROR:pygls.protocol:Failed to handle request 173 textDocument/hover HoverParams(text_document=TextDocumentIdentifier(uri='file:///workspace/Afrik-kitchen/view_menu/forms.py'), position=145:0, work_done_token=None)
+Traceback (most recent call last):
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request
+    self._execute_request(msg_id, handler, params)
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request
+    self._send_response(msg_id, handler(params))
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 378, in hover
+    jedi_script.help(
+  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper
+    raise ValueError('`column` parameter (%d) is not in a valid range '
+ValueError: `column` parameter (1) is not in a valid range (0-0) for line 146 ('\n').
+
+2023-07-09 20:18:29.935 [info] [Error - 8:18:29 PM] Request textDocument/hover failed.
+2023-07-09 20:18:29.935 [info]   Message: ValueError: `column` parameter (1) is not in a valid range (0-0) for line 146 ('\n').
+  Code: -32602 
+{'traceback': ['  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 337, in _handle_request\n    self._execute_request(msg_id, handler, params)\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/pygls/protocol.py", line 261, in _execute_request\n    self._send_response(msg_id, handler(params))\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi_language_server/server.py", line 378, in hover\n    jedi_script.help(\n', '  File "/workspace/.vscode-remote/extensions/ms-python.python-2023.12.0-universal/pythonFiles/lib/jedilsp/jedi/api/helpers.py", line 484, in wrapper\n    raise ValueError(\'`column` parameter (%d) is not in a valid range \'\n']}
+2023-07-09 20:18:41.303 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "183"
+
+2023-07-09 20:20:38.243 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "280"
+
+2023-07-09 20:20:49.335 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "281"
+
+2023-07-09 20:23:36.562 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "327"
+
+2023-07-09 20:28:49.804 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "350"
+
+2023-07-09 20:35:01.660 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "370"
+
+2023-07-09 20:35:11.367 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "382"
+
+2023-07-09 20:35:36.238 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "392"
+
+2023-07-09 20:40:45.270 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "556"
+
+2023-07-09 20:40:48.640 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "565"
+
+2023-07-09 20:40:56.515 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "585"
+
+2023-07-09 20:42:09.664 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "670"
+
+2023-07-09 20:44:09.561 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "850"
+
+2023-07-09 20:44:15.428 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "866"
+
+2023-07-09 20:45:20.935 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "911"
+
+2023-07-09 21:56:45.510 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1028"
+
+2023-07-09 21:57:20.299 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1060"
+
+2023-07-09 21:57:42.619 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1105"
+
+2023-07-09 21:57:53.274 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1117"
+
+2023-07-09 22:03:49.908 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1215"
+
+2023-07-09 22:04:00.849 [info] WARNING:pygls.protocol:Cancel notification for unknown message id "1233"
+
