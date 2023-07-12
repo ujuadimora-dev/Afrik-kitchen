@@ -20,7 +20,7 @@
                 <h3 class=" green-heading cursive-heading ">Welcome dear {{user}}</h3>
             </div>
             <div class="home">
-                <!-- Div 1: Back to Home -->
+                <!-- Div 1: Back to BookingHome -->
                 <div class="home">
                     <a href="{% url 'booking:TableListView' %}"><i class="fas fa-arrow-alt-circle-left"></i> BookingHome</a>
                 </div>
@@ -46,7 +46,7 @@
                 <div class="capacity">
                     <h3>wheelchair accessibilty: {{booking.table.wheelchair_accessible}}</h3>
                 </div>
-                <!-- <div class="cancel"><a href="{% url 'booking:cancel_booking' booking.id %}"><i class="far fa-2x fa-times-circle"></i></a></div> -->
+                
                 <div class="delete"><a href="{% url 'booking:delete_booking' booking.id %}"><i class="far fa-2x fa-times-circle"></i> Cancel Booking</a></div>
                 <div class="edit_booking_form"><a href="{% url 'booking:edit_booking' booking.id %}"><i class="far fa-2x fa-edit"></i> Edit Booking</a></div>
                 

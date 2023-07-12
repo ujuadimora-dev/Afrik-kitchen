@@ -67,18 +67,12 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
-    #path('', views.index, name='index'),
     path('view_menu/', include('view_menu.urls', namespace='view_menu')),
-    
     path('', include('booking.urls')),
     path('accounts/', include('allauth.urls')),
-   # path('event/', include('event.urls', namespace='event')),
     path('view_menu/create-menu/includes/403/', TemplateView.as_view(template_name='includes/403.html'), name='403'),
-
-
     path('contact/', contact, name='contact'),
     path('contact_success/<str:name>/', success, name='success'),
-
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

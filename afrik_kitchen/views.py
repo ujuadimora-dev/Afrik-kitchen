@@ -9,7 +9,7 @@ def contact(request):
         if form.is_valid():
             # Process the form data and get the name
             name = form.cleaned_data['name']
-            # Add logic to save the form data or perform any other actions
+            #  logic to save the form data or perform any other actions
             
             return redirect('success', name=name)  # Pass the name as a parameter
     else:

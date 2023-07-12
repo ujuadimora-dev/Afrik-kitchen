@@ -91,4 +91,3 @@ class Booking(models.Model):
         return table_capacity
 
 
-#def get_cancel_booking_url(self):

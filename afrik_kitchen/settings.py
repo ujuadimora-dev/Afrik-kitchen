@@ -14,6 +14,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+from django.contrib.messages import constants as messages
 
 if os.path.isfile('env.py'):
     import env
@@ -35,7 +36,9 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates'),
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ['afrik-kitchen.herokuapp.com', 'localhost', '8000-ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu101.gitpod.io','8000-ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu99.gitpod.io', '8000-ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu100.gitpod.io']
 
@@ -52,10 +55,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
      # Django Allauth
-    'django.contrib.sites', # new
-    'allauth', # new
-    'allauth.account', # new
-    'allauth.socialaccount', # new
+    'django.contrib.sites', 
+    'allauth', 
+    'allauth.account', 
+    'allauth.socialaccount', 
     'allauth.socialaccount.providers.github',
 
     #'django-lib',
@@ -164,6 +167,15 @@ ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
+
+
+MESSAGE_TAGS = {
+    messages.DEBUG: 'alert-info',
+    messages.INFO:  'alert-info',
+    messages.SUCCESS: 'alert-success',
+    messages.WARNING: 'alert-warning',
+    messages.ERROR: 'alert-danger',
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
