@@ -4,6 +4,7 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
+    text-decoration:  none;
 }
 body{
     background-color: rgb(46, 47, 48);
@@ -13,7 +14,7 @@ body{
     height: 100vh;
 }
 
-/* Main Divs 
+Main Divs 
 .content {
     display: flex;
     flex-direction: row;
@@ -21,7 +22,7 @@ body{
     width:100%;
     justify-content: left;
 }
-*/
+
 .image{
     flex: 0.3;
 }
@@ -88,7 +89,7 @@ input, button{
     color: #555;
 }
 
-button{
+/* button{
     background-color: #dfdfdf;
     color:rgb(6, 137, 245);
     outline:none;
@@ -97,7 +98,7 @@ button{
 button:hover{
     color:#dfdfdf;
     background-color: rgb(6, 137, 245);
-}
+} */
 
 /* the table_list*
 .container-wrapper {

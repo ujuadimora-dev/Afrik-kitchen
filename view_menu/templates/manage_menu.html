@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class="text-center green-heading cursive-heading">Manage Menus</h1>
+
+{% for menu_type, menu_items in menu_data.items %}
+<h2>{{ menu_type }} Menu</h2>
+<table>
+    <tr>
+        <th>FImage</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price (Medium)</th>
+        <th>Price (Large)</th>
+        <th>Vegetarian</th>
+        <th>Calorie Count</th>
+        <th>Created On</th>
+        <th>Created By Staff</th>
+        <th>Actions</th>
+    </tr>
+    {% for menu_item in menu_items %}
+    <tr>
+        <td><img src="{{ menu_item.fimage }}" alt="Menu Image"></td>
+        <td>{{ menu_item.name }}</td>
+        <td>{{ menu_item.description }}</td>
+        <td>{{ menu_item.priceM }}</td>
+        <td>{{ menu_item.priceL }}</td>
+        <td>{% if menu_item.vegetarian %}Yes{% else %}No{% endif %}</td>
+        <td>{{ menu_item.calorie_count }}</td>
+        <td>{{ menu_item.created_on }}</td>
+        <td>{{ menu_item.created_by_staff }}</td>
+        <td>
+            <a href="{% url 'view_menu:edit_menu_item' menu_item.pk %}">Edit</a> |
+            <a href="{% url 'view_menu:delete_menu_item' menu_item.pk %}">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endfor %}
+
+{% endblock %}

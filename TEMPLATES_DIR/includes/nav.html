@@ -9,11 +9,11 @@
 <body>
     <header>
         <!-- Nav menu -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
             <div class="container-fluid">
                 <!-- Logo -->
                 <a class="navbar-brand" href="{% url 'home:home' %}">
-                    <img src="{% static 'images/afrikk_logo.png' %}" alt="African Kitchen Logo" width="" height="">
+                    <img src="{% static 'images/logo_kiche.png' %}" alt="African Kitchen Logo" width="150" height="60">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,6 +58,12 @@
                                     {% if user.is_staff %}   
                                          <li><a class="dropdown-item" aria-current="page"
                                         href="{% url 'view_menu:create_menu' %}">Create Menu</a></li>
+                                        <li><a class="dropdown-item" aria-current="page"
+                                            href="{% url 'view_menu:create_menu' %}">Delete Menu</a></li>
+                                            <li><a class="dropdown-item" aria-current="page"
+                                                href="{% url 'view_menu:manage_menu' %}">Mange Menu</a></li>
+    
+
                                     {% endif %}
                             </ul>
                         </li>

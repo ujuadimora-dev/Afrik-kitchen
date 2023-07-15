@@ -10,11 +10,13 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.shortcuts import get_object_or_404, redirect
 from django.contrib import messages
 from django.shortcuts import redirect
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.decorators import login_required
 import datetime
 
 
 
-
+@login_required
 def TableListView(request):
     model = Table
     template_name = 'table_list.html'
@@ -40,10 +42,12 @@ def TableListView(request):
     return render(request, 'table_list.html', context)
 
 
-
-class BookingList(ListView):
+class BookingList(LoginRequiredMixin, ListView):
     model = Booking
     template_name = 'booking_list.html'
+    context_object_name = 'booking_list'
+    login_url = 'home:home'
+
     def get_queryset(self, *args, **kwargs):
         if self.request.user.is_staff:
             booking_list = Booking.objects.all()
@@ -51,7 +55,6 @@ class BookingList(ListView):
         else:
             booking_list = Booking.objects.filter(user=self.request.user)
             return booking_list
-
 
 class TableDetailView(View):
     def get(self, request, *args, **kwargs):
@@ -98,6 +101,9 @@ class TableDetailView(View):
             )
             booking.save()
             return HttpResponse(booking)
+            
+
+
         else:
             message = "This table is already booked. Please try another one."
             booking_home_url = reverse('booking:TableListView')
@@ -144,7 +150,7 @@ class BookingCreateView(FormView):
 
 class BookingSuccessView(View):
     def get(self, request, *args, **kwargs):
-        return render(request, 'booking/booking_success.html')
+        return render(request, 'booking:booking_success.html')
        
 
 

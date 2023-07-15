@@ -1,91 +1,35 @@
-/* Root CSS */
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-}
-body{
-    background-color: rgb(46, 47, 48);
-    color: rgb(236, 235, 228);
-    font-family: sans-serif;
-    line-height: 1.25;
-}
-
-/*Brand CSS */
-#brand{
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 3rem;
-    margin: 1.5rem;
-}
-
-/* Main Div */
-.content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width:100%;
-    justify-content: space-evenly;
-}
-
-/* table Divs */
-.table{
-    max-width:20%;
-    min-width: 200px;
-    text-align: center;
-    border-radius: 1rem;
-    padding:1rem;
-    margin:0.5rem;
-    background-color: #444;
-    flex: 1;
-}
-
-.table:hover{
-    background-color: #353535;
-}
-
-/* for table Divs */
-h2{
-    margin: 0.25rem;
-}
-a{
-    text-decoration: none;
-    color: #dbdbdb;
-}
-img{
-    max-width:90%;
-}
+/* syling for Table booking*/
 
 /* the landing page of the table*/
 /* Hero Image */
 
-import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&family=Roboto&display=swap');
+/* import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&family=Roboto&display=swap');
 
 /* Generic styles */
-html,
+/* html,
 body {
     height: 100%;
-    color: rgb(0, 0, 0);
-    font-family: 'Roboto', sans-serif;
-}
+    /* color: rgb(0, 0, 0); */
+    font-family: 'Roboto', sans-serif; */
+} */
 
-header {
-    background-color: rgb(0, 128, 43);
-}
+/* header {
+    background-color: rgb(58, 60, 59);
+} */
 
-body {
+/* body {
     display: flex;
     flex-direction: column;
-}
+} */
 
-main {
+/* main {
     flex: 1 0 auto;
     background-color: white;
-}
+} */
 
 /* Hero Image */
 
-.table-img {
+/* .table-img {
     background-image: url("https://res.cloudinary.com/daaluzzqp/image/upload/v1688387236/static/menu/css/images/backg.50dd5005a54c.jpg");
     height: 300px;
     background-position: bottom;
@@ -93,7 +37,7 @@ main {
     background-size: cover;
 }
 
-/* Navbar */
+/* Navbar *
 
 nav.navbar {
     vertical-align: middle;
@@ -127,7 +71,7 @@ i.fa-solid.fa-bars:hover {
     color: #ddc439;
 }
 
-/* Footer */
+/* Footer *
 .footer {
     background-color: black;
 }
@@ -144,7 +88,7 @@ i.fa-solid.fa-bars:hover {
 
 /* Reusable table styling */
 /* Zebra striping */
-tr:nth-of-type(odd) {
+/* tr:nth-of-type(odd) {
     background: #eee;
 }
 
@@ -155,9 +99,9 @@ th {
     text-align: start;
     color: black;
     vertical-align: middle;
-}
+} */
 
-hr {
+/* hr {
     width: 33%;
     margin: 10px auto;
     color: #ddc439;
@@ -168,7 +112,7 @@ td a {
     width: 150px;
 }
 
-/* Reusable form styling */
+/* Reusable form styling *
 
 .form-style, .button-style {
     background-color: black; 
@@ -193,40 +137,40 @@ td a {
 
 /* Home page */
 
-.mapouter {
+/* .mapouter {
     display: flex; 
     flex-direction: column;
     width: 100%;
     height: auto;
-}
+} */
 
-.gmap_canvas {
+/* .gmap_canvas {
     overflow: hidden;
     background: none !important;
     display: flex;
     align-items: center;
-}
+} */
 
-.gmap_canvas iframe {
+/* .gmap_canvas iframe {
     min-height: 350px;
     width: 100%;
-    border-radius: 10px;
-}
+    border-radius: 10px; */
+} */
 
-.opening ul {
+/* .opening ul {
     list-style: none;
-}
+} */
 
 /* the table form*/
-.container {
+/* .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: #f2f2f2;
-  }
+  } */
   
-  .table {
+  /* .table {
     width: 300px;
     margin: 20px;
     padding: 20px;
@@ -235,9 +179,9 @@ td a {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: box-shadow 0.3s ease;
-  }
+  } */
   
-  .table:hover {
+  /* .table:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
@@ -246,9 +190,9 @@ td a {
     height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
-  }
+  } */
   
-  .table h2 {
+  /* .table h2 {
     font-size: 24px;
     margin-bottom: 10px;
   }
@@ -256,5 +200,5 @@ td a {
   .table p {
     font-size: 16px;
     color: #777;
-  }
-  
+  } */
+   */

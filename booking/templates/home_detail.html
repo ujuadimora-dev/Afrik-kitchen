@@ -6,8 +6,10 @@
 
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
+    
     <script src="https://kit.fontawesome.com/692189991f.js" crossorigin="anonymous"></script>
 
     <!-- Main StyleSheet -->
@@ -31,7 +33,7 @@
             <!-- Div 2: Tablenformation -->
             <div class="table-info">
                 <h1>{{table_capacity}}</h1>
-                <h3 class="white_color">A high quality and comfortable table for every occassion </h3>
+                <h3 class="white_color text-center">A high quality and comfortable table for every occassion </h3>
             </div>
 
             <!-- Div 3: Table Booking Form -->
@@ -39,10 +41,10 @@
                 {% csrf_token %}
 
                 <!-- Input Div -->
-                <div class="input-div">
+                <!-- <div class="input-div">
                     <label for="id_table_number">Table Number:</label>
                     <input type="number" name="table_number" id="id_table_number">
-                </div>
+                </div> -->
                 <div class="input-div">
                     <label for="id_reservation_date">Reservation Date:</label>
                     {{ form.reservation_date }}

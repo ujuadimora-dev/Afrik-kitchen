@@ -33,11 +33,7 @@
     <!-- Header -->
     {% include 'includes/nav.html' %}
 
-    {% block create_menu %}
-    {% if user.is_staff %}
-        <li><a class="dropdown-item" aria-current="page" href="{% url 'view_menu:create_menu' %}">Create Menu</a></li>
-    {% endif %}
-    {% endblock %}
+    
 
     <div class="container">
         <div class="row">

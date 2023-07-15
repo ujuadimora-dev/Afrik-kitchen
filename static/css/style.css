@@ -1,29 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&family=Roboto&display=swap');
 
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  text-decoration:  none;
+}
+
 /* Generic styles */
 html,
 body {
     height: 100%;
     color: rgb(0, 0, 0);
     font-family: 'Roboto', sans-serif;
+    
 }
 
-
-
-header {
-    background-color: rgb(2, 131, 45);
+/* header {
+    background-color:rgb(36, 51, 24)
 }
 
 body {
     display: flex;
     flex-direction: column;
-}
+} */
 
-main {
+/* main {
     flex: 1 0 auto;
     background-color: white;
 }
-
+ */
 
 
 /* Hero Image */
@@ -54,15 +60,19 @@ main {
 
 #content {
   display: flex;
+
+
   flex-wrap: wrap;
   justify-content: space-between;
+  
 }
 
 .table {
-  width: calc(33.33% - 20px);
-  background-color: #ffffff; /* Add your desired background color here */
-  padding: 20px;
+  width: 40%;
+  background-color: #ffffff; 
+  padding: 0px;
   margin-bottom: 20px;
+  animation: both;
 }
 
 .table img {
@@ -86,6 +96,18 @@ main {
 
 .cursive-heading {
   font-family: Script MT;
+}
+
+@media screen and (max-width: 768px) {
+  .table {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .table {
+    width: calc(100% - 20px);
+  }
 }
 
 /* Navbar */
@@ -121,6 +143,142 @@ i.fa-solid.fa-bars:hover {
 .active {
     color: #ddc439;
 }
+
+
+/* home Section */
+/* Our Story Section */
+
+.our-story {
+  padding: 80px 0;
+}
+
+.our-story .row {
+  align-items: center;
+}
+
+.our-story .story-image img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+.our-story .story-text {
+  padding: 0 40px;
+}
+
+.green-heading{
+  color :green
+}
+
+.cursive-heading{
+  font-family: cursive;
+}
+
+.our-story .story-image img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+  opacity: 0; /* Set initial opacity to 0 */
+ animation-name: fade-in;
+ animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards
+
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* Menu Section */
+.menu {
+  padding: 80px 0;
+  background-color: #f8f8f8;
+}
+
+.menu h2 {
+  margin-bottom: 40px;
+}
+
+.menu .row {
+  justify-content: center;
+  gap: 30px;
+}
+
+.menu .col-md-3 {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-card {
+  background-color: #fff;
+  padding: 20px;
+  text-align: left;
+  
+ 
+  animation-name: fade-in;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards
+
+}
+
+
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-card img {
+  width: 200%;
+  max-height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.menu-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.menu-card p {
+  font-size: 16px;
+}
+
+/* Small screen styles */
+@media screen and (max-width: 767px) {
+.col-md-4 {
+  width: 100%;
+  margin-bottom: 20px;
+}
+}
+
+/* Large screen styles */
+@media screen and (min-width: 768px) {
+.row.justify-content-center {
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.col-md-4 {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+}
+}
+
+
+
 
 /* Footer */
 .footer {
@@ -234,114 +392,6 @@ th {
 }
 
 
-
-/* home Section */
-/* Our Story Section */
-
-.our-story {
-    padding: 80px 0;
-  }
-  
-  .our-story .row {
-    align-items: center;
-  }
-  
-  .our-story .story-image img {
-    width: 100%;
-    max-width: 400px;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .our-story .story-text {
-    padding: 0 40px;
-  }
-
-  .green-heading{
-    color :green
-  }
-
-  .cursive-heading{
-    font-family: cursive;
-  }
-  
-  .our-story .story-image img {
-    width: 100%;
-    max-width: 400px;
-    display: block;
-    margin: 0 auto;
-    opacity: 0; /* Set initial opacity to 0 */
-   animation-name: fade-in;
-   animation-duration: 1s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards
-
-  }
-
-  @keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  /* Menu Section */
-  .menu {
-    padding: 80px 0;
-    background-color: #f8f8f8;
-  }
-  
-  .menu h2 {
-    margin-bottom: 40px;
-  }
-
-  .menu .row {
-    justify-content: center;
-    gap: 30px;
-  }
-
-  .menu .col-md-3 {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .menu-card {
-    background-color: #fff;
-    padding: 20px;
-    text-align: left;
-    
-   
-    animation-name: fade-in;
-    animation-duration: 1s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards
-
-  }
-
-  
-  
-  .menu-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .menu-card img {
-    width: 200%;
-    max-height: 100px;
-    object-fit: cover;
-    border-radius: 4px;
-    margin-bottom: 20px;
-  }
-  
-  .menu-card h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .menu-card p {
-    font-size: 16px;
-  }
 
 
 /* login*/
@@ -505,7 +555,27 @@ th {
   input[type="submit"]:hover {
     background-color: rgb(0, 128, 43);
   }
-  
+ 
+  /* contact form Ajust*/
+
+  .background-image {
+    background-image:  url("https://res.cloudinary.com/daaluzzqp/image/upload/v1689281483/pad_fsggil.png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+}
+
+.form-container h1 {
+    text-align: center;
+}
   
 /* css for the booking managmemt*/
 
