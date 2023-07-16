@@ -38,7 +38,7 @@
                             </ul>
                         </li>
                         <!-- Show menu drop downs to staff -->
-                        {% if user.is_authenticated %}          
+                        {% if user.is_authenticated %}
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle scroll-to-menu" href="#menu" id="staffOptions"
                                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -46,25 +46,14 @@
                             </a>
 
                             <ul class="dropdown-menu" aria-labelledby="staffOptions">
-                                <li><a class="dropdown-item" aria-current="page"
-                                        href="{% url 'view_menu:breakfast' %}">Breakfast</a></li>
-                                <li><a class="dropdown-item" aria-current="page"
-                                        href="{% url 'view_menu:lunch' %}">Lunch</a></li>
-                                <li><a class="dropdown-item" aria-current="page"
-                                        href="{% url 'view_menu:dinner' %}">Dinner</a></li>
-                                <li><a class="dropdown-item" aria-current="page"
-                                        href="{% url 'view_menu:side' %}">Sides</a></li>
-
-                                    {% if user.is_staff %}   
-                                         <li><a class="dropdown-item" aria-current="page"
-                                        href="{% url 'view_menu:create_menu' %}">Create Menu</a></li>
-                                        <li><a class="dropdown-item" aria-current="page"
-                                            href="{% url 'view_menu:create_menu' %}">Delete Menu</a></li>
-                                            <li><a class="dropdown-item" aria-current="page"
-                                                href="{% url 'view_menu:manage_menu' %}">Mange Menu</a></li>
-    
-
+                                <ul class="dropdown-menu" aria-labelledby="staffOptions">
+                                    <li><a class="dropdown-item" aria-current="page"
+                                            href="{}">View Menus</a></li>
+                                    {% if user.is_staff %}
+                                    <li><a class="dropdown-item" aria-current="page"
+                                            href="{}">Manage Menus</a></li>
                                     {% endif %}
+                                </ul>
                             </ul>
                         </li>
                         {% else %}
