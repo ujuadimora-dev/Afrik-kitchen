@@ -1,16 +1,80 @@
 {% extends "base.html" %}
-
 {% block content %}
-    <h1>Manage Menu</h1>
-    <ul>
-        {% for menuitem in menuitems %}
-            <li>
-                <strong>{{ menuitem.name }}</strong> - {{ menuitem.type }}
-                <a href="{% url 'food:update_menuitem' menuitem.pk %}">Edit</a>
-                <a href="{% url 'food:delete_menuitem' menuitem.pk %}">Delete</a>
-            </li>
-        {% empty %}
-            <li>No menu items found.</li>
-        {% endfor %}
+
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        color: #fff;
+        background-color: #5cb85c;
+        border-color: #4cae4c;
+    }
+
+    .btn-warning {
+        background-color: #f0ad4e;
+        border-color: #eea236;
+    }
+</style>
+
+
+
+<h1>Manage Menu</h1>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Actions</th>
+    </tr>
+
+    {% for menuitem in menuitems %}
+    <tr>
+
+        <td>{{ menuitem.name }}</td>
+        <td>{{ menuitem.type }}</td>
+        <td>
+            <a href="{% url 'food:update_menuitem' menuitem.pk %}" btn btn-sucesss>update</a>
+            <a href="{% url 'food:delete_menuitem' menuitem.pk %}" btn btn-warning>Delete</a>
+        </td>
+    </tr>
+    {% empty %}
+    <li>No menu items found.</li>
+    {% endfor %}
     </ul>
+
+
+
+
 {% endblock %}
