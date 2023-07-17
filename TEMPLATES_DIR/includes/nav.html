@@ -46,14 +46,12 @@
                             </a>
 
                             <ul class="dropdown-menu" aria-labelledby="staffOptions">
-                                <ul class="dropdown-menu" aria-labelledby="staffOptions">
-                                    <li><a class="dropdown-item" aria-current="page"
-                                            href="{}">View Menus</a></li>
-                                    {% if user.is_staff %}
-                                    <li><a class="dropdown-item" aria-current="page"
-                                            href="{}">Manage Menus</a></li>
-                                    {% endif %}
-                                </ul>
+                                <li><a class="dropdown-item" aria-current="page" href="{% url 'food:food' %}">View
+                                        Menus</a></li>
+
+                                {% if user.is_staff %}
+                                <li><a class="dropdown-item" aria-current="page" href="{}">Manage Menus</a></li>
+                                {% endif %}
                             </ul>
                         </li>
                         {% else %}

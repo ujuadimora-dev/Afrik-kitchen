@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="form-section">
+        <h1 class="green-heading cursive-heading">Create Menu</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-success">Create Menu</button>
+        </form>
+    </div>
+
+    <style>
+        .form-section {
+            margin: 20px auto;
+            max-width: 900px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .form-section form {
+            display: grid;
+            gap: 10px;
+        }
+
+        .form-section label {
+            font-weight: bold;
+        }
+
+        .form-section input[type="text"],
+        .form-section textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-section button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-section button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+{% endblock %}
