@@ -1,6 +1,8 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import MenuItem
 from .forms import MenuitemDetail
+
+
 
 
 # Create your views here.
@@ -27,3 +29,28 @@ def create_menuitem(request):
             return redirect('food:food')  # Redirect to menu_list view
     
         return render(request, 'food/create_menu.html', {'form': form})
+
+def manage_menu(request):
+    menuitems = MenuItem.objects.all()
+    context = {
+        'menuitems': menuitems
+    }
+    return render(request, 'food/manage_menu.html', context)
+
+
+def delete_menuitem(request, pk):
+    menuitem = get_object_or_404(MenuItem, pk=pk)
+    if request.method == 'POST':
+        menuitem.delete()
+        return redirect('food:food')  # Redirect to menu_list view
+    return render(request, 'food/delete_menuitem.html', {'menuitem': menuitem})
+
+
+def update_menuitem(request, pk):
+    menuitem = get_object_or_404(MenuItem, pk=pk)
+    form = MenuitemDetail(request.POST or None, instance=menuitem)
+    if form.is_valid():
+        form.save()
+        return redirect('food:food')  # Redirect to menu_list view
+    return render(request, 'food/update_menu.html', {'form': form})
+

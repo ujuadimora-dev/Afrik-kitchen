@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="form-section">
+        <h1 class="green-heading cursive-heading">Update Menu</h1>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Update Menu</button>
+        </form>
+    </div>
+
+    <style>
+        .form-section {
+            margin: 20px auto;
+            max-width: 900px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .form-section button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-section button[type="submit"]:hover {
+            background-color: #0069d9;
+        }
+    </style>
+{% endblock %}

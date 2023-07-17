@@ -50,7 +50,12 @@
                                         Menus</a></li>
 
                                 {% if user.is_staff %}
-                                <li><a class="dropdown-item" aria-current="page" href="{}">Manage Menus</a></li>
+                                <li><a class="dropdown-item" aria-current="page"
+                                        href="{% url 'food:create_menuitem' %}">Create Menu</a></li>
+                                <li><a class="dropdown-item" aria-current="page"
+                                     href="{% url 'food:manage_menu'  %}">Manage Menu</a></li>
+
+                              
                                 {% endif %}
                             </ul>
                         </li>

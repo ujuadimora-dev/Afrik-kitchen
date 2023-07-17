@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Manage Menu</h1>
+    <ul>
+        {% for menuitem in menuitems %}
+            <li>
+                <strong>{{ menuitem.name }}</strong> - {{ menuitem.type }}
+                <a href="{% url 'food:update_menuitem' menuitem.pk %}">Edit</a>
+                <a href="{% url 'food:delete_menuitem' menuitem.pk %}">Delete</a>
+            </li>
+        {% empty %}
+            <li>No menu items found.</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
