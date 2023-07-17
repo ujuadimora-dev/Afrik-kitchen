@@ -37,7 +37,6 @@ class MenuItem(models.Model):
         return str(self.name)
 
 
-
 class Menu(models.Model):
     """ Model to create a menu """
     name = models.CharField(max_length=25)

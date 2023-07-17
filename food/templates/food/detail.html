@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 class="text-center green-heading cursive-heading">Menu Detail</h1>
+
+<table>
+    <tr>
+        <th>Image</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price (M)</th>
+        <th>Price (L)</th>
+        <th>Vegetarian</th>
+        <th>Calorie Count</th>
+        <th>Created On</th>
+        <th>Created By Staff</th>
+    </tr>
+    <tr>
+        <td><img src="{{ menuitem.fimage }}" alt="Menu Image"></td>
+        <td>{{ menuitem.name }}</td>
+        <td>{{ menuitem.description }}</td>
+        <td>{{ menuitem.priceM }}</td>
+        <td>{{ menuitem.priceL }}</td>
+        <td>{% if menuitem.vegetarian %}Yes{% else %}No{% endif %}</td>
+        <td>{{ menuitem.calorie_count }}</td>
+        <td>{{ menuitem.created_on }}</td>
+        <td>{{ menuitem.created_by_staff }}</td>
+    </tr>
+</table>
+
+{% endblock %}

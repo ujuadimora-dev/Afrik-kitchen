@@ -55,7 +55,7 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
-#from view_menu import views
+from food import views
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -69,7 +69,7 @@ from django.views.generic import TemplateView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
-    #path('view_menu/', include('view_menu.urls', namespace='view_menu')),
+    path('food/', include('food.urls', namespace='food')),
     path('', include('booking.urls')),
     path('accounts/', include('allauth.urls')),
    # path('view_menu/create-menu/includes/403/', TemplateView.as_view(template_name='includes/403.html'), name='403'),
