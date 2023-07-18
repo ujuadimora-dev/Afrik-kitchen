@@ -715,6 +715,14 @@ th {
   .footer .col-md-4 {
     margin-bottom: 40px;
   }
+
+  .white{
+    color: white;
+  }
+
+  h2 {
+    color: #f8f8f8;
+  }
   
   .footer-card {
     background-color: #fff;

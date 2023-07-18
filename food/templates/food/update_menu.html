@@ -2,11 +2,11 @@
 
 {% block content %}
     <div class="form-section">
-        <h1 class="green-heading cursive-heading">Update Menu</h1>
+        <h1 class="green-heading cursive-heading text-center">Update Menu</h1>
         <form method="POST">
             {% csrf_token %}
             {{ form.as_p }}
-            <button type="submit" class="btn btn-primary">Update Menu</button>
+            <button type="submit" class="btn btn-success">Update Menu</button>
         </form>
     </div>
 
@@ -22,7 +22,7 @@
 
         .form-section button[type="submit"] {
             padding: 10px 20px;
-            background-color: #007bff;
+            /* background-color: green; */
             color: white;
             border: none;
             border-radius: 4px;
@@ -30,7 +30,39 @@
         }
 
         .form-section button[type="submit"]:hover {
-            background-color: #0069d9;
+            /* background-color: green; */
         }
+
+/* Media queries for mobile responsiveness */
+@media only screen and (max-width: 480px) {
+            .form-section {
+                padding: 10px;
+            }
+
+            .form-section h1 {
+                font-size: 20px;
+            }
+
+            .form-section button[type="submit"] {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+
+
     </style>
 {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

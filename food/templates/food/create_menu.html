@@ -2,7 +2,7 @@
 
 {% block content %}
     <div class="form-section">
-        <h1 class="green-heading cursive-heading">Create Menu</h1>
+        <h1 class="green-heading cursive-heading text-center">Create Menu</h1>
         <form method="POST">
             {% csrf_token %}
             {{ form.as_p }}
@@ -49,6 +49,28 @@
 
         .form-section button[type="submit"]:hover {
             background-color: #45a049;
+        }
+
+
+        
+        /* Media queries for mobile responsiveness */
+        @media only screen and (max-width: 480px) {
+            .form-section {
+                padding: 10px;
+            }
+
+            .form-section h1 {
+                font-size: 20px;
+            }
+
+            .form-section input[type="text"],
+            .form-section textarea {
+                padding: 8px;
+            }
+
+            .form-section button[type="submit"] {
+                padding: 8px 16px;
+            }
         }
     </style>
 {% endblock %}

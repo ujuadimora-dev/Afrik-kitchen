@@ -7,12 +7,10 @@
 {% endblock %}
 
 {% block content %}
+<div class="container">
+    <h1 class="text-center green-heading cursive-heading">Event/Food Booking/Ordering Contact Form</h1>
 
-<div class="background-image">
-    <div class="container form-container">
-
-        <h1 class="text-center green-heading cursive-heading ">Event Contact Form</h1>
-
+    <div class="form-container">
         <form method="post" action="{% url 'contact' %}">
             {% csrf_token %}
 
@@ -55,8 +53,56 @@
                 <input type="submit" value="Submit" class="btn btn-primary">
             </div>
         </form>
-
     </div>
 </div>
+
+<style>
+    /* CSS code for responsiveness */
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .form-container {
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="text"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    /* Media queries for responsive layout */
+    @media only screen and (max-width: 768px) {
+        .container {
+            padding: 10px;
+        }
+    }
+</style>
 
 {% endblock %}

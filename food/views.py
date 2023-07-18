@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import MenuItem
 from .forms import MenuitemDetail
+from django.contrib import messages
 
 
 
@@ -26,6 +27,7 @@ def create_menuitem(request):
 
         if form.is_valid():
             form.save()
+            messages.success(request, 'Menu item created successfully.')
             return redirect('food:food')  # Redirect to menu_list view
     
         return render(request, 'food/create_menu.html', {'form': form})
@@ -42,6 +44,7 @@ def delete_menuitem(request, pk):
     menuitem = get_object_or_404(MenuItem, pk=pk)
     if request.method == 'POST':
         menuitem.delete()
+        messages.success(request, 'Menu item deleted successfully.')
         return redirect('food:food')  # Redirect to menu_list view
     return render(request, 'food/delete_menuitem.html', {'menuitem': menuitem})
 
@@ -51,6 +54,7 @@ def update_menuitem(request, pk):
     form = MenuitemDetail(request.POST or None, instance=menuitem)
     if form.is_valid():
         form.save()
+        messages.success(request, 'Menu item updated successfully.')
         return redirect('food:food')  # Redirect to menu_list view
     return render(request, 'food/update_menu.html', {'form': form})
 

@@ -1,12 +1,12 @@
-# Sizzle and Steak
+# Afrik Kitchen
 
-Sizzle and Steak is a fictional restaurant located beside the sea in County Antrim, Northern Ireland. The app is a restaurant management system designed to allow staff to easily manage the menus and bookings. It also provides customers with a simple, easy to use booking system where they can view and manage their own reservations.
-The live link can be found here: [Live Site - Sizzle and Steak](https://sizzle-and-steak.onrender.com/)
+Afrik Kitchen is one of the best  restaurants  that offer orginic Afrikcan food that loctaed in Bremen City in Germany Europ . The app is a restaurant management system designed to allow staff to easily manage the food menus, table management and Table bookings. It also provides customers with a simple, easy to use booking(Table )system where they can view and manage their own reservations. The app has two main section: Section for Managing anf booking and reservation go d Table, section for the Viewing Menu and manging of the menu and section for the Event and contactof the event
+The live link can be found here: [Live Site -  Afrik Kitchen) https://ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu101.gitpod.io/)
 
-![Mock Up](docs/readme_images/mockup.PNG)
+![Mock Up](docs/readme_images/moch_site.png)
 
 ## Table of Contents
-- [Sizzle and Steak](#sizzle-and-steak)
+- [Afrik Kitchen](#Afrik_kitchen)
   - [Table of Contents](#table-of-contents)
 - [User-Experience-Design](#user-experience-design)
   - [The-Strategy-Plane](#the-strategy-plane)
@@ -42,9 +42,9 @@ The live link can be found here: [Live Site - Sizzle and Steak](https://sizzle-a
 
 ### Site-Goals
 
-The site is aimed to help restaurant staff to easily manage the menus displayed on the website, as well as keeping track of upcoming bookings and capacity, editing and deleting as neccessary. 
+The site is aimed to help restaurant staff to easily manage the food menus  as well as mange table booking that displayed on the website, as well as keeping track of upcoming bookings and capacity, editing and deleting as neccessary.
 
-The site also aims to provide customers with a simple, hassle free way to make reservations without the need to call the restaurant. They will also be able to cancel their bookings or update when needed.
+The site also aims to provide customers with a simple, hassle free way to make table reservations without the need to call the restaurant. They will also be able to cancel their table bookings  and reservation or update when needed.
 
 ### Agile Planning
 
@@ -52,9 +52,9 @@ This project was developed using agile methodologies by delivering small feature
 
 All projects were assigned to epics, prioritized under the labels, Must have, should have, could have. They were assigned to sprints and story pointed according to complexity. "Must have" stories were completed first, "should haves" and then finally "could haves". It was done this way to ensure that all core requirements were completed first to give the project a complete feel, with the nice to have features being added should there be capacity.
 
-The Kanban board was created using github projects and can be located [here](https://github.com/Gareth-McGirr/Portfolio-Project-4-SizzleAndSteak/projects/1) and can be viewed to see more information on the project cards. All stories except the documentation tasks have a full set of acceptance criteria in order to define the functionality that marks that story as complete.
+The  board was created using github projects and can be located [here](https://github.com/users/ujuadimora-dev/projects/5/views/1) and can be viewed to see more information on the project cards. 
 
-![Kanban image](docs/readme_images/kanban.PNG)
+![Afrikchen_board1 image](docs/readme_images/)
 
 #### Epics
 
@@ -62,8 +62,7 @@ The project had 7 main Epics (milestones):
 
 **EPIC 1 - Base Setup**
 
-The base setup epic is for all stories needed for the base set up of the application. Without the base setup, the app would not be possible so it was the first epic to be delivered as all other features depend on the completion of the base setup.
-
+The base setup epic is for all stories needed for the base set up of the application. The most of template i used depend in the base.template
 **EPIC 2 - Stand alone Pages**
 
 The stand alone pages epic is for small pages that did not have enough stories to warrant their own full epics. Instead of creating epics for tiny features, these small deliverables were all added under this epic.
@@ -74,11 +73,11 @@ The authentication epic is for all stories related to the registration, login an
 
 **EPIC 4 - Menu**
 
-The menu epic is for all stories that relate to the creating, deleting, editing and viewing of menus. This allows for regular users to view menus and for staff to manage them with a simple UI interface.
+The menu epic is for all stories that relate to the creating, deleting, editing and viewing of menus. This allows for regular users to view menus , users or customer can fille the form if they want to book the any food that is being display at the site and for staff to manage the menu by add new menu item, deleting and updating them with a simple UI interface.
 
-**EPIC 5 - Booking**
+**EPIC 5 - Table  Booking**
 
-The booking epic is for all stories that relate to creating, viewing, updating and deleting bookings. This allows the staff to easily view upcoming bookings, manage the bookings and also for customers to book and manage their own reservations.
+The booking epic is for all stories that relate to creating, viewing, updating, making reservation for table  and deleting bookings. Here th customer can make reservations for the table, update and cancel thero own table booking but the staff can manger over all the bookings of all customer  and  the staff to easily view upcoming bookings, manage the bookings 
 
 **EPIC 6 - Deployment Epic**
 
@@ -86,7 +85,7 @@ This epic is for all stories related to deploying the app to heroku so that the 
 
 **EPIC 7 - Documentation**
 
-This epic is for all document related stories and tasks that are needed to document the software development lifecycle of the application. It aims to deliver quality documentation, explaining all stages of development and necessary information on running, deploying and using the application.
+This epic is for all document related stories and tasks that are needed to document the software development lifecycle of the application. It aims to deliver quality documentation, explaining all stages of development and necessary information on running, deploying and  how the app works .
 
 #### User Stories
 
@@ -120,11 +119,11 @@ As a developer, I need to implement allauth so that users can sign up and have a
 
 As a Site Owner, I want users to verify their email when registering an account so that I can ensure that a valid email address is being used.
 
-As a site owner, I would like the allauth pages customized to that they fit in with the sites styling
+
 
 **EPIC 4 - Menu**
 
-As a staff user, I want to be able to create a new menu when we have new dishes to offer
+As a staff user, I want to be able to add/create a new menu when we have new dishes to offer
 
 As a user, I would like to be able to view menus so that I can decide if I would like to dine at the restaurant
 
@@ -136,21 +135,23 @@ As a staff user, I want to be able to delete a menu when it is no longer used
 
 **EPIC 5 - Booking**
 
-As a user, I would like to be able to create a new booking when I want to visit the restaurant
+As a user, I would like to be able to create a make table  booking/ resevation when I want to visit the restaurant
+
+As a user, I would like to be able to create a make table  booking/ resevation when I want have an Event/parties
 
 As a user, I would like to view my bookings when I need to check the information
 
-As a user, I would like to be able to edit a booking so that I can make changes when needed
+As a user, I would like to be able to edit/upadte  my table booking/reservation so that I can make changes when needed
 
-As a user, I would like to receive feedback when I create a booking or edit one so I know it was completed successfully
-
-As a staff user, I want to be able to search a booking by reference to save time searching
+As a user, I would like to receive feedback when I make reservation / booking or edit one so I know it was completed successfully
 
 As a user I would like to delete a booking when I no longer require it
 
+As a User Staff,  would like to view all customer table reservation/booking whe a customer could not make it
+
 **EPIC 6 - Deployment Epic**
 
-As a developer, I need to set up whitenoise so that my static files are served in deployment
+
 
 As a developer, I need to deploy the project to heroku so that it is live for customers
 
@@ -165,9 +166,13 @@ Tasks:
 
 * Responsive Design - Site should be fully functional on all devices from 320px up
 * Hamburger menu for mobile devices
-* Ability to perform CRUD functionality on Menus and Bookings
+* Ability to perform CRUD functionality on Menus and  Table Bookings
 * Restricted role based features
 * Home page with restaurant information
+* Home page for Table booking
+* Ability to to view all Menus
+* Ability to view Table for Booking
+* Abilitiy to fill form for food ording and event(e.g Parties)
 
 ## The-Structure-Plane
 
@@ -185,18 +190,18 @@ The following navigation items are available on all pages:
   * Home -> index.html - Visible to all
   * Bookings (Drop Down):
     * Manage Bookings -> managebookings.html - Visible to logged in users
-    * New Booking -> booking.html - Visible to logged in users
+    * New Booking -> table_lis.html - Visible to logged in users
   * Menus (Drop Down):
-    * View Menus -> menus.html - Visible to all
+    * View Menus -> menu_list.html - Visible to all
     * Create Menu -> create_menu.html - Visible to staff
-    * Manage Menus -> managemenus - Visible to staff
+    * Manage Menus -> manage_menu - Visible to staff
   * Login -> login.html - Visible to logged out users
   * Register -> signup.html - Visible to logged out users
   * Logout -> logout.html - Visible to logged in users
 
 The navigation menu is displayed on all pages and drops down into a hamburger menu on smaller devices. This will allow users to view the site from any device and not take up too much space on mobile devices.
 
-![Navbar](docs/readme_images/navbar.PNG)
+![Navbar](docs/readme_images/nav_bar.png)
 
 ``USER STORY - As a restaurant owner, I would like a home page so that customers can view information on my restaurant``
 
@@ -204,17 +209,27 @@ Implementation:
 
 **Home Page**
 
-The home page contains a hero image of a seaside restaurant and the restaurant information at the top of the page. This will immediately make it evident to the user, what the purpose of the website is.
+1.  The home page contains a hero image of a delecious meal - Below the image. There is  a brief intro to what the resuturant can  offer. This will immediately make it evident to the user, what the purpose of the website is.
 
-Under the information section are two buttons, 'Make a booking' and 'View Menus'. These buttons will allow the user a quick way to the respective pages if they wish to make a booking or view the restaurants active menus.
+2. The  next section there is Our story Story. Telling the user the need to patroni us . There a hyperlink_like cup. There is the fruit indueti that Afrik Kitchen patrner that supplied us with natural drink
 
-The last section of the home page contains a google map, marking the location of the restaurant and the opening hours of the restaurant. This will allow the user to locate the restaurant and operating times.
 
-![Hero Image](docs/readme_images/hero.PNG)
+3. The another interesting section is  Menu section . Afrik kitchen offer Breakfast, Lunch , dinner and side menu- Each of the link you click, navigate you to the list of the menus.
 
-![Welcome Section](docs/readme_images/welcome.PNG)
+4. This  section is  Event  section . @Afrik kitchen user can book for Event and make table reservations Event button naviagte you to fill the for for the Event a while table button navigate to home for Table booking.
 
-![Find Us](docs/readme_images/find-us.PNG)
+5. This  last section of the home page contains a google map, marking the location of the restaurant and the opening hours of the restaurant. This will allow the user to locate the restaurant and operating times.
+
+
+![Hero Image](docs/readme_images/landing_page.png)
+
+![Our Story Section](docs/readme_images/our_story_sec.png)
+
+![Menu Section](docs/readme_images/menu_sec.png)
+
+![Event/table booking ](docs/readme_images/event_table_sect.png)
+
+![Find Us](docs/readme_images/find_us_sec.PNG)
 
 
 ``USER STORY - As a developer, I need to create the footer with social media links and contact information``

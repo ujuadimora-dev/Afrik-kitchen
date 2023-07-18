@@ -4,29 +4,91 @@
 
 <h1 class="text-center green-heading cursive-heading">Menu Detail</h1>
 
-<table>
-    <tr>
-        <th>Image</th>
-        <th>Name</th>
-        <th>Description</th>
-        <th>Price (M)</th>
-        <th>Price (L)</th>
-        <th>Vegetarian</th>
-        <th>Calorie Count</th>
-        <th>Created On</th>
-        <th>Created By Staff</th>
-    </tr>
-    <tr>
-        <td><img src="{{ menuitem.fimage }}" alt="Menu Image"></td>
-        <td>{{ menuitem.name }}</td>
-        <td>{{ menuitem.description }}</td>
-        <td>{{ menuitem.priceM }}</td>
-        <td>{{ menuitem.priceL }}</td>
-        <td>{% if menuitem.vegetarian %}Yes{% else %}No{% endif %}</td>
-        <td>{{ menuitem.calorie_count }}</td>
-        <td>{{ menuitem.created_on }}</td>
-        <td>{{ menuitem.created_by_staff }}</td>
-    </tr>
-</table>
+
+<div class="menu-item">
+    <img src="{{ menuitem.fimage }}" alt="Menu Image">
+    <div class="menu-details">
+        <p><strong>Name:</strong> {{ menuitem.name }}</p>
+        <p><strong>Description:</strong> {{ menuitem.description }}</p>
+        <p><strong>Price (M):</strong> {{ menuitem.priceM }}</p>
+        <p><strong>Price (L):</strong> {{ menuitem.priceL }}</p>
+        <p><strong>Vegetarian:</strong> {% if menuitem.vegetarian %}Yes{% else %}No{% endif %}</p>
+        <p><strong>Calorie Count:</strong> {{ menuitem.calorie_count }}</p>
+
+    </div>
+
+    
+</div>
+<div class="contact-section">
+
+    <h3 class="green-heading cursive-heading">Contact Us for Food Ordering</h3>
+    <p>@ Afrik Kitchen, we are at best at organising events such as weddings, Birthdays,
+        party,
+        house warming party, churching, graduations party, companies and school parties.
+        You can book
+        today or make enquiry here</p>
+    <a href="{% url 'home:contact' %}" class="btn btn-success">contact Us</a>
+
+
+</div>
+
+
+<style>
+    /* Define the default styles for the table */
+    .menu-item {
+        display: flex;
+        align-items: center;
+    }
+
+
+    /* table {
+        width: 100%;
+        border-collapse: collapse;
+    } */
+
+    .menu-item img {
+        max-width: 100%;
+        height: auto;
+        margin-right: 20px;
+    }
+
+    /* th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    } */
+
+
+    .menu-details p {
+        margin-bottom: 10px;
+    }
+
+    .contact-section {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    /* Add media queries for responsive layout */
+    /* @media only screen and (max-width: 768px) {
+        table {
+            font-size: 12px;
+        }
+
+        th, td {
+            padding: 5px;
+        }
+    } */
+
+    @media only screen and (max-width: 480px) {
+        .menu-item {
+            flex-direction: column;
+        }
+
+        .menu-item img {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+</style>
 
 {% endblock %}

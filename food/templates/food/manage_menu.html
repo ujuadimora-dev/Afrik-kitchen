@@ -1,4 +1,6 @@
 {% extends "base.html" %}
+
+
 {% block content %}
 
 <style>
@@ -44,14 +46,35 @@
     }
 
     .btn-warning {
-        background-color: #f0ad4e;
-        border-color: #eea236;
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: none;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        -ms-touch-action: manipulation;
+        touch-action: manipulation;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        color: #fff;
+        background-color: #b7b85c;
+        border-color: #9fae4c;
     }
 </style>
 
 
 
-<h1>Manage Menu</h1>
+<h1 class="text-center  green-heading cursive-heading">Manage Menu</h1>
 <table>
     <tr>
         <th>Name</th>
@@ -65,16 +88,13 @@
         <td>{{ menuitem.name }}</td>
         <td>{{ menuitem.type }}</td>
         <td>
-            <a href="{% url 'food:update_menuitem' menuitem.pk %}" btn btn-sucesss>update</a>
-            <a href="{% url 'food:delete_menuitem' menuitem.pk %}" btn btn-warning>Delete</a>
+            <a href="{% url 'food:update_menuitem' menuitem.pk %}"  class="btn">update</a>
+            <a href="{% url 'food:delete_menuitem' menuitem.pk %}" class=" btn-warning" >Delete</a>
         </td>
     </tr>
     {% empty %}
     <li>No menu items found.</li>
     {% endfor %}
     </ul>
-
-
-
 
 {% endblock %}

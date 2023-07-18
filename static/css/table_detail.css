@@ -1,7 +1,7 @@
 /* Root CSS */
 
 *{
-    padding:0;
+    padding:10px;
     margin:0;
     box-sizing: border-box;
     text-decoration:  none;
@@ -11,7 +11,7 @@ body{
     color: rgb(14, 153, 60);
     font-family: sans-serif;
     line-height: 1.25;
-    height: 100vh;
+    height: 10vh;
 }
 
 Main Divs 
@@ -36,24 +36,10 @@ Main Divs
     flex-direction: column;
 }
 
-/* Sub Divs *
 
-.home{
-    flex: 0.2;
-}
-.table-info{
-    flex: 0.4;
-    margin: 5rem 1rem;
-    
-}
 
-form{
-    display: flex;
-    flex: 0.4 1 auto;
-    flex-direction: column;
-}
 
-/* Inside Sub Divs */
+/* Inside Sub Divs
 
 .image img{
     flex:1;
@@ -67,7 +53,7 @@ i{
 
 .white_color {
   color: white;
-}
+} */
 
 
 /* Form's CSS */
@@ -86,74 +72,10 @@ input, button{
     border-radius: 0.5rem;
     line-height: 1.5;
     font-size: 1.5rem;
-    color: #555;
+    color: #350303;
 }
 
-/* button{
-    background-color: #dfdfdf;
-    color:rgb(6, 137, 245);
-    outline:none;
-}
 
-button:hover{
-    color:#dfdfdf;
-    background-color: rgb(6, 137, 245);
-} */
-
-/* the table_list*
-.container-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f2f2f2;
-    padding: 40px 0;
-  }
-  
-  .content-wrapper {
-    max-width: 900px;
-  }
-  
-  .text-area {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  #content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .table {
-    flex-basis: calc(33.33% - 20px);
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .table a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .table img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-  
-  .table h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .table p {
-    font-size: 16px;
-    color: #777;
-  }
   
 
   /* CSS for table_detail.html */
@@ -166,12 +88,12 @@ button:hover{
 }
 
 .table {
-  width: 400px;
+  width: 500px; 
   padding: 20px;
   background-color: #383636;
   border-radius: 10px;
   box-shadow: 0 0 5px rgb(0, 128, 43);
-};
+}
 
 
 .home a {
@@ -211,7 +133,7 @@ label {
 input[type="text"],
 input[type="date"],
 input[type="time"] {
-  width: 100%;
+  width: 10%; */
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -228,4 +150,19 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #45a049;
+}
+
+
+  /* Media Queries for Mobile */
+  @media only screen and (max-width: 768px) {
+    .table {
+        max-width: 90%;
+    }
+}
+
+/* Media Queries for Smaller Mobile */
+@media only screen and (max-width: 480px) {
+    .table {
+        padding: 10px;
+    }
 }

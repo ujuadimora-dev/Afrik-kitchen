@@ -41,7 +41,7 @@
         }
 
         .container {
-            /* display: grid; */
+            /* display: grid;  */
             grid-template-columns: repeat(3, 1fr);
             background-color: rgb(238, 231, 231);
             grid-gap: 20px;
@@ -69,6 +69,10 @@
 
          @media (max-width: 576px) {
             .container {
+                grid-template-columns: 1fr;
+            }
+
+            .card{
                 grid-template-columns: 1fr;
             }
         } 
