@@ -240,7 +240,7 @@ Implementation:
 
 A footer has been added to the bottom of the site, this contains a Twitter and Facebook link so that users can follow the restaurant on social media if they want to keep up to date with special offers not advertised on the website. These icons have aria-labels added to ensure users with assistive screen reading technology know what the purpose of the links are for. They also open in new tabs as they lead users away from the site.
 
-![Footer](docs/readme_images/footer.PNG)
+![Footer](docs/readme_images/footer_sec.png)
 
 ``USER STORY - As a staff user, I want to be able to create a new menu when we have new dishes to offer``
 
@@ -248,9 +248,9 @@ Implementation:
 
 **Create Menu Page**
 
-A create menu page was implemented to allow staff users to create new menus via the UI without having to use the backend admin panel. This will allow staff the ability to quickly update menus when they have made changes to the food being offered.
+A create menu page was implemented to allow staff users( must be login on) to create new menus via the UI without having to use the backend admin panel. This will allow staff the ability to quickly update menus when they have made changes to the food being offered. This menu is not accessible to customer or  un_login user or staff
 
-![Create Menu](docs/readme_images/create-menu.PNG)
+![Create Menu](docs/readme_images/create_menu_page.png)
 
 ``USER STORY -As a user, I would like to be able to view menus so that I can decide if I would like to dine at the restaurant``
 
@@ -258,9 +258,17 @@ Implementation:
 
 **View Menu Page**
 
-A menu page has been implemented to allow users to see the current active menus and decide whether they are interested in the food we offer before booking. This is visible to all users regardless of logged in state as it is not user friendly to restrict core information from users to force them into signing up.
+A menu page has been implemented to allow users to see the current active menus and decide whether they are interested in the food we offer before booking or coming to our resturant. This is visible to all users regardless of  if logged  or not. We want to mantain user friendly  attitude.
 
-![View Menus](docs/readme_images/menus.PNG)
+![View Menus](docs/readme_images/view_menu.png)
+
+
+**View Menu Detail Page**
+
+A menu  detail page has been implemented to allow users to see the current active price, and other information about the particular  menus and decide whether they are interested in the food we offer before booking or coming to our resturant. This is visible to all users regardless of  if logged  or not. We want to mantain user friendly  attitude.
+
+![View Menus](docs/readme_images/menu_detail.png)
+
 
 ``USER STORY -As a staff user, I want to be able to edit a menu when updates are needed``
 
@@ -268,31 +276,38 @@ Implementation:
 
 **Edit Menu Page**
 
-On the manage menus page a button was added to allow staff members to edit a menu when changes need to be made.
+On the manage menus page a button was added to allow staff members to edit/update information for menu when changes are made.
 
-![Edit Menu](docs/readme_images/edit-menu.PNG)
+![Edit/update Menu](docs/readme_images/update_menu_form.png)
 
-``USER STORY -As a staff member, I would like to receive feedback when I create or update menus so that I can see they have worked``
+``USER STORY -As a staff member, I would like to receive feedback when I create or update menus so as to know that is sucessful or not``
 
 Implementation:
 
-**Toasts**
+**Messages*
 
-Custom toasts were added on successful creation and deletion of menus which display success messages to the user to enable them to see that the action completed successfully.
+Django message  template  where added to base.html  on on screen message  on successful creation and deletion of menus which display success messages to the user to enable them to see that the action completed successfully.
 
-![Menu Toasts](docs/readme_images/toast-menu.PNG)
+![Sucessfull on screen Messages; This is not capture here for it is On_Screen_Message( THERE IS NO SCREENSHOT)](docs/readme_images/messages)
 
-``USER STORY -As a staff user, I want to be able to delete a menu when it is no longer used``
+``USER STORY -As a staff user, I want to be able to delete a menu when it is no longer used or required to change all the menu
 
 Implementation:
 
 **Delete Menu Page**
 
-On the manage menus page, a delete button has been implemented that will take staff users to a confirmation page to allow them to delete a menu. This will allow staff to delete menus when they are no longer needed
+On the manage menus page, a delete button has been implemented that will take staff users to a  delete page to allow them to delete a menu. This will allow staff to delete menus when they are no longer needed
 
-![Delete Menu](docs/readme_images/delete-menu.PNG)
+![Manage Menu](docs/readme_images/manage_menu_form.png)
 
-``USER-STORY - As a user, I would like to be able to create a new booking when I want to visit the restaurant``
+When a staff user click Delete button, will navigate to comformation of deletion page as show below 
+
+[Delete Menu](docs/readme_images/delete_comfirm.png)
+
+
+
+
+``USER-STORY - As a user, I would like to be able to create/ make resevation for Table  when I want to have business or famile or dating Lunch or dinner or breakfast``
 
 Implementation:
 
@@ -300,8 +315,7 @@ Implementation:
 
 A booking page was implemented with a form that takes in the customer details and enables the user to easily make a booking through the UI. 
 
-Extensive logic was added to the form validation to ensure that not only is there a table available for the users chosen time and date but also that it has enough seats for the amount of guests. If the form is successful with validation on the front end, logic is in place to find the lowest capacity table to seat the guests for the given date and time.
-
+The customer  navigate to the Table booking home  and then choiice the date and time for the booking
 This allows for seat optimisation to ensure we do not have small amounts of guests at tables that could of been booked for larger groups. Ensuring table optimisation and revenue for the restaurant.
 
 ![Create Booking](docs/readme_images/create-booking.PNG)
@@ -316,7 +330,7 @@ A manage bookings page was implemented with validation checks on the user. This 
 
 For restaurant staff users, all bookings will be available to display so that staff can easily view numbers and future bookings.
 
-![Manage Bookings](docs/readme_images/manage-bookings.PNG)
+![Manage Bookings](docs/readme_images/manage_booking.PNG)
 
 ``USER-STORY - As a user, I would like to be able to edit a booking so that I can make changes when needed``
 
@@ -328,27 +342,21 @@ On the manage bookings page an edit button is present that allows the user to di
 
 For staff users, they can also edit bookings from the manage booking page, even if they did not create the reservation. This will allow restaurant staff to ammend details as needed.
 
-![Edit Booking](docs/readme_images/edit-booking.PNG)
+![Edit Booking](docs/readme_images/manage_booking.png)
 
 ``USER-STORY - As a user, I would like to receive feedback when I create a booking or edit one so I know it was completed successfully``
 
 Implementation:
 
-**Toasts**
+**Djanggo custom Message**
 
-Custom toasts were implemented on the successful creation and editing of bookings. This will provide feedback to the user to relay information that the booking was successfully received or updated.
+Custom  Django message were implemented on the successful creation and editing of bookings. This will provide feedback to the user to relay information that the booking was successfully received or updated.
 
-![Booking Toasts](docs/readme_images/booking-toast.PNG)
+![The on SCREEN MESSAGES was NOt Captured](docs/readme_images)
 
 ``USER-STORY - As a staff user, I want to be able to search a booking by reference to save time searching``
 
-Implementation:
 
-**Searchbox**
-
-A search box was added to the manage bookings page that is only visible to staff users. This will allow the staff members to easily locate a booking by reference number if they need to find it quickly.
-
-[Search Boxes](docs/readme_images/search.PNG)
 
 ``USER-STORY - As a user I would like to delete a booking when I no longer require it``
 
@@ -360,13 +368,9 @@ A delete button was added to the manage bookings page that will allow customers 
 
 For staff members, they also have the abaility to delete any booking through the UI as well. This will allow staff to free up table capacity should a customer call to cancel their booking.
 
-![Delete Booking](docs/readme_images/delete-booking.PNG)
+![Delete Booking](docs/readme_images/cancel_table_sec.png)
 
-Favicon
-    * A site wide favicon was implemented.
-    * This provides an image in the tabs header to allow the user to easily identify the website if they have multiple tabs open.
 
-![Favicon](docs/readme_images/favicon.PNG)
 
 **Error Pages**
 
@@ -392,11 +396,7 @@ A 403 error page has been implemented to provide feedback to the user when they 
 
 This covers:
 
-* Create Menu - Only authorized to staff
-* Edit Menu - Only authorized to staff
-* Delete Menu - Only authorized to staff
-* Edit Booking - Only authorized to the customer who created the booking or a staff member
-* Delete booking - Only authorized to the customer who created the booking or a staff member
+
 
 ``USER STORY - As a developer, I need to implement a 500 error page to alert users when an internal server error occurs``
 
@@ -416,12 +416,27 @@ The following stories were implemented in order to set up a base structure for a
 
 ``As a developer, I need to set up the project so that it is ready for implementing the core features``
 
-**Favicon**
 
-A favicon was added the website to enable users to easily locate the website in the browser when multiple tabs are open.
 
 ### Features Left To Implement
 - In a future release I would like to implement a page which displays a table map of the restaurant with information displayed on each table of upcoming bookings. This feature would allow staff to easily see if there are any upcoming bookings on the each table and plan accordingly. 
+
+- I would to abe implement online ordering system where by user can order food online , either by paying for their with credi card or pay  upon delivery.
+
+- i would to be able to implement  food  and table search so as to enable the user to easily get want they are looking for when visting the site.
+
+- Also, in the table booking, i would like to display different kind of the tables( here on this site, it only one type of the table that was 
+  display, i could not go further than that  due to time factor, i was  not able).
+
+- i would like to implemt cookings for data security policy.
+
+- Also  i would like user to be to download our menu and table plan to help them plan for their futrue event.
+
+- Also  I  like to implement suscription to our news letter so that user can subscript and be uptodate for Events.
+
+- I would like dedicate Facebook or Utube for the Resurant for the media presence.
+
+-  I will add a favicon to the the website to enable users to easily locate the website in the browser when multiple tabs are open.
 
 
 ## The-Skeleton-Plane
@@ -431,7 +446,7 @@ A favicon was added the website to enable users to easily locate the website in 
 - Home page
 
 
-![Home Page](docs/wireframes/home.JPG)
+![Home Page](docs/wireframes/wire_homepag.png)
 
 
 - Signup page
@@ -496,9 +511,7 @@ A favicon was added the website to enable users to easily locate the website in 
 
 ![500 Error](docs/wireframes/500.JPG)
 
-**Differences to Design**
 
-On the menu page, the original wireframe was to display the menus in a complete linear format but on larger screens this caused a lot of un-neccessary white space on smaller items like drinks and sides. A change was made to have the drinks and sides sit side-by-side on larger screens and stack as originally planned on mobiles.
 
 ### Database-Design
 
@@ -516,14 +529,14 @@ Entity relationship diagram was created using [DBVisualizer](https://www.dbvis.c
 
 Views were secured by using the django class based view mixin, UserPassesTextMixin. A test function was created to use the mixin and checks were ran to ensure that the user who is trying to access the page is authorized. Any staff restricted functionality, user edit/delete functionality listed in the features was secured using this method.
 
-Environment variables were stored in an env.py for local development for security purposes to ensure no secret keys, api keys or sensitive information was added the the repository. In production, these variables were added to the heroku config vars within the project.
+Environment variables were stored in an env.py for local development for security purposes to ensure no secret keys, api keys or sensitive information was added the the repository. In production, these variables were added to the heroku config vars within the project. and DeBug was set to Falase before deplyoment , reason bein 1 , it was a good pratice and seconly to avoid breakage of the site during coustomer visiatoonand lastly , if not may expose vital secuity informatiom
 
 ## The-Surface-Plane
 ### Design
 
 ### Colour-Scheme
 
-The main color schemes for the website are black ( #000000 ) ground. White font (#FFF) and the gold (#8f773c9e) was added to borders, button text and hover affects to add a hint of color to the website.
+The main color schemes for the website are green and white 
 
 ### Typography
 
@@ -531,7 +544,7 @@ The Roboto font was used throughout the website. This font is from google fonts 
 
 ### Imagery
 
-The Website logo was made using Canva using the Gold colour to match in with the website color scheme.
+The Website logo was made using logo.com a free site for creatimg logo of every type.
 
 The hero image was taken from Pexels which is a royalty free image site.
 
@@ -555,7 +568,7 @@ The hero image was taken from Pexels which is a royalty free image site.
 - Font Awesome
   - This was used for various icons throughout the site
 - Favicon.io
-  - favicon files were created at https://favicon.io/favicon-converter/
+  
 - balsamiq
   - wireframes were created using balsamiq from https://balsamiq.com/wireframes/desktop/#
 - Canva
@@ -606,7 +619,7 @@ Test cases and results can be found in the [TESTING.md](TESTING.md) file. This w
 
 ### Version Control
 
-The site was created using the Visual Studio Code editor and pushed to github to the remote repository ‘Gars-Steakhouse’.
+The site was created using the Visual Studio Code editor and pushed to github to the remote repository ‘Afrik_kitchen’.
 
 The following git commands were used throughout development to push code to the remote repo:
 
@@ -642,7 +655,7 @@ The site was deployed to Heroku. The steps to deploy are as follows:
 
 The app should now be deployed.
 
-The live link can be found here: [Live Site](https://sizzle-and-steak.onrender.com/)
+The live link can be found here: [Live Site](https://.com/)
 
 ### Run Locally
 
