@@ -354,7 +354,7 @@ Custom  Django message were implemented on the successful creation and editing o
 
 ![The on SCREEN MESSAGES was NOt Captured](docs/readme_images)
 
-``USER-STORY - As a staff user, I want to be able to search a booking by reference to save time searching``
+`
 
 
 
@@ -452,39 +452,39 @@ The following stories were implemented in order to set up a base structure for a
 - Signup page
 
 
-![Sign up Page](docs/wireframes/register.JPG)
+![Sign up Page](docs/wireframes/wire_signup.png)
 
 - Log in
 
-![Login Page](docs/wireframes/login.JPG)
+![Login Page](docs/wireframes/sign_in_wire.png)
 
 - Log Out
 
-![Logout Page](docs/wireframes/logout.JPG)
+![Logout Page](docs/wireframes/wire_sign_out.png)
 
 - Create Booking
 
-![Create Booking](docs/wireframes/create_booking.JPG)
+![Create Booking](docs/wireframes/create_booking_wire.png)
 
 - Edit Booking 
 
-![Edit Booking](docs/wireframes/edit_booking.JPG)
+![Edit Booking](docs/wireframes/edit_menu_wire.png)
 
 - Manage Bookings
 
-![Manage Bookings](docs/wireframes/manage_booking.JPG)
+![Manage Bookings](docs/wireframes/manage_booking_wire.png)
 
 - Delete Booking 
 
-![Delete Booking](docs/wireframes/delete_booking.JPG)
+![Delete Booking](docs/wireframes/delete_booked_comfirm_wire.png)
 
 - Create Menu 
 
-![Create Menu](docs/wireframes/create_menu.JPG)
+![Create Menu](docs/wireframes/create_menu_wire.png)
 
 - Edit Menu 
 
-![Edit Menu](docs/wireframes/edit_menu.JPG)
+![Edit Menu](docs/wireframes/edit_menu_wire.png)
 
 - View Menu 
 
@@ -493,23 +493,23 @@ The following stories were implemented in order to set up a base structure for a
 
 - Manage Menus
 
-![Manage Menu](docs/wireframes/manage_menus.JPG)
+![Manage Menu](docs/wireframes/manage_menu_wire.png)
 
 - Delete Menu 
 
-![Delete Menu](docs/wireframes/delete_menu.JPG)
+![Delete Menu](docs/wireframes/delete_menu_wire.png)
 
 - 404 Error 
 
-![404 Error](docs/wireframes/404.JPG)
+![404 Error](docs/wireframes/404_erro_wire.png)
 
 - 403 Error 
 
-![403 Error](docs/wireframes/403.JPG)
+![403 Error](docs/wireframes/403_error_wire)
 
 - 500 Error 
 
-![500 Error](docs/wireframes/500.JPG)
+![500 Error](docs/wireframes/500_error_wire.png)
 
 
 
@@ -521,13 +521,11 @@ The Menu Items model holds objects that are linked to the Menu Models by a many 
 
 Bookings are related to the customer (user) by a Foreign Key which allows the users to be able to view and update bookings attached to their accounts.
 
-Entity relationship diagram was created using [DBVisualizer](https://www.dbvis.com/) and shows the schemas for each of the models and how they are related.
+Entity relationship diagram was created using microsoft pointpoint and shows the schemas for each of the models and how they are related.
 
-![Entity Relationship Diagram](docs/readme_images/erd.JPG)
+![Entity Relationship Diagram](docs/readme_images/data_base.PNG)
 
 ### Security
-
-Views were secured by using the django class based view mixin, UserPassesTextMixin. A test function was created to use the mixin and checks were ran to ensure that the user who is trying to access the page is authorized. Any staff restricted functionality, user edit/delete functionality listed in the features was secured using this method.
 
 Environment variables were stored in an env.py for local development for security purposes to ensure no secret keys, api keys or sensitive information was added the the repository. In production, these variables were added to the heroku config vars within the project. and DeBug was set to Falase before deplyoment , reason bein 1 , it was a good pratice and seconly to avoid breakage of the site during coustomer visiatoonand lastly , if not may expose vital secuity informatiom
 
@@ -567,11 +565,12 @@ The hero image was taken from Pexels which is a royalty free image site.
   - Used to commit and push code during the development of the Website
 - Font Awesome
   - This was used for various icons throughout the site
-- Favicon.io
+- Elephantsql(Progresql) for th storing Data
+
+-  Claudinary: This was use to store food images
   
-- balsamiq
-  - wireframes were created using balsamiq from https://balsamiq.com/wireframes/desktop/#
-- Canva
+- 
+- Logo.com
   - This was used to create the logo in header 
 - TinyPNG
   - This was used to compress the hero image for optimal load times
@@ -586,7 +585,6 @@ The hero image was taken from Pexels which is a royalty free image site.
 **External Python Modules**
 
 * cloudinary==1.29.0 - Cloundinary was set up for use but no custom uploads were made, settings remain for future development
-* crispy-bootstrap5==0.6 - This was used to allow bootstrap5 use with crispy forms
 * cryptography==37.0.2 - Installed as dependency with another package
 * defusedxml==0.7.1 - Installed as dependency with another package
 * dj-database-url==0.5.0 - Used to parse database url for production environment
@@ -594,7 +592,6 @@ The hero image was taken from Pexels which is a royalty free image site.
 * Django==4.0.5 - Framework used to build the application
 * django-admin-rangefilter==0.8.4 - This was used to search bookings in the admin for a range between 2 dates
 * django-allauth==0.51.0 - Used for the sites authentication system, sign up, sign in, logout, password resets ect.
-* django-crispy-forms==1.14.0 - Used to style the forms on render
 * django-model-utils==4.2.0 - Installed as dependency with another package
 * gunicorn==20.1.0 - Installed as dependency with another package
 * idna==3.3 - Installed as dependency with another package
@@ -681,5 +678,5 @@ Most commonly, forks are used to either propose changes to someone else's projec
 
 ## Credits 
 
-The [Hero Image](https://www.pexels.com/photo/people-dining-at-an-al-fresco-restaurant-by-the-sea-6446203/) was taken from pexels.
+
 

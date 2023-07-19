@@ -238,13 +238,7 @@ Tests were performed on the create booking to ensure that:
 2. A customer cannot book if no tables are available for the amount of guests
 4. Forms cannot be submitted when required fields are empty
 
-## Unit Testing
 
-Unit tests were created to test some basic functionality such as templates used and redirects. These can be found in the tests.py files in the respective apps.
-
-Results:
-
-![unit tests](docs/testing/unit-test.PNG)
 
 ## Accessibility
 
