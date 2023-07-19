@@ -1,0 +1,43 @@
+
+    /* Define the default styles for the table */
+    .menu-item {
+        display: flex;
+        align-items: center;
+    }
+    /* table {
+        width: 100%;
+        border-collapse: collapse;
+    } */
+
+    .menu-item img {
+        max-width: 100%;
+        height: auto;
+        margin-right: 20px;
+    }
+
+    /* th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    } */
+
+    .menu-details p {
+        margin-bottom: 10px;
+    }
+    .contact-section {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    /* Add media queries for responsive layout */
+
+    @media only screen and (max-width: 480px) {
+        .menu-item {
+            flex-direction: column;
+        }
+
+        .menu-item img {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }

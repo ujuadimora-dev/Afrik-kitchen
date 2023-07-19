@@ -21,14 +21,17 @@ def detail(request, pk):
 
 
 def create_menuitem(request):
-    """ To create the menu item"""
-    form = MenuitemDetail(request.POST or None)
-
-    if form.is_valid():
-        form.save()
-        messages.success(request, 'Menu item created successfully.')
-        return redirect('food:food')  # Redirect to menu_list view
-        return render(request, 'food/create_menu.html', {'form': form})
+    """To create the menu item"""
+    if request.method == 'POST':
+        form = MenuitemDetail(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Menu item created successfully.')
+            return redirect('food:food')  # Redirect to menu_list view after successful form submission
+    else:
+        # Handle the GET request (render the form)
+        form = MenuitemDetail()
+    return render(request, 'food/create_menu.html', {'form': form})
 
 
 def manage_menu(request):

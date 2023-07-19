@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 
+{% load static %}  <!-- Add this line to load the static template tag -->
+
+<!-- Main StyleSheet -->
+<link rel="stylesheet" href="{% static 'css/menu.css' %}">
+{% block extra_css %}{% endblock %}
+
 {% block content %}
     <div class="form-section">
         <h1 class="green-heading cursive-heading text-center">Create Menu</h1>
@@ -9,66 +15,5 @@
             <button type="submit" class="btn btn-success">Create Menu</button>
         </form>
     </div>
-
-    <style>
-        .form-section {
-            margin: 20px auto;
-            max-width: 900px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-
-        .form-section form {
-            display: grid;
-            gap: 10px;
-        }
-
-        .form-section label {
-            font-weight: bold;
-        }
-
-        .form-section input[type="text"],
-        .form-section textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-        .form-section button[type="submit"] {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .form-section button[type="submit"]:hover {
-            background-color: #45a049;
-        }
-        
-        /* Media queries for mobile responsiveness */
-        @media only screen and (max-width: 480px) {
-            .form-section {
-                padding: 10px;
-            }
-
-            .form-section h1 {
-                font-size: 20px;
-            }
-
-            .form-section input[type="text"],
-            .form-section textarea {
-                padding: 8px;
-            }
-
-            .form-section button[type="submit"] {
-                padding: 8px 16px;
-            }
-        }
-    </style>
 {% endblock %}
+

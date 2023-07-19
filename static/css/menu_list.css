@@ -1,0 +1,146 @@
+
+/* Reset and common styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Generic styles */
+.green-heading {
+    color: green;
+}
+
+.cursive-heading {
+    font-family: cursive;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* Card styles */
+.card1 {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card1 .card-body1 {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card1 .card-img-top1 {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.card1 .card-title1 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.card1 .btn {
+    margin-top: 10px;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    .card1 {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card1 {
+        width: calc(100% - 20px);
+    }
+}
+
+
+/* manage menu styling */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.btn-warning {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #b7b85c;
+    border-color: #9fae4c;
+}
+

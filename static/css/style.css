@@ -1,47 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&family=Roboto&display=swap');
-
-*{
-  padding:0;
-  margin:0;
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  text-decoration:  none;
+  text-decoration: none;
 }
 
 /* Generic styles */
 html,
 body {
-    height: 100%;
-    color: rgb(0, 0, 0);
-    font-family: 'Roboto', sans-serif;
-    
+  height: 100%;
+  color: rgb(0, 0, 0);
+  font-family: 'Roboto', sans-serif;
 }
 
-/* header {
-    background-color:rgb(36, 51, 24)
+/* Hero Image at the home page */
+.hero-img{
+  background-image: url("https://res.cloudinary.com/daaluzzqp/image/upload/v1689767882/static/images/pgr.95996c7efca5.png");
+  height: 400px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-} */
-
-/* main {
-    flex: 1 0 auto;
-    background-color: white;
-}
- */
-
-
-/* Hero Image */
-
-.hero-img {
-    background-image: url("https://res.cloudinary.com/daaluzzqp/image/upload/v1688480597/pgr_xwohu1.png");
-    height: 400px;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-/* Table home image*/
+/* Table home image */
 .table-img {
   background-image: url("https://res.cloudinary.com/daaluzzqp/image/upload/v1688646705/book_bgr_xjsh5m.jpg");
   height: 400px;
@@ -49,6 +30,75 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.container-wrapper1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9; 
+  padding: 40px;
+}
+
+/* Rest of the styles for the content */
+/* Add any additional styles as needed */
+
+/* Example styles for card layout */
+.card1 {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.card-title1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.green-heading {
+  color: green;
+}
+
+.cursive-heading {
+  font-family: cursive;
+}
+
+.white {
+  color: white;
+}
+
+/* Add any other styles as needed */
+
+
+
 
 .container-wrapper1 {
   display: flex;

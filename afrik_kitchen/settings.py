@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-
 from pathlib import Path
 import os
 import dj_database_url
@@ -18,6 +17,10 @@ from django.contrib.messages import constants as messages
 
 if os.path.isfile('env.py'):
     import env
+
+
+DEVELOPMENT = os.environ.get('DEVELOPMENT', False)
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -38,6 +41,10 @@ DEBUG = True
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ['afrik-kitchen.herokuapp.com', 'localhost', '8000-ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu101.gitpod.io','8000-ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu99.gitpod.io', '8000-ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu100.gitpod.io', 'https://42609-ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu101.gitpod.io/']
+
+RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
+if RENDER_EXTERNAL_HOSTNAME:
+    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 
 # Application definition
@@ -61,7 +68,7 @@ INSTALLED_APPS = [
 
     # 'django-lib',
     'cloudinary',
-    # 'cloudinary_storage'
+    # 'cloudinary_storage',
     # app used
     'home',
     'food',
@@ -72,6 +79,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -186,6 +194,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -196,4 +206,3 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-

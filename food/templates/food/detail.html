@@ -1,6 +1,11 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block content %}
+<!-- Main StyleSheet -->
+<link rel="stylesheet" href="{% static 'css/menu_detail.css' %}">
+
 
 <h1 class="text-center green-heading cursive-heading">Menu Detail</h1>
 
@@ -27,49 +32,5 @@
         today or make enquiry here</p>
     <a href="{% url 'home:contact' %}" class="btn btn-success">contact Us</a>
 </div>
-<style>
-    /* Define the default styles for the table */
-    .menu-item {
-        display: flex;
-        align-items: center;
-    }
-    /* table {
-        width: 100%;
-        border-collapse: collapse;
-    } */
-
-    .menu-item img {
-        max-width: 100%;
-        height: auto;
-        margin-right: 20px;
-    }
-
-    /* th, td {
-        padding: 10px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
-    } */
-
-    .menu-details p {
-        margin-bottom: 10px;
-    }
-    .contact-section {
-        margin-top: 20px;
-        text-align: center;
-    }
-
-    /* Add media queries for responsive layout */
-
-    @media only screen and (max-width: 480px) {
-        .menu-item {
-            flex-direction: column;
-        }
-
-        .menu-item img {
-            margin-right: 0;
-            margin-bottom: 10px;
-        }
-    }
-</style>
 
 {% endblock %}
