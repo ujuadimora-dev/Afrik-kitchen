@@ -19,9 +19,6 @@ from django.contrib.messages import constants as messages
 if os.path.isfile('env.py'):
     import env
 
-
-
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -31,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates'),
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = 'django-insecure-l8_65qbqouj!$9q&imj%r(!1i7#88()-x)qicafr2z%@8exrer'
+# SECRET_KEY = 'django-insecure-l8_65qbqouj!$9q&imj%r(!1i7#88()-x)qicafr2z%@8exrer'
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
@@ -54,25 +51,22 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
 
-     # Django Allauth
+    # Django Allauth
+
     'django.contrib.sites', 
     'allauth', 
     'allauth.account', 
     'allauth.socialaccount', 
     'allauth.socialaccount.providers.github',
 
-    #'django-lib',
+    # 'django-lib',
     'cloudinary',
-    #'cloudinary_storage',
-    #'django_summernote',
+    # 'cloudinary_storage'
     # app used
     'home',
     'food',
-    #'booking.avaliable',
-    #'view_menu',
     'booking',
-    #'event',
-    #'afrik_kitchen',
+    # 'afrik_kitchen',
     'accounts'
 ]
 
@@ -87,7 +81,7 @@ MIDDLEWARE = [
 ]
 
 AUTHENTICATION_BACKENDS = [
-    #Needed to login by username in Django admin, regareless of 'allauth'
+    # Needed to login by username in Django admin, regareless of 'allauth'
     'django.contrib.auth.backends.ModelBackend',
 
     # 'Allauth' specific authentification methods, such as login be emmail
@@ -96,7 +90,7 @@ AUTHENTICATION_BACKENDS = [
 
 
 AUTHENTICATION_BACKENDS = (
-    #Needed to login by username in Django admin, regareless of 'allauth'
+    # Needed to login by username in Django admin, regareless of 'allauth'
     "django.contrib.auth.backends.ModelBackend",
     # 'Allauth' specific authentification methods, such as login be emmail
     "allauth.account.auth_backends.AuthenticationBackend",
@@ -129,9 +123,6 @@ WSGI_APPLICATION = 'afrik_kitchen.wsgi.application'
 DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL")),
 }
-
-
-
 
 
 # Password validation
@@ -192,7 +183,7 @@ SITE_ID = 1
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR,'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 
@@ -205,5 +196,4 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
 

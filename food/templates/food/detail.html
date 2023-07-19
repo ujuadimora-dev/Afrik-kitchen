@@ -16,8 +16,6 @@
         <p><strong>Calorie Count:</strong> {{ menuitem.calorie_count }}</p>
 
     </div>
-
-    
 </div>
 <div class="contact-section">
 
@@ -28,19 +26,13 @@
         You can book
         today or make enquiry here</p>
     <a href="{% url 'home:contact' %}" class="btn btn-success">contact Us</a>
-
-
 </div>
-
-
 <style>
     /* Define the default styles for the table */
     .menu-item {
         display: flex;
         align-items: center;
     }
-
-
     /* table {
         width: 100%;
         border-collapse: collapse;
@@ -58,26 +50,15 @@
         border-bottom: 1px solid #ddd;
     } */
 
-
     .menu-details p {
         margin-bottom: 10px;
     }
-
     .contact-section {
         margin-top: 20px;
         text-align: center;
     }
 
     /* Add media queries for responsive layout */
-    /* @media only screen and (max-width: 768px) {
-        table {
-            font-size: 12px;
-        }
-
-        th, td {
-            padding: 5px;
-        }
-    } */
 
     @media only screen and (max-width: 480px) {
         .menu-item {

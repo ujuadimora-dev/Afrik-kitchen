@@ -30,7 +30,7 @@
       </div>
 
       <!-- Div 3: Table Booking Form -->
-      <h2> Edit your Bookings</h2>
+      <h2 > Edit your Bookings</h2>
       <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
@@ -44,6 +44,14 @@
         </script>
         <button type="submit">Save Changes</button>
       </form>
+
+      {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+                <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
 
     </div>
   </div> <!-- END Main Content Div -->
