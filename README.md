@@ -1,7 +1,7 @@
 # Afrik Kitchen
 
-Afrik Kitchen is one of the best  restaurants  that offer orginic Afrikcan food that loctaed in Bremen City in Germany Europ . The app is a restaurant management system designed to allow staff to easily manage the food menus, table management and Table bookings. It also provides customers with a simple, easy to use booking(Table )system where they can view and manage their own reservations. The app has two main section: Section for Managing anf booking and reservation go d Table, section for the Viewing Menu and manging of the menu and section for the Event and contactof the event
-The live link can be found here: [Live Site -  Afrik Kitchen) https://ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu101.gitpod.io/)
+Afrik Kitchen is one of the best  restaurants  that offer orginic Afrikcan food that loctaed in Bremen City in Germany Europ . The app is a restaurant management system designed to allow staff to easily manage the food menus, table management and Table bookings. It also provides customers with a simple, easy to use booking(Table )system where they can view and manage their own reservations. The app has three(3) main sections: Section for Managing/ booking/ reservation of  Table(s), section for the managing of  menu(food) and section for the Events(example wedding, Anuversly, Graduation ceremony etc) and contact of the event
+The live link can be found here: [Live Site -  Afrik Kitchen) (https://afrik-kitchen.herokuapp.com/)
 
 ![Mock Up](docs/readme_images/moch_site.png)
 
@@ -42,7 +42,7 @@ The live link can be found here: [Live Site -  Afrik Kitchen) https://ujuadimora
 
 ### Site-Goals
 
-The site is aimed to help restaurant staff to easily manage the food menus  as well as mange table booking that displayed on the website, as well as keeping track of upcoming bookings and capacity, editing and deleting as neccessary.
+The site is aimed to help restaurant staff to easily manage the food and table for customers. Also for the user or customer may want to dinne or lunch in a unique resturant or would like to make table reservation for an event  conveniently. 
 
 The site also aims to provide customers with a simple, hassle free way to make table reservations without the need to call the restaurant. They will also be able to cancel their table bookings  and reservation or update when needed.
 
@@ -50,54 +50,50 @@ The site also aims to provide customers with a simple, hassle free way to make t
 
 This project was developed using agile methodologies by delivering small features in incremental sprints. There were 3 sprints in total, spaced out evenly over four weeks.
 
-All projects were assigned to epics, prioritized under the labels, Must have, should have, could have. They were assigned to sprints and story pointed according to complexity. "Must have" stories were completed first, "should haves" and then finally "could haves". It was done this way to ensure that all core requirements were completed first to give the project a complete feel, with the nice to have features being added should there be capacity.
+All projects were  prioritized under the labels, Must have, should have, could have.  "Must have" stories were completed first, "should haves" and then finally "could haves". It was done this way to ensure that all core requirements were completed first to give the project a complete feel, with the nice to have features being added should there be capacity.
 
-The  board was created using github projects and can be located [here](https://github.com/users/ujuadimora-dev/projects/5/views/1) and can be viewed to see more information on the project cards. 
+The  board was created using github projects and can be located [here]https://github.com/users/ujuadimora-dev/projects/5) and can be viewed to see more information on the project cards. 
 
 ![Afrikchen_board1 image](docs/readme_images/)
 
-#### Epics
+#### The project
 
-The project had 7 main Epics (milestones):
+The project were completed in 7 parts: 
 
-**EPIC 1 - Base Setup**
+**Part 1 - Base Setup**
 
-The base setup epic is for all stories needed for the base set up of the application. The most of template i used depend in the base.template
-**EPIC 2 - Stand alone Pages**
+The base setup  is for all stories needed for the base set up of the application. The most of template i used depend in the base.template
+**Part 2 - Standalone Pages**
 
 The stand alone pages epic is for small pages that did not have enough stories to warrant their own full epics. Instead of creating epics for tiny features, these small deliverables were all added under this epic.
 
-**EPIC 3 - Authentication Epic**
+**Part 3 - Authentication**
 
-The authentication epic is for all stories related to the registration, login and authorization of views. This epic provides critical functionality and value as without it the staff would not be able to managed the bookings securely without regular site visitors also being able to see and perform actions.
+The authentication  is for all stories related to the registration, login and authorization of views. This part provides critical functionality and value as without it the staff would not be able to managed the bookings securely without regular site visitors also being able to see and perform actions.
 
-**EPIC 4 - Menu**
+**part 4 - Menu**
 
-The menu epic is for all stories that relate to the creating, deleting, editing and viewing of menus. This allows for regular users to view menus , users or customer can fille the form if they want to book the any food that is being display at the site and for staff to manage the menu by add new menu item, deleting and updating them with a simple UI interface.
+The menu  is for all stories that relate to the creating, deleting, editing and viewing of menus. This allows for regular users to view menus , users or customer can fill the form if they want to book for food that is being display at the site and for staff to manage the menu by add new menu item, deleting and updating them with a simple UI interface.
 
-**EPIC 5 - Table  Booking**
+**Part 5 - Table  Booking**
 
-The booking epic is for all stories that relate to creating, viewing, updating, making reservation for table  and deleting bookings. Here th customer can make reservations for the table, update and cancel thero own table booking but the staff can manger over all the bookings of all customer  and  the staff to easily view upcoming bookings, manage the bookings 
+The booking  is for all stories that relate to creating, viewing, updating, making reservation for table  and deleting bookings. Here th customer can make reservations for the table, update and cancel thero own table booking but the staff can manger over all the bookings of all customer  and  the staff to easily view upcoming bookings, manage the bookings 
 
-**EPIC 6 - Deployment Epic**
+**Part 6 - Deployment**
 
-This epic is for all stories related to deploying the app to heroku so that the site is live for staff and customer use.
+This  is  all about  stories related to deploying the app to heroku so that the site is live for staff and customer use.
 
-**EPIC 7 - Documentation**
+**Part  7 - Documentation**
 
-This epic is for all document related stories and tasks that are needed to document the software development lifecycle of the application. It aims to deliver quality documentation, explaining all stages of development and necessary information on running, deploying and  how the app works .
+This part is for all document-related stories and tasks that are needed to document the software development lifecycle of the application. It aims to deliver quality documentation, explaining all stages of development and necessary information on running, deploying and  how the app works .
 
 #### User Stories
 
-The following user stories (by epic) were completed over the 3 sprints:
+The following are the project  plan
+**Part1  - Base Setup**
 
-**EPIC 1 - Base Setup**
+As a developer, I need to create the base.html page and structureso thatother pages can reuse the layout
 
-As a developer, I need to create the base.html page and structure so that other pages can reuse the layout
-
-As a developer, I need to create static resources so that images, css and javascript work on the website
-
-As a developer, I need to set up the project so that it is ready for implementing the core features
 
 As a developer, I need to create the footer with social media links and contact information
 
@@ -111,9 +107,9 @@ As a developer, I need to implement a 500 error page to alert users when an inte
 
 As a developer, I need to implement a 403 error page to redirect unauthorised users to so that I can secure my views
 
-As a restaurant owner, I would like a home page so that customers can view information on my restaurant
 
-**EPIC 3 - Authentication Epic**
+
+**part 3 - Authentication Epic**
 
 As a developer, I need to implement allauth so that users can sign up and have access to the websites features
 
@@ -121,7 +117,7 @@ As a Site Owner, I want users to verify their email when registering an account 
 
 
 
-**EPIC 4 - Menu**
+**Part 4 - Menu**
 
 As a staff user, I want to be able to add/create a new menu when we have new dishes to offer
 
@@ -133,7 +129,7 @@ As a staff member, I would like to receive feedback when I create or update menu
 
 As a staff user, I want to be able to delete a menu when it is no longer used
 
-**EPIC 5 - Booking**
+**Part 5 - Booking**
 
 As a user, I would like to be able to create a make table  booking/ resevation when I want to visit the restaurant
 
@@ -149,13 +145,13 @@ As a user I would like to delete a booking when I no longer require it
 
 As a User Staff,  would like to view all customer table reservation/booking whe a customer could not make it
 
-**EPIC 6 - Deployment Epic**
+**part 6 - Deployment **
 
 
 
 As a developer, I need to deploy the project to heroku so that it is live for customers
 
-**EPIC 7 - Documentation**
+**Part 7 - Documentation**
 
 Tasks:
 
@@ -171,6 +167,7 @@ Tasks:
 * Home page with restaurant information
 * Home page for Table booking
 * Ability to to view all Menus
+* Ability to view details  of the menu
 * Ability to view Table for Booking
 * Abilitiy to fill form for food ording and event(e.g Parties)
 
@@ -316,7 +313,7 @@ Implementation:
 A booking page was implemented with a form that takes in the customer details and enables the user to easily make a booking through the UI. 
 
 The customer  navigate to the Table booking home  and then choiice the date and time for the booking
-This allows for seat optimisation to ensure we do not have small amounts of guests at tables that could of been booked for larger groups. Ensuring table optimisation and revenue for the restaurant.
+Tr groups. 
 
 ![Create Booking](docs/readme_images/create-booking.PNG)
 
@@ -544,7 +541,7 @@ The Roboto font was used throughout the website. This font is from google fonts 
 
 The Website logo was made using logo.com a free site for creatimg logo of every type.
 
-The hero image was taken from Pexels which is a royalty free image site.
+
 
 
 ## Technolgies
@@ -575,13 +572,7 @@ The hero image was taken from Pexels which is a royalty free image site.
 - TinyPNG
   - This was used to compress the hero image for optimal load times
 
-**Python Modules Used**
-
-* Django Class based views (ListView, UpdateView, DeleteView, CreateView) - Used for the classes to create, read, update and delete
-* Mixins (LoginRequiredMixin, UserPassesTestMixin) - Used to enforce login required on views and test user is authorized to perform actions
-* messages - Used to pass messages to the toasts to display feedback to the user upon actions
-* timedelta, date - Date was used in order to search for objects by date and timedelta for searching date ranges
-
+*
 **External Python Modules**
 
 * cloudinary==1.29.0 - Cloundinary was set up for use but no custom uploads were made, settings remain for future development
@@ -610,7 +601,7 @@ The hero image was taken from Pexels which is a royalty free image site.
 
 ## Testing
 
-Test cases and results can be found in the [TESTING.md](TESTING.md) file. This was moved due to the size of the file.
+Test cases and results can be found in the [TEST.md](TEST.md) file. This was moved due to the size of the file.
 
 ## Deployment
 
@@ -652,7 +643,7 @@ The site was deployed to Heroku. The steps to deploy are as follows:
 
 The app should now be deployed.
 
-The live link can be found here: [Live Site](https://.com/)
+The live link can be found here: [Live Site](https://afrik-kitchen.herokuapp.com/)
 
 ### Run Locally
 
@@ -676,7 +667,7 @@ Most commonly, forks are used to either propose changes to someone else's projec
 
 - This will create a duplicate of the full project in your GitHub Repository.
 
-## Credits 
+## Credits https://www.youtube.com/watch?v=QEnY1lLcd1E, https://1000projects.org/online-restaurant-food-ordering-management-system-python-project.html, 
 
 
 
