@@ -39,8 +39,16 @@ body {
   padding: 40px;
 }
 
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9; 
+  padding: 40px;
+}
+
+
 /* Rest of the styles for the content */
-/* Add any additional styles as needed */
 
 /* Example styles for card layout */
 .card1 {
