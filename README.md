@@ -54,7 +54,8 @@ All projects were  prioritized under the labels, Must have, should have, could h
 
 The  board was created using github projects and can be located [here]https://github.com/users/ujuadimora-dev/projects/5) and can be viewed to see more information on the project cards. 
 
-![Afrikchen_board1 image](docs/readme_images/)
+![Afrikchen_board1 image](docs/readme_images/project_board.png)
+![Afrikchen_board1 image](docs/readme_images/pro_work.pngpng)
 
 #### The project
 
@@ -108,13 +109,11 @@ As a developer, I need to implement a 500 error page to alert users when an inte
 As a developer, I need to implement a 403 error page to redirect unauthorised users to so that I can secure my views
 
 
-
-**part 3 - Authentication Epic**
+**Part 3 - Authentication**
 
 As a developer, I need to implement allauth so that users can sign up and have access to the websites features
 
 As a Site Owner, I want users to verify their email when registering an account so that I can ensure that a valid email address is being used.
-
 
 
 **Part 4 - Menu**
@@ -162,7 +161,7 @@ Tasks:
 
 * Responsive Design - Site should be fully functional on all devices from 320px up
 * Hamburger menu for mobile devices
-* Ability to perform CRUD functionality on Menus and  Table Bookings
+* Ability to perform CRUD functionality on Menus and  Table 
 * Restricted role based features
 * Home page with restaurant information
 * Home page for Table booking
@@ -351,8 +350,6 @@ Custom  Django message were implemented on the successful creation and editing o
 
 ![The on SCREEN MESSAGES was NOt Captured](docs/readme_images)
 
-`
-
 
 
 ``USER-STORY - As a user I would like to delete a booking when I no longer require it``
@@ -366,8 +363,6 @@ A delete button was added to the manage bookings page that will allow customers 
 For staff members, they also have the abaility to delete any booking through the UI as well. This will allow staff to free up table capacity should a customer call to cancel their booking.
 
 ![Delete Booking](docs/readme_images/cancel_table_sec.png)
-
-
 
 **Error Pages**
 
@@ -393,8 +388,6 @@ A 403 error page has been implemented to provide feedback to the user when they 
 
 This covers:
 
-
-
 ``USER STORY - As a developer, I need to implement a 500 error page to alert users when an internal server error occurs``
 
 Implementation:
@@ -414,7 +407,6 @@ The following stories were implemented in order to set up a base structure for a
 ``As a developer, I need to set up the project so that it is ready for implementing the core features``
 
 
-
 ### Features Left To Implement
 - In a future release I would like to implement a page which displays a table map of the restaurant with information displayed on each table of upcoming bookings. This feature would allow staff to easily see if there are any upcoming bookings on the each table and plan accordingly. 
 
@@ -422,16 +414,15 @@ The following stories were implemented in order to set up a base structure for a
 
 - i would to be able to implement  food  and table search so as to enable the user to easily get want they are looking for when visting the site.
 
-- Also, in the table booking, i would like to display different kind of the tables( here on this site, it only one type of the table that was 
-  display, i could not go further than that  due to time factor, i was  not able).
+- Also, in the table booking, i would like to display different kind of the tables( here on this site, it only one type of the table that was display, i could not go further than that  due to time factor, i was  not able).
 
-- i would like to implemt cookings for data security policy.
+- I would like to implement cookings for data security policy.
 
-- Also  i would like user to be to download our menu and table plan to help them plan for their futrue event.
+- Also  i would like user to be  able to download our menu and table plan to help them plan for their futrue event.
 
-- Also  I  like to implement suscription to our news letter so that user can subscript and be uptodate for Events.
+- Also  I  like to implement suscription to our news letter so that user can subscript and be uptodate for our Events.
 
-- I would like dedicate Facebook or Utube for the Resurant for the media presence.
+- I would like dedicate Facebook or UTube for the Resurant for the media presence.
 
 -  I will add a favicon to the the website to enable users to easily locate the website in the browser when multiple tabs are open.
 
@@ -542,8 +533,6 @@ The Roboto font was used throughout the website. This font is from google fonts 
 The Website logo was made using logo.com a free site for creatimg logo of every type.
 
 
-
-
 ## Technolgies
 
 - HTML
@@ -569,10 +558,8 @@ The Website logo was made using logo.com a free site for creatimg logo of every 
 - 
 - Logo.com
   - This was used to create the logo in header 
-- TinyPNG
-  - This was used to compress the hero image for optimal load times
 
-*
+
 **External Python Modules**
 
 * cloudinary==1.29.0 - Cloundinary was set up for use but no custom uploads were made, settings remain for future development
@@ -585,23 +572,27 @@ The Website logo was made using logo.com a free site for creatimg logo of every 
 * django-allauth==0.51.0 - Used for the sites authentication system, sign up, sign in, logout, password resets ect.
 * django-model-utils==4.2.0 - Installed as dependency with another package
 * gunicorn==20.1.0 - Installed as dependency with another package
-* idna==3.3 - Installed as dependency with another package
 * oauthlib==3.2.0 - Installed as dependency with another package
 * psycopg2==2.9.3 - Needed for heroku deployment
-* pycparser==2.21 - Installed as dependency with another package
-* PyJWT==2.4.0 - Installed as dependency with another package
 * python3-openid==3.2.0 - Installed as dependency with another package
 * requests==2.27.1 - Installed as dependency with another package
 * requests-oauthlib==1.3.1 - Installed as dependency with another package (allauth authentication)
 * six==1.16.0 - Installed as dependency with another package
 * sqlparse==0.4.2 - Installed as dependency with another package
-* tzdata==2022.1 - Installed as dependency with another package
 * urllib3==1.26.9 - Installed as dependency with another package
 * whitenoise==6.2.0 - Used to serve static files directly without use of static resource provider like cloundinary
 
 ## Testing
 
-Test cases and results can be found in the [TEST.md](TEST.md) file. This was moved due to the size of the file.
+Test cases and results can be found in the [Testing the functionality of the site](test.md) file. 
+
+Other Test are Below:
+![Light House Test ](docs/testing/view_menu_ligh.png)
+
+![CSS ](docs/testing/css_check.png)
+
+![Wave ](docs/testing/site_wave.PNG)
+
 
 ## Deployment
 
@@ -632,8 +623,6 @@ The site was deployed to Heroku. The steps to deploy are as follows:
 - Add the following config vars:
   - SECRET_KEY: (Your secret key)
   - DATABASE_URL: (This should already exist with add on of postgres)
-  - EMAIL_HOST_USER: (email address)
-  - EMAIL_HOST_PASS: (email app password)
   - CLOUNDINARY_URL: (cloudinary api url)
 - Click the deploy tab
 - Scroll down to Connect to GitHub and sign in / authorize when prompted
@@ -667,7 +656,13 @@ Most commonly, forks are used to either propose changes to someone else's projec
 
 - This will create a duplicate of the full project in your GitHub Repository.
 
-## Credits https://www.youtube.com/watch?v=QEnY1lLcd1E, https://1000projects.org/online-restaurant-food-ordering-management-system-python-project.html, 
+## Credits https://www.youtube.com/watch?v=QEnY1lLcd1E, https://1000projects.org/online-restaurant-food-ordering-management-system-python-project.html, Follow up Code institute Project( I Think, therefor I Blog)
+
+### Bugs  
+-  There  are some  bugs that needed to be noted:
+1  Feedback and returning to Homepage   when the user booked  sucesssfull that table is not working
+2  Likewise for Edit and Deleting of the Booked Tables
+3. In the booking for the table, it is  bug to be able to book in the date and time that have passed
 
 
 

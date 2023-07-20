@@ -152,12 +152,13 @@ class BookingCreateView(FormView):
 class BookingSuccessView(View):
     """ success message  """
     def get(self, request, *args, **kwargs):
-        return render(request, 'booking:booking_success.html')
+        return render(request, 'Booking succssful','booking:booking_success.html')
        
 
 class CancelBookingView(DeleteView):
     """ Here is the view to manage Booking"""
     model = Booking
+    success_message = 'Booked Table Cancell successfully.'
     success_url = reverse_lazy('booking:managebookings') 
 
     def delete(self, request, *args, **kwargs):
@@ -172,6 +173,7 @@ class CancelBookingView(DeleteView):
 class DeleteBookingView(DeleteView):
     """ delete the booking """
     model = Booking
+    success_message = 'Booked Table deleted successfully.'
     success_url = reverse_lazy('booking:managebookings') 
 
 

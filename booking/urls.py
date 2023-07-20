@@ -2,7 +2,7 @@ from django.urls import path
 from .views import BookingList, TableListView, TableDetailView
 from .views import BookingCreateView, BookingSuccessView, CancelBookingView
 from .views import DeleteBookingView, EditBookingView
-from .views import BookingSuccessView, CancelBookingView,  DeleteBookingView
+from .views import CancelBookingView,  DeleteBookingView
 from . import views
 
 

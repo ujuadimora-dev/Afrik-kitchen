@@ -1,6 +1,10 @@
 {% extends "base.html" %}
  <!-- Template for editing /updating menu tag -->
 {% block content %}
+<!-- Main StyleSheet -->
+<link rel="stylesheet" href="{% static 'css/menu_detail.css' %}">
+
+
     <div class="form-section">
         <h1 class="green-heading cursive-heading text-center">Update Menu</h1>
         <form method="POST">
@@ -9,46 +13,6 @@
             <button type="submit" class="btn btn-success">Update Menu</button>
         </form>
     </div>
-
-    <style>
-        .form-section {
-            margin: 20px auto;
-            max-width: 900px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-
-        .form-section button[type="submit"] {
-            padding: 10px 20px;
-            /* background-color: green; */
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .form-section button[type="submit"]:hover {
-             background-color: green; 
-        }
-
-/* Media queries for mobile responsiveness */
-@media only screen and (max-width: 480px) {
-            .form-section {
-                padding: 10px;
-            }
-
-            .form-section h1 {
-                font-size: 20px;
-            }
-
-            .form-section button[type="submit"] {
-                padding: 8px 16px;
-                font-size: 14px;
-            }
-        }
-    </style>
 {% endblock %}
 
 
