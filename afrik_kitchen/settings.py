@@ -37,10 +37,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEVELOPMENT = True
-DEBUG = DEVELOPMENT
 
-DEBUG = DEVELOPMENT
+DEBUG = True
 
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
