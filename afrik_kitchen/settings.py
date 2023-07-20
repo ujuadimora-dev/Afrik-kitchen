@@ -36,11 +36,19 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates'),
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
+
+# DEVELOPMENT = True
+# DEBUG = DEVELOPMENT
+
+# DEBUG = DEVELOPMENT
 DEBUG = True
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['afrik-kitchen.herokuapp.com', 'localhost', '8000-ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu101.gitpod.io','8000-ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu99.gitpod.io', '8000-ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu100.gitpod.io', 'https://42609-ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu101.gitpod.io/']
+ALLOWED_HOSTS = [
+    'afrik-kitchen.herokuapp.com',
+     'localhost', 
+     '8000-ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu102.gitpod.io']
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
@@ -65,16 +73,12 @@ INSTALLED_APPS = [
     'allauth.account', 
     'allauth.socialaccount', 
     'allauth.socialaccount.providers.github',
-
-    # 'django-lib',
     'cloudinary',
-    # 'cloudinary_storage',
     # app used
     'home',
     'food',
     'booking',
-    # 'afrik_kitchen',
-    'accounts'
+    #'accounts'
 ]
 
 MIDDLEWARE = [
@@ -151,7 +155,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Email settings
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
@@ -160,7 +163,6 @@ ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
-
 
 MESSAGE_TAGS = {
     messages.DEBUG: 'alert-info',

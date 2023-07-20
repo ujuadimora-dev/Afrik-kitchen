@@ -1,25 +1,15 @@
 
-    /* Define the default styles for the table */
+    /* styles for menu table */
     .menu-item {
         display: flex;
         align-items: center;
     }
-    /* table {
-        width: 100%;
-        border-collapse: collapse;
-    } */
 
     .menu-item img {
         max-width: 100%;
         height: auto;
         margin-right: 20px;
     }
-
-    /* th, td {
-        padding: 10px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
-    } */
 
     .menu-details p {
         margin-bottom: 10px;
@@ -39,5 +29,45 @@
         .menu-item img {
             margin-right: 0;
             margin-bottom: 10px;
+        }
+    }
+
+    /* style for updating Menu*/
+
+    .form-section {
+        margin: 20px auto;
+        max-width: 900px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    .form-section button[type="submit"] {
+        padding: 10px 20px;
+        /* background-color: green; */
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .form-section button[type="submit"]:hover {
+         background-color: green; 
+    }
+
+/* Media queries for mobile responsiveness */
+@media only screen and (max-width: 480px) {
+        .form-section {
+            padding: 10px;
+        }
+
+        .form-section h1 {
+            font-size: 20px;
+        }
+
+        .form-section button[type="submit"] {
+            padding: 8px 16px;
+            font-size: 14px;
         }
     }

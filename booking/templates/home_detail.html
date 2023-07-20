@@ -1,6 +1,6 @@
 
 {% load static %}
-
+ <!--form for table Booking -->
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/table_detail.css' %}">
 {% endblock %}
@@ -28,10 +28,6 @@
             {% csrf_token %}
 
             <!-- Input Div -->
-            <!-- <div class="input-div">
-                <label for="id_table_number">Table Number:</label>
-                <input type="number" name="table_number" id="id_table_number">
-            </div> -->
             <div class="input-div">
                 <label for="id_reservation_date">Reservation Date:</label>
                 {{ form.reservation_date }}

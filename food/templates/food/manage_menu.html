@@ -1,11 +1,7 @@
 {% extends "base.html" %}
-
-{% load static %}  <!-- Add this line to load the static template tag -->
-
-
+<!-- Template for  Managing the menu Items-->
+{% load static %}
 {% block content %}
-
-
 <h1 class="text-center  green-heading cursive-heading">Manage Menu</h1>
 <table>
     <tr>
@@ -20,12 +16,12 @@
         <td>{{ menuitem.name }}</td>
         <td>{{ menuitem.type }}</td>
         <td>
-            <a href="{% url 'food:update_menuitem' menuitem.pk %}"  class="btn">update</a>
-            <a href="{% url 'food:delete_menuitem' menuitem.pk %}" class=" btn-warning" >Delete</a>
+            <a href="{% url 'food:update_menuitem' menuitem.pk %}" class="btn">update</a>
+            <a href="{% url 'food:delete_menuitem' menuitem.pk %}" class=" btn-warning">Delete</a>
         </td>
     </tr>
     {% empty %}
     <li>No menu items found.</li>
     {% endfor %}
     </ul>
-{% endblock %}
+    {% endblock %}
