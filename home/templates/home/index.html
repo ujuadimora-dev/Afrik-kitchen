@@ -2,163 +2,166 @@
 
 {% load static %}
 
-
-
 {% block content %}
-<div class="container-wrapper">
-  <div class="hero-img">
 
-  </div>
-    <div class="content-wrapper1 main-column">
-        <div class="text-area content">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+<main>
+
+    <div class="container-wrapper">
+        <div class="hero-img">
+
+        </div>
+        <!-- <div class="content-wrapper1 main-column"> -->
+        <div class="content">
             <!-- Title and about us sections -->
-            <h1 class="text-center  green-heading cursive-heading ">
-                *Ndewo**Wilkommen*
-            </h1>
+            <!-- <h1 class="text-center  green-heading cursive-heading "> -->
+            <h1>*Ndewo*Wilkommen*Bonjour*Welcome*</h1>
             <div>
                 <p>
                     Here at <span class="green-heading cursive-heading">Afrik Kitchen</span>, we speak the language of
                     food. All our food ingredients are
                     orgnic, that i can assure you.They are organically made or prepard with touch of proffessionlism.
-
-                </p>
-                <p>
                     If your are seeking where to relax, after a hectic work of the day, or you want to have business or
                     familiy lunch? or where you would like a home made dinner with friends, or you are Dating out? Here
                     @Afrik Kitchen is the right restaurant for You as well as for every occasion.
                 </p>
             </div>
+        </div>
+    </div>
+    <!-- Our Story Section -->
+    <section class="section_heading">
+        <div class="our_story">
+            <div class="story_image">
+                <img src="{% static 'images/our_story_afrik.jpg' %}" alt="Our Story">
+            </div>
 
-            <!-- Our Story Section -->
-            <section class="our-story ">
-                <div class="container-wrapper">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="story-image">
-                                <img src="{% static 'images/our_story_afrik.jpg' %}" alt="Our Story">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="story-text">
-                                <h1 class="green-heading cursive-heading">Our Story</h1>
-                                <p>Afrik Kitchen is one of best restaurant in Bremen City Germany, Europ
-                                    that offer African Dishes and Event booking and organisation
-                                </p>
-                                <p> Our staff are polite ,friendly and equally happy taking your Order and
-                                    serving.</p>
-                                <p> We partner with of Natural fruit Juice and Water industry Just to serve You better
-                                    Explore the their website;
-                                    <a class="green-heading" href="https://www.kaylyjuice.co.za/" target="_blank"
-                                        rel="noopener" aria-label="Visit our twitter page (opens in a new tab)">
-                                        <i class="fa-solid fa-martini-glass-citrus ms-3"></i> </a></p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="story_text">
+                <h1 class="">Our Story</h1>
+                <div>
+                    <p>Afrik Kitchen is one of best restaurant in Bremen City Germany, Europ
+                        that offer African Dishes and Event booking and organisation
+                    </p>
+                    <p> Our staff are polite ,friendly and equally happy taking your Order and
+                        serving.</p>
+                    <p> We partner with of Natural fruit Juice and Water industry Just to serve You better
+                        Explore the their website;
+                        <a class="green-heading" href="https://www.kaylyjuice.co.za/" target="_blank" rel="noopener"
+                            aria-label="Visit our twitter page (opens in a new tab)">
+                            <i class="fa-solid fa-martini-glass-citrus ms-3"></i> </a>
+                    </p>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <!-- Menu Section -->
-            <section class="menu  scroll-to-menu" id="menu">
-                <div class="container-wrapper">
-                    <h1 class="text-center green-heading cursive-heading">Menu</h1>
-                    <div class="row justify-content-center">
-                        <div class="col-md-4  ">
-                            <div class="menu-card fade-in ">
-                                <h3>Breakfast</h3>
-                                <p>A typical healthy African Breakfast. It contains all essential nutrients
-                                    (protein, fat and oil, fish, etc.) and there is also one made for vegetarians.
-                                    We prepare it the way you will like it.</p>
-                                </p>
-                                <a href="{% url 'food:food' %}" class="btn btn-success">Click here for
-                                    more</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 ">
-                            <div class="menu-card fade-in">
-                                <h3>Lunch</h3>
-                                <p>A healthy and mouth-watering fulfilling meal with the right atmosphere. This can
-                                    keep you going for the rest of the day.</p>
-                                <a href="{% url 'food:food' %}" class="btn btn-success">Click here for
-                                    more</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="menu-card fade-in">
-                                <h3>Dinner</h3>
-                                <p>A delicious and light dinner with a soothing ambiance and background music. This
-                                    contains meat, fish, vegetables, onions, and oil.
-                                </p>
-                                <a href="{% url 'food:food' %}" class="btn btn-success">Click here for
-                                    more</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 ">
-                            <div class="menu-card fade-in">
-                                <h3>Sides</h3>
-                                <p>A delicious side dish that can complement your meal while we prepare your order.
-                                </p>.</p>
-                                <a href="{% url 'food:food' %}" class="btn btn-success">Click here for more</a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <!-- <div class="container-wrapper"> -->
+        <div class="menu_heading">
+            <h1>Menu</h1>
+        </div>
+        <div class="menu_wrapper">
+            <div class="food">
+                <h3>Breakfast</h3>
+                <img src="{% static 'images/break_food.jpg' %}" alt="food_image">
+                <p>A typical healthy African Breakfast. It contains all essential nutrients
+                    (protein, fat and oil, fish, etc.) and there is also one made for vegetarians.
+                    We prepare it the way you will like it.</p>
+                </p>
+                <a href="{% url 'food:food' %}" class="">Click here for
+                    more</a>
+            </div>
+            <div class="food">
+                <h3>Lunch</h3>
+                <img src="{% static 'images/lunch_food.jpg' %}" alt="food_image">
+                <p>A healthy and mouth-watering fulfilling meal with the right atmosphere. This can
+                    keep you going for the rest of the day.</p>
+                <a href="{% url 'food:food' %}" class="">Click here for
+                    more</a>
+            </div>
+            <div class="food">
+                <h3>Dinner</h3>
+                <img src="{% static 'images/food_dinner.jpg' %}" alt="food_image">
+                <p>A delicious and light dinner with a soothing ambiance and background music. This
+                    contains meat, fish, vegetables, onions, and oil.
+                </p>
+                <a href="{% url 'food:food' %}" class="">Click here for
+                    more</a>
+            </div>
+
+            <div class="food">
+                <h3>Sides</h3>
+                <img src="{% static 'images/food_side.jpg' %}" alt="food_image">
+                <p>A delicious side dish that can complement your meal while we prepare your order.
+                </p>
+                <a href="{% url 'food:food' %}" class="">Click here for more</a>
+            </div>
+        </div>
+
+        <!-- Event Section -->
+        <section class="section_heading">
+            <div>
+                <h1>Events/Table Bookings</h1>
+            </div>
+
+            <div class="our_event">
+
+                <div class="event">
+                    <img src="{% static 'images/event_afrik.jpg' %}" alt="Our event pic">
+                    <h3 class="">Contact Us for Your Events</h3>
+                    <p>@ Afrik Kitchen, we are at best at organising events such as weddings, Birthdays,
+                        party,
+                        house warming party, churching, graduations party, compaies and school parties.
+                        You can book
+                        today or make enquiry here</p>
+                    <a href="{% url 'home:contact' %}" class="">contact Us</a>
+
                 </div>
-            </section>
-            <!-- Events Section -->
-            <section class="events">
-                <div class="container-wrapper">
-                    <h1 class="text-center green-heading cursive-heading">Events/Table Bookings</h1>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="event-card">
-                                <img src="{% static 'images/event_afrik.jpg' %}" alt="Event ennquiring/booking">
-                                <h3 class="green-heading cursive-heading">Contact Us for Your Events</h3>
-                                <p>@ Afrik Kitchen, we are at best at organising events such as weddings, Birthdays,
-                                    party,
-                                    house warming party, churching, graduations party, compaies and school parties.
-                                    You can book
-                                    today or make enquiry here</p>
-                                <a href="{% url 'home:contact' %}" class="btn btn-success">contact Us</a>
 
+                <div class="event">
+                    <img src="{% static 'images/event.jpg' %}" alt="Our Story">
+                    <h3 class="green-heading cursive-heading">Book Your Table(s) </h3>
+                    <p>You can book tables for your dinner, Company's meeting, Dating out,
+                        familiy's meeting , lunck or dinner as case may be here.</p>
+                    <a href="{% url 'booking:TableListView' %}" class="">Book Table</a>
 
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="event-card">
-                                <img src="{% static 'images/event.jpg' %}" alt="Table booking">
-                                <h3 class="green-heading cursive-heading">Book Your Table(s) </h3>
-                                <p>You can book tables for your dinner, Company's meeting, Dating out,
-                                    familiy's meeting , lunck or dinner as case may be here.</p>
-                                <a href="{% url 'booking:TableListView' %}" class="btn btn-success">Book Table</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </section>
 
-            <footer class="footer">
-                <h2 class="text-center white" style="color: white">Find Us</h2>
-                <div class="container-wrapper  bg-success">
-                    <div class="row">
-                        <div class="col-md">
-                            <div class="event-card">
-                                <h4 class="green-heading cursive-heading ">The location of our restaurant</h4>
-                                <img src="{% static 'images/map_location.jpg' %}" alt="Event ennquiring/booking">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="event-card">
-                                <h3 class="green-heading cursive-heading">Our Office Hours </h3>
-                                <ul class="no-decoration">
-                                    <li>Monday to Friday: 7.00am - 10.45pm</li>
-                                    <li>Saturdays: 9.45 - 130pm</li>
-                                    <li>Holidays: 10pm - 4pm</li>
-                                    <li>Sundays: closed</li>
-                                </ul>
-                                <p>14 Gronland Street Bremen<br>Bremen, State Germany<br>Phone: <a
-                                        href="tel:+1234567890">123-456-7890</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            {% endblock %}
+
+            </div>
+        </section>
+
+</main>
+<footer class="container-wrapper">
+    <div>
+        <h2>Find Us</h2>
+    </div>
+    <div class="footer">
+        <div>
+            <div class="locate">
+                <h4>Restaurant Location</h4>
+            </div>
+            <div>
+                <img src="{% static 'images/map_location.jpg' %}" alt="Restaurant Location">
+            </div>
+        </div>
+
+
+        <div class="hours"> 
+            <h4>Our Office Hours</h4>
+            <ul>
+                <li>Monday to Friday: 7.00am - 10.45pm</li>
+                <li>Saturdays: 9.45am - 1.30pm</li>
+                <li>Holidays: 10.00am - 4.00pm</li>
+                <li>Sundays: Closed</li>
+            </ul>
+            <p>14 Gronland Street, Bremen<br>Bremen, State Germany<br>Phone: <a href="tel:+1234567890">123-456-7890</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+
+
+{% endblock %}
