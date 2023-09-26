@@ -34,6 +34,21 @@ body{
   flex-grow: 1;
 }
 
+.headings h2{
+  font-size: 2rem;
+  font-weight: 800;
+  color: #17704b;
+
+}
+
+.headings h3{
+  font-size: 2rem;
+  font-family: cursive;
+  color:#000;
+
+
+}
+
 .home a {
   text-align: right;
   color: #17704b;
@@ -54,6 +69,37 @@ body{
   padding: 20px;
   background-color: #b3a8a8;
   border: 1px solid #b3a8a8;
+}
+.booking .category h2{
+  font-size: 1.5rem;
+  color: #17704b;
+}
+.booking .on h3 , .booking .at h3 , .booking .position h3, .booking .capacity h3    {
+  color: #000;
+  font-family: cursive;
+  font-size: 1rem;
+}
+
+/* Style the "Delete Booking" and "Edit Booking" links */
+.delete a,
+.edit_booking_form a {
+    text-decoration: none; /* Remove underline from links */
+    color: #ff0000; /* Set the link color */
+    font-weight: bold; /* Make the text bold */
+    margin-right: 10px; /* Add spacing between the icon and text */
+}
+
+/* Style the font-awesome icons */
+.delete i,
+.edit_booking_form i {
+    font-size: 20px; /* Set the icon size */
+    margin-right: 5px; /* Add spacing between the icon and text */
+}
+
+/* Hover effect for links */
+.delete a:hover,
+.edit_booking_form a:hover {
+    color: #cc0000; /* Change the link color on hover */
 }
 
 /* Styles for booking details */

@@ -3,40 +3,49 @@
 {% load static %}
 
 {% block extra_css %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/table_list.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/new_table.css' %}">
 {% endblock %}
 
 {% block content %}
-<div class="container-wrapper">
-  <div class="table-img">
+<section class="book_table">
+  <div class="container-hero ">
+    <div class="table-img">
 
-  </div>
-  <div class="content-wrapper main-column">
-    <div class="text-area content">
-      <!-- Title and about us sections -->
-      <h1 class="text-center green-heading  cursive-heading "><span>Book Your Table Here</span></h1>
-      <h3 class="text-center green-heading  ">
-        Make your choice
-      </h3>
-      <div>
-        <div class="container-wrapper1">
-          <!-- Main Content -->
-          <div id="content">
-            {% for table_capacity, table_url in table_list %}
-            <div class="table">
-              <a href="{{table_url}}">
-                <img src="https://res.cloudinary.com/daaluzzqp/image/upload/v1688646705/book_bgr_xjsh5m.jpg" />
-                <h2 class="green-heading">{{table_capacity}} Table capacity</h2>
-                <p class="green-heading cursive-heading ">
-                  Very Comfortable Table. This can be in Garden, near the Window, or as You will like it.
-                </p>
-              </a>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-      </div>
     </div>
   </div>
-</div>
-{% endblock %}
+
+
+  <div class="text">
+
+    <!-- Title and about us sections -->
+    <div class="hero_text ">
+      <h1 ><span>Book Your Table Here</span></h1>
+    </div>
+
+    <div class="text_choice">
+      <h3> Make your choice</h3>
+    </div>
+  </div>
+
+
+  <div class="container_capcity">
+    <!-- Main Content -->
+    <div id="content">
+      {% for table_capacity, table_url in table_list %}
+      <div class="table">
+        <a href="{{table_url}}">
+          <img src="https://res.cloudinary.com/daaluzzqp/image/upload/v1688646705/book_bgr_xjsh5m.jpg" />
+          <h2>{{table_capacity}} Table capacity</h2>
+          <p>
+            Very Comfortable Table. This can be in Garden, near the Window, or as You will like it.
+          </p>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  </div>
+  </div>
+
+  {% endblock %}
+</section>
