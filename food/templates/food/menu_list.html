@@ -1,51 +1,60 @@
 {% extends "base.html" %}
-<!-- Template for the View Menu -->
 {% load static %}
 {% block content %}
+
+<style>
+    .text-center {
+        text-align: center;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 800px; /* Adjust the max-width as needed */
+    }
+
+    .card1 {
+        width: 250px;
+        margin: 20px;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s;
+    }
+
+    .card1:hover {
+        transform: scale(1.05);
+    }
+
+    .card-img-top1 {
+        border-radius: 50%; /* Makes the image round */
+        width: 150px; /* Adjust the width as needed */
+        height: 150px; /* Adjust the height as needed */
+        object-fit: cover; /* Ensures images maintain their aspect ratio */
+        margin: 10px auto;
+    }
+
+    .section-heading {
+        margin-top: 20px;
+        font-size: 24px;
+        color: #007bff;
+    }
+</style>
+
 <div class="text-center">
     <div>
         <h1 class="green-heading cursive-heading">View Menu</h1>
     </div>
 
-    <h2 class="section-heading green-heading cursive-heading ">Breakfast</h2>
+    <h2 class="section-heading green-heading cursive-heading">Breakfast</h2>
     {% for menuitem in menuitem %}
     {% if menuitem.type == 'BREAKFAST' %}
     <div class="card1">
         <div class="card-body1">
-            <img class="card-img-top-1" src="{{ menuitem.fimage }}" alt="Menu Image">
-        </div>
-        <div class="card-body1">
-            <h5 class="card-title1">{{ menuitem.name }}</h5>
-        </div>
-        <div class="card-body1">
-            <a href="{% url 'food:detail' menuitem.pk %}" class="btn btn-success">Detail</a>
-        </div>
-    </div>
-    {% endif %}
-    {% endfor %}
-
-    <h2 class="section-heading green-heading cursive-heading ">Lunch</h2>
-    {% for menuitem in menuitem %}
-    {% if menuitem.type == 'LUNCH' %}
-    <div class="card1">
-        <div class="card-body1">
-            <img class="card-img-top1" src="{{ menuitem.fimage }}" alt="Menu Image">
-        </div>
-        <div class="card-body1">
-            <h5 class="card-title">{{ menuitem.name }}</h5>
-        </div>
-        <div class="card-body1">
-            <a href="{% url 'food:detail' menuitem.pk %}" class="btn btn-success">Detail</a>
-        </div>
-    </div>
-    {% endif %}
-    {% endfor %}
-
-    <h2 class="section-heading green-heading cursive-heading ">Dinner</h2>
-    {% for menuitem in menuitem %}
-    {% if menuitem.type == 'DINNER' %}
-    <div class="card1">
-        <div class="card-body1">
             <img class="card-img-top1" src="{{ menuitem.fimage }}" alt="Menu Image">
         </div>
         <div class="card-body1">
@@ -58,22 +67,57 @@
     {% endif %}
     {% endfor %}
 
-    <h2 class="section-heading green-heading cursive-heading ">Side</h2>
-    {% for menuitem in menuitem %}
-    {% if menuitem.type == 'SIDE' %}
-    <div class="card1">
-        <div class="card-body1">
-            <img class="card-img-top1" src="{{ menuitem.fimage }}" alt="Menu Image">
-        </div>
-        <div class="card-body1">
-            <h5 class="card-title1">{{ menuitem.name }}</h5>
-        </div>
-        <div class="card-body1">
-            <a href="{% url 'food:detail' menuitem.pk %}" class="btn btn-success">Detail</a>
-        </div>
+    <h2 class="section-heading green-heading cursive-heading">Lunch</h2>
+{% for menuitem in menuitem %}
+{% if menuitem.type == 'LUNCH' %}
+<div class="card1">
+    <div class="card-body1">
+        <img class="card-img-top1" src="{{ menuitem.fimage }}" alt="Menu Image">
     </div>
-    {% endif %}
-    {% endfor %}
+    <div class="card-body1">
+        <h5 class="card-title1">{{ menuitem.name }}</h5>
+    </div>
+    <div class="card-body1">
+        <a href="{% url 'food:detail' menuitem.pk %}" class="btn btn-success">Detail</a>
+    </div>
+</div>
+{% endif %}
+{% endfor %}
+
+<h2 class="section-heading green-heading cursive-heading">Dinner</h2>
+{% for menuitem in menuitem %}
+{% if menuitem.type == 'DINNER' %}
+<div class="card1">
+    <div class="card-body1">
+        <img class="card-img-top1" src="{{ menuitem.fimage }}" alt="Menu Image">
+    </div>
+    <div class="card-body1">
+        <h5 class="card-title1">{{ menuitem.name }}</h5>
+    </div>
+    <div class="card-body1">
+        <a href="{% url 'food:detail' menuitem.pk %}" class="btn btn-success">Detail</a>
+    </div>
+</div>
+{% endif %}
+{% endfor %}
+
+<h2 class="section-heading green-heading cursive-heading">Side</h2>
+{% for menuitem in menuitem %}
+{% if menuitem.type == 'SIDE' %}
+<div class="card1">
+    <div class="card-body1">
+        <img class="card-img-top1" src="{{ menuitem.fimage }}" alt="Menu Image">
+    </div>
+    <div class="card-body1">
+        <h5 class="card-title1">{{ menuitem.name }}</h5>
+    </div>
+    <div class="card-body1">
+        <a href="{% url 'food:detail' menuitem.pk %}" class="btn btn-success">Detail</a>
+    </div>
+</div>
+{% endif %}
+{% endfor %}
 </div>
 </div>
 {% endblock %}
+

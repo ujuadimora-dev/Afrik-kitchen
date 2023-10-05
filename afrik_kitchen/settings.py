@@ -44,7 +44,7 @@ DEBUG = True
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = [
-    'afrik-kitchen.herokuapp.com', '8000-ujuadimorad-afrikkitche-zqva385bw5d.ws-eu104.gitpod.io' ,
+    'afrik-kitchen.herokuapp.com', '8000-ujuadimorad-afrikkitche-zqva385bw5d.ws-eu105.gitpod.io' ,
      'localhost', 
      '8000-ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu102.gitpod.io']
 

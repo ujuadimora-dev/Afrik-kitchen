@@ -52,8 +52,11 @@ class Booking(models.Model):
     reservation_time = models.CharField(
         max_length=20, choices=BOOKING_TIME, default="8:00am - 9:45am")
 
-    def __str__(self):return f"{self.user} Sucessfully **has Booked for** {self.table.table_number} Table  on {self.reservation_date} at {self.reservation_time}"
-       
+
+
+    # def __str__(self):
+    #     return f"{self.user} has booked a table on {self.reservation_date} at {self.reservation_time}"
+        
     def get_table_capacity(self):
         """ to get the value to display"""
         table_capacities = dict(self.table.CAPACITY_CHOICES)
