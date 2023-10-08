@@ -45,7 +45,7 @@ if development:
     ALLOWED_HOSTS = ['localhost', '8000-ujuadimorad-afrikkitche-zqva385bw5d.ws-eu105.gitpod.io']
 
 else:
-    ALLOWED_HOSTS = ['8000-ujuadimorad-afrikkitche-zqva385bw5d.ws-eu105.gitpod.io', 'https://afrik-kitchen.herokuapp.com/']
+    ALLOWED_HOSTS = ['afrik-kitchen.herokuapp.com']
 
 
 
