@@ -1,1 +1,1 @@
-web: gunicorn afrik_kitchen.wsgi
+web: gunicorn afrik_kitchen.wsgi:application
