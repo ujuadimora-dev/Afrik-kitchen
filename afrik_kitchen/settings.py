@@ -18,8 +18,9 @@ from django.contrib.messages import constants as messages
 if os.path.isfile('env.py'):
     import env
 
+development = os.environ.get('DEVELOPMEMT', False)
 
-DEVELOPMENT = os.environ.get('DEVELOPMENT', False)
+# DEVELOPMENT = os.environ.get('DEVELOPMENT', False)
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -37,16 +38,48 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
+DEBUG = development
 
-DEBUG = False
+
+if development:
+    ALLOWED_HOSTS = ['localhost', '8000-ujuadimorad-afrikkitche-zqva385bw5d.ws-eu105.gitpod.io']
+
+else:
+    ALLOWED_HOSTS = ['8000-ujuadimorad-afrikkitche-zqva385bw5d.ws-eu105.gitpod.io', 'https://afrik-kitchen.herokuapp.com/']
+
 
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = [
-    'afrik-kitchen.herokuapp.com', '8000-ujuadimorad-afrikkitche-zqva385bw5d.ws-eu105.gitpod.io' ,
-     'localhost', 
-     '8000-ujuadimorad-afrikkitche-w2pyx2xzr68.ws-eu102.gitpod.io']
+# settings.py
+
+# Configure error handling to log exceptions
+# settings.py
+
+# settings.py
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'file': {
+            'level': 'ERROR',
+            'class': 'logging.FileHandler',
+            'filename': '/workspace/Afrik-kitchen/afrik_kitchen/logs',  # Full path to the log file
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['file'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+    },
+}
+
+
+
+
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
@@ -129,6 +162,18 @@ WSGI_APPLICATION = 'afrik_kitchen.wsgi.application'
 
 
 # Database
+if development:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+else:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+
 
 
 DATABASES = {

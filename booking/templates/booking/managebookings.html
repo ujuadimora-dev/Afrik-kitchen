@@ -20,7 +20,7 @@
     <!-- Option to Delete a Booking -->
     <a href="{% url 'booking:delete_booking' booking.id %}">Cancel</a> |
     <!-- Option to Edit a Booking -->
-    <a href="{% url 'booking:edit_booking' booking.id %}">Edit</a>
+    <a href="{% url 'booking:booking_edit' booking.id %}">Edit</a>
   </li>
   {% empty %}
   <li>No bookings available.</li>

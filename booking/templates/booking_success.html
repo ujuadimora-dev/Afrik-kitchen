@@ -56,10 +56,10 @@
         <p>{{ message }}</p>
         <p>{{ user }} Your booking has been successfully made.</p>
         <p>What would you like to do next?</p>
-        <a href="{% url 'home:home' %}">Go Home</a>
+        <a href="{% url 'home:index' %}">Go Home</a>
         <a href="{% url 'booking:TableListView' %}">Book and Manage Table</a>
         <a href="{% url 'food:food' %}">Order for Food</a>
-        <a href="{% url 'home:contact' %}" >Contact Us for an Event</a>
+        <a href="{% url 'contact' %}" >Contact Us for an Event</a>
         <a href="{% url 'account_logout' %}">Exit the program</a>
     </div>
 </body>

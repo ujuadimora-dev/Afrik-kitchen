@@ -5,7 +5,7 @@ from afrik_kitchen.views import contact, success
 app_name = 'home'
 
 urlpatterns = [
-    path('', HomeView.as_view(), name='home'),
+    path('', HomeView.as_view(), name='index'),
     path('contact/', contact, name='contact'),
     path('contact_success/{name}/', success, name='contact_success')
 

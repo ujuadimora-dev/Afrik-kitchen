@@ -1,0 +1,103 @@
+"GET /favicon.ico HTTP/1.1" 500 59
+"GET /favicon.ico HTTP/1.1" 500 59
+"GET /favicon.ico HTTP/1.1" 500 59
+"GET /favicon.ico HTTP/1.1" 500 59
+"GET / HTTP/1.1" 500 59
+"GET /favicon.ico HTTP/1.1" 500 59
+"GET /favicon.ico HTTP/1.1" 500 59
+"GET /table_list/ HTTP/1.1" 500 59
+"GET /favicon.ico HTTP/1.1" 500 59
+"GET /table_list/ HTTP/1.1" 500 59
+"GET /favicon.ico HTTP/1.1" 500 59
+"GET /favicon.ico HTTP/1.1" 500 59
+"GET / HTTP/1.1" 500 59
+"GET /favicon.ico HTTP/1.1" 500 59
+"GET / HTTP/1.1" 500 59
+"GET /favicon.ico HTTP/1.1" 500 59
+"GET / HTTP/1.1" 500 59
+"GET /favicon.ico HTTP/1.1" 500 59
+"GET / HTTP/1.1" 500 59
+"GET /favicon.ico HTTP/1.1" 500 59
+"GET / HTTP/1.1" 500 59
+"GET /favicon.ico HTTP/1.1" 500 59
+"GET / HTTP/1.1" 500 59
+"GET /favicon.ico HTTP/1.1" 500 59
+"GET / HTTP/1.1" 500 59
+"GET /favicon.ico HTTP/1.1" 500 59
+"GET / HTTP/1.1" 500 59
+"GET /favicon.ico HTTP/1.1" 500 59
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+"GET /managebookings/ HTTP/1.1" 500 59
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+The joined path (/css/booking_list.css) is located outside of the base path component (/workspace/Afrik-kitchen/static)
+Internal Server Error: /managebookings/
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/workspace/Afrik-kitchen/booking/views.py", line 174, in managebooking
+    return render(request, 'managebookings.html', context)
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: managebookings.html
+"GET /managebookings/ HTTP/1.1" 500 5745
+Internal Server Error: /managebookings/
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/workspace/Afrik-kitchen/booking/views.py", line 174, in managebooking
+    return render(request, 'managebookings.html', context)
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: managebookings.html
+"GET /managebookings/ HTTP/1.1" 500 5745
+Internal Server Error: /managebookings/
+Traceback (most recent call last):
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/workspace/Afrik-kitchen/booking/views.py", line 174, in managebooking
+    return render(request, 'managebookings.html', context)
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/workspace/.pip-modules/lib/python3.8/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: managebookings.html
+"GET /managebookings/ HTTP/1.1" 500 5745

@@ -24,7 +24,7 @@ class BookingList(LoginRequiredMixin, ListView):
     model = Booking
     template_name = 'booking_list.html'
     context_object_name = 'booking_list'
-    login_url = 'home:home'
+    login_url = 'home:index'
 
     def get_queryset(self):
         if self.request.user.is_staff:
@@ -126,7 +126,6 @@ class BookedAlredyView(View):
         return render(request, self.template_name)
 
 
-
 class CancelBookingView(DeleteView):
     model = Booking
     success_message = 'Booked Table Cancell successfully.'
@@ -159,3 +158,17 @@ class EditBookingView(UpdateView):
     def get_success_url(self):
         success_message = 'Booking updated successfully.'
         return reverse_lazy('booking:managebookings')
+
+# views.py
+from django.shortcuts import render, redirect
+from .models import Booking
+
+def managebooking(request):
+    # Retrieve a list of bookings (customize this query based on your needs)
+    bookings = Booking.objects.all()
+
+    context = {
+        'bookings': bookings,
+    }
+
+    return render(request, 'managebookings.html', context)
