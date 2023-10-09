@@ -18,7 +18,7 @@ from django.contrib.messages import constants as messages
 if os.path.isfile('env.py'):
     import env
 
-development = os.environ.get('DEVELOPMEMT', False)
+# development = os.environ.get('DEVELOPMEMT', False)
 
 # DEVELOPMENT = os.environ.get('DEVELOPMENT', False)
 
@@ -40,8 +40,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # DEBUG = development
 DEBUG = True
-ALLOWED_HOSTS = ['localhost', '8000-ujuadimorad-afrikkitche-zqva385bw5d.ws-eu105.gitpod.io']
-
+ALLOWED_HOSTS = ['localhost', '8000-ujuadimorad-afrikkitche-zqva385bw5d.ws-eu105.gitpod.io', 'afrik-kitchen.herokuapp.com']
 
 
 # if development:
@@ -51,37 +50,7 @@ ALLOWED_HOSTS = ['localhost', '8000-ujuadimorad-afrikkitche-zqva385bw5d.ws-eu105
 #     ALLOWED_HOSTS = ['afrik-kitchen.herokuapp.com']
 
 
-
 X_FRAME_OPTIONS = 'SAMEORIGIN'
-
-# settings.py
-
-# Configure error handling to log exceptions
-# settings.py
-
-# settings.py
-
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'file': {
-            'level': 'ERROR',
-            'class': 'logging.FileHandler',
-            'filename': '/workspace/Afrik-kitchen/afrik_kitchen/logs',  # Full path to the log file
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['file'],
-            'level': 'ERROR',
-            'propagate': True,
-        },
-    },
-}
-
-
-
 
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
@@ -164,19 +133,18 @@ TEMPLATES = [
 WSGI_APPLICATION = 'afrik_kitchen.wsgi.application'
 
 
-# Database
-if development:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
-else:
-    DATABASES = {
-        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-    }
-
+# # Database
+# if development:
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': BASE_DIR / 'db.sqlite3',
+#         }
+#     }
+# else:
+#     DATABASES = {
+#         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+#     }
 
 
 DATABASES = {
