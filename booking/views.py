@@ -80,30 +80,38 @@ class TableDetailView(View):
                 # return HttpResponse(f"{message} <a href='{booking_home_url}'>Booking Home</a>")
 
 
+
 class BookingCreateView(FormView):
-    template_name = 'create_booking.html'
+    template_name = 'booking/create_booking.html'
     form_class = TableAvaliableForm
     success_url = reverse_lazy('booking_success')  # Use the URL name, not template name
 
     def form_valid(self, form):
         data = form.cleaned_data
-        capacity = data['capacity']
-        table = get_object_or_404(Table, capacity=capacity)
+        capacity = data.get('capacity', None)
 
-        if check_avaliable(table, data['reservation_date'], data['reservation_time']):
-            booking = Booking.objects.create(
-                user=self.request.user,
-                table=table,
-                reservation_date=data['reservation_date'],
-                reservation_time=data['reservation_time']
-            )
-            booking.save()
-            
-            messages.success(self.request, f'Booking confirmed for {booking.id} guests')
-            return render(request, 'booking_success.html')  # Redirect to the booking_success view
+        if capacity is not None:
+            # Get the table with the specified capacity or return a 404 error if not found
+            table = get_object_or_404(Table, capacity=capacity)
+
+            if check_avaliable(table, data['reservation_date'], data['reservation_time']):
+                booking = Booking.objects.create(
+                    user=self.request.user,
+                    table=table,
+                    reservation_date=data['reservation_date'],
+                    reservation_time=data['reservation_time']
+                )
+                booking.save()
+                
+                messages.success(self.request, f'Booking confirmed for {booking.id} guests')
+                return redirect('booking_success')  # Redirect to the booking_success view
+
+            else:
+                messages.error(self.request, 'Table is already booked. Please try another one.')
+                return self.form_invalid(form)
 
         else:
-            messages.error(self.request, ' table is already booked. Please try another one.')
+            messages.error(self.request, 'Invalid capacity. Please check again.')
             return self.form_invalid(form)
 
 

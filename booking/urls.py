@@ -19,6 +19,10 @@ urlpatterns = [
     path('cancel/<int:pk>/', CancelBookingView.as_view(), name='cancel_booking'),
     path('delete/<int:pk>/', DeleteBookingView.as_view(), name='delete_booking'),
     path('edit/<int:pk>/', EditBookingView.as_view(), name='booking_edit'),   
-]
 
+
+
+    
+
+]
 
