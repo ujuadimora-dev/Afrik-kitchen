@@ -209,19 +209,31 @@ SITE_ID = 1
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/static/'  # URL prefix for static files
 
+# Specify the directories where your static files are located
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+# The directory where Django should collect static files for deployment
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Use Cloudinary storage for static files
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-STATICFILES_EXCLUDE = ['favicon.ico']
 
+# Configuration for Cloudinary storage
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME'),
+    'API_KEY': os.environ.get('CLOUDINARY_API_KEY'),
+    'API_SECRET': os.environ.get('CLOUDINARY_API_SECRET'),
+    'PREFIX': 'static/',  # Add this line to specify the prefix for static files
+}
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# Media files (user uploads, etc.)
+MEDIA_URL = '/media/'  # URL prefix for media files
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # The directory where media files are stored locally
+
+# Use Cloudinary storage for media files
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-
 
 
 
